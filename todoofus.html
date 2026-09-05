@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#352719" />
+    <meta
+      name="description"
+      content="Carnet de progression pour la chasse aux boucliers."
+    />
+    <title>Todoofus — Chasse aux boucliers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Nunito:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="todofus.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#questBoard">Aller au journal</a>
+
+    <!-- Sprite SVG local : cohérent, léger et sans dépendance JavaScript. -->
+    <svg class="svg-sprite" aria-hidden="true">
+      <symbol id="icon-shield" viewBox="0 0 24 24">
+        <path d="M12 3 5 6v5c0 4.6 2.7 8 7 10 4.3-2 7-5.4 7-10V6l-7-3Z" />
+        <path d="M12 7v9M8.5 11.5h7" />
+      </symbol>
+      <symbol id="icon-map" viewBox="0 0 24 24">
+        <path d="m3 6 5-2 8 2 5-2v14l-5 2-8-2-5 2V6Z" />
+        <path d="M8 4v14M16 6v14" />
+      </symbol>
+      <symbol id="icon-search" viewBox="0 0 24 24">
+        <circle cx="11" cy="11" r="7" />
+        <path d="m20 20-4-4" />
+      </symbol>
+      <symbol id="icon-filter" viewBox="0 0 24 24">
+        <path d="M4 6h16M7 12h10M10 18h4" />
+      </symbol>
+      <symbol id="icon-check" viewBox="0 0 24 24">
+        <path d="m5 12 4 4L19 6" />
+      </symbol>
+      <symbol id="icon-reset" viewBox="0 0 24 24">
+        <path d="M4 4v6h6M5.5 15a8 8 0 1 0 .5-7" />
+      </symbol>
+      <symbol id="icon-trophy" viewBox="0 0 24 24">
+        <path d="M8 4h8v5a4 4 0 0 1-8 0V4ZM9 20h6M12 13v7" />
+        <path d="M8 6H4v2a4 4 0 0 0 4 4M16 6h4v2a4 4 0 0 1-4 4" />
+      </symbol>
+      <symbol id="icon-spark" viewBox="0 0 24 24">
+        <path
+          d="m12 3 1.5 5.5L19 10l-5.5 1.5L12 17l-1.5-5.5L5 10l5.5-1.5L12 3Z"
+        />
+        <path
+          d="m19 16 .7 2.3L22 19l-2.3.7L19 22l-.7-2.3L16 19l2.3-.7L19 16Z"
+        />
+      </symbol>
+      <symbol id="icon-close" viewBox="0 0 24 24">
+        <path d="m6 6 12 12M18 6 6 18" />
+      </symbol>
+      <symbol id="icon-download" viewBox="0 0 24 24">
+        <path d="M12 3v12M7 10l5 5 5-5M5 21h14" />
+      </symbol>
+      <symbol id="icon-upload" viewBox="0 0 24 24">
+        <path d="M12 16V4M7 9l5-5 5 5M5 21h14" />
+      </symbol>
+      <symbol id="icon-backpack" viewBox="0 0 24 24">
+        <path d="M5.5 8.5h13l1 11H4.5l1-11Z" />
+        <path d="M8.5 8.5V6.8a3.5 3.5 0 0 1 7 0v1.7M5.5 11h13M12 11v3" />
+        <path d="M7 15.5h2M15 15.5h2" />
+      </symbol>
+      <symbol id="icon-chevron" viewBox="0 0 24 24">
+        <path d="m7 9 5 5 5-5" />
+      </symbol>
+    </svg>
+
+    <div class="world-backdrop" aria-hidden="true"></div>
+    <main class="app-shell">
+      <header class="hero">
+        <div class="hero-copy-block">
+          <div class="brand-mark">
+            <svg aria-hidden="true"><use href="#icon-map" /></svg>
+          </div>
+          <div>
+            <p class="eyebrow">Todoofus · Carnet d’aventure</p>
+            <h1>Votre aventure, <span>bien organisée</span></h1>
+            <p class="hero-copy">
+              Donjons, quêtes, métiers et élevage réunis dans un seul carnet.
+            </p>
+          </div>
+        </div>
+        <img
+          class="hero-illustration"
+          src="dofus-shield-hero-v2.png"
+          alt="Blason fantasy turquoise serti d’or"
+        />
+        <details class="hero-options">
+          <summary class="hero-options-toggle">Options</summary>
+          <div class="hero-options-menu" aria-label="Options de sauvegarde">
+            <button type="button" class="button button-small button-ghost" id="exportSave">
+              <svg aria-hidden="true"><use href="#icon-download" /></svg>Exporter ma sauvegarde
+            </button>
+            <button type="button" class="button button-small button-ghost" id="importSave">
+              <svg aria-hidden="true"><use href="#icon-upload" /></svg>Importer ma sauvegarde
+            </button>
+            <p class="save-status" id="saveStatus" aria-live="polite"></p>
+            <button type="button" class="button button-small button-ghost" id="toggleTheme">
+              <span id="themeLabel">Activer le cuir sombre</span>
+            </button>
+          </div>
+        </details>
+      </header>
+
+      <nav class="module-nav" role="tablist" aria-label="Choisir un module">
+        <button
+          type="button"
+          class="module-tab is-active"
+          id="module-tab-pvm"
+          data-module="pvm"
+          role="tab"
+          aria-selected="true"
+          aria-controls="moduleContent"
+          tabindex="0"
+        >
+          <svg aria-hidden="true"><use href="#icon-shield" /></svg>PvM / Donjons
+        </button>
+        <button
+          type="button"
+          class="module-tab"
+          id="module-tab-lore"
+          data-module="lore"
+          role="tab"
+          aria-selected="false"
+          aria-controls="moduleContent"
+          tabindex="-1"
+        >
+          <svg aria-hidden="true"><use href="#icon-map" /></svg>Quêtes
+        </button>
+        <button
+          type="button"
+          class="module-tab"
+          id="module-tab-artisanat"
+          data-module="artisanat"
+          role="tab"
+          aria-selected="false"
+          aria-controls="moduleContent"
+          tabindex="-1"
+        >
+          <svg aria-hidden="true"><use href="#icon-spark" /></svg>Artisanat / Élevage
+        </button>
+      </nav>
+
+      <div
+        id="moduleContent"
+        class="module-content"
+        role="tabpanel"
+        aria-labelledby="module-tab-pvm"
+      >
+        <section class="progress-panel" aria-labelledby="progress-title">
+          <div class="progress-heading">
+            <div class="section-title-wrap">
+              <span class="section-icon"
+                ><svg aria-hidden="true"><use href="#icon-trophy" /></svg
+              ></span>
+              <div>
+                <p class="eyebrow" id="progressEyebrow">Progression globale</p>
+                <h2 id="progress-title">
+                  <span id="progressText">0 / 0</span>
+                  <span id="progressUnit">objectifs terminés</span>
+                </h2>
+              </div>
+            </div>
+            <div class="progress-score">
+              <strong id="progressPercent">0</strong><span>%</span>
+            </div>
+          </div>
+          <div
+            class="progress-bar"
+            role="progressbar"
+            aria-label="Progression globale"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            aria-valuenow="0"
+            id="progressBar"
+          >
+            <div class="progress-fill" id="progressFill"></div>
+          </div>
+          <div class="progress-footer">
+            <p id="progressMessage">Votre aventure commence ici.</p>
+            <div class="actions">
+              <div class="progress-actions" aria-label="Actions de progression">
+                <button type="button" class="button button-primary" id="checkAll">
+                  <svg aria-hidden="true"><use href="#icon-check" /></svg
+                  ><span id="checkAllLabel">Tout terminer</span>
+                </button>
+                <button type="button" class="button button-danger button-secondary-action" id="openReset">
+                  <svg aria-hidden="true"><use href="#icon-reset" /></svg
+                  ><span id="resetLabel">Effacer la progression</span>
+                </button>
+              </div>
+              <input id="importFile" type="file" accept="application/json,.json" hidden />
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="quest-board"
+          id="questBoard"
+          aria-labelledby="quest-title"
+        >
+          <div class="quest-heading">
+            <div class="section-title-wrap">
+              <span class="section-icon"
+                ><svg aria-hidden="true"><use href="#icon-shield" /></svg
+              ></span>
+              <div>
+                <p class="eyebrow" id="questEyebrow">Exploration par zone</p>
+                <h2 id="quest-title">Zones et parcours</h2>
+              </div>
+            </div>
+            <div class="quest-tools">
+              <details class="filter-panel">
+                <summary>
+                  <span class="filter-panel-title">
+                    <svg aria-hidden="true"><use href="#icon-filter" /></svg>
+                    Filtres
+                  </span>
+                  <span class="filter-panel-hint">Affiner l’affichage</span>
+                </summary>
+                <div class="filter-panel-content">
+                  <div class="filter-primary-row">
+                    <label class="search-field"
+                    ><span class="sr-only" id="searchLabel"
+                      >Rechercher une zone ou un objectif</span
+                    ><svg aria-hidden="true"><use href="#icon-search" /></svg
+                    ><input
+                      id="searchInput"
+                      type="search"
+                      placeholder="Rechercher une zone ou un objectif…"
+                      autocomplete="off"
+                  />                </label>
+                   <label class="search-field objective-search-field">
+                     <span class="sr-only">Rechercher un objectif</span>
+                     <svg aria-hidden="true"><use href="#icon-search" /></svg>
+                     <input id="objectiveSearchInput" type="search" placeholder="Rechercher un objectif…" autocomplete="off" />
+                   </label>
+                    <label class="select-field" for="levelFilter">
+                    <span>Niveau</span>
+                    <select id="levelFilter">
+                      <option value="all">Tous</option>
+                      <option value="1-50">1–50</option>
+                      <option value="51-100">51–100</option>
+                      <option value="101-150">101–150</option>
+                      <option value="151-200">151–200</option>
+                    </select>
+                    </label>
+                    <label class="select-field" for="zoneFilter" id="zoneFilterField">
+                    <span>Zone</span>
+                    <select id="zoneFilter">
+                      <option value="all">Toutes</option>
+                    </select>
+                    </label>
+                    <div class="filters" aria-label="Filtrer par état">
+                      <button class="filter is-active" id="status-filter-all" type="button" data-filter="all" aria-pressed="true">Tous</button>
+                      <button class="filter" id="status-filter-todo" type="button" data-filter="todo" aria-pressed="false">À faire</button>
+                      <button class="filter" id="status-filter-done" type="button" data-filter="done" aria-pressed="false">Terminés</button>
+                    </div>
+                  </div>
+                  <details class="tag-filter-panel">
+                    <summary>Tags spécifiques</summary>
+                    <div id="tagFilters" class="tag-filters" role="group" aria-label="Filtrer par tags"></div>
+                  </details>
+                  <div class="filter-secondary-row">
+                    <label class="select-field" for="categoryFilter">
+                    <span>Type</span>
+                    <select id="categoryFilter" aria-label="Filtrer par type"></select>
+                    </label>
+                    <div class="catalog-actions" aria-label="Actions d’affichage">
+                      <button type="button" class="button button-small button-ghost" id="expandAll">Tout ouvrir</button>
+                      <button type="button" class="button button-small button-ghost" id="collapseAll">Tout fermer</button>
+                      <button type="button" class="button button-small button-ghost" id="hideCompleted" aria-pressed="false">
+                        Masquer les quêtes terminées
+                      </button>
+                      <button type="button" class="button button-small button-ghost" id="resetFilters">
+                        <svg aria-hidden="true"><use href="#icon-reset" /></svg>Réinitialiser les filtres
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </details>
+            </div>
+          </div>
+          <p class="result-count" id="resultCount" aria-live="polite"></p>
+          <p class="module-notice" id="moduleNotice" hidden></p>
+          <div id="tiers" class="tiers"></div>
+          <div class="empty-state" id="emptyState" hidden>
+            <svg aria-hidden="true"><use href="#icon-search" /></svg>
+            <h3 id="emptyTitle">Aucun parcours trouvé</h3>
+            <p id="emptyText">Essayez un autre nom ou changez de filtre.</p>
+          </div>
+        </section>
+      </div>
+
+      <footer>
+        <svg aria-hidden="true"><use href="#icon-spark" /></svg
+        ><span>Progression enregistrée automatiquement sur cet appareil.</span
+        ><svg aria-hidden="true"><use href="#icon-spark" /></svg>
+      </footer>
+    </main>
+
+    <dialog class="dialog" id="resetDialog" aria-labelledby="dialogTitle">
+      <div class="dialog-icon">
+        <svg aria-hidden="true"><use href="#icon-reset" /></svg>
+      </div>
+      <button
+        type="button"
+        class="icon-button dialog-close"
+        id="closeReset"
+        aria-label="Fermer"
+      >
+        <svg aria-hidden="true"><use href="#icon-close" /></svg>
+      </button>
+      <p class="eyebrow">Réinitialiser la quête</p>
+      <h2 id="dialogTitle">Effacer toute la progression ?</h2>
+      <p id="resetDialogText">Cette action ne peut pas être annulée.</p>
+      <div class="dialog-actions">
+        <button type="button" class="button button-ghost" id="cancelReset">
+          Conserver</button
+        ><button type="button" class="button button-danger" id="uncheckAll">
+          <svg aria-hidden="true"><use href="#icon-reset" /></svg>Tout effacer
+        </button>
+      </div>
+    </dialog>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="data/data-loader.js" defer></script>
+    <script src="todofus.js" defer></script>
+  </body>
+</html>

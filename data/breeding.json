@@ -1,0 +1,14 @@
+{
+  "version": 2,
+
+  "generations": [
+    {
+      "id": "generation-1",
+      "name": "Génération 1",
+      "order": 10,
+      "description": "Première génération de Dragodindes.",
+      "raceIds": [],
+      "objectives": []
+    }
+  ]
+}

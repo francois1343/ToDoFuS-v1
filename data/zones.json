@@ -1,0 +1,142 @@
+{
+  "version": 2,
+
+  "zones": [
+    {
+      "id": "amakna",
+      "name": "Amakna",
+      "order": 10,
+      "levelRange": { "min": 20, "max": 120 },
+      "tags": [],
+      "objectives": []
+    },
+    {
+      "id": "archipel-vulkania",
+      "name": "Archipel de Vulkania",
+      "order": 20,
+      "levelRange": { "min": 100, "max": 200 },
+      "tags": ["event"],
+      "objectives": []
+    },
+    {
+      "id": "astrub",
+      "name": "Astrub",
+      "order": 30,
+      "levelRange": { "min": 1, "max": 50 },
+      "tags": ["starter"],
+      "objectives": []
+    },
+    {
+      "id": "baie-sufokia",
+      "name": "Baie de Sufokia",
+      "order": 40,
+      "levelRange": { "min": 40, "max": 100 },
+      "tags": [],
+      "objectives": []
+    },
+    {
+      "id": "bonta",
+      "name": "Bonta",
+      "order": 50,
+      "levelRange": { "min": 30, "max": 200 },
+      "tags": ["city"],
+      "objectives": []
+    },
+    {
+      "id": "brakmar",
+      "name": "Brâkmar",
+      "order": 60,
+      "levelRange": { "min": 30, "max": 200 },
+      "tags": ["city"],
+      "objectives": []
+    },
+    {
+      "id": "foire-du-trool",
+      "name": "Foire du Trool",
+      "order": 70,
+      "levelRange": { "min": 40, "max": 100 },
+      "tags": ["activity"],
+      "objectives": []
+    },
+    {
+      "id": "foret-abraknydes",
+      "name": "Forêt des Abraknydes",
+      "order": 80,
+      "levelRange": { "min": 30, "max": 100 },
+      "tags": [],
+      "objectives": []
+    },
+    {
+      "id": "ile-otomai",
+      "name": "Île d'Otomaï",
+      "order": 90,
+      "levelRange": { "min": 40, "max": 200 },
+      "tags": ["island"],
+      "objectives": []
+    },
+    {
+      "id": "ile-frigost",
+      "name": "Île de Frigost",
+      "order": 100,
+      "levelRange": { "min": 50, "max": 200 },
+      "tags": ["island", "endgame"],
+      "objectives": []
+    },
+    {
+      "id": "ile-moon",
+      "name": "Île de Moon",
+      "order": 110,
+      "levelRange": { "min": 40, "max": 100 },
+      "tags": ["island"],
+      "objectives": []
+    },
+    {
+      "id": "ile-nowel",
+      "name": "Île de Nowel",
+      "order": 120,
+      "levelRange": { "min": 20, "max": 200 },
+      "tags": ["island", "event"],
+      "objectives": []
+    },
+    {
+      "id": "ile-pandala",
+      "name": "Île de Pandala",
+      "order": 130,
+      "levelRange": { "min": 30, "max": 200 },
+      "tags": ["island"],
+      "objectives": []
+    },
+    {
+      "id": "ile-wabbits",
+      "name": "Île des Wabbits",
+      "order": 140,
+      "levelRange": { "min": 40, "max": 100 },
+      "tags": ["island"],
+      "objectives": []
+    },
+    {
+      "id": "incarnam",
+      "name": "Incarnam",
+      "order": 150,
+      "levelRange": { "min": 1, "max": 20 },
+      "tags": ["starter"],
+      "objectives": []
+    },
+    {
+      "id": "lande-sidimote",
+      "name": "Lande de Sidimote",
+      "order": 160,
+      "levelRange": { "min": 30, "max": 200 },
+      "tags": [],
+      "objectives": []
+    },
+    {
+      "id": "plaines-cania",
+      "name": "Plaines de Cania",
+      "order": 170,
+      "levelRange": { "min": 30, "max": 150 },
+      "tags": [],
+      "objectives": []
+    }
+  ]
+}
