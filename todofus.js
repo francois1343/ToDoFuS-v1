@@ -54,7 +54,7 @@ const moduleBlueprints = {
     progressUnit: "objectifs terminés",
     searchPlaceholder: "Rechercher une zone ou un objectif…",
     categories: ["dungeon", "quest", "monster", "objective"],
-    notice: "Les cartes viennent de zones.json et dungeon-routes.json ; leurs objectifs peuvent être ajoutés progressivement.",
+    notice: "Les cartes viennent des fichiers zones.json, rush-starter.json et parcours.json ; leurs objectifs peuvent être ajoutés progressivement.",
   },
   lore: {
     id: "lore",
@@ -102,6 +102,7 @@ const elements = {
   expandAll: document.getElementById("expandAll"),
   collapseAll: document.getElementById("collapseAll"),
   hideCompleted: document.getElementById("hideCompleted"),
+  hideCompletedLabel: document.getElementById("hideCompletedLabel"),
   exportSave: document.getElementById("exportSave"),
   importSave: document.getElementById("importSave"),
   importFile: document.getElementById("importFile"),
@@ -137,6 +138,7 @@ let activeZone = "all";
 let searchTerm = "";
 let objectiveSearchTerm = "";
 let hideCompleted = false;
+let hiddenSections = new Set();
 let toastTimer;
 const openGroupIds = new Set();
 const filterState = {};
@@ -681,17 +683,17 @@ function objectiveMatches(module, group, objective) {
 
 function filteredObjectives(module, group) {
   return group.objectives.filter((objective) =>
-    objectiveMatches(module, group, objective) &&
-    (!hideCompleted || !isObjectiveDone(module, objective)),
+    objectiveMatches(module, group, objective),
   );
 }
 
 function groupVisible(module, group, objectives) {
+  const stats = groupStats(module, group);
+  if (hideCompleted && stats.total > 0 && stats.completed === stats.total) {
+    return false;
+  }
   if (group.objectives.length) {
-    return objectives.length > 0 || (
-      hideCompleted &&
-      group.objectives.some((objective) => isObjectiveDone(module, objective))
-    );
+    return objectives.length > 0;
   }
   const metricDone = group.metric
     ? metricValue(group) >= group.metric.target
@@ -949,6 +951,9 @@ function renderGroup(module, group, objectives) {
         <div class="tier-progress" role="progressbar" aria-label="Progression ${escapeHtml(group.name)}" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${stats.percent}"><i style="width:${stats.percent}%"></i></div>
       </div>
       <span class="tier-chevron" aria-hidden="true">${icon("chevron")}</span>
+      <button type="button" class="tier-complete-button${stats.total && stats.completed === stats.total ? " is-complete" : ""}" data-complete-group="${escapeHtml(groupId)}" aria-label="${stats.total && stats.completed === stats.total ? "Palier déjà terminé" : `Valider toutes les étapes de ${group.name}`}" title="${stats.total && stats.completed === stats.total ? "Palier déjà terminé" : "Valider toutes les étapes"}">
+        ${icon("check")}
+      </button>
     </summary>
     <div class="task-list">${itemsPanel.panel}${content}</div>
   </details>`;
@@ -958,6 +963,7 @@ function renderCatalog(module) {
   let visibleGroups = 0;
   const sections = module.sections
     .map((section) => {
+      const isHidden = hiddenSections.has(section.id);
       const cards = section.groups
         .map((group) => {
           const objectives = filteredObjectives(module, group);
@@ -966,13 +972,16 @@ function renderCatalog(module) {
           return renderGroup(module, group, objectives);
         })
         .join("");
-      if (!cards) return "";
-      return `<section class="catalog-section${section.sequential ? " is-sequential" : ""}" aria-labelledby="section-${escapeHtml(section.id)}">
+      if (!cards && !isHidden) return "";
+      return `<section class="catalog-section${section.sequential ? " is-sequential" : ""}${isHidden ? " is-hidden" : ""}" aria-labelledby="section-${escapeHtml(section.id)}">
         <div class="catalog-section-heading">
           <div><p class="eyebrow">${escapeHtml(module.shortLabel)}</p><h3 id="section-${escapeHtml(section.id)}">${escapeHtml(section.title)}</h3></div>
-          ${section.description ? `<p>${escapeHtml(section.description)}</p>` : ""}
+          <div class="catalog-section-actions">
+            ${section.description ? `<p>${escapeHtml(section.description)}</p>` : ""}
+            <button type="button" class="button button-small button-ghost section-visibility-button" data-hide-section="${escapeHtml(section.id)}" aria-pressed="${String(isHidden)}">${isHidden ? "Afficher la catégorie" : "Masquer la catégorie"}</button>
+          </div>
         </div>
-        <div class="section-grid">${cards}</div>
+        ${isHidden ? "" : `<div class="section-grid">${cards}</div>`}
       </section>`;
     })
     .join("");
@@ -997,10 +1006,25 @@ function progressMessage(stats) {
 }
 
 function renderCategoryFilters(module) {
-  const tags = new Set(moduleGroups(module).flatMap((group) => [
-    ...asArray(group.tags),
-    ...group.objectives.flatMap((objective) => asArray(objective.tags)),
-  ]).filter((tag) => !["city", "island", "event", "endgame", "activity"].includes(tag)));
+  const ignoredTags = new Set(["city", "island", "event", "endgame", "activity"]);
+  const ignoredLoreTags = new Set(["dofus", "primordial"]);
+  const tags = new Set(moduleGroups(module).flatMap((group) => {
+    const sourceTags = module.id === "lore"
+      ? asArray(group.tags)
+      : [
+          ...asArray(group.tags),
+          ...group.objectives.flatMap((objective) => asArray(objective.tags)),
+        ];
+    return sourceTags
+      .filter((tag) => typeof tag === "string")
+      .map((tag) => normalizeSearch(tag).replace(/\s+/g, "-"))
+      .filter((tag) =>
+        !ignoredTags.has(tag) &&
+        !(module.id === "lore" && (
+          ignoredLoreTags.has(tag) || /^niveau-\d+$/.test(tag)
+        )),
+      );
+  }));
   const fill = (select, values, allLabel, selected) => {
     select.innerHTML = [`<option value="all">${allLabel}</option>`, ...values
       .sort()
@@ -1008,18 +1032,40 @@ function renderCategoryFilters(module) {
       .join("");
     select.value = values.includes(selected) ? selected : "all";
   };
+  const themeForTag = (tag) => {
+    const zones = new Set([
+      "amakna", "astrub", "enutrosor", "frigost", "moon", "otomai",
+      "sufokia", "wabbit", "xelorium", "srambad", "meriana", "pandala",
+    ]);
+    const progression = /^(niveau-\d+|debutant|primordial|mise-a-jour-.+)$/.test(tag);
+    const playstyle = new Set(["solo", "duo", "compagnons", "prudent", "prospection", "quotidienne"]);
+    if (zones.has(tag)) return "Zones et régions";
+    if (progression) return "Progression";
+    if (playstyle.has(tag)) return "Style de jeu";
+    return "Contenus et Dofus";
+  };
+  const groupedTags = [...tags].reduce((groups, tag) => {
+    const theme = themeForTag(tag);
+    if (!groups[theme]) groups[theme] = [];
+    groups[theme].push(tag);
+    return groups;
+  }, {});
+  const tagChoice = (tag) =>
+    `<label class="tag-choice"><input type="checkbox" value="${escapeHtml(tag)}" ${
+      activeTags.includes(tag) ? "checked" : ""
+    }>${escapeHtml(humanize(tag))}</label>`;
   fill(elements.categoryFilter, module.categories, "Tous les types", activeCategory);
   elements.tagFilters.innerHTML = [
     `<label class="tag-choice"><input type="checkbox" value="" ${
       activeTags.length ? "" : "checked"
     }>Tous les tags</label>`,
-    ...[...tags]
-      .sort()
-      .map(
-        (tag) =>
-          `<label class="tag-choice"><input type="checkbox" value="${escapeHtml(tag)}" ${
-            activeTags.includes(tag) ? "checked" : ""
-          }>${escapeHtml(humanize(tag))}</label>`,
+    ...Object.entries(groupedTags)
+      .sort(([a], [b]) => a.localeCompare(b, "fr"))
+      .map(([theme, themeTags]) =>
+        `<details class="tag-theme">
+          <summary>${escapeHtml(theme)} <span>${themeTags.length}</span></summary>
+          <div class="tag-theme-options">${themeTags.sort((a, b) => a.localeCompare(b, "fr")).map(tagChoice).join("")}</div>
+        </details>`,
       ),
   ].join("");
 }
@@ -1064,6 +1110,9 @@ function updateInterface(module, stats, visibleGroups) {
     ? ""
     : "Modifiez la recherche ou les filtres pour afficher d’autres cartes, ou revenez plus tard : contenu à venir.";
   elements.resultCount.textContent = `${visibleGroups} carte${visibleGroups === 1 ? "" : "s"} affichée${visibleGroups === 1 ? "" : "s"}`;
+  elements.hideCompletedLabel.textContent = hideCompleted
+    ? "Afficher les progressions achevées (100 %)"
+    : "Masquer les progressions achevées (100 %)";
   elements.checkAllLabel.textContent = "Tout terminer";
   elements.resetLabel.textContent = "Effacer la progression";
   elements.checkAll.disabled = !stats.total || stats.percent === 100;
@@ -1106,6 +1155,7 @@ function resetFilters() {
   searchTerm = "";
   objectiveSearchTerm = "";
   hideCompleted = false;
+  hiddenSections = new Set();
   elements.searchInput.value = "";
   elements.objectiveSearchInput.value = "";
   elements.hideCompleted.setAttribute("aria-pressed", "false");
@@ -1129,6 +1179,7 @@ function rememberFilters() {
     search: searchTerm,
     objectiveSearch: objectiveSearchTerm,
     hideCompleted,
+    hiddenSections: [...hiddenSections],
   };
   state.filters = filterState;
   saveState();
@@ -1148,6 +1199,7 @@ function restoreFilters(moduleId) {
   searchTerm = saved.search || "";
   objectiveSearchTerm = saved.objectiveSearch || "";
   hideCompleted = Boolean(saved.hideCompleted);
+  hiddenSections = new Set(Array.isArray(saved.hiddenSections) ? saved.hiddenSections : []);
   elements.searchInput.value = searchTerm;
   elements.objectiveSearchInput.value = objectiveSearchTerm;
   elements.hideCompleted.setAttribute("aria-pressed", String(hideCompleted));
@@ -1298,6 +1350,35 @@ elements.tiers.addEventListener("toggle", (event) => {
 }, true);
 
 elements.tiers.addEventListener("click", (event) => {
+  const sectionButton = event.target.closest("[data-hide-section]");
+  if (sectionButton) {
+    event.preventDefault();
+    event.stopPropagation();
+    const sectionId = sectionButton.dataset.hideSection;
+    if (hiddenSections.has(sectionId)) hiddenSections.delete(sectionId);
+    else hiddenSections.add(sectionId);
+    rememberFilters();
+    render({ focusId: sectionButton.id });
+    return;
+  }
+  const completeButton = event.target.closest("[data-complete-group]");
+  if (completeButton) {
+    event.preventDefault();
+    event.stopPropagation();
+    const module = currentModule();
+    const group = moduleGroups(module).find(
+      (candidate) => `${module.id}:${candidate.id}` === completeButton.dataset.completeGroup,
+    );
+    if (!group) return;
+    group.objectives.forEach((objective) => {
+      state.objectives[objectiveStateId(module, objective)] = true;
+    });
+    if (group.metric) state.metrics[metricStateId(group)] = group.metric.target;
+    saveState();
+    render();
+    showToast(`Le palier « ${group.name} » est marqué comme terminé.`);
+    return;
+  }
   const backpack = event.target.closest("[data-backpack]");
   if (backpack) {
     event.preventDefault();

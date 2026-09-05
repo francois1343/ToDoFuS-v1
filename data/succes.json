@@ -1,0 +1,412 @@
+{
+  "version": 3,
+  "successes": [
+    {
+      "dofusId": "dofus-argente",
+      "objective": {
+        "id": "en-route-pour-l-aventure",
+        "title": "En route pour l'aventure",
+        "type": "achievement",
+        "summary": "Quêtes d'apprentissage d'Incarnam."
+      }
+    },
+    {
+      "dofusId": "dofus-argente",
+      "objective": {
+        "id": "pousse-par-le-vent",
+        "title": "Poussé par le vent",
+        "type": "achievement",
+        "summary": "Premières quêtes de découverte autour d'Incarnam."
+      }
+    },
+    {
+      "dofusId": "dofus-argente",
+      "objective": {
+        "id": "service-dans-la-milice",
+        "title": "Service dans la milice",
+        "type": "achievement",
+        "summary": "Quêtes de la milice d'Incarnam."
+      }
+    },
+    {
+      "dofusId": "dofus-argente",
+      "objective": {
+        "id": "c-est-le-metier-qui-rentre",
+        "title": "C'est le métier qui rentre",
+        "type": "achievement",
+        "summary": "Découverte des métiers et de l'artisanat."
+      }
+    },
+    {
+      "dofusId": "dofus-argente",
+      "objective": {
+        "id": "ramdam-sur-incarnam",
+        "title": "Ramdam sur Incarnam",
+        "type": "achievement",
+        "summary": "Quêtes annexes d'Incarnam."
+      }
+    },
+    {
+      "dofusId": "dofus-argente",
+      "objective": {
+        "id": "un-citoyen-modele",
+        "title": "Un citoyen modèle",
+        "type": "achievement",
+        "summary": "Quêtes d'Astrub et de la citoyenneté."
+      }
+    },
+    {
+      "dofusId": "dofus-argente",
+      "objective": {
+        "id": "l-occasion-fait-le-larron",
+        "title": "L'occasion fait le larron",
+        "type": "achievement",
+        "summary": "Enquêtes et rencontres dans Astrub."
+      }
+    },
+    {
+      "dofusId": "dofus-argente",
+      "objective": {
+        "id": "la-grande-biblioquete",
+        "title": "La grande biblioquête",
+        "type": "achievement",
+        "summary": "Quêtes de la bibliothèque d'Astrub."
+      }
+    },
+    {
+      "dofusId": "dofus-argente",
+      "objective": {
+        "id": "mercenaire-d-acier",
+        "title": "Mercenaire d'acier",
+        "type": "achievement",
+        "summary": "Quêtes de combat et de défense d'Astrub."
+      }
+    },
+    {
+      "dofusId": "dofus-argente",
+      "objective": {
+        "id": "pas-le-temps-de-chomer",
+        "title": "Pas le temps de chômer",
+        "type": "achievement",
+        "summary": "Quêtes d'artisanat et de travail à Astrub."
+      }
+    },
+    {
+      "dofusId": "dofus-argente",
+      "objective": {
+        "id": "l-habitat-urbain",
+        "title": "L'habitat urbain",
+        "type": "achievement",
+        "summary": "Quêtes consacrées aux créatures et habitants d'Astrub."
+      }
+    },
+    {
+      "dofusId": "dofus-argente",
+      "objective": {
+        "id": "escapades-et-embuscades",
+        "title": "Escapades et embuscades",
+        "type": "achievement",
+        "summary": "Dernières quêtes d'exploration autour d'Astrub."
+      }
+    },
+    {
+      "dofusId": "dofus-cawotte",
+      "objective": {
+        "id": "ruse-comme-une-lenalde",
+        "title": "Rusé comme une Lenalde",
+        "type": "achievement",
+        "summary": "Série de quêtes d'exploration et d'enquêtes sur l'île des Wabbits."
+      }
+    },
+    {
+      "dofusId": "dofus-cawotte",
+      "objective": {
+        "id": "un-wa-de-pacotille",
+        "title": "Un Wa de pacotille",
+        "type": "achievement",
+        "summary": "Quêtes relatives au Wa Wabbit et à son château."
+      }
+    },
+    {
+      "dofusId": "dofus-cawotte",
+      "objective": {
+        "id": "poil-de-cawotte",
+        "title": "Poil de Cawotte",
+        "type": "achievement",
+        "summary": "Succès final d'obtention. Nécessite d'équiper la Panoplie du Wa Wabbit (Couronne, Bâton, Cape) à la fin du donjon Terrier du Wa Wabbit et de parler au Gawdien.",
+        "prerequisites": [
+          "ruse-comme-une-lenalde",
+          "un-wa-de-pacotille"
+        ]
+      }
+    },
+    {
+      "dofusId": "dokoko",
+      "objective": {
+        "id": "koko-boy",
+        "title": "Koko Boy",
+        "type": "achievement",
+        "summary": "Série de quêtes de découverte et d'exploration de l'île de Moon."
+      }
+    },
+    {
+      "dofusId": "dofus-emeraude",
+      "objective": {
+        "id": "vert-emeraude",
+        "title": "Vert émeraude",
+        "type": "achievement",
+        "summary": "Série de quêtes de Mériana retraçant l'enquête sur le Dark Vlad, la chasse aux bandits de Cania et l'obtention du Dofus Émeraude.",
+        "prerequisites": [
+          "mais-ou-sont-les-dofus"
+        ]
+      }
+    },
+    {
+      "dofusId": "dofus-pourpre",
+      "objective": {
+        "id": "pourpre-profond",
+        "title": "Pourpre profond",
+        "type": "achievement",
+        "summary": "Succès majeur débloquant le Dofus Pourpre après la quête des tablettes et des gardiens de donjon."
+      }
+    },
+    {
+      "dofusId": "dofus-turquoise",
+      "objective": {
+        "id": "bleu-turquoise",
+        "title": "Bleu turquoise",
+        "type": "achievement",
+        "summary": "Succès regroupant la série de quêtes d'Aguabrial et l'obtention du Dofus Turquoise."
+      }
+    },
+    {
+      "dofusId": "ocre-d-ambre",
+      "objective": {
+        "id": "ocre-d-ambre",
+        "title": "Ocre d'ambre",
+        "type": "achievement",
+        "summary": "Succès regroupant la série de quêtes narratives et mécaniques d'Otomaï."
+      }
+    },
+    {
+      "dofusId": "dofus-ivoire",
+      "objective": {
+        "id": "blanc-ivoire",
+        "title": "Blanc Ivoire",
+        "type": "achievement",
+        "summary": "Série de quêtes épiques pour réveiller la magie du Dragon Blanc Dardondakal et obtenir le Dofus Ivoire."
+      }
+    },
+    {
+      "dofusId": "dofus-ebene",
+      "objective": {
+        "id": "noir-d-ebene",
+        "title": "Noir d'ébène",
+        "type": "achievement",
+        "summary": "Série de quêtes d'investigation et d'épreuves mystiques retraçant l'origine du Dragon Noir Grougaloragran jusqu'à l'éclosion du Dofus Ébène."
+      }
+    },
+    {
+      "dofusId": "dofus-vulbis",
+      "objective": {
+        "id": "quetic-vulbis",
+        "title": "Quêtes du Dofus Vulbis",
+        "type": "achievement",
+        "summary": "Série de quêtes complexes autour des Anomalies Temporielles, de Crocabulia et des Songes Infinis pour obtenir le Dofus Vulbis."
+      }
+    },
+    {
+      "dofusId": "dofus-des-glaces",
+      "objective": {
+        "id": "fri-carre",
+        "title": "Fri carré",
+        "type": "achievement",
+        "summary": "Quêtes d'introduction et d'installation sur Frigost."
+      }
+    },
+    {
+      "dofusId": "dofus-des-glaces",
+      "objective": {
+        "id": "halte-au-peage",
+        "title": "Halte au péage",
+        "type": "achievement",
+        "summary": "Série de quêtes de donjons et de progression à travers Frigost I et II."
+      }
+    },
+    {
+      "dofusId": "dofus-des-glaces",
+      "objective": {
+        "id": "la-maire-denie",
+        "title": "La maire dénie",
+        "type": "achievement",
+        "summary": "Quêtes de soutien administratif et de développement du bourg de Frigost."
+      }
+    },
+    {
+      "dofusId": "dofus-des-glaces",
+      "objective": {
+        "id": "l-hiver-arrive",
+        "title": "L'hiver arrive",
+        "type": "achievement",
+        "summary": "Série de quêtes narratives au sein du Château du Comte Harebourg et du Village Enseveli."
+      }
+    },
+    {
+      "dofusId": "dofus-des-glaces",
+      "objective": {
+        "id": "l-ame-de-glace",
+        "title": "L'âme de glace",
+        "type": "achievement",
+        "summary": "Enquête approfondie sur l'origine du gel de Frigost et la malédiction d'Aguabrial."
+      }
+    },
+    {
+      "dofusId": "dofus-des-glaces",
+      "objective": {
+        "id": "fraichement-pondu",
+        "title": "Fraîchement pondu",
+        "type": "achievement",
+        "summary": "Étape ultime d'obtention directe du Dofus des Glaces.",
+        "prerequisites": [
+          "fri-carre",
+          "halte-au-peage",
+          "la-maire-denie",
+          "l-hiver-arrive",
+          "l-ame-de-glace"
+        ]
+      }
+    },
+    {
+      "dofusId": "dolmanax",
+      "objective": {
+        "id": "le-repos-du-dragon",
+        "title": "Le repos du dragon",
+        "type": "achievement",
+        "summary": "Accomplir 365 fois la quête 'Offrande du jour' du sanctuaire de l'Almanax pour réunir les 365 pages de calendrier et réveiller le Dolmanax."
+      }
+    },
+    {
+      "dofusId": "dofus-kaliptus",
+      "objective": {
+        "id": "repaire-du-skeunk",
+        "title": "Repaire du Skeunk",
+        "type": "dungeon",
+        "summary": "Vaincre le Skeunk dans son repaire après avoir vaincu ses 4 Sadidettes et récupérer les 4 broches pour obtenir le Dofus Kaliptus."
+      }
+    },
+    {
+      "dofusId": "dofus-abyssal",
+      "objective": {
+        "id": "plouf",
+        "title": "Plouf !",
+        "type": "achievement",
+        "summary": "Succès d'introduction à l'exploration des profondeurs de Sufokia."
+      }
+    },
+    {
+      "dofusId": "dofus-abyssal",
+      "objective": {
+        "id": "la-mer-en-heritage",
+        "title": "La mer en héritage",
+        "type": "achievement",
+        "summary": "Série de quêtes sur l'histoire ancienne des Abysses et les technologies de Sufokia."
+      }
+    },
+    {
+      "dofusId": "dofus-abyssal",
+      "objective": {
+        "id": "la-guerre-des-profondeurs",
+        "title": "La guerre des profondeurs",
+        "type": "achievement",
+        "summary": "Enquête et affrontements autour de la crise sous-marine des Trithons et Mercemers."
+      }
+    },
+    {
+      "dofusId": "dofus-abyssal",
+      "objective": {
+        "id": "l-appel-de-koutoulou",
+        "title": "L'appel de Koutoulou",
+        "type": "achievement",
+        "summary": "Quêtes de la zone du Temple de Koutoulou et des cultes impies des profondeurs."
+      }
+    },
+    {
+      "dofusId": "dofus-abyssal",
+      "objective": {
+        "id": "vous-ne-descendrez-pas-plus-bas",
+        "title": "Vous ne descendrez pas plus bas",
+        "type": "achievement",
+        "summary": "Exploration des zones les plus profondes et dangereuses des Abysses."
+      }
+    },
+    {
+      "dofusId": "dofus-abyssal",
+      "objective": {
+        "id": "silence-on-coule",
+        "title": "Silence on coule",
+        "type": "achievement",
+        "summary": "Série de quêtes de la zone des Mercemers et mémoire oubliée des abysses."
+      }
+    },
+    {
+      "dofusId": "dofus-abyssal",
+      "objective": {
+        "id": "test-d-etancheite",
+        "title": "Test d'étanchéité",
+        "type": "achievement",
+        "summary": "Épreuves finales et préparation de l'équipement sous-marin d'élite."
+      }
+    },
+    {
+      "dofusId": "dofus-nebuleux",
+      "objective": {
+        "id": "quetes-enutrosor",
+        "title": "Quêtes d'Enutrosor",
+        "type": "achievement",
+        "summary": "Valider l'intégralité des quêtes de la dimension Enutrosor et s'entretenir avec le Dieu Enutrof."
+      }
+    },
+    {
+      "dofusId": "dofus-nebuleux",
+      "objective": {
+        "id": "quetes-srambad",
+        "title": "Quêtes de Srambad",
+        "type": "achievement",
+        "summary": "Valider l'intégralité des quêtes de la dimension Srambad et s'entretenir avec le Dieu Sram."
+      }
+    },
+    {
+      "dofusId": "dofus-nebuleux",
+      "objective": {
+        "id": "quetes-xelorium",
+        "title": "Quêtes du Xélorium",
+        "type": "achievement",
+        "summary": "Valider l'intégralité des quêtes de la dimension Xélorium et s'entretenir avec le Dieu Xélor."
+      }
+    },
+    {
+      "dofusId": "dofus-nebuleux",
+      "objective": {
+        "id": "dofus-des-veilleurs-req",
+        "title": "Dofus des Veilleurs",
+        "type": "achievement",
+        "summary": "Terminer le succès et les quêtes liées au Dofus des Veilleurs."
+      }
+    },
+    {
+      "dofusId": "dofus-nebuleux",
+      "objective": {
+        "id": "l-oiseau-du-temps",
+        "title": "L'oiseau du temps",
+        "type": "achievement",
+        "summary": "Ultime quête d'affrontement et de démêlage temporel permettant de mettre la main sur le Dofus Nébuleux.",
+        "prerequisites": [
+          "quetes-enutrosor",
+          "quetes-srambad",
+          "quetes-xelorium",
+          "dofus-des-veilleurs-req"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "id": "duo",
+      "name": "Succès Duo",
+      "type": "achievement",
+      "order": 20,
+      "levelRange": {
+        "min": 1,
+        "max": null
+      },
+      "tags": [
+        "duo"
+      ],
+      "description": "Suivi des succès nécessitant une réalisation en Duo.",
+      "objectives": []
+    },
+    {
+      "id": "prudent",
+      "name": "Succès Prudent",
+      "type": "achievement",
+      "order": 30,
+      "levelRange": {
+        "min": 1,
+        "max": null
+      },
+      "tags": [
+        "prudent"
+      ],
+      "description": "Suivi des succès avec la contrainte Prudent.",
+      "objectives": []
+    },
+    {
+      "id": "compagnons",
+      "name": "Compagnons",
+      "type": "companion",
+      "order": 40,
+      "levelRange": {
+        "min": 30,
+        "max": null
+      },
+      "tags": [
+        "companion"
+      ],
+      "description": "Suivi des objectifs liés aux Compagnons.",
+      "objectives": []
+    },
+    {
+      "id": "tour-du-monde",
+      "name": "Tour du Monde",
+      "type": "quest",
+      "order": 50,
+      "levelRange": {
+        "min": 1,
+        "max": null
+      },
+      "tags": [
+        "world-tour"
+      ],
+      "description": "Progression des étapes du Tour du Monde.",
+      "objectives": []
+    },
+    {
+      "id": "gladiatrool",
+      "name": "Gladiatrool",
+      "type": "activity",
+      "order": 60,
+      "levelRange": {
+        "min": 1,
+        "max": null
+      },
+      "tags": [
+        "gladiatrool"
+      ],
+      "description": "Suivi de la progression Gladiatrool.",
+      "objectives": []
+    },
+    {
+      "id": "score-tutu",
+      "name": "Score Tutu",
+      "type": "achievement",
+      "order": 70,
+      "levelRange": {
+        "min": 1,
+        "max": null
+      },
+      "tags": [
+        "score-tutu"
+      ],
+      "description": "Suivi des objectifs liés au Score Tutu.",
+      "objectives": []
+    }
+  ]
+}

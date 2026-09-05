@@ -1,6 +1,5 @@
 {
   "version": 3,
-
   "dofus": [
     {
       "id": "dofus-argente",
@@ -9,7 +8,12 @@
       "level": 20,
       "acquisition": "quest",
       "summary": "Créé par Rathrosk, le Dofus Argenté protège son porteur lorsqu'il tombe sous 20 % de points de vie.",
-      "tags": ["Dofus", "Astrub", "Débutant", "Solo"],
+      "tags": [
+        "Dofus",
+        "Astrub",
+        "Débutant",
+        "Solo"
+      ],
       "source": "https://www.dofuspourlesnoobs.com/quetes-du-dofus-argente.html",
       "progression": {
         "trackId": "main-dofus",
@@ -21,25 +25,82 @@
           "id": "partie-incarnam",
           "name": "Partie I : Quêtes d'Incarnam",
           "itemsRequired": [
-            { "name": "Eau potable", "quantity": 8 },
-            { "name": "Fer", "quantity": 5 },
-            { "name": "Poudre de Perlinpainpain", "quantity": 3 },
-            { "name": "Ortie", "quantity": 3 },
-            { "name": "Sauge", "quantity": 3 },
-            { "name": "Trèfle à 5 feuilles", "quantity": 3 },
-            { "name": "Huile de Sésame", "quantity": 2 },
-            { "name": "Baguette Rikiki", "quantity": 1 },
-            { "name": "Couteau de Chasse ou arme de chasse", "quantity": 1 },
-            { "name": "Ferrite", "quantity": 1 },
-            { "name": "Serviette de Plage", "quantity": 1 },
-            { "name": "Cuir de Scélérat Strubien", "quantity": 1 },
-            { "name": "Planche Contreplaquée", "quantity": 1 },
-            { "name": "Fleur de Pissenlit Diabolique", "quantity": 1 },
-            { "name": "Pétale de Rose Démoniaque", "quantity": 1 },
-            { "name": "Pétale de Tournesol Sauvage", "quantity": 1 },
-            { "name": "Langue d'Épouvanteur", "quantity": 1 },
-            { "name": "Lailait", "quantity": 1 },
-            { "name": "Goujon", "quantity": 1 }
+            {
+              "name": "Eau potable",
+              "quantity": 8
+            },
+            {
+              "name": "Fer",
+              "quantity": 5
+            },
+            {
+              "name": "Poudre de Perlinpainpain",
+              "quantity": 3
+            },
+            {
+              "name": "Ortie",
+              "quantity": 3
+            },
+            {
+              "name": "Sauge",
+              "quantity": 3
+            },
+            {
+              "name": "Trèfle à 5 feuilles",
+              "quantity": 3
+            },
+            {
+              "name": "Huile de Sésame",
+              "quantity": 2
+            },
+            {
+              "name": "Baguette Rikiki",
+              "quantity": 1
+            },
+            {
+              "name": "Couteau de Chasse ou arme de chasse",
+              "quantity": 1
+            },
+            {
+              "name": "Ferrite",
+              "quantity": 1
+            },
+            {
+              "name": "Serviette de Plage",
+              "quantity": 1
+            },
+            {
+              "name": "Cuir de Scélérat Strubien",
+              "quantity": 1
+            },
+            {
+              "name": "Planche Contreplaquée",
+              "quantity": 1
+            },
+            {
+              "name": "Fleur de Pissenlit Diabolique",
+              "quantity": 1
+            },
+            {
+              "name": "Pétale de Rose Démoniaque",
+              "quantity": 1
+            },
+            {
+              "name": "Pétale de Tournesol Sauvage",
+              "quantity": 1
+            },
+            {
+              "name": "Langue d'Épouvanteur",
+              "quantity": 1
+            },
+            {
+              "name": "Lailait",
+              "quantity": 1
+            },
+            {
+              "name": "Goujon",
+              "quantity": 1
+            }
           ],
           "successes": [
             "en-route-pour-l-aventure",
@@ -64,370 +125,16 @@
         }
       ],
       "rewards": {
-        "items": ["Dofus Argenté"],
+        "items": [
+          "Dofus Argenté"
+        ],
         "effect": "Sous 20 % de points de vie, soigne 20 % de la vie au début du tour suivant, une fois par combat."
       },
       "globalPrerequisites": [
         "Niveau 20 recommandé",
         "Avoir accès à Incarnam et Astrub"
-      ],
-      "objectives": [
-        {
-          "id": "en-route-pour-l-aventure",
-          "title": "En route pour l'aventure",
-          "type": "achievement",
-          "summary": "Quêtes d'apprentissage d'Incarnam.",
-          "quests": [
-            {
-              "id": "q-anneau-de-tous-les-dangers",
-              "name": "L'anneau de tous les dangers",
-              "level": 1
-            },
-            {
-              "id": "q-sous-le-regard-des-dieux",
-              "name": "Sous le regard des dieux",
-              "level": 1
-            },
-            {
-              "id": "q-reponses-a-tout",
-              "name": "Réponses à tout",
-              "level": 1
-            },
-            {
-              "id": "q-le-village-dans-les-nuages",
-              "name": "Le village dans les nuages",
-              "level": 1
-            },
-            {
-              "id": "q-espoirs-et-tragedies",
-              "name": "Espoirs et tragédies",
-              "level": 1
-            },
-            {
-              "id": "q-dans-la-gueule-du-milimilou",
-              "name": "Dans la gueule du Milimilou",
-              "level": 1
-            },
-            {
-              "id": "q-destination-astrub",
-              "name": "Destination Astrub",
-              "level": 20
-            }
-          ]
-        },
-        {
-          "id": "pousse-par-le-vent",
-          "title": "Poussé par le vent",
-          "type": "achievement",
-          "summary": "Premières quêtes de découverte autour d'Incarnam.",
-          "quests": [
-            {
-              "id": "q-transport-peu-commun",
-              "name": "Transport peu commun",
-              "level": 1
-            },
-            {
-              "id": "q-des-vestiges-de-legende",
-              "name": "Des vestiges de légende",
-              "level": 1
-            },
-            { "id": "q-vu-du-ciel", "name": "Vu du ciel", "level": 1 }
-          ]
-        },
-        {
-          "id": "service-dans-la-milice",
-          "title": "Service dans la milice",
-          "type": "achievement",
-          "summary": "Quêtes de la milice d'Incarnam.",
-          "quests": [
-            {
-              "id": "q-mise-a-lepreuve",
-              "name": "Mise à l'épreuve",
-              "level": 1
-            },
-            {
-              "id": "q-champs-de-bataille",
-              "name": "Champs de bataille",
-              "level": 1
-            },
-            {
-              "id": "q-coups-depee-dans-leau",
-              "name": "Coups d'épée dans l'eau",
-              "level": 1
-            },
-            {
-              "id": "q-decime-moi-des-bouftous",
-              "name": "Décime-moi des bouftous",
-              "level": 1
-            },
-            {
-              "id": "q-chasse-aux-chapardams",
-              "name": "Chasse aux chapardams",
-              "level": 1
-            },
-            {
-              "id": "q-lecon-dhumilite",
-              "name": "Leçon d'humilité",
-              "level": 1
-            },
-            {
-              "id": "q-des-chafers-qui-marchent",
-              "name": "Des chafers qui marchent",
-              "level": 1
-            }
-          ]
-        },
-        {
-          "id": "c-est-le-metier-qui-rentre",
-          "title": "C'est le métier qui rentre",
-          "type": "achievement",
-          "summary": "Découverte des métiers et de l'artisanat.",
-          "quests": [
-            {
-              "id": "q-produits-naturels",
-              "name": "Produits naturels",
-              "level": 1
-            },
-            {
-              "id": "q-la-hache-et-la-pioche",
-              "name": "La hache et la pioche",
-              "level": 1
-            },
-            {
-              "id": "q-boune-un-jour-boune-toujours",
-              "name": "Boune un jour, boune toujours",
-              "level": 1
-            },
-            {
-              "id": "q-le-choix-des-armes",
-              "name": "Le choix des armes",
-              "level": 1
-            }
-          ]
-        },
-        {
-          "id": "ramdam-sur-incarnam",
-          "title": "Ramdam sur Incarnam",
-          "type": "achievement",
-          "summary": "Quêtes annexes d'Incarnam.",
-          "quests": [
-            {
-              "id": "q-la-galette-secrete",
-              "name": "La galette secrète",
-              "level": 1
-            },
-            { "id": "q-mort-au-rat", "name": "Mort au rat !", "level": 1 },
-            { "id": "q-cryptologie", "name": "Cryptologie", "level": 1 },
-            {
-              "id": "q-un-peu-de-pigment",
-              "name": "Un peu de pigment",
-              "level": 1
-            }
-          ]
-        },
-        {
-          "id": "un-citoyen-modele",
-          "title": "Un citoyen modèle",
-          "type": "achievement",
-          "summary": "Quêtes d'Astrub et de la citoyenneté.",
-          "quests": [
-            {
-              "id": "q-les-principes-d-archie-maident",
-              "name": "Les principes d'Archie m'aident",
-              "level": 20
-            },
-            {
-              "id": "q-on-marche-sur-des-oeufs",
-              "name": "On marche sur des oeufs",
-              "level": 20
-            },
-            {
-              "id": "q-conseil-de-classe",
-              "name": "Conseil de classe",
-              "level": 20
-            },
-            {
-              "id": "q-quete-de-classe",
-              "name": "Quête de classe",
-              "level": 20
-            },
-            { "id": "q-ca-sent-le-gaz", "name": "Ça sent le gaz", "level": 20 },
-            {
-              "id": "q-balade-en-foret",
-              "name": "Balade en forêt",
-              "level": 20
-            }
-          ]
-        },
-        {
-          "id": "l-occasion-fait-le-larron",
-          "title": "L'occasion fait le larron",
-          "type": "achievement",
-          "summary": "Enquêtes et rencontres dans Astrub.",
-          "quests": [
-            {
-              "id": "q-ca-tombe-a-leau",
-              "name": "Ça tombe à l'eau",
-              "level": 20
-            },
-            {
-              "id": "q-six-pieds-sous-terre",
-              "name": "Six pieds sous terre",
-              "level": 20
-            },
-            {
-              "id": "q-tel-est-pris-qui-croyait-prendre",
-              "name": "Tel est pris qui croyait prendre",
-              "level": 20
-            }
-          ]
-        },
-        {
-          "id": "la-grande-biblioquete",
-          "title": "La grande biblioquête",
-          "type": "achievement",
-          "summary": "Quêtes de la bibliothèque d'Astrub.",
-          "quests": [
-            {
-              "id": "q-lhistoire-en-mouvement",
-              "name": "L'histoire en mouvement",
-              "level": 20
-            },
-            {
-              "id": "q-restauration-rapide",
-              "name": "Restauration rapide",
-              "level": 20
-            },
-            {
-              "id": "q-de-vrais-rats-de-bibliotheque",
-              "name": "De vrais rats de bibliothèque",
-              "level": 20
-            },
-            {
-              "id": "q-legende-dautomne",
-              "name": "Légende d'automne",
-              "level": 20
-            }
-          ]
-        },
-        {
-          "id": "mercenaire-d-acier",
-          "title": "Mercenaire d'acier",
-          "type": "achievement",
-          "summary": "Quêtes de combat et de défense d'Astrub.",
-          "quests": [
-            {
-              "id": "q-biere-qui-roule",
-              "name": "Bière qui roule n'amasse pas mousse",
-              "level": 20
-            },
-            { "id": "q-combat-de-rue", "name": "Combat de rue", "level": 20 },
-            {
-              "id": "q-comme-un-pichon-hors-de-leau",
-              "name": "Comme un pichon hors de l'eau",
-              "level": 20
-            },
-            {
-              "id": "q-dejeuner-a-la-fourchette",
-              "name": "Déjeuner à la fourchette",
-              "level": 20
-            },
-            {
-              "id": "q-la-coupe-des-vices",
-              "name": "La coupe des vices",
-              "level": 20
-            },
-            {
-              "id": "q-les-as-de-la-cambriolage",
-              "name": "Les as de la cambriole",
-              "level": 20
-            }
-          ]
-        },
-        {
-          "id": "pas-le-temps-de-chomer",
-          "title": "Pas le temps de chômer",
-          "type": "achievement",
-          "summary": "Quêtes d'artisanat et de travail à Astrub.",
-          "quests": [
-            {
-              "id": "q-crise-sanitaire",
-              "name": "Crise sanitaire",
-              "level": 20
-            },
-            {
-              "id": "q-livraison-par-interim",
-              "name": "Livraison par intérim",
-              "level": 20
-            },
-            { "id": "q-golemancien", "name": "Golémancien", "level": 20 },
-            {
-              "id": "q-le-rebelle-de-la-foret",
-              "name": "Le rebelle de la forêt",
-              "level": 20
-            }
-          ]
-        },
-        {
-          "id": "l-habitat-urbain",
-          "title": "L'habitat urbain",
-          "type": "achievement",
-          "summary": "Quêtes consacrées aux créatures et habitants d'Astrub.",
-          "quests": [
-            { "id": "q-chacha-blues", "name": "Chacha Blues", "level": 20 },
-            {
-              "id": "q-les-deux-font-l-impair",
-              "name": "Les deux font l'impair",
-              "level": 20
-            },
-            {
-              "id": "q-attention-a-la-bete",
-              "name": "Attention à la Bête !",
-              "level": 20
-            }
-          ]
-        },
-        {
-          "id": "escapades-et-embuscades",
-          "title": "Escapades et embuscades",
-          "type": "achievement",
-          "summary": "Dernières quêtes d'exploration autour d'Astrub.",
-          "quests": [
-            {
-              "id": "q-la-petite-mission-dans-la-prairie",
-              "name": "La petite mission dans la prairie",
-              "level": 20
-            },
-            {
-              "id": "q-qui-seme-le-vent",
-              "name": "Qui sème le vent récolte l'Artempeth",
-              "level": 20
-            },
-            {
-              "id": "q-bucherons-en-detresse",
-              "name": "Bûcherons en détresse",
-              "level": 20
-            },
-            {
-              "id": "q-le-genie-se-meut",
-              "name": "Le génie se meut",
-              "level": 20
-            },
-            {
-              "id": "q-l-invasion-des-profanateurs",
-              "name": "L'invasion des profanateurs de sépulture",
-              "level": 20
-            },
-            {
-              "id": "q-le-repos-est-dans-le-champ",
-              "name": "Le repos est dans le champ",
-              "level": 20
-            }
-          ]
-        }
       ]
     },
-
     {
       "id": "dofus-cawotte",
       "name": "Dofus Cawotte",
@@ -435,122 +142,53 @@
       "level": 60,
       "acquisition": "quest",
       "summary": "Confère un bonus de Sagesse au porteur. S'obtient au terme des aventures et donjons de l'île des Wabbits après avoir présenté la Panoplie du Wa Wabbit au Gawdien.",
-      "tags": ["Dofus", "Wabbit", "Niveau 60", "Panoplie Wa"],
+      "tags": [
+        "Dofus",
+        "Wabbit",
+        "Niveau 60",
+        "Panoplie Wa"
+      ],
       "source": "https://www.dofuspourlesnoobs.com/quetes-du-dofus-cawotte.html",
       "progression": {
         "trackId": "main-dofus",
         "order": 20,
-        "requiredIds": ["dofus-argente"]
+        "requiredIds": [
+          "dofus-argente"
+        ]
       },
       "itemsRequired": [
-        { "name": "Cawotte", "quantity": 1 },
-        { "name": "Patte de Wabbit", "quantity": 1 },
-        { "name": "Couronne du Wa Wabbit", "quantity": 1 },
-        { "name": "Bâton du Wa Wabbit", "quantity": 1 },
-        { "name": "Cape du Wa Wabbit", "quantity": 1 }
+        {
+          "name": "Cawotte",
+          "quantity": 1
+        },
+        {
+          "name": "Patte de Wabbit",
+          "quantity": 1
+        },
+        {
+          "name": "Couronne du Wa Wabbit",
+          "quantity": 1
+        },
+        {
+          "name": "Bâton du Wa Wabbit",
+          "quantity": 1
+        },
+        {
+          "name": "Cape du Wa Wabbit",
+          "quantity": 1
+        }
       ],
       "rewards": {
-        "items": ["Dofus Cawotte"],
+        "items": [
+          "Dofus Cawotte"
+        ],
         "effect": "+60 Sagesse"
       },
       "globalPrerequisites": [
         "Niveau 60 recommandé",
         "Avoir accès à l'île des Wabbits"
-      ],
-      "objectives": [
-        {
-          "id": "ruse-comme-une-lenalde",
-          "title": "Rusé comme une Lenalde",
-          "type": "achievement",
-          "summary": "Série de quêtes d'exploration et d'enquêtes sur l'île des Wabbits.",
-          "quests": [
-            {
-              "id": "q-sauvegarder-lespece",
-              "name": "Sauvegarder l'espèce",
-              "level": 60
-            },
-            {
-              "id": "q-faites-lamour-pas-la-guerre",
-              "name": "Faites l'amour, pas la guerre",
-              "level": 60
-            },
-            {
-              "id": "q-ca-sent-la-cawotte",
-              "name": "Ça sent la cawotte",
-              "level": 60
-            },
-            {
-              "id": "q-il-y-a-un-os-de-wabbit",
-              "name": "Il y a un os, de Wabbit",
-              "level": 60
-            },
-            {
-              "id": "q-art-gastronomique",
-              "name": "Art gastronomique",
-              "level": 60
-            },
-            {
-              "id": "q-expedition-culinaire",
-              "name": "Expédition culinaire",
-              "level": 60
-            },
-            {
-              "id": "q-voyage-au-centre-du-wabbit",
-              "name": "Voyage au centre du Wabbit",
-              "level": 60
-            },
-            {
-              "id": "q-des-pwinces-pas-tres-charmants",
-              "name": "Des pwinces pas très charmants",
-              "level": 60
-            }
-          ]
-        },
-        {
-          "id": "un-wa-de-pacotille",
-          "title": "Un Wa de pacotille",
-          "type": "achievement",
-          "summary": "Quêtes relatives au Wa Wabbit et à son château.",
-          "quests": [
-            {
-              "id": "q-jamais-deux-sans-trois",
-              "name": "Jamais deux sans trois",
-              "level": 60
-            },
-            {
-              "id": "q-le-chateau-du-wa",
-              "name": "Le château du Wa",
-              "level": 60
-            },
-            {
-              "id": "q-loeuf-ou-la-cawotte",
-              "name": "L'œuf ou la cawotte ?",
-              "level": 60
-            }
-          ]
-        },
-        {
-          "id": "poil-de-cawotte",
-          "title": "Poil de Cawotte",
-          "type": "achievement",
-          "summary": "Succès final d'obtention. Nécessite d'équiper la Panoplie du Wa Wabbit (Couronne, Bâton, Cape) à la fin du donjon Terrier du Wa Wabbit et de parler au Gawdien.",
-          "prerequisites": ["ruse-comme-une-lenalde", "un-wa-de-pacotille"],
-          "quests": [
-            {
-              "id": "q-donjon-terrier-du-wa-wabbit",
-              "name": "Vaincre le Wa Wabbit dans son Terrier",
-              "level": 60
-            },
-            {
-              "id": "q-parler-au-gawdien-du-dofus",
-              "name": "Parler au Gawdien du Dofus (équipé de la panoplie Wa)",
-              "level": 60
-            }
-          ]
-        }
       ]
     },
-
     {
       "id": "dokoko",
       "name": "Dokoko",
@@ -558,62 +196,41 @@
       "level": 60,
       "acquisition": "quest",
       "summary": "Créé par le Dragon Lacustre, le Dokoko soigne le porteur de 10 % de sa santé max au début des tours 3, 6, 9, 12, etc.",
-      "tags": ["Dofus", "Moon", "Niveau 60", "Solo"],
+      "tags": [
+        "Dofus",
+        "Moon",
+        "Niveau 60",
+        "Solo"
+      ],
       "source": "https://www.dofuspourlesnoobs.com/dokoko.html",
       "progression": {
         "trackId": "main-dofus",
         "order": 30,
-        "requiredIds": ["dofus-cawotte"]
+        "requiredIds": [
+          "dofus-cawotte"
+        ]
       },
       "itemsRequired": [
-        { "name": "Casque", "quantity": 1 },
-        { "name": "Ailes en bois", "quantity": 1 }
+        {
+          "name": "Casque",
+          "quantity": 1
+        },
+        {
+          "name": "Ailes en bois",
+          "quantity": 1
+        }
       ],
       "rewards": {
-        "items": ["Dokoko"],
+        "items": [
+          "Dokoko"
+        ],
         "effect": "Au début des tours 3, 6, 9, 12... soigne le porteur de 10 % de ses PV max."
       },
       "globalPrerequisites": [
         "Niveau 60 recommandé",
         "Avoir accès à l'île de Moon (Casque & Ailes en bois pour le canon)"
-      ],
-      "objectives": [
-        {
-          "id": "koko-boy",
-          "title": "Koko Boy",
-          "type": "achievement",
-          "summary": "Série de quêtes de découverte et d'exploration de l'île de Moon.",
-          "quests": [
-            {
-              "id": "q-partir-un-jour-sans-retour",
-              "name": "Partir un jour sans retour",
-              "level": 60
-            },
-            {
-              "id": "q-un-parfum-de-vacances",
-              "name": "Un parfum de vacances",
-              "level": 60
-            },
-            {
-              "id": "q-un-indigeste-chez-les-indigenes",
-              "name": "Un indigeste chez les indigènes",
-              "level": 60
-            },
-            {
-              "id": "q-squelettes-et-amulettes",
-              "name": "Squelettes et amulettes",
-              "level": 60
-            },
-            {
-              "id": "q-rendez-vous-avec-la-lune",
-              "name": "Rendez-vous avec la lune",
-              "level": 60
-            }
-          ]
-        }
       ]
     },
-
     {
       "id": "dofus-emeraude",
       "name": "Dofus Émeraude",
@@ -621,23 +238,46 @@
       "level": 100,
       "acquisition": "quest",
       "summary": "Création du Dragon Aerafal, le Dofus Émeraude augmente les points de vie et octroie un bouclier en début de tour s'il y a un ennemi au contact.",
-      "tags": ["Dofus", "Primordial", "Niveau 100", "Vert Émeraude", "Mériana"],
+      "tags": [
+        "Dofus",
+        "Primordial",
+        "Niveau 100",
+        "Vert Émeraude",
+        "Mériana"
+      ],
       "source": "https://www.dofuspourlesnoobs.com/vert-eacutemeraude.html",
       "progression": {
         "trackId": "main-dofus",
         "order": 40,
-        "requiredIds": ["dokoko"]
+        "requiredIds": [
+          "dokoko"
+        ]
       },
       "parts": [
         {
           "id": "partie-vert-emeraude",
           "name": "Quêtes du Dofus Émeraude (Vert émeraude)",
           "itemsRequired": [
-            { "name": "Plume du Kwak de Vent", "quantity": 10 },
-            { "name": "Graine de la Discorde", "quantity": 8 },
-            { "name": "Ailes de Scarafeuille Blanc", "quantity": 6 },
-            { "name": "Résine", "quantity": 4 },
-            { "name": "Pierre d'Émeraude", "quantity": 2 },
+            {
+              "name": "Plume du Kwak de Vent",
+              "quantity": 10
+            },
+            {
+              "name": "Graine de la Discorde",
+              "quantity": 8
+            },
+            {
+              "name": "Ailes de Scarafeuille Blanc",
+              "quantity": 6
+            },
+            {
+              "name": "Résine",
+              "quantity": 4
+            },
+            {
+              "name": "Pierre d'Émeraude",
+              "quantity": 2
+            },
             {
               "name": "Dragodinde Rousse Sauvage",
               "quantity": 1,
@@ -653,14 +293,24 @@
               "quantity": 1,
               "note": "À capturer ou acheter"
             },
-            { "name": "Kamas", "quantity": 1100 }
+            {
+              "name": "Kamas",
+              "quantity": 1100
+            }
           ],
-          "dungeonsRequired": ["Donjon Tanière du Meulou", "Donjon Bwork"],
-          "successes": ["vert-emeraude"]
+          "dungeonsRequired": [
+            "Donjon Tanière du Meulou",
+            "Donjon Bwork"
+          ],
+          "successes": [
+            "vert-emeraude"
+          ]
         }
       ],
       "rewards": {
-        "items": ["Dofus Émeraude"],
+        "items": [
+          "Dofus Émeraude"
+        ],
         "effect": "+200 Vitalité. À la fin du tour, donne 100% du niveau du lanceur en Bouclier pour chaque ennemi au contact."
       },
       "globalPrerequisites": [
@@ -670,60 +320,8 @@
         "Avoir le succès 'Elle a peut-être trop mangé ?' (faire naître une monture)",
         "Être Éleveur niveau 20 ou +",
         "Être niveau 50 ou plus dans au moins un métier"
-      ],
-      "objectives": [
-        {
-          "id": "vert-emeraude",
-          "title": "Vert émeraude",
-          "type": "achievement",
-          "summary": "Série de quêtes de Mériana retraçant l'enquête sur le Dark Vlad, la chasse aux bandits de Cania et l'obtention du Dofus Émeraude.",
-          "prerequisites": ["mais-ou-sont-les-dofus"],
-          "quests": [
-            {
-              "id": "q-retourner-voir-le-dark-vlad-toujours-sans-mourir",
-              "name": "Retourner voir le Dark Vlad, toujours sans mourir",
-              "level": 100
-            },
-            {
-              "id": "q-qui-botte-le-cul-des-culs-bottes",
-              "name": "Qui botte le cul des Culs Bottés ?",
-              "level": 100
-            },
-            {
-              "id": "q-le-voleur-daumes",
-              "name": "Le voleur d'âmes",
-              "level": 100
-            },
-            {
-              "id": "q-lamour-perdu-de-nabur",
-              "name": "L'amour perdu de Nabur",
-              "level": 100
-            },
-            {
-              "id": "q-naissance-dune-vocation",
-              "name": "Naissance d'une vocation",
-              "level": 100
-            },
-            {
-              "id": "q-les-bandits-de-cania",
-              "name": "Les bandits de Cania",
-              "level": 100
-            },
-            {
-              "id": "q-draconanthropie",
-              "name": "Draconanthropie",
-              "level": 100
-            },
-            {
-              "id": "q-ultime-reminiscence",
-              "name": "Ultime réminiscence",
-              "level": 100
-            }
-          ]
-        }
       ]
     },
-
     {
       "id": "dofus-pourpre",
       "name": "Dofus Pourpre",
@@ -731,20 +329,33 @@
       "level": 110,
       "acquisition": "quest",
       "summary": "Créé par Ignemikhal, le Dofus Pourpre augmente la puissance et confère un bonus de dommages finaux temporaires à chaque fois que son porteur subit une attaque.",
-      "tags": ["Dofus", "Primordial", "Niveau 110", "Mériana"],
+      "tags": [
+        "Dofus",
+        "Primordial",
+        "Niveau 110",
+        "Mériana"
+      ],
       "source": "https://www.dofuspourlesnoobs.com/quecirctes-du-dofus-pourpre.html",
       "progression": {
         "trackId": "main-dofus",
         "order": 50,
-        "requiredIds": ["dofus-emeraude"]
+        "requiredIds": [
+          "dofus-emeraude"
+        ]
       },
       "parts": [
         {
           "id": "partie-pourpre-profond",
           "name": "Quêtes du Dofus Pourpre (Pourpre profond)",
           "itemsRequired": [
-            { "name": "Tige de Bambouto", "quantity": 1 },
-            { "name": "Tête de mort", "quantity": 1 },
+            {
+              "name": "Tige de Bambouto",
+              "quantity": 1
+            },
+            {
+              "name": "Tête de mort",
+              "quantity": 1
+            },
             {
               "name": "Rose des sables",
               "quantity": 20000,
@@ -758,69 +369,22 @@
             "Donjon Ring du Capitaine Ekarlatte",
             "Donjon Antre du Blop Multicolore Royal"
           ],
-          "successes": ["pourpre-profond"]
+          "successes": [
+            "pourpre-profond"
+          ]
         }
       ],
       "rewards": {
-        "items": ["Dofus Pourpre"],
+        "items": [
+          "Dofus Pourpre"
+        ],
         "effect": "+80 Puissance. Quand le porteur est attaqué, il gagne +1% de dommages finaux pendant 2 tours (cumulable 10 fois)."
       },
       "globalPrerequisites": [
         "Niveau 110 recommandé",
         "Avoir terminé la quête 'Mais où sont les Dofus ?' auprès de Mériana"
-      ],
-      "objectives": [
-        {
-          "id": "pourpre-profond",
-          "title": "Pourpre profond",
-          "type": "achievement",
-          "summary": "Succès majeur débloquant le Dofus Pourpre après la quête des tablettes et des gardiens de donjon.",
-          "quests": [
-            {
-              "id": "q-le-livre-des-taures",
-              "name": "Le livre des Taures",
-              "level": 110
-            },
-            {
-              "id": "q-taures-et-detours",
-              "name": "Taures et détours",
-              "level": 110
-            },
-            {
-              "id": "q-le-tresor-de-totankama",
-              "name": "Le trésor de Totankama",
-              "level": 110
-            },
-            {
-              "id": "q-il-faut-battre-le-lait-quand-il-est-chaud",
-              "name": "Il faut battre le lait quand il est chaud",
-              "level": 110
-            },
-            {
-              "id": "q-regrets-deternailes",
-              "name": "Regrets d'éternailes",
-              "level": 110
-            },
-            {
-              "id": "q-lanneau-de-tot",
-              "name": "L'anneau de Tot",
-              "level": 110
-            },
-            {
-              "id": "q-une-ame-en-peine",
-              "name": "Une âme en peine",
-              "level": 110
-            },
-            {
-              "id": "q-le-pouvoir-derriere-le-trone",
-              "name": "Le pouvoir derrière le trône",
-              "level": 110
-            }
-          ]
-        }
       ]
     },
-
     {
       "id": "dofus-turquoise",
       "name": "Dofus Turquoise",
@@ -828,72 +392,241 @@
       "level": 160,
       "acquisition": "quest",
       "summary": "Créé par le Dragon de l'Eau Aguabrial, le Dofus Turquoise confère des coups critiques et augmente les dommages finaux à chaque coup critique porté.",
-      "tags": ["Dofus", "Primordial", "Niveau 160", "Bleu Turquoise"],
+      "tags": [
+        "Dofus",
+        "Primordial",
+        "Niveau 160",
+        "Bleu Turquoise"
+      ],
       "source": "https://www.dofuspourlesnoobs.com/quecirctes-du-dofus-turquoise.html",
       "progression": {
         "trackId": "main-dofus",
         "order": 60,
-        "requiredIds": ["dofus-pourpre"]
+        "requiredIds": [
+          "dofus-pourpre"
+        ]
       },
       "parts": [
         {
           "id": "partie-bleu-turquoise",
           "name": "Quêtes du Dofus Turquoise (Bleu turquoise)",
           "itemsRequired": [
-            { "name": "Pépite", "quantity": 600 },
-            { "name": "Os de Sramouraï", "quantity": 15 },
-            { "name": "Plume de Gobvious", "quantity": 10 },
-            { "name": "Peau de Don Duss Ang", "quantity": 10 },
-            { "name": "Corne de Berserkoffre", "quantity": 10 },
-            { "name": "Canine de Mergranlou", "quantity": 10 },
-            { "name": "Coquille de Dragoss Charbon", "quantity": 10 },
-            { "name": "Aile de Dragodinde", "quantity": 10 },
-            { "name": "Poil de Rat d'Égoutant", "quantity": 10 },
-            { "name": "Fleur de Gloutoblop", "quantity": 10 },
-            { "name": "Peau de Don Dorgan", "quantity": 10 },
-            { "name": "Moustache du Mufafah", "quantity": 10 },
-            { "name": "Oreille de Rhinoféroce", "quantity": 10 },
-            { "name": "Duvet de Truchon", "quantity": 10 },
-            { "name": "Trunc de Kokoko", "quantity": 10 },
-            { "name": "Casque Cassé du Chafer", "quantity": 10 },
-            { "name": "Poils de Smilomouth", "quantity": 10 },
-            { "name": "Carpelle de Brouture", "quantity": 10 },
-            { "name": "Croupion de Truchmuche", "quantity": 10 },
-            { "name": "Calumet Zoth", "quantity": 10 },
-            { "name": "Estomac de Black Wo Wabbit", "quantity": 8 },
-            { "name": "Pierre de Topaze", "quantity": 5 },
-            { "name": "Substrat de Bosquet", "quantity": 5 },
-            { "name": "Kouartz", "quantity": 5 },
-            { "name": "Bakélélite", "quantity": 5 },
-            { "name": "Magnésite", "quantity": 5 },
-            { "name": "Kriptonite", "quantity": 5 },
-            { "name": "Ebonite", "quantity": 5 },
-            { "name": "Lait de Tortue", "quantity": 5 },
-            { "name": "Substrat de Fascine", "quantity": 5 },
-            { "name": "Substrat de Fourré", "quantity": 5 },
-            { "name": "Coquille de Dragoss Ardoise", "quantity": 3 },
-            { "name": "Laine de Dardalaine", "quantity": 3 },
-            { "name": "Écorce de Liroye Merline", "quantity": 3 },
-            { "name": "Rotule du Disciple Zoth", "quantity": 3 },
-            { "name": "Aile Atrophiée de Tofu Dodu", "quantity": 3 },
-            { "name": "Corne de Dragoss Calcaire", "quantity": 3 },
-            { "name": "Corne de Rhinoféroce", "quantity": 3 },
-            { "name": "Échasse de Molette", "quantity": 3 },
-            { "name": "Morpion de Truchideur", "quantity": 3 },
-            { "name": "Arête géante du Shamansot", "quantity": 3 },
-            { "name": "Étoffe de Kaniglou", "quantity": 1 },
-            { "name": "Bière du Feubuk", "quantity": 1 },
-            { "name": "Oreille du Fu Mansot", "quantity": 1 },
-            { "name": "Talon d'achille de l'Abrakleur sombre", "quantity": 1 },
-            { "name": "Peau de Moon", "quantity": 1 },
-            { "name": "Carapace du Mantiscore", "quantity": 1 },
-            { "name": "Carniflore", "quantity": 1 },
-            { "name": "Chaussette trouée de Dramak", "quantity": 1 },
-            { "name": "Feuille de Blop Multicolore Royal", "quantity": 1 },
-            { "name": "Plume du Kwakwa", "quantity": 1 },
-            { "name": "Groin de Dragon Cochon", "quantity": 1 },
-            { "name": "Laine du Royalmouth", "quantity": 1 },
-            { "name": "Pixel de Fraktale", "quantity": 1 }
+            {
+              "name": "Pépite",
+              "quantity": 600
+            },
+            {
+              "name": "Os de Sramouraï",
+              "quantity": 15
+            },
+            {
+              "name": "Plume de Gobvious",
+              "quantity": 10
+            },
+            {
+              "name": "Peau de Don Duss Ang",
+              "quantity": 10
+            },
+            {
+              "name": "Corne de Berserkoffre",
+              "quantity": 10
+            },
+            {
+              "name": "Canine de Mergranlou",
+              "quantity": 10
+            },
+            {
+              "name": "Coquille de Dragoss Charbon",
+              "quantity": 10
+            },
+            {
+              "name": "Aile de Dragodinde",
+              "quantity": 10
+            },
+            {
+              "name": "Poil de Rat d'Égoutant",
+              "quantity": 10
+            },
+            {
+              "name": "Fleur de Gloutoblop",
+              "quantity": 10
+            },
+            {
+              "name": "Peau de Don Dorgan",
+              "quantity": 10
+            },
+            {
+              "name": "Moustache du Mufafah",
+              "quantity": 10
+            },
+            {
+              "name": "Oreille de Rhinoféroce",
+              "quantity": 10
+            },
+            {
+              "name": "Duvet de Truchon",
+              "quantity": 10
+            },
+            {
+              "name": "Trunc de Kokoko",
+              "quantity": 10
+            },
+            {
+              "name": "Casque Cassé du Chafer",
+              "quantity": 10
+            },
+            {
+              "name": "Poils de Smilomouth",
+              "quantity": 10
+            },
+            {
+              "name": "Carpelle de Brouture",
+              "quantity": 10
+            },
+            {
+              "name": "Croupion de Truchmuche",
+              "quantity": 10
+            },
+            {
+              "name": "Calumet Zoth",
+              "quantity": 10
+            },
+            {
+              "name": "Estomac de Black Wo Wabbit",
+              "quantity": 8
+            },
+            {
+              "name": "Pierre de Topaze",
+              "quantity": 5
+            },
+            {
+              "name": "Substrat de Bosquet",
+              "quantity": 5
+            },
+            {
+              "name": "Kouartz",
+              "quantity": 5
+            },
+            {
+              "name": "Bakélélite",
+              "quantity": 5
+            },
+            {
+              "name": "Magnésite",
+              "quantity": 5
+            },
+            {
+              "name": "Kriptonite",
+              "quantity": 5
+            },
+            {
+              "name": "Ebonite",
+              "quantity": 5
+            },
+            {
+              "name": "Lait de Tortue",
+              "quantity": 5
+            },
+            {
+              "name": "Substrat de Fascine",
+              "quantity": 5
+            },
+            {
+              "name": "Substrat de Fourré",
+              "quantity": 5
+            },
+            {
+              "name": "Coquille de Dragoss Ardoise",
+              "quantity": 3
+            },
+            {
+              "name": "Laine de Dardalaine",
+              "quantity": 3
+            },
+            {
+              "name": "Écorce de Liroye Merline",
+              "quantity": 3
+            },
+            {
+              "name": "Rotule du Disciple Zoth",
+              "quantity": 3
+            },
+            {
+              "name": "Aile Atrophiée de Tofu Dodu",
+              "quantity": 3
+            },
+            {
+              "name": "Corne de Dragoss Calcaire",
+              "quantity": 3
+            },
+            {
+              "name": "Corne de Rhinoféroce",
+              "quantity": 3
+            },
+            {
+              "name": "Échasse de Molette",
+              "quantity": 3
+            },
+            {
+              "name": "Morpion de Truchideur",
+              "quantity": 3
+            },
+            {
+              "name": "Arête géante du Shamansot",
+              "quantity": 3
+            },
+            {
+              "name": "Étoffe de Kaniglou",
+              "quantity": 1
+            },
+            {
+              "name": "Bière du Feubuk",
+              "quantity": 1
+            },
+            {
+              "name": "Oreille du Fu Mansot",
+              "quantity": 1
+            },
+            {
+              "name": "Talon d'achille de l'Abrakleur sombre",
+              "quantity": 1
+            },
+            {
+              "name": "Peau de Moon",
+              "quantity": 1
+            },
+            {
+              "name": "Carapace du Mantiscore",
+              "quantity": 1
+            },
+            {
+              "name": "Carniflore",
+              "quantity": 1
+            },
+            {
+              "name": "Chaussette trouée de Dramak",
+              "quantity": 1
+            },
+            {
+              "name": "Feuille de Blop Multicolore Royal",
+              "quantity": 1
+            },
+            {
+              "name": "Plume du Kwakwa",
+              "quantity": 1
+            },
+            {
+              "name": "Groin de Dragon Cochon",
+              "quantity": 1
+            },
+            {
+              "name": "Laine du Royalmouth",
+              "quantity": 1
+            },
+            {
+              "name": "Pixel de Fraktale",
+              "quantity": 1
+            }
           ],
           "dungeonsRequired": [
             "Donjon Antre du Dragon Cochon",
@@ -909,76 +642,23 @@
             "Grotte de Kanigroula (Altération Idole)",
             "Antre du Korriandre (Altération Idole)"
           ],
-          "successes": ["bleu-turquoise"]
+          "successes": [
+            "bleu-turquoise"
+          ]
         }
       ],
       "rewards": {
-        "items": ["Dofus Turquoise"],
+        "items": [
+          "Dofus Turquoise"
+        ],
         "effect": "+10% Crit. Pour chaque coup critique occasionné, les dommages finaux sont augmentés de 1% pendant 3 tours (cumulable 10 fois)."
       },
       "globalPrerequisites": [
         "Niveau 150-160 recommandé",
         "Avoir validé le succès 'Un disciple modèle'",
         "Avoir validé la quête 'Mais où sont les Dofus ?'"
-      ],
-      "objectives": [
-        {
-          "id": "bleu-turquoise",
-          "title": "Bleu turquoise",
-          "type": "achievement",
-          "summary": "Succès regroupant la série de quêtes d'Aguabrial et l'obtention du Dofus Turquoise.",
-          "quests": [
-            {
-              "id": "q-plongeon-et-dragon",
-              "name": "Plongeon et dragon",
-              "level": 160
-            },
-            {
-              "id": "q-extinction-des-feux",
-              "name": "Extinction des feux",
-              "level": 160
-            },
-            {
-              "id": "q-on-dirait-le-sud",
-              "name": "On dirait le Sud",
-              "level": 160
-            },
-            {
-              "id": "q-la-mechante-sorciere-de-lest",
-              "name": "La méchante sorcière de l'Est",
-              "level": 160
-            },
-            { "id": "q-autel-du-nord", "name": "Autel du Nord", "level": 160 },
-            {
-              "id": "q-il-etait-une-foi-dans-louest",
-              "name": "Il était une foi dans l'Ouest",
-              "level": 160
-            },
-            {
-              "id": "q-la-benediction-de-viti",
-              "name": "La bénédiction de Viti",
-              "level": 160
-            },
-            {
-              "id": "q-la-benediction-de-thomahon",
-              "name": "La bénédiction de Thomahon",
-              "level": 160
-            },
-            {
-              "id": "q-la-benediction-de-foluk",
-              "name": "La bénédiction de Foluk",
-              "level": 160
-            },
-            {
-              "id": "q-une-ame-en-colere",
-              "name": "Une âme en colère",
-              "level": 160
-            }
-          ]
-        }
       ]
     },
-
     {
       "id": "ocre-d-ambre",
       "name": "Ocre d'ambre",
@@ -986,7 +666,12 @@
       "level": 180,
       "acquisition": "quest",
       "summary": "Série de quêtes introduite lors de la mise à jour 2.63. Elle est indépendante de 'L'éternelle moisson', mais la complétion de 'La raison du plus fort' débloque l'accès aux Potions d'Otomaï ainsi qu'aux archiklones (via le PNJ Jykel).",
-      "tags": ["Dofus", "Otomaï", "Archiklones", "Mise à jour 2.63"],
+      "tags": [
+        "Dofus",
+        "Otomaï",
+        "Archiklones",
+        "Mise à jour 2.63"
+      ],
       "source": "https://www.dofuspourlesnoobs.com/ocre-d-ambre.html",
       "progression": {
         "trackId": "main-dofus",
@@ -1024,8 +709,12 @@
               "note": "Pour crafter la Potion d'Otomaï"
             }
           ],
-          "dungeonsRequired": ["Donjon Akadémie des Gobs"],
-          "successes": ["ocre-d-ambre"]
+          "dungeonsRequired": [
+            "Donjon Akadémie des Gobs"
+          ],
+          "successes": [
+            "ocre-d-ambre"
+          ]
         }
       ],
       "rewards": {
@@ -1038,59 +727,8 @@
       "globalPrerequisites": [
         "Niveau 40 minimum pour la 2ème quête, niveau 180 recommandé pour l'ensemble",
         "Avoir démarré la quête 'L'éternelle moisson'"
-      ],
-      "objectives": [
-        {
-          "id": "ocre-d-ambre",
-          "title": "Ocre d'ambre",
-          "type": "achievement",
-          "summary": "Succès regroupant la série de quêtes narratives et mécaniques d'Otomaï.",
-          "quests": [
-            {
-              "id": "q-le-dofus-et-lalchimiste",
-              "name": "Le Dofus et l'alchimiste",
-              "level": 40
-            },
-            {
-              "id": "q-la-raison-du-plus-fort",
-              "name": "La raison du plus fort",
-              "level": 40
-            },
-            {
-              "id": "q-apres-lui-le-deluge",
-              "name": "Après lui, le déluge",
-              "level": 180
-            },
-            {
-              "id": "q-comme-un-corbac-sur-sa-branche",
-              "name": "Comme un corbac sur sa branche",
-              "level": 180
-            },
-            {
-              "id": "q-rester-plante-la",
-              "name": "Rester planté là",
-              "level": 180
-            },
-            {
-              "id": "q-pas-de-fumee-sans-feu",
-              "name": "Pas de fumée sans feu",
-              "level": 180
-            },
-            {
-              "id": "q-quand-les-esprits-sechauffent",
-              "name": "Quand les esprits s'échauffent",
-              "level": 180
-            },
-            {
-              "id": "q-le-serment-de-lambre",
-              "name": "Le serment de l'ambre",
-              "level": 180
-            }
-          ]
-        }
       ]
     },
-
     {
       "id": "dofus-ivoire",
       "name": "Dofus Ivoire",
@@ -1109,27 +747,56 @@
       "progression": {
         "trackId": "main-dofus",
         "order": 70,
-        "requiredIds": ["dofus-turquoise"]
+        "requiredIds": [
+          "dofus-turquoise"
+        ]
       },
       "parts": [
         {
           "id": "partie-blanc-ivoire",
           "name": "Quêtes du Dofus Ivoire (Blanc Ivoire)",
           "itemsRequired": [
-            { "name": "Graisse Gélatineuse", "quantity": 50 },
-            { "name": "Frostiz", "quantity": 50 },
+            {
+              "name": "Graisse Gélatineuse",
+              "quantity": 50
+            },
+            {
+              "name": "Frostiz",
+              "quantity": 50
+            },
             {
               "name": "Blague de Soufre",
               "quantity": 20,
               "note": "Achat à Frigost en [-77,-45]"
             },
-            { "name": "Obsidienne", "quantity": 15 },
-            { "name": "Perce-Neige", "quantity": 15 },
-            { "name": "Moustache de Rilur", "quantity": 5 },
-            { "name": "Pic du Nocturlabe", "quantity": 1 },
-            { "name": "Peau de Crocabulia", "quantity": 1 },
-            { "name": "Corde du Fancrôme", "quantity": 1 },
-            { "name": "Baguette Rikiki", "quantity": 1 }
+            {
+              "name": "Obsidienne",
+              "quantity": 15
+            },
+            {
+              "name": "Perce-Neige",
+              "quantity": 15
+            },
+            {
+              "name": "Moustache de Rilur",
+              "quantity": 5
+            },
+            {
+              "name": "Pic du Nocturlabe",
+              "quantity": 1
+            },
+            {
+              "name": "Peau de Crocabulia",
+              "quantity": 1
+            },
+            {
+              "name": "Corde du Fancrôme",
+              "quantity": 1
+            },
+            {
+              "name": "Baguette Rikiki",
+              "quantity": 1
+            }
           ],
           "dungeonsRequired": [
             "Donjon Défi du Chaloeil",
@@ -1141,71 +808,22 @@
             "Donjon Tour de Katrepat",
             "Donjon Transporteur de Sylargh"
           ],
-          "successes": ["blanc-ivoire"]
+          "successes": [
+            "blanc-ivoire"
+          ]
         }
       ],
       "rewards": {
-        "items": ["Dofus Ivoire"],
+        "items": [
+          "Dofus Ivoire"
+        ],
         "effect": "+4% Résistances (Neutre, Terre, Feu, Eau, Air). Le porteur réduit de 50% les dommages d'une attaque sur cinq."
       },
       "globalPrerequisites": [
         "Niveau 180 (200 fortement recommandé pour les donjons)",
         "Avoir atteint le niveau 100 d'Alignement (Bonta ou Brâkmar) pour la quête 'Examen de passage'"
-      ],
-      "objectives": [
-        {
-          "id": "blanc-ivoire",
-          "title": "Blanc Ivoire",
-          "type": "achievement",
-          "summary": "Série de quêtes épiques pour réveiller la magie du Dragon Blanc Dardondakal et obtenir le Dofus Ivoire.",
-          "quests": [
-            {
-              "id": "q-le-dragon-blanc",
-              "name": "Le dragon blanc",
-              "level": 180
-            },
-            {
-              "id": "q-examen-de-passage",
-              "name": "Examen de passage",
-              "level": 180
-            },
-            { "id": "q-le-pays-gris", "name": "Le pays gris", "level": 180 },
-            {
-              "id": "q-casse-en-enutrosor",
-              "name": "Casse en Enutrosor",
-              "level": 180
-            },
-            { "id": "q-nordalie", "name": "Nordalie", "level": 180 },
-            {
-              "id": "q-le-bonheur-est-dans-le-spray",
-              "name": "Le bonheur est dans le spray",
-              "level": 180
-            },
-            {
-              "id": "q-une-voix-de-crystal",
-              "name": "Une voix de crystal",
-              "level": 180
-            },
-            {
-              "id": "q-le-mort-dans-lame",
-              "name": "Le mort dans l'âme",
-              "level": 180
-            },
-            {
-              "id": "q-le-guerrier-noir",
-              "name": "Le guerrier noir",
-              "level": 180
-            },
-            {
-              "id": "q-il-est-temps-de-mourir",
-              "name": "Il est temps de mourir",
-              "level": 180
-            }
-          ]
-        }
       ]
     },
-
     {
       "id": "dofus-ebene",
       "name": "Dofus Ébène",
@@ -1224,28 +842,60 @@
       "progression": {
         "trackId": "main-dofus",
         "order": 80,
-        "requiredIds": ["dofus-ivoire"]
+        "requiredIds": [
+          "dofus-ivoire"
+        ]
       },
       "parts": [
         {
           "id": "partie-noir-d-ebene",
           "name": "Quêtes du Dofus Ébène (Noir d'ébène)",
           "itemsRequired": [
-            { "name": "Poudre de Perlinpainpain", "quantity": 36 },
-            { "name": "Perce-Neige", "quantity": 20 },
-            { "name": "Mesure de sel", "quantity": 18 },
-            { "name": "Seigle", "quantity": 18 },
-            { "name": "Obsidienne", "quantity": 10 },
-            { "name": "Dolomite", "quantity": 10 },
-            { "name": "Écume de mer", "quantity": 10 },
-            { "name": "Saucisse Fumée", "quantity": 10 },
+            {
+              "name": "Poudre de Perlinpainpain",
+              "quantity": 36
+            },
+            {
+              "name": "Perce-Neige",
+              "quantity": 20
+            },
+            {
+              "name": "Mesure de sel",
+              "quantity": 18
+            },
+            {
+              "name": "Seigle",
+              "quantity": 18
+            },
+            {
+              "name": "Obsidienne",
+              "quantity": 10
+            },
+            {
+              "name": "Dolomite",
+              "quantity": 10
+            },
+            {
+              "name": "Écume de mer",
+              "quantity": 10
+            },
+            {
+              "name": "Saucisse Fumée",
+              "quantity": 10
+            },
             {
               "name": "Barbarbe",
               "quantity": 5,
               "note": "Peut être achetée par un ami ayant fait la quête 'La dernière barbe avant la fin du monde'"
             },
-            { "name": "Corde d'escalade", "quantity": 1 },
-            { "name": "Kamas", "quantity": 20500 }
+            {
+              "name": "Corde d'escalade",
+              "quantity": 1
+            },
+            {
+              "name": "Kamas",
+              "quantity": 20500
+            }
           ],
           "dungeonsRequired": [
             "Donjon Repaire de Skeunk",
@@ -1258,11 +908,15 @@
             "Donjon Trône de la Cour Sombre",
             "Donjon Tour de Solar"
           ],
-          "successes": ["noir-d-ebene"]
+          "successes": [
+            "noir-d-ebene"
+          ]
         }
       ],
       "rewards": {
-        "items": ["Dofus Ébène"],
+        "items": [
+          "Dofus Ébène"
+        ],
         "effect": "+40 Fuite. Utiliser une attaque génère des charges d'Ébène. À 5 charges, la prochaine attaque applique un poison de dommages Neutre/Terre/Feu/Eau/Air cumulable."
       },
       "globalPrerequisites": [
@@ -1277,69 +931,8 @@
         "Être Paysan niveau 80 minimum",
         "Être Mineur niveau 20 minimum",
         "Avoir accès aux Songes Infinis (Rêve III ou +)"
-      ],
-      "objectives": [
-        {
-          "id": "noir-d-ebene",
-          "title": "Noir d'ébène",
-          "type": "achievement",
-          "summary": "Série de quêtes d'investigation et d'épreuves mystiques retraçant l'origine du Dragon Noir Grougaloragran jusqu'à l'éclosion du Dofus Ébène.",
-          "quests": [
-            {
-              "id": "q-lepée-du-rocher",
-              "name": "L'épée du rocher",
-              "level": 180
-            },
-            {
-              "id": "q-le-forgeur-de-legende",
-              "name": "Le forgeur de légende",
-              "level": 180
-            },
-            {
-              "id": "q-jusqu-au-bout-du-reve",
-              "name": "Jusqu'au bout du rêve",
-              "level": 180
-            },
-            {
-              "id": "q-a-la-recherche-de-crocoburio",
-              "name": "À la recherche de Crocoburio",
-              "level": 180
-            },
-            {
-              "id": "q-le-creuset-de-meriana",
-              "name": "Le creuset de Mériana",
-              "level": 180
-            },
-            {
-              "id": "q-une-douloureuse-separation",
-              "name": "Une douloureuse séparation",
-              "level": 180
-            },
-            {
-              "id": "q-le-dragon-noir",
-              "name": "Le dragon noir",
-              "level": 180
-            },
-            {
-              "id": "q-la-vengeance-du-dernier-empereur",
-              "name": "La vengeance du dernier empereur",
-              "level": 180
-            },
-            {
-              "id": "q-loeuf-de-crocabulia",
-              "name": "L'œuf de Crocabulia",
-              "level": 180
-            },
-            {
-              "id": "q-un-nouvel-heritier",
-              "name": "Un nouvel héritier",
-              "level": 180
-            }
-          ]
-        }
       ]
     },
-
     {
       "id": "dofus-vulbis",
       "name": "Dofus Vulbis",
@@ -1358,35 +951,74 @@
       "progression": {
         "trackId": "main-dofus",
         "order": 90,
-        "requiredIds": ["dofus-ebene"]
+        "requiredIds": [
+          "dofus-ebene"
+        ]
       },
       "parts": [
         {
           "id": "partie-dofus-vulbis",
           "name": "Quêtes du Dofus Vulbis",
           "itemsRequired": [
-            { "name": "Pépite", "quantity": 789 },
-            { "name": "Reflet onirique", "quantity": 500 },
-            { "name": "Sablier miniature", "quantity": 42 },
-            { "name": "Quisnoa", "quantity": 10 },
-            { "name": "Salikrone", "quantity": 10 },
-            { "name": "Galet Solaire", "quantity": 3 },
-            { "name": "Bidoche Goûtue", "quantity": 2 },
-            { "name": "Œil de verre", "quantity": 2 },
-            { "name": "Corne brisée de Crocabulia", "quantity": 1 },
-            { "name": "Essence du Comte Harebourg", "quantity": 1 },
-            { "name": "Essence de Vortex", "quantity": 1 }
+            {
+              "name": "Pépite",
+              "quantity": 789
+            },
+            {
+              "name": "Reflet onirique",
+              "quantity": 500
+            },
+            {
+              "name": "Sablier miniature",
+              "quantity": 42
+            },
+            {
+              "name": "Quisnoa",
+              "quantity": 10
+            },
+            {
+              "name": "Salikrone",
+              "quantity": 10
+            },
+            {
+              "name": "Galet Solaire",
+              "quantity": 3
+            },
+            {
+              "name": "Bidoche Goûtue",
+              "quantity": 2
+            },
+            {
+              "name": "Œil de verre",
+              "quantity": 2
+            },
+            {
+              "name": "Corne brisée de Crocabulia",
+              "quantity": 1
+            },
+            {
+              "name": "Essence du Comte Harebourg",
+              "quantity": 1
+            },
+            {
+              "name": "Essence de Vortex",
+              "quantity": 1
+            }
           ],
           "dungeonsRequired": [
             "Donjon Sanctuaire des Dragoeufs",
             "Donjon Donjon de la Cité d'Othon (Vortex)",
             "Donjon Donjon du Comte Harebourg"
           ],
-          "successes": ["quetic-vulbis"]
+          "successes": [
+            "quetic-vulbis"
+          ]
         }
       ],
       "rewards": {
-        "items": ["Dofus Vulbis"],
+        "items": [
+          "Dofus Vulbis"
+        ],
         "effect": "+1 PM. Augmente les dommages finaux de 10% pendant 1 tour si le porteur n'a pas subi d'attaque au corps-à-corps pendant le tour précédent."
       },
       "globalPrerequisites": [
@@ -1396,45 +1028,8 @@
         "Accès au Xélorium",
         "Accès aux Songes Infinis (Palier Paradoxe I ou +)",
         "Être Alchimiste ou Paysan niveau 200"
-      ],
-      "objectives": [
-        {
-          "id": "quetic-vulbis",
-          "title": "Quêtes du Dofus Vulbis",
-          "type": "achievement",
-          "summary": "Série de quêtes complexes autour des Anomalies Temporielles, de Crocabulia et des Songes Infinis pour obtenir le Dofus Vulbis.",
-          "quests": [
-            { "id": "q-amaknanomalie", "name": "Amaknanomalie", "level": 190 },
-            {
-              "id": "q-la-mere-des-dragoeufs",
-              "name": "La mère des Dragoeufs",
-              "level": 190
-            },
-            {
-              "id": "q-cauchemar-infini",
-              "name": "Cauchemar infini",
-              "level": 190
-            },
-            {
-              "id": "q-la-nuit-qui-rugit",
-              "name": "La Nuit-qui-rugit",
-              "level": 190
-            },
-            {
-              "id": "q-les-raisons-de-la-colere",
-              "name": "Les raisons de la colère",
-              "level": 190
-            },
-            {
-              "id": "q-le-temps-des-secrets",
-              "name": "Le temps des secrets",
-              "level": 190
-            }
-          ]
-        }
       ]
     },
-
     {
       "id": "dofus-des-glaces",
       "name": "Dofus des Glaces",
@@ -1442,12 +1037,19 @@
       "level": 180,
       "acquisition": "quest",
       "summary": "Pond par le dragon de glace Aguabrial sous l'emprise du Comte Harebourg, le Dofus des Glaces s'obtient au terme d'une immense série de quêtes sur l'île de Frigost (succès 'Œuf à la neige').",
-      "tags": ["Dofus", "Frigost", "Niveau 180", "Œuf à la neige"],
+      "tags": [
+        "Dofus",
+        "Frigost",
+        "Niveau 180",
+        "Œuf à la neige"
+      ],
       "source": "https://www.dofuspourlesnoobs.com/dofus-des-glaces.html",
       "progression": {
         "trackId": "main-dofus",
         "order": 65,
-        "requiredIds": ["dofus-turquoise"]
+        "requiredIds": [
+          "dofus-turquoise"
+        ]
       },
       "parts": [
         {
@@ -1485,203 +1087,17 @@
         }
       ],
       "rewards": {
-        "items": ["Dofus des Glaces"],
+        "items": [
+          "Dofus des Glaces"
+        ],
         "effect": "+20 Dommages (Neutre, Terre, Feu, Eau, Air)"
       },
       "globalPrerequisites": [
         "Niveau 180 recommandé",
         "Avoir débloqué l'accès à Frigost I, II et III",
         "Avoir vaincu l'ensemble des boss de donjons de Frigost 1, 2 et 3 au moins une fois"
-      ],
-      "objectives": [
-        {
-          "id": "fri-carre",
-          "title": "Fri carré",
-          "type": "achievement",
-          "summary": "Quêtes d'introduction et d'installation sur Frigost.",
-          "quests": [
-            {
-              "id": "q-la-terre-banquise",
-              "name": "La terre banquise",
-              "level": 100
-            },
-            {
-              "id": "q-la-maire-de-glace",
-              "name": "La maire de glace",
-              "level": 100
-            },
-            { "id": "q-full-contact", "name": "Full Contact", "level": 100 }
-          ]
-        },
-        {
-          "id": "halte-au-peage",
-          "title": "Halte au péage",
-          "type": "achievement",
-          "summary": "Série de quêtes de donjons et de progression à travers Frigost I et II.",
-          "quests": [
-            { "id": "q-antiroyaliste", "name": "Antiroyaliste", "level": 120 },
-            {
-              "id": "q-les-joyeux-de-la-couronne",
-              "name": "Les joyeux de la couronne",
-              "level": 130
-            },
-            {
-              "id": "q-fais-dodo-tauras-du-gateau",
-              "name": "Fais dodo, t'auras du gâteau",
-              "level": 140
-            },
-            { "id": "q-lavomatique", "name": "Lavomatique", "level": 150 },
-            {
-              "id": "q-cest-frais-mais-cest-pas-grave",
-              "name": "C'est frais, mais c'est pas grave",
-              "level": 160
-            },
-            {
-              "id": "q-sans-ma-barbe-quelle-barbe",
-              "name": "Sans ma barbe, quelle barbe",
-              "level": 170
-            },
-            {
-              "id": "q-la-haut-sur-la-montagne",
-              "name": "Là-haut sur la montagne",
-              "level": 180
-            },
-            {
-              "id": "q-le-pic-qui-glace",
-              "name": "Le pic qui glace",
-              "level": 180
-            }
-          ]
-        },
-        {
-          "id": "la-maire-denie",
-          "title": "La maire dénie",
-          "type": "achievement",
-          "summary": "Quêtes de soutien administratif et de développement du bourg de Frigost.",
-          "quests": [
-            {
-              "id": "q-bienvenue-a-frigost",
-              "name": "Bienvenue à Frigost",
-              "level": 100
-            },
-            {
-              "id": "q-lessentiel-est-dans-lac-gele",
-              "name": "L'essentiel est dans Lac Gelé",
-              "level": 110
-            },
-            {
-              "id": "q-les-rescapes-de-frigost",
-              "name": "Les rescapés de Frigost",
-              "level": 120
-            },
-            {
-              "id": "q-frigost-une-ile-pas-comme-les-autres",
-              "name": "Frigost, une île pas comme les autres",
-              "level": 130
-            },
-            {
-              "id": "q-developpement-durable",
-              "name": "Développement durable",
-              "level": 140
-            },
-            {
-              "id": "q-donjons-et-trouffions",
-              "name": "Donjons et trouffions",
-              "level": 150
-            },
-            {
-              "id": "q-au-fion-du-trou",
-              "name": "Au fion du trou",
-              "level": 160
-            }
-          ]
-        },
-        {
-          "id": "l-hiver-arrive",
-          "title": "L'hiver arrive",
-          "type": "achievement",
-          "summary": "Série de quêtes narratives au sein du Château du Comte Harebourg et du Village Enseveli.",
-          "quests": [
-            {
-              "id": "q-les-rescapes-du-village-enseveli",
-              "name": "Les rescapés du Village Enseveli",
-              "level": 180
-            },
-            {
-              "id": "q-les-derniers-rescapes",
-              "name": "Les derniers rescapés",
-              "level": 180
-            },
-            {
-              "id": "q-la-vie-de-chateau",
-              "name": "La vie de château",
-              "level": 190
-            },
-            {
-              "id": "q-la-machine-a-demonter-le-temps",
-              "name": "La machine à démonter le temps",
-              "level": 190
-            },
-            {
-              "id": "q-il-faut-mettre-un-terme-aux-maitres",
-              "name": "Il faut mettre un terme aux maîtres",
-              "level": 200
-            },
-            {
-              "id": "q-un-comte-de-faits-divers",
-              "name": "Un comte de faits divers",
-              "level": 200
-            }
-          ]
-        },
-        {
-          "id": "l-ame-de-glace",
-          "title": "L'âme de glace",
-          "type": "achievement",
-          "summary": "Enquête approfondie sur l'origine du gel de Frigost et la malédiction d'Aguabrial.",
-          "quests": [
-            { "id": "q-prologue", "name": "Prologue", "level": 180 },
-            { "id": "q-malediction", "name": "Malédiction !", "level": 180 },
-            {
-              "id": "q-mission-solution",
-              "name": "Mission Solution",
-              "level": 180
-            },
-            {
-              "id": "q-chaud-et-froid",
-              "name": "Chaud et froid",
-              "level": 180
-            },
-            {
-              "id": "q-le-givre-des-revelations",
-              "name": "Le givre des révélations",
-              "level": 180
-            }
-          ]
-        },
-        {
-          "id": "fraichement-pondu",
-          "title": "Fraîchement pondu",
-          "type": "achievement",
-          "summary": "Étape ultime d'obtention directe du Dofus des Glaces.",
-          "prerequisites": [
-            "fri-carre",
-            "halte-au-peage",
-            "la-maire-denie",
-            "l-hiver-arrive",
-            "l-ame-de-glace"
-          ],
-          "quests": [
-            {
-              "id": "q-le-dofus-des-glaces",
-              "name": "Le Dofus des Glaces",
-              "level": 180
-            }
-          ]
-        }
       ]
     },
-
     {
       "id": "dolmanax",
       "name": "Dolmanax",
@@ -1700,7 +1116,9 @@
       "progression": {
         "trackId": "main-dofus",
         "order": 45,
-        "requiredIds": ["dokoko"]
+        "requiredIds": [
+          "dokoko"
+        ]
       },
       "parts": [
         {
@@ -1718,39 +1136,22 @@
               "note": "Obtenues en effectuant la quête 'Offrande du jour' chaque jour"
             }
           ],
-          "successes": ["le-repos-du-dragon"]
+          "successes": [
+            "le-repos-du-dragon"
+          ]
         }
       ],
       "rewards": {
-        "items": ["Dolmanax"],
+        "items": [
+          "Dolmanax"
+        ],
         "effect": "+50 Force, +50 Intelligence, +50 Agilité, +50 Chance"
       },
       "globalPrerequisites": [
         "Niveau 100 recommandé (accessible dès le niveau 1)",
         "Nécessite au minimum 365 jours de réalisation de la quête quotidienne de l'Almanax"
-      ],
-      "objectives": [
-        {
-          "id": "le-repos-du-dragon",
-          "title": "Le repos du dragon",
-          "type": "achievement",
-          "summary": "Accomplir 365 fois la quête 'Offrande du jour' du sanctuaire de l'Almanax pour réunir les 365 pages de calendrier et réveiller le Dolmanax.",
-          "quests": [
-            {
-              "id": "q-offrande-du-jour",
-              "name": "Offrande du jour (répétée 365 fois)",
-              "level": 100
-            },
-            {
-              "id": "q-le-repos-du-dragon",
-              "name": "Le repos du dragon",
-              "level": 100
-            }
-          ]
-        }
       ]
     },
-
     {
       "id": "dofus-kaliptus",
       "name": "Dofus Kaliptus",
@@ -1758,12 +1159,19 @@
       "level": 60,
       "acquisition": "quest",
       "summary": "Pond par le dragon de la forêt de Kaliptus, le Dofus Kaliptus s'obtient à la fin du Repaire du Skeunk auprès d'Emeraude la Diamantine en échange des 4 broches des filles du Skeunk.",
-      "tags": ["Dofus", "Skeunk", "Niveau 60", "Prospection"],
+      "tags": [
+        "Dofus",
+        "Skeunk",
+        "Niveau 60",
+        "Prospection"
+      ],
       "source": "https://www.dofuspourlesnoobs.com/le-repaire-du-skeunk.html",
       "progression": {
         "trackId": "main-dofus",
         "order": 25,
-        "requiredIds": ["dofus-cawotte"]
+        "requiredIds": [
+          "dofus-cawotte"
+        ]
       },
       "parts": [
         {
@@ -1801,40 +1209,25 @@
               "note": "Pour la clé / accès au donjon"
             }
           ],
-          "dungeonsRequired": ["Donjon Repaire du Skeunk"],
-          "successes": ["repaire-du-skeunk"]
+          "dungeonsRequired": [
+            "Donjon Repaire du Skeunk"
+          ],
+          "successes": [
+            "repaire-du-skeunk"
+          ]
         }
       ],
       "rewards": {
-        "items": ["Dofus Kaliptus"],
+        "items": [
+          "Dofus Kaliptus"
+        ],
         "effect": "+30 Prospection"
       },
       "globalPrerequisites": [
         "Niveau 60 recommandé",
         "Avoir accès à la Montagne des Koalaks et à la Vallée de la Morh'Kitu"
-      ],
-      "objectives": [
-        {
-          "id": "repaire-du-skeunk",
-          "title": "Repaire du Skeunk",
-          "type": "dungeon",
-          "summary": "Vaincre le Skeunk dans son repaire après avoir vaincu ses 4 Sadidettes et récupérer les 4 broches pour obtenir le Dofus Kaliptus.",
-          "quests": [
-            {
-              "id": "q-repaire-du-skeunk-dungeon",
-              "name": "Vaincre Skeunk dans son repaire",
-              "level": 60
-            },
-            {
-              "id": "q-echange-broches-skeunk",
-              "name": "Échanger les 4 broches à la fin du donjon",
-              "level": 60
-            }
-          ]
-        }
       ]
     },
-
     {
       "id": "dofus-abyssal",
       "name": "Dofus Abyssal",
@@ -1842,44 +1235,130 @@
       "level": 200,
       "acquisition": "quest",
       "summary": "Né dans les profondeurs sous-marines de Sufokia, le Dofus Abyssal accorde des PM ou des PA supplémentaires au début du tour selon qu'aucun ennemi ou qu'au moins un ennemi est au contact.",
-      "tags": ["Dofus", "Abysses", "Sufokia", "Niveau 200", "Merkator"],
+      "tags": [
+        "Dofus",
+        "Abysses",
+        "Sufokia",
+        "Niveau 200",
+        "Merkator"
+      ],
       "source": "https://www.dofuspourlesnoobs.com/dofus-abyssal.html",
       "progression": {
         "trackId": "main-dofus",
         "order": 85,
-        "requiredIds": ["dofus-ebene"]
+        "requiredIds": [
+          "dofus-ebene"
+        ]
       },
       "parts": [
         {
           "id": "partie-abysses",
           "name": "Quêtes du Dofus Abyssal (Succès Abysses)",
           "itemsRequired": [
-            { "name": "Pépite", "quantity": 200 },
-            { "name": "Peau de Rouquette", "quantity": 10 },
-            { "name": "Tentacule de Grofond", "quantity": 7 },
-            { "name": "Œil de Shokkoth", "quantity": 7 },
-            { "name": "Tentacule de N'Yalg", "quantity": 6 },
-            { "name": "Patte de Li-Fo", "quantity": 5 },
-            { "name": "Kobalite", "quantity": 5 },
-            { "name": "Saucisse Fumée", "quantity": 5 },
-            { "name": "Flûte de Klûtiste", "quantity": 5 },
-            { "name": "Écorce de Brouture", "quantity": 3 },
-            { "name": "Dent de Fantômat", "quantity": 3 },
-            { "name": "Écume de mer", "quantity": 3 },
-            { "name": "Patelle", "quantity": 3 },
-            { "name": "Quisnoa", "quantity": 3 },
-            { "name": "Bois d'Aquajou", "quantity": 3 },
-            { "name": "Salikrone", "quantity": 3 },
-            { "name": "Viande Goûtue", "quantity": 3 },
-            { "name": "Défense du Phossile", "quantity": 1 },
-            { "name": "Bave de Mol Usk", "quantity": 1 },
-            { "name": "Pince de Crabe Yoloniste", "quantity": 1 },
-            { "name": "Écaille de Gambaf", "quantity": 1 },
-            { "name": "Lanterne de Tourthon", "quantity": 1 },
-            { "name": "Encre de Poulpée", "quantity": 1 },
-            { "name": "Trident de Tryde", "quantity": 1 },
-            { "name": "Peau de Trithon", "quantity": 1 },
-            { "name": "Parasite Aquatique", "quantity": 1 },
+            {
+              "name": "Pépite",
+              "quantity": 200
+            },
+            {
+              "name": "Peau de Rouquette",
+              "quantity": 10
+            },
+            {
+              "name": "Tentacule de Grofond",
+              "quantity": 7
+            },
+            {
+              "name": "Œil de Shokkoth",
+              "quantity": 7
+            },
+            {
+              "name": "Tentacule de N'Yalg",
+              "quantity": 6
+            },
+            {
+              "name": "Patte de Li-Fo",
+              "quantity": 5
+            },
+            {
+              "name": "Kobalite",
+              "quantity": 5
+            },
+            {
+              "name": "Saucisse Fumée",
+              "quantity": 5
+            },
+            {
+              "name": "Flûte de Klûtiste",
+              "quantity": 5
+            },
+            {
+              "name": "Écorce de Brouture",
+              "quantity": 3
+            },
+            {
+              "name": "Dent de Fantômat",
+              "quantity": 3
+            },
+            {
+              "name": "Écume de mer",
+              "quantity": 3
+            },
+            {
+              "name": "Patelle",
+              "quantity": 3
+            },
+            {
+              "name": "Quisnoa",
+              "quantity": 3
+            },
+            {
+              "name": "Bois d'Aquajou",
+              "quantity": 3
+            },
+            {
+              "name": "Salikrone",
+              "quantity": 3
+            },
+            {
+              "name": "Viande Goûtue",
+              "quantity": 3
+            },
+            {
+              "name": "Défense du Phossile",
+              "quantity": 1
+            },
+            {
+              "name": "Bave de Mol Usk",
+              "quantity": 1
+            },
+            {
+              "name": "Pince de Crabe Yoloniste",
+              "quantity": 1
+            },
+            {
+              "name": "Écaille de Gambaf",
+              "quantity": 1
+            },
+            {
+              "name": "Lanterne de Tourthon",
+              "quantity": 1
+            },
+            {
+              "name": "Encre de Poulpée",
+              "quantity": 1
+            },
+            {
+              "name": "Trident de Tryde",
+              "quantity": 1
+            },
+            {
+              "name": "Peau de Trithon",
+              "quantity": 1
+            },
+            {
+              "name": "Parasite Aquatique",
+              "quantity": 1
+            },
             {
               "name": "Perle des profondeurs",
               "quantity": 20,
@@ -1939,7 +1418,9 @@
         }
       ],
       "rewards": {
-        "items": ["Dofus Abyssal"],
+        "items": [
+          "Dofus Abyssal"
+        ],
         "effect": "+1 PA si aucun ennemi n'est au contact au début du tour. Sinon, +1 PM."
       },
       "globalPrerequisites": [
@@ -1947,270 +1428,199 @@
         "Avoir au moins 1 métier au niveau 200",
         "Avoir accès aux sous-zones des Abysses de Sufokia (Scaphandre)",
         "Nécessite l'aide d'au moins un autre joueur pour certaines étapes de dalles/combats"
-      ],
-      "objectives": [
-        {
-          "id": "plouf",
-          "title": "Plouf !",
-          "type": "achievement",
-          "summary": "Succès d'introduction à l'exploration des profondeurs de Sufokia.",
-          "quests": [
-            {
-              "id": "q-la-peche-aux-infos",
-              "name": "La pêche aux infos",
-              "level": 200
-            },
-            {
-              "id": "q-le-heros-de-sufokia",
-              "name": "Le héros de Sufokia",
-              "level": 200
-            }
-          ]
-        },
-        {
-          "id": "la-mer-en-heritage",
-          "title": "La mer en héritage",
-          "type": "achievement",
-          "summary": "Série de quêtes sur l'histoire ancienne des Abysses et les technologies de Sufokia.",
-          "quests": [
-            {
-              "id": "q-il-y-a-de-lelectricite-dans-leau",
-              "name": "Il y a de l'électricité dans l'eau",
-              "level": 200
-            },
-            {
-              "id": "q-topo-le-petit-robot",
-              "name": "Topo le petit robot",
-              "level": 200
-            },
-            {
-              "id": "q-piege-de-crystal",
-              "name": "Piège de crystal",
-              "level": 200
-            },
-            {
-              "id": "q-son-nom-est-personne",
-              "name": "Son nom est Personne",
-              "level": 200
-            },
-            {
-              "id": "q-la-clef-de-lenigme",
-              "name": "La clef de l'énigme",
-              "level": 200
-            },
-            {
-              "id": "q-une-porte-vers-le-passe",
-              "name": "Une porte vers le passé",
-              "level": 200
-            }
-          ]
-        },
-        {
-          "id": "la-guerre-des-profondeurs",
-          "title": "La guerre des profondeurs",
-          "type": "achievement",
-          "summary": "Enquête et affrontements autour de la crise sous-marine des Trithons et Mercemers.",
-          "quests": [
-            {
-              "id": "q-reine-de-beaute",
-              "name": "Reine de beauté",
-              "level": 200
-            },
-            { "id": "q-rancon-nage", "name": "Rançon nage", "level": 200 },
-            {
-              "id": "q-strategie-en-trithon-reel",
-              "name": "Stratégie en Trithon Réel",
-              "level": 200
-            },
-            {
-              "id": "q-sur-fond-de-crise",
-              "name": "Sur fond de crise",
-              "level": 200
-            },
-            {
-              "id": "q-risquer-un-oeil",
-              "name": "Risquer un œil",
-              "level": 200
-            },
-            {
-              "id": "q-la-gueule-de-lenfer",
-              "name": "La gueule de l'enfer",
-              "level": 200
-            }
-          ]
-        },
-        {
-          "id": "l-appel-de-koutoulou",
-          "title": "L'appel de Koutoulou",
-          "type": "achievement",
-          "summary": "Quêtes de la zone du Temple de Koutoulou et des cultes impies des profondeurs.",
-          "quests": [
-            {
-              "id": "q-celle-qui-glougloutait-dans-les-tenebres",
-              "name": "Celle qui glougloutait dans les ténèbres",
-              "level": 200
-            },
-            {
-              "id": "q-laffaire-pollie-perkine",
-              "name": "L'affaire Pollie Perkine",
-              "level": 200
-            },
-            {
-              "id": "q-trop-pollie-pour-etre-honnete",
-              "name": "Trop Pollie pour être honnête",
-              "level": 200
-            },
-            {
-              "id": "q-quand-les-astres-seront-propices",
-              "name": "Quand les astres seront propices",
-              "level": 200
-            },
-            {
-              "id": "q-il-suffira-dun-signe",
-              "name": "Il suffira d'un signe",
-              "level": 200
-            },
-            {
-              "id": "q-de-mal-en-impie",
-              "name": "De mal en impie",
-              "level": 200
-            }
-          ]
-        },
-        {
-          "id": "vous-ne-descendrez-pas-plus-bas",
-          "title": "Vous ne descendrez pas plus bas",
-          "type": "achievement",
-          "summary": "Exploration des zones les plus profondes et dangereuses des Abysses.",
-          "quests": [
-            {
-              "id": "q-le-vieux-gob-et-la-mer",
-              "name": "Le vieux gob et la mer",
-              "level": 200
-            },
-            {
-              "id": "q-demain-jarete",
-              "name": "Demain, j'arête",
-              "level": 200
-            },
-            {
-              "id": "q-leffet-paula-rice",
-              "name": "L'effet Paula Rice",
-              "level": 200
-            },
-            { "id": "q-fhtagn", "name": "Fhtagn !", "level": 200 }
-          ]
-        },
-        {
-          "id": "silence-on-coule",
-          "title": "Silence on coule",
-          "type": "achievement",
-          "summary": "Série de quêtes de la zone des Mercemers et mémoire oubliée des abysses.",
-          "quests": [
-            {
-              "id": "q-les-sept-mercemers",
-              "name": "Les sept Mercemers",
-              "level": 200
-            },
-            {
-              "id": "q-nos-chairs-voisines",
-              "name": "Nos chairs voisines",
-              "level": 200
-            },
-            {
-              "id": "q-concurrence-deployale",
-              "name": "Concurrence déloyale",
-              "level": 200
-            },
-            {
-              "id": "q-qui-a-la-plus-grosse",
-              "name": "Qui a la plus grosse ?",
-              "level": 200
-            },
-            {
-              "id": "q-droit-de-cuissage",
-              "name": "Droit de cuissage",
-              "level": 200
-            },
-            {
-              "id": "q-la-musique-de-rykke-zane",
-              "name": "La musique de Rykke Zane",
-              "level": 200
-            },
-            {
-              "id": "q-memoires-dun-amnesique",
-              "name": "Mémoires d'un amnésique",
-              "level": 200
-            },
-            {
-              "id": "q-lodeur-devant-le-seuil",
-              "name": "L'odeur devant le seuil",
-              "level": 200
-            },
-            {
-              "id": "q-aux-grands-mots-les-grands-remedes",
-              "name": "Aux grands mots les grands remèdes",
-              "level": 200
-            }
-          ]
-        },
-        {
-          "id": "test-d-etancheite",
-          "title": "Test d'étanchéité",
-          "type": "achievement",
-          "summary": "Épreuves finales et préparation de l'équipement sous-marin d'élite.",
-          "quests": [
-            {
-              "id": "q-livresse-des-profondeurs",
-              "name": "L'ivresse des profondeurs",
-              "level": 200
-            },
-            {
-              "id": "q-les-mercemers-sont-bien-outilles",
-              "name": "Les Mercemers sont bien outillés",
-              "level": 200
-            },
-            {
-              "id": "q-peche-aux-krabouilleurs",
-              "name": "Pêche aux krabouilleurs",
-              "level": 200
-            },
-            {
-              "id": "q-a-bas-kralab-rah",
-              "name": "À bas Kralab Rah",
-              "level": 200
-            },
-            {
-              "id": "q-ko-pour-bosko-tho",
-              "name": "KO pour Bosko Tho",
-              "level": 200
-            },
-            {
-              "id": "q-relevez-les-niveaux",
-              "name": "Relevez les niveaux",
-              "level": 200
-            },
-            { "id": "q-prise-de-notes", "name": "Prise de notes", "level": 200 }
-          ]
-        }
       ]
     },
-
     {
       "id": "dofus-nebuleux",
       "name": "Dofus Nébuleux",
-      "category": "other",
-      "level": 180,
+      "category": "primordial",
+      "level": 190,
       "acquisition": "quest",
+      "summary": "Pond par le Dragon du Temps, le Dofus Nébuleux alterne ses effets d'un tour sur l'autre : il augmente considérablement les dommages lors des tours pairs et les réduit légèrement lors des tours impairs.",
+      "tags": [
+        "Dofus",
+        "Dimensions Divines",
+        "Niveau 190",
+        "Enutrosor",
+        "Srambad",
+        "Xélorium",
+        "Oiseau du Temps"
+      ],
+      "source": "https://www.dofuspourlesnoobs.com/dofus-nebuleux.html",
       "progression": {
-        "trackId": null,
-        "order": null,
+        "trackId": "main-dofus",
+        "order": 75,
         "requiredIds": []
       },
-      "objectives": []
+      "parts": [
+        {
+          "id": "partie-nebuleux",
+          "name": "Quêtes du Dofus Nébuleux",
+          "itemsRequired": [
+            {
+              "name": "Moyenne pierre d'âme parfaite (ou supérieure)",
+              "quantity": 4
+            },
+            {
+              "name": "Oreille de Rhinoféroce",
+              "quantity": 10
+            },
+            {
+              "name": "Corne du Boufcoul",
+              "quantity": 10
+            },
+            {
+              "name": "Pomme de Terre",
+              "quantity": 35,
+              "note": "Ou 1 combat de groupe ou 32 000 kamas"
+            },
+            {
+              "name": "Clef de la Fabrique de Malléfisk",
+              "quantity": 1
+            },
+            {
+              "name": "Corne de Kamasterisk",
+              "quantity": 1
+            },
+            {
+              "name": "Sourcil de Barbétoal",
+              "quantity": 1
+            },
+            {
+              "name": "Dent de Lévitrof",
+              "quantity": 1
+            },
+            {
+              "name": "Morceau de clef de Paspartou",
+              "quantity": 1
+            },
+            {
+              "name": "Rossignol",
+              "quantity": 1
+            },
+            {
+              "name": "Crâne magique de Magouille",
+              "quantity": 1
+            },
+            {
+              "name": "Pixel de Brikablak",
+              "quantity": 1
+            },
+            {
+              "name": "Pixel d'Éklatleth",
+              "quantity": 1
+            },
+            {
+              "name": "Pixel de Gromorso",
+              "quantity": 1
+            },
+            {
+              "name": "Pixel de Farfacette",
+              "quantity": 1
+            },
+            {
+              "name": "Pétale de Rose Démoniaque",
+              "quantity": 1
+            },
+            {
+              "name": "Huile de Tournesol Sauvage",
+              "quantity": 1
+            },
+            {
+              "name": "Noix de Kokoko",
+              "quantity": 1
+            },
+            {
+              "name": "Trame Dimensionnelle",
+              "quantity": 1
+            },
+            {
+              "name": "Corne de Méjaire",
+              "quantity": 1,
+              "note": "1 à 3 nécessaires"
+            },
+            {
+              "name": "Serre d'Ikargn",
+              "quantity": 1,
+              "note": "1 à 3 nécessaires"
+            },
+            {
+              "name": "Œil de Harpille",
+              "quantity": 1,
+              "note": "1 à 3 nécessaires"
+            },
+            {
+              "name": "Griffe de Buboxor",
+              "quantity": 1,
+              "note": "1 à 3 nécessaires"
+            },
+            {
+              "name": "Lait de Porsalu",
+              "quantity": 1
+            },
+            {
+              "name": "Oreille de Bouledogre",
+              "quantity": 1
+            },
+            {
+              "name": "Insigne de Malveilleur",
+              "quantity": 1,
+              "note": "Ou 30 000 kamas"
+            },
+            {
+              "name": "Anneau du bandit",
+              "quantity": 1,
+              "note": "Ou 100 000 kamas"
+            },
+            {
+              "name": "Baguette Rikiki",
+              "quantity": 1
+            },
+            {
+              "name": "Dofus des Veilleurs",
+              "quantity": 1,
+              "note": "Possession requise"
+            }
+          ],
+          "dungeonsRequired": [
+            "Donjon Malle de Malléfisk",
+            "Donjon Galerie du Phossile",
+            "Donjon Palais de Nidas",
+            "Donjon Ring du Capitaine Ekarlatte",
+            "Donjon Haut des pyramides d'Ecaflipus",
+            "Donjon Donjon de Queen Miranda",
+            "Donjon Donjon du Roi Nidas",
+            "Donjon Donjon de Gein",
+            "Donjon Donjon de Vortex"
+          ],
+          "successes": [
+            "quetes-enutrosor",
+            "quetes-srambad",
+            "quetes-xelorium",
+            "dofus-des-veilleurs-req",
+            "l-oiseau-du-temps"
+          ]
+        }
+      ],
+      "rewards": {
+        "items": [
+          "Dofus Nébuleux"
+        ],
+        "effect": "Tours impairs (1, 3, 5...) : -10% dommages finaux. Tours pairs (2, 4, 6...) : +20% dommages finaux."
+      },
+      "globalPrerequisites": [
+        "Niveau 190 recommandé (200 vivement conseillé)",
+        "Avoir accumulé au moins 3 000 points de succès",
+        "Avoir au moins un métier niveau 200 (succès Compagnon)",
+        "Posséder des caractéristiques pures de base > 800 (Force/Intel/Chance/Agilité) ou > 5000 Vitalité (hors parchotage/équipements)",
+        "Posséder le Dofus des Veilleurs",
+        "Parler au Dieu Enutrof à la fin des quêtes d'Enutrosor",
+        "Parler au Dieu Sram à la fin des quêtes de Srambad",
+        "Parler au Dieu Xélor à la fin des quêtes du Xélorium",
+        "Nécessite 3 compagnons/amis pour le combat final de l'Oiseau du Temps"
+      ]
     }
   ],
-
   "tracks": [
     {
       "id": "main-dofus",
@@ -2225,7 +1635,6 @@
       "type": "flexible"
     }
   ],
-
   "categories": [
     {
       "id": "anomalies-temporelles",

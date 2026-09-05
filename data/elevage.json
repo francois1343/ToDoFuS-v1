@@ -1,6 +1,13 @@
 {
   "version": 2,
-
+  "categories": [
+    {
+      "id": "breeding",
+      "name": "Élevage",
+      "order": 40
+    }
+  ],
+  "professions": [],
   "generations": [
     {
       "id": "generation-1",

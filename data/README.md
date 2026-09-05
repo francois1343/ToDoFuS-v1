@@ -1,6 +1,17 @@
 # Données ToDofus
 
-Les composants lisent les données par l’intermédiaire de `data-loader.js`. Ils ne dépendent donc pas directement des noms de fichiers ni du format CSV.
+Les composants lisent les données par l’intermédiaire de `data-loader.js`. Les sources sont séparées par thème :
+
+- `rush-starter.json` : parcours Rush Starter ;
+- `zones.json` : zones ;
+- `parcours.json` : parcours transversaux ;
+- `succes.json` : succès des Dofus ;
+- `quetes.json` : quêtes détaillées des succès ;
+- `dofus.json` : métadonnées, prérequis et parties des Dofus ;
+- `artisanat.json` : métiers de récolte, fabrication et forgemagie ;
+- `elevage.json` : élevage et générations.
+
+Le chargeur fusionne ces fichiers avant validation afin de conserver le format interne actuel.
 
 ## Objectif JSON générique
 

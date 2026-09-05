@@ -1,0 +1,1348 @@
+{
+  "version": 3,
+  "quests": [
+    {
+      "dofusId": "dofus-argente",
+      "successId": "en-route-pour-l-aventure",
+      "quests": [
+        {
+          "id": "q-anneau-de-tous-les-dangers",
+          "name": "L'anneau de tous les dangers",
+          "level": 1
+        },
+        {
+          "id": "q-sous-le-regard-des-dieux",
+          "name": "Sous le regard des dieux",
+          "level": 1
+        },
+        {
+          "id": "q-reponses-a-tout",
+          "name": "Réponses à tout",
+          "level": 1
+        },
+        {
+          "id": "q-le-village-dans-les-nuages",
+          "name": "Le village dans les nuages",
+          "level": 1
+        },
+        {
+          "id": "q-espoirs-et-tragedies",
+          "name": "Espoirs et tragédies",
+          "level": 1
+        },
+        {
+          "id": "q-dans-la-gueule-du-milimilou",
+          "name": "Dans la gueule du Milimilou",
+          "level": 1
+        },
+        {
+          "id": "q-destination-astrub",
+          "name": "Destination Astrub",
+          "level": 20
+        }
+      ]
+    },
+    {
+      "dofusId": "dofus-argente",
+      "successId": "pousse-par-le-vent",
+      "quests": [
+        {
+          "id": "q-transport-peu-commun",
+          "name": "Transport peu commun",
+          "level": 1
+        },
+        {
+          "id": "q-des-vestiges-de-legende",
+          "name": "Des vestiges de légende",
+          "level": 1
+        },
+        {
+          "id": "q-vu-du-ciel",
+          "name": "Vu du ciel",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "dofusId": "dofus-argente",
+      "successId": "service-dans-la-milice",
+      "quests": [
+        {
+          "id": "q-mise-a-lepreuve",
+          "name": "Mise à l'épreuve",
+          "level": 1
+        },
+        {
+          "id": "q-champs-de-bataille",
+          "name": "Champs de bataille",
+          "level": 1
+        },
+        {
+          "id": "q-coups-depee-dans-leau",
+          "name": "Coups d'épée dans l'eau",
+          "level": 1
+        },
+        {
+          "id": "q-decime-moi-des-bouftous",
+          "name": "Décime-moi des bouftous",
+          "level": 1
+        },
+        {
+          "id": "q-chasse-aux-chapardams",
+          "name": "Chasse aux chapardams",
+          "level": 1
+        },
+        {
+          "id": "q-lecon-dhumilite",
+          "name": "Leçon d'humilité",
+          "level": 1
+        },
+        {
+          "id": "q-des-chafers-qui-marchent",
+          "name": "Des chafers qui marchent",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "dofusId": "dofus-argente",
+      "successId": "c-est-le-metier-qui-rentre",
+      "quests": [
+        {
+          "id": "q-produits-naturels",
+          "name": "Produits naturels",
+          "level": 1
+        },
+        {
+          "id": "q-la-hache-et-la-pioche",
+          "name": "La hache et la pioche",
+          "level": 1
+        },
+        {
+          "id": "q-boune-un-jour-boune-toujours",
+          "name": "Boune un jour, boune toujours",
+          "level": 1
+        },
+        {
+          "id": "q-le-choix-des-armes",
+          "name": "Le choix des armes",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "dofusId": "dofus-argente",
+      "successId": "ramdam-sur-incarnam",
+      "quests": [
+        {
+          "id": "q-la-galette-secrete",
+          "name": "La galette secrète",
+          "level": 1
+        },
+        {
+          "id": "q-mort-au-rat",
+          "name": "Mort au rat !",
+          "level": 1
+        },
+        {
+          "id": "q-cryptologie",
+          "name": "Cryptologie",
+          "level": 1
+        },
+        {
+          "id": "q-un-peu-de-pigment",
+          "name": "Un peu de pigment",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "dofusId": "dofus-argente",
+      "successId": "un-citoyen-modele",
+      "quests": [
+        {
+          "id": "q-les-principes-d-archie-maident",
+          "name": "Les principes d'Archie m'aident",
+          "level": 20
+        },
+        {
+          "id": "q-on-marche-sur-des-oeufs",
+          "name": "On marche sur des oeufs",
+          "level": 20
+        },
+        {
+          "id": "q-conseil-de-classe",
+          "name": "Conseil de classe",
+          "level": 20
+        },
+        {
+          "id": "q-quete-de-classe",
+          "name": "Quête de classe",
+          "level": 20
+        },
+        {
+          "id": "q-ca-sent-le-gaz",
+          "name": "Ça sent le gaz",
+          "level": 20
+        },
+        {
+          "id": "q-balade-en-foret",
+          "name": "Balade en forêt",
+          "level": 20
+        }
+      ]
+    },
+    {
+      "dofusId": "dofus-argente",
+      "successId": "l-occasion-fait-le-larron",
+      "quests": [
+        {
+          "id": "q-ca-tombe-a-leau",
+          "name": "Ça tombe à l'eau",
+          "level": 20
+        },
+        {
+          "id": "q-six-pieds-sous-terre",
+          "name": "Six pieds sous terre",
+          "level": 20
+        },
+        {
+          "id": "q-tel-est-pris-qui-croyait-prendre",
+          "name": "Tel est pris qui croyait prendre",
+          "level": 20
+        }
+      ]
+    },
+    {
+      "dofusId": "dofus-argente",
+      "successId": "la-grande-biblioquete",
+      "quests": [
+        {
+          "id": "q-lhistoire-en-mouvement",
+          "name": "L'histoire en mouvement",
+          "level": 20
+        },
+        {
+          "id": "q-restauration-rapide",
+          "name": "Restauration rapide",
+          "level": 20
+        },
+        {
+          "id": "q-de-vrais-rats-de-bibliotheque",
+          "name": "De vrais rats de bibliothèque",
+          "level": 20
+        },
+        {
+          "id": "q-legende-dautomne",
+          "name": "Légende d'automne",
+          "level": 20
+        }
+      ]
+    },
+    {
+      "dofusId": "dofus-argente",
+      "successId": "mercenaire-d-acier",
+      "quests": [
+        {
+          "id": "q-biere-qui-roule",
+          "name": "Bière qui roule n'amasse pas mousse",
+          "level": 20
+        },
+        {
+          "id": "q-combat-de-rue",
+          "name": "Combat de rue",
+          "level": 20
+        },
+        {
+          "id": "q-comme-un-pichon-hors-de-leau",
+          "name": "Comme un pichon hors de l'eau",
+          "level": 20
+        },
+        {
+          "id": "q-dejeuner-a-la-fourchette",
+          "name": "Déjeuner à la fourchette",
+          "level": 20
+        },
+        {
+          "id": "q-la-coupe-des-vices",
+          "name": "La coupe des vices",
+          "level": 20
+        },
+        {
+          "id": "q-les-as-de-la-cambriolage",
+          "name": "Les as de la cambriole",
+          "level": 20
+        }
+      ]
+    },
+    {
+      "dofusId": "dofus-argente",
+      "successId": "pas-le-temps-de-chomer",
+      "quests": [
+        {
+          "id": "q-crise-sanitaire",
+          "name": "Crise sanitaire",
+          "level": 20
+        },
+        {
+          "id": "q-livraison-par-interim",
+          "name": "Livraison par intérim",
+          "level": 20
+        },
+        {
+          "id": "q-golemancien",
+          "name": "Golémancien",
+          "level": 20
+        },
+        {
+          "id": "q-le-rebelle-de-la-foret",
+          "name": "Le rebelle de la forêt",
+          "level": 20
+        }
+      ]
+    },
+    {
+      "dofusId": "dofus-argente",
+      "successId": "l-habitat-urbain",
+      "quests": [
+        {
+          "id": "q-chacha-blues",
+          "name": "Chacha Blues",
+          "level": 20
+        },
+        {
+          "id": "q-les-deux-font-l-impair",
+          "name": "Les deux font l'impair",
+          "level": 20
+        },
+        {
+          "id": "q-attention-a-la-bete",
+          "name": "Attention à la Bête !",
+          "level": 20
+        }
+      ]
+    },
+    {
+      "dofusId": "dofus-argente",
+      "successId": "escapades-et-embuscades",
+      "quests": [
+        {
+          "id": "q-la-petite-mission-dans-la-prairie",
+          "name": "La petite mission dans la prairie",
+          "level": 20
+        },
+        {
+          "id": "q-qui-seme-le-vent",
+          "name": "Qui sème le vent récolte l'Artempeth",
+          "level": 20
+        },
+        {
+          "id": "q-bucherons-en-detresse",
+          "name": "Bûcherons en détresse",
+          "level": 20
+        },
+        {
+          "id": "q-le-genie-se-meut",
+          "name": "Le génie se meut",
+          "level": 20
+        },
+        {
+          "id": "q-l-invasion-des-profanateurs",
+          "name": "L'invasion des profanateurs de sépulture",
+          "level": 20
+        },
+        {
+          "id": "q-le-repos-est-dans-le-champ",
+          "name": "Le repos est dans le champ",
+          "level": 20
+        }
+      ]
+    },
+    {
+      "dofusId": "dofus-cawotte",
+      "successId": "ruse-comme-une-lenalde",
+      "quests": [
+        {
+          "id": "q-sauvegarder-lespece",
+          "name": "Sauvegarder l'espèce",
+          "level": 60
+        },
+        {
+          "id": "q-faites-lamour-pas-la-guerre",
+          "name": "Faites l'amour, pas la guerre",
+          "level": 60
+        },
+        {
+          "id": "q-ca-sent-la-cawotte",
+          "name": "Ça sent la cawotte",
+          "level": 60
+        },
+        {
+          "id": "q-il-y-a-un-os-de-wabbit",
+          "name": "Il y a un os, de Wabbit",
+          "level": 60
+        },
+        {
+          "id": "q-art-gastronomique",
+          "name": "Art gastronomique",
+          "level": 60
+        },
+        {
+          "id": "q-expedition-culinaire",
+          "name": "Expédition culinaire",
+          "level": 60
+        },
+        {
+          "id": "q-voyage-au-centre-du-wabbit",
+          "name": "Voyage au centre du Wabbit",
+          "level": 60
+        },
+        {
+          "id": "q-des-pwinces-pas-tres-charmants",
+          "name": "Des pwinces pas très charmants",
+          "level": 60
+        }
+      ]
+    },
+    {
+      "dofusId": "dofus-cawotte",
+      "successId": "un-wa-de-pacotille",
+      "quests": [
+        {
+          "id": "q-jamais-deux-sans-trois",
+          "name": "Jamais deux sans trois",
+          "level": 60
+        },
+        {
+          "id": "q-le-chateau-du-wa",
+          "name": "Le château du Wa",
+          "level": 60
+        },
+        {
+          "id": "q-loeuf-ou-la-cawotte",
+          "name": "L'œuf ou la cawotte ?",
+          "level": 60
+        }
+      ]
+    },
+    {
+      "dofusId": "dofus-cawotte",
+      "successId": "poil-de-cawotte",
+      "quests": [
+        {
+          "id": "q-donjon-terrier-du-wa-wabbit",
+          "name": "Vaincre le Wa Wabbit dans son Terrier",
+          "level": 60
+        },
+        {
+          "id": "q-parler-au-gawdien-du-dofus",
+          "name": "Parler au Gawdien du Dofus (équipé de la panoplie Wa)",
+          "level": 60
+        }
+      ]
+    },
+    {
+      "dofusId": "dokoko",
+      "successId": "koko-boy",
+      "quests": [
+        {
+          "id": "q-partir-un-jour-sans-retour",
+          "name": "Partir un jour sans retour",
+          "level": 60
+        },
+        {
+          "id": "q-un-parfum-de-vacances",
+          "name": "Un parfum de vacances",
+          "level": 60
+        },
+        {
+          "id": "q-un-indigeste-chez-les-indigenes",
+          "name": "Un indigeste chez les indigènes",
+          "level": 60
+        },
+        {
+          "id": "q-squelettes-et-amulettes",
+          "name": "Squelettes et amulettes",
+          "level": 60
+        },
+        {
+          "id": "q-rendez-vous-avec-la-lune",
+          "name": "Rendez-vous avec la lune",
+          "level": 60
+        }
+      ]
+    },
+    {
+      "dofusId": "dofus-emeraude",
+      "successId": "vert-emeraude",
+      "quests": [
+        {
+          "id": "q-retourner-voir-le-dark-vlad-toujours-sans-mourir",
+          "name": "Retourner voir le Dark Vlad, toujours sans mourir",
+          "level": 100
+        },
+        {
+          "id": "q-qui-botte-le-cul-des-culs-bottes",
+          "name": "Qui botte le cul des Culs Bottés ?",
+          "level": 100
+        },
+        {
+          "id": "q-le-voleur-daumes",
+          "name": "Le voleur d'âmes",
+          "level": 100
+        },
+        {
+          "id": "q-lamour-perdu-de-nabur",
+          "name": "L'amour perdu de Nabur",
+          "level": 100
+        },
+        {
+          "id": "q-naissance-dune-vocation",
+          "name": "Naissance d'une vocation",
+          "level": 100
+        },
+        {
+          "id": "q-les-bandits-de-cania",
+          "name": "Les bandits de Cania",
+          "level": 100
+        },
+        {
+          "id": "q-draconanthropie",
+          "name": "Draconanthropie",
+          "level": 100
+        },
+        {
+          "id": "q-ultime-reminiscence",
+          "name": "Ultime réminiscence",
+          "level": 100
+        }
+      ]
+    },
+    {
+      "dofusId": "dofus-pourpre",
+      "successId": "pourpre-profond",
+      "quests": [
+        {
+          "id": "q-le-livre-des-taures",
+          "name": "Le livre des Taures",
+          "level": 110
+        },
+        {
+          "id": "q-taures-et-detours",
+          "name": "Taures et détours",
+          "level": 110
+        },
+        {
+          "id": "q-le-tresor-de-totankama",
+          "name": "Le trésor de Totankama",
+          "level": 110
+        },
+        {
+          "id": "q-il-faut-battre-le-lait-quand-il-est-chaud",
+          "name": "Il faut battre le lait quand il est chaud",
+          "level": 110
+        },
+        {
+          "id": "q-regrets-deternailes",
+          "name": "Regrets d'éternailes",
+          "level": 110
+        },
+        {
+          "id": "q-lanneau-de-tot",
+          "name": "L'anneau de Tot",
+          "level": 110
+        },
+        {
+          "id": "q-une-ame-en-peine",
+          "name": "Une âme en peine",
+          "level": 110
+        },
+        {
+          "id": "q-le-pouvoir-derriere-le-trone",
+          "name": "Le pouvoir derrière le trône",
+          "level": 110
+        }
+      ]
+    },
+    {
+      "dofusId": "dofus-turquoise",
+      "successId": "bleu-turquoise",
+      "quests": [
+        {
+          "id": "q-plongeon-et-dragon",
+          "name": "Plongeon et dragon",
+          "level": 160
+        },
+        {
+          "id": "q-extinction-des-feux",
+          "name": "Extinction des feux",
+          "level": 160
+        },
+        {
+          "id": "q-on-dirait-le-sud",
+          "name": "On dirait le Sud",
+          "level": 160
+        },
+        {
+          "id": "q-la-mechante-sorciere-de-lest",
+          "name": "La méchante sorcière de l'Est",
+          "level": 160
+        },
+        {
+          "id": "q-autel-du-nord",
+          "name": "Autel du Nord",
+          "level": 160
+        },
+        {
+          "id": "q-il-etait-une-foi-dans-louest",
+          "name": "Il était une foi dans l'Ouest",
+          "level": 160
+        },
+        {
+          "id": "q-la-benediction-de-viti",
+          "name": "La bénédiction de Viti",
+          "level": 160
+        },
+        {
+          "id": "q-la-benediction-de-thomahon",
+          "name": "La bénédiction de Thomahon",
+          "level": 160
+        },
+        {
+          "id": "q-la-benediction-de-foluk",
+          "name": "La bénédiction de Foluk",
+          "level": 160
+        },
+        {
+          "id": "q-une-ame-en-colere",
+          "name": "Une âme en colère",
+          "level": 160
+        }
+      ]
+    },
+    {
+      "dofusId": "ocre-d-ambre",
+      "successId": "ocre-d-ambre",
+      "quests": [
+        {
+          "id": "q-le-dofus-et-lalchimiste",
+          "name": "Le Dofus et l'alchimiste",
+          "level": 40
+        },
+        {
+          "id": "q-la-raison-du-plus-fort",
+          "name": "La raison du plus fort",
+          "level": 40
+        },
+        {
+          "id": "q-apres-lui-le-deluge",
+          "name": "Après lui, le déluge",
+          "level": 180
+        },
+        {
+          "id": "q-comme-un-corbac-sur-sa-branche",
+          "name": "Comme un corbac sur sa branche",
+          "level": 180
+        },
+        {
+          "id": "q-rester-plante-la",
+          "name": "Rester planté là",
+          "level": 180
+        },
+        {
+          "id": "q-pas-de-fumee-sans-feu",
+          "name": "Pas de fumée sans feu",
+          "level": 180
+        },
+        {
+          "id": "q-quand-les-esprits-sechauffent",
+          "name": "Quand les esprits s'échauffent",
+          "level": 180
+        },
+        {
+          "id": "q-le-serment-de-lambre",
+          "name": "Le serment de l'ambre",
+          "level": 180
+        }
+      ]
+    },
+    {
+      "dofusId": "dofus-ivoire",
+      "successId": "blanc-ivoire",
+      "quests": [
+        {
+          "id": "q-le-dragon-blanc",
+          "name": "Le dragon blanc",
+          "level": 180
+        },
+        {
+          "id": "q-examen-de-passage",
+          "name": "Examen de passage",
+          "level": 180
+        },
+        {
+          "id": "q-le-pays-gris",
+          "name": "Le pays gris",
+          "level": 180
+        },
+        {
+          "id": "q-casse-en-enutrosor",
+          "name": "Casse en Enutrosor",
+          "level": 180
+        },
+        {
+          "id": "q-nordalie",
+          "name": "Nordalie",
+          "level": 180
+        },
+        {
+          "id": "q-le-bonheur-est-dans-le-spray",
+          "name": "Le bonheur est dans le spray",
+          "level": 180
+        },
+        {
+          "id": "q-une-voix-de-crystal",
+          "name": "Une voix de crystal",
+          "level": 180
+        },
+        {
+          "id": "q-le-mort-dans-lame",
+          "name": "Le mort dans l'âme",
+          "level": 180
+        },
+        {
+          "id": "q-le-guerrier-noir",
+          "name": "Le guerrier noir",
+          "level": 180
+        },
+        {
+          "id": "q-il-est-temps-de-mourir",
+          "name": "Il est temps de mourir",
+          "level": 180
+        }
+      ]
+    },
+    {
+      "dofusId": "dofus-ebene",
+      "successId": "noir-d-ebene",
+      "quests": [
+        {
+          "id": "q-lepée-du-rocher",
+          "name": "L'épée du rocher",
+          "level": 180
+        },
+        {
+          "id": "q-le-forgeur-de-legende",
+          "name": "Le forgeur de légende",
+          "level": 180
+        },
+        {
+          "id": "q-jusqu-au-bout-du-reve",
+          "name": "Jusqu'au bout du rêve",
+          "level": 180
+        },
+        {
+          "id": "q-a-la-recherche-de-crocoburio",
+          "name": "À la recherche de Crocoburio",
+          "level": 180
+        },
+        {
+          "id": "q-le-creuset-de-meriana",
+          "name": "Le creuset de Mériana",
+          "level": 180
+        },
+        {
+          "id": "q-une-douloureuse-separation",
+          "name": "Une douloureuse séparation",
+          "level": 180
+        },
+        {
+          "id": "q-le-dragon-noir",
+          "name": "Le dragon noir",
+          "level": 180
+        },
+        {
+          "id": "q-la-vengeance-du-dernier-empereur",
+          "name": "La vengeance du dernier empereur",
+          "level": 180
+        },
+        {
+          "id": "q-loeuf-de-crocabulia",
+          "name": "L'œuf de Crocabulia",
+          "level": 180
+        },
+        {
+          "id": "q-un-nouvel-heritier",
+          "name": "Un nouvel héritier",
+          "level": 180
+        }
+      ]
+    },
+    {
+      "dofusId": "dofus-vulbis",
+      "successId": "quetic-vulbis",
+      "quests": [
+        {
+          "id": "q-amaknanomalie",
+          "name": "Amaknanomalie",
+          "level": 190
+        },
+        {
+          "id": "q-la-mere-des-dragoeufs",
+          "name": "La mère des Dragoeufs",
+          "level": 190
+        },
+        {
+          "id": "q-cauchemar-infini",
+          "name": "Cauchemar infini",
+          "level": 190
+        },
+        {
+          "id": "q-la-nuit-qui-rugit",
+          "name": "La Nuit-qui-rugit",
+          "level": 190
+        },
+        {
+          "id": "q-les-raisons-de-la-colere",
+          "name": "Les raisons de la colère",
+          "level": 190
+        },
+        {
+          "id": "q-le-temps-des-secrets",
+          "name": "Le temps des secrets",
+          "level": 190
+        }
+      ]
+    },
+    {
+      "dofusId": "dofus-des-glaces",
+      "successId": "fri-carre",
+      "quests": [
+        {
+          "id": "q-la-terre-banquise",
+          "name": "La terre banquise",
+          "level": 100
+        },
+        {
+          "id": "q-la-maire-de-glace",
+          "name": "La maire de glace",
+          "level": 100
+        },
+        {
+          "id": "q-full-contact",
+          "name": "Full Contact",
+          "level": 100
+        }
+      ]
+    },
+    {
+      "dofusId": "dofus-des-glaces",
+      "successId": "halte-au-peage",
+      "quests": [
+        {
+          "id": "q-antiroyaliste",
+          "name": "Antiroyaliste",
+          "level": 120
+        },
+        {
+          "id": "q-les-joyeux-de-la-couronne",
+          "name": "Les joyeux de la couronne",
+          "level": 130
+        },
+        {
+          "id": "q-fais-dodo-tauras-du-gateau",
+          "name": "Fais dodo, t'auras du gâteau",
+          "level": 140
+        },
+        {
+          "id": "q-lavomatique",
+          "name": "Lavomatique",
+          "level": 150
+        },
+        {
+          "id": "q-cest-frais-mais-cest-pas-grave",
+          "name": "C'est frais, mais c'est pas grave",
+          "level": 160
+        },
+        {
+          "id": "q-sans-ma-barbe-quelle-barbe",
+          "name": "Sans ma barbe, quelle barbe",
+          "level": 170
+        },
+        {
+          "id": "q-la-haut-sur-la-montagne",
+          "name": "Là-haut sur la montagne",
+          "level": 180
+        },
+        {
+          "id": "q-le-pic-qui-glace",
+          "name": "Le pic qui glace",
+          "level": 180
+        }
+      ]
+    },
+    {
+      "dofusId": "dofus-des-glaces",
+      "successId": "la-maire-denie",
+      "quests": [
+        {
+          "id": "q-bienvenue-a-frigost",
+          "name": "Bienvenue à Frigost",
+          "level": 100
+        },
+        {
+          "id": "q-lessentiel-est-dans-lac-gele",
+          "name": "L'essentiel est dans Lac Gelé",
+          "level": 110
+        },
+        {
+          "id": "q-les-rescapes-de-frigost",
+          "name": "Les rescapés de Frigost",
+          "level": 120
+        },
+        {
+          "id": "q-frigost-une-ile-pas-comme-les-autres",
+          "name": "Frigost, une île pas comme les autres",
+          "level": 130
+        },
+        {
+          "id": "q-developpement-durable",
+          "name": "Développement durable",
+          "level": 140
+        },
+        {
+          "id": "q-donjons-et-trouffions",
+          "name": "Donjons et trouffions",
+          "level": 150
+        },
+        {
+          "id": "q-au-fion-du-trou",
+          "name": "Au fion du trou",
+          "level": 160
+        }
+      ]
+    },
+    {
+      "dofusId": "dofus-des-glaces",
+      "successId": "l-hiver-arrive",
+      "quests": [
+        {
+          "id": "q-les-rescapes-du-village-enseveli",
+          "name": "Les rescapés du Village Enseveli",
+          "level": 180
+        },
+        {
+          "id": "q-les-derniers-rescapes",
+          "name": "Les derniers rescapés",
+          "level": 180
+        },
+        {
+          "id": "q-la-vie-de-chateau",
+          "name": "La vie de château",
+          "level": 190
+        },
+        {
+          "id": "q-la-machine-a-demonter-le-temps",
+          "name": "La machine à démonter le temps",
+          "level": 190
+        },
+        {
+          "id": "q-il-faut-mettre-un-terme-aux-maitres",
+          "name": "Il faut mettre un terme aux maîtres",
+          "level": 200
+        },
+        {
+          "id": "q-un-comte-de-faits-divers",
+          "name": "Un comte de faits divers",
+          "level": 200
+        }
+      ]
+    },
+    {
+      "dofusId": "dofus-des-glaces",
+      "successId": "l-ame-de-glace",
+      "quests": [
+        {
+          "id": "q-prologue",
+          "name": "Prologue",
+          "level": 180
+        },
+        {
+          "id": "q-malediction",
+          "name": "Malédiction !",
+          "level": 180
+        },
+        {
+          "id": "q-mission-solution",
+          "name": "Mission Solution",
+          "level": 180
+        },
+        {
+          "id": "q-chaud-et-froid",
+          "name": "Chaud et froid",
+          "level": 180
+        },
+        {
+          "id": "q-le-givre-des-revelations",
+          "name": "Le givre des révélations",
+          "level": 180
+        }
+      ]
+    },
+    {
+      "dofusId": "dofus-des-glaces",
+      "successId": "fraichement-pondu",
+      "quests": [
+        {
+          "id": "q-le-dofus-des-glaces",
+          "name": "Le Dofus des Glaces",
+          "level": 180
+        }
+      ]
+    },
+    {
+      "dofusId": "dolmanax",
+      "successId": "le-repos-du-dragon",
+      "quests": [
+        {
+          "id": "q-offrande-du-jour",
+          "name": "Offrande du jour (répétée 365 fois)",
+          "level": 100
+        },
+        {
+          "id": "q-le-repos-du-dragon",
+          "name": "Le repos du dragon",
+          "level": 100
+        }
+      ]
+    },
+    {
+      "dofusId": "dofus-kaliptus",
+      "successId": "repaire-du-skeunk",
+      "quests": [
+        {
+          "id": "q-repaire-du-skeunk-dungeon",
+          "name": "Vaincre Skeunk dans son repaire",
+          "level": 60
+        },
+        {
+          "id": "q-echange-broches-skeunk",
+          "name": "Échanger les 4 broches à la fin du donjon",
+          "level": 60
+        }
+      ]
+    },
+    {
+      "dofusId": "dofus-abyssal",
+      "successId": "plouf",
+      "quests": [
+        {
+          "id": "q-la-peche-aux-infos",
+          "name": "La pêche aux infos",
+          "level": 200
+        },
+        {
+          "id": "q-le-heros-de-sufokia",
+          "name": "Le héros de Sufokia",
+          "level": 200
+        }
+      ]
+    },
+    {
+      "dofusId": "dofus-abyssal",
+      "successId": "la-mer-en-heritage",
+      "quests": [
+        {
+          "id": "q-il-y-a-de-lelectricite-dans-leau",
+          "name": "Il y a de l'électricité dans l'eau",
+          "level": 200
+        },
+        {
+          "id": "q-topo-le-petit-robot",
+          "name": "Topo le petit robot",
+          "level": 200
+        },
+        {
+          "id": "q-piege-de-crystal",
+          "name": "Piège de crystal",
+          "level": 200
+        },
+        {
+          "id": "q-son-nom-est-personne",
+          "name": "Son nom est Personne",
+          "level": 200
+        },
+        {
+          "id": "q-la-clef-de-lenigme",
+          "name": "La clef de l'énigme",
+          "level": 200
+        },
+        {
+          "id": "q-une-porte-vers-le-passe",
+          "name": "Une porte vers le passé",
+          "level": 200
+        }
+      ]
+    },
+    {
+      "dofusId": "dofus-abyssal",
+      "successId": "la-guerre-des-profondeurs",
+      "quests": [
+        {
+          "id": "q-reine-de-beaute",
+          "name": "Reine de beauté",
+          "level": 200
+        },
+        {
+          "id": "q-rancon-nage",
+          "name": "Rançon nage",
+          "level": 200
+        },
+        {
+          "id": "q-strategie-en-trithon-reel",
+          "name": "Stratégie en Trithon Réel",
+          "level": 200
+        },
+        {
+          "id": "q-sur-fond-de-crise",
+          "name": "Sur fond de crise",
+          "level": 200
+        },
+        {
+          "id": "q-risquer-un-oeil",
+          "name": "Risquer un œil",
+          "level": 200
+        },
+        {
+          "id": "q-la-gueule-de-lenfer",
+          "name": "La gueule de l'enfer",
+          "level": 200
+        }
+      ]
+    },
+    {
+      "dofusId": "dofus-abyssal",
+      "successId": "l-appel-de-koutoulou",
+      "quests": [
+        {
+          "id": "q-celle-qui-glougloutait-dans-les-tenebres",
+          "name": "Celle qui glougloutait dans les ténèbres",
+          "level": 200
+        },
+        {
+          "id": "q-laffaire-pollie-perkine",
+          "name": "L'affaire Pollie Perkine",
+          "level": 200
+        },
+        {
+          "id": "q-trop-pollie-pour-etre-honnete",
+          "name": "Trop Pollie pour être honnête",
+          "level": 200
+        },
+        {
+          "id": "q-quand-les-astres-seront-propices",
+          "name": "Quand les astres seront propices",
+          "level": 200
+        },
+        {
+          "id": "q-il-suffira-dun-signe",
+          "name": "Il suffira d'un signe",
+          "level": 200
+        },
+        {
+          "id": "q-de-mal-en-impie",
+          "name": "De mal en impie",
+          "level": 200
+        }
+      ]
+    },
+    {
+      "dofusId": "dofus-abyssal",
+      "successId": "vous-ne-descendrez-pas-plus-bas",
+      "quests": [
+        {
+          "id": "q-le-vieux-gob-et-la-mer",
+          "name": "Le vieux gob et la mer",
+          "level": 200
+        },
+        {
+          "id": "q-demain-jarete",
+          "name": "Demain, j'arête",
+          "level": 200
+        },
+        {
+          "id": "q-leffet-paula-rice",
+          "name": "L'effet Paula Rice",
+          "level": 200
+        },
+        {
+          "id": "q-fhtagn",
+          "name": "Fhtagn !",
+          "level": 200
+        }
+      ]
+    },
+    {
+      "dofusId": "dofus-abyssal",
+      "successId": "silence-on-coule",
+      "quests": [
+        {
+          "id": "q-les-sept-mercemers",
+          "name": "Les sept Mercemers",
+          "level": 200
+        },
+        {
+          "id": "q-nos-chairs-voisines",
+          "name": "Nos chairs voisines",
+          "level": 200
+        },
+        {
+          "id": "q-concurrence-deployale",
+          "name": "Concurrence déloyale",
+          "level": 200
+        },
+        {
+          "id": "q-qui-a-la-plus-grosse",
+          "name": "Qui a la plus grosse ?",
+          "level": 200
+        },
+        {
+          "id": "q-droit-de-cuissage",
+          "name": "Droit de cuissage",
+          "level": 200
+        },
+        {
+          "id": "q-la-musique-de-rykke-zane",
+          "name": "La musique de Rykke Zane",
+          "level": 200
+        },
+        {
+          "id": "q-memoires-dun-amnesique",
+          "name": "Mémoires d'un amnésique",
+          "level": 200
+        },
+        {
+          "id": "q-lodeur-devant-le-seuil",
+          "name": "L'odeur devant le seuil",
+          "level": 200
+        },
+        {
+          "id": "q-aux-grands-mots-les-grands-remedes",
+          "name": "Aux grands mots les grands remèdes",
+          "level": 200
+        }
+      ]
+    },
+    {
+      "dofusId": "dofus-abyssal",
+      "successId": "test-d-etancheite",
+      "quests": [
+        {
+          "id": "q-livresse-des-profondeurs",
+          "name": "L'ivresse des profondeurs",
+          "level": 200
+        },
+        {
+          "id": "q-les-mercemers-sont-bien-outilles",
+          "name": "Les Mercemers sont bien outillés",
+          "level": 200
+        },
+        {
+          "id": "q-peche-aux-krabouilleurs",
+          "name": "Pêche aux krabouilleurs",
+          "level": 200
+        },
+        {
+          "id": "q-a-bas-kralab-rah",
+          "name": "À bas Kralab Rah",
+          "level": 200
+        },
+        {
+          "id": "q-ko-pour-bosko-tho",
+          "name": "KO pour Bosko Tho",
+          "level": 200
+        },
+        {
+          "id": "q-relevez-les-niveaux",
+          "name": "Relevez les niveaux",
+          "level": 200
+        },
+        {
+          "id": "q-prise-de-notes",
+          "name": "Prise de notes",
+          "level": 200
+        }
+      ]
+    },
+    {
+      "dofusId": "dofus-nebuleux",
+      "successId": "quetes-enutrosor",
+      "quests": [
+        {
+          "id": "q-quetes-enutrosor-all",
+          "name": "Série complète des quêtes d'Enutrosor",
+          "level": 190
+        },
+        {
+          "id": "q-parler-dieu-enutrof",
+          "name": "Audience auprès du Dieu Enutrof",
+          "level": 190
+        }
+      ]
+    },
+    {
+      "dofusId": "dofus-nebuleux",
+      "successId": "quetes-srambad",
+      "quests": [
+        {
+          "id": "q-quetes-srambad-all",
+          "name": "Série complète des quêtes de Srambad",
+          "level": 190
+        },
+        {
+          "id": "q-parler-dieu-sram",
+          "name": "Audience auprès du Dieu Sram",
+          "level": 190
+        }
+      ]
+    },
+    {
+      "dofusId": "dofus-nebuleux",
+      "successId": "quetes-xelorium",
+      "quests": [
+        {
+          "id": "q-quetes-xelorium-all",
+          "name": "Série complète des quêtes du Xélorium",
+          "level": 190
+        },
+        {
+          "id": "q-parler-dieu-xelor",
+          "name": "Audience auprès du Dieu Xélor",
+          "level": 190
+        }
+      ]
+    },
+    {
+      "dofusId": "dofus-nebuleux",
+      "successId": "dofus-des-veilleurs-req",
+      "quests": [
+        {
+          "id": "q-dofus-des-veilleurs-quest",
+          "name": "Obtention du Dofus des Veilleurs",
+          "level": 180
+        }
+      ]
+    },
+    {
+      "dofusId": "dofus-nebuleux",
+      "successId": "l-oiseau-du-temps",
+      "quests": [
+        {
+          "id": "q-la-quete-de-loiseau-du-temps",
+          "name": "La quête de l'oiseau du temps",
+          "level": 190
+        }
+      ]
+    }
+  ]
+}

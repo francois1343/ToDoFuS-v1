@@ -1,504 +1,5 @@
 {
   "version": 2,
-
-  "professions": [
-    {
-      "id": "alchimiste",
-      "name": "Alchimiste",
-      "type": "gathering",
-      "order": 10,
-      "progression": {
-        "kind": "level",
-        "min": 0,
-        "max": 200,
-        "current": 0,
-        "target": 200
-      },
-      "tags": ["gathering"],
-      "objectives": []
-    },
-    {
-      "id": "paysan",
-      "name": "Paysan",
-      "type": "gathering",
-      "order": 20,
-      "progression": {
-        "kind": "level",
-        "min": 0,
-        "max": 200,
-        "current": 0,
-        "target": 200
-      },
-      "tags": ["gathering"],
-      "objectives": []
-    },
-    {
-      "id": "bucheron",
-      "name": "Bûcheron",
-      "type": "gathering",
-      "order": 30,
-      "progression": {
-        "kind": "level",
-        "min": 0,
-        "max": 200,
-        "current": 0,
-        "target": 200
-      },
-      "tags": ["gathering"],
-      "objectives": []
-    },
-    {
-      "id": "mineur",
-      "name": "Mineur",
-      "type": "gathering",
-      "order": 40,
-      "progression": {
-        "kind": "level",
-        "min": 0,
-        "max": 200,
-        "current": 0,
-        "target": 200
-      },
-      "tags": ["gathering"],
-      "objectives": []
-    },
-    {
-      "id": "pecheur",
-      "name": "Pêcheur",
-      "type": "gathering",
-      "order": 50,
-      "progression": {
-        "kind": "level",
-        "min": 0,
-        "max": 200,
-        "current": 0,
-        "target": 200
-      },
-      "tags": ["gathering"],
-      "objectives": []
-    },
-    {
-      "id": "bijoutier",
-      "name": "Bijoutier",
-      "type": "crafting",
-      "order": 60,
-      "progression": {
-        "kind": "level",
-        "min": 0,
-        "max": 200,
-        "current": 0,
-        "target": 200
-      },
-      "tags": ["crafting"],
-      "objectives": []
-    },
-    {
-      "id": "boucher",
-      "name": "Boucher",
-      "type": "crafting",
-      "order": 70,
-      "progression": {
-        "kind": "level",
-        "min": 0,
-        "max": 200,
-        "current": 0,
-        "target": 200
-      },
-      "tags": ["crafting"],
-      "objectives": []
-    },
-    {
-      "id": "boulanger",
-      "name": "Boulanger",
-      "type": "crafting",
-      "order": 80,
-      "progression": {
-        "kind": "level",
-        "min": 0,
-        "max": 200,
-        "current": 0,
-        "target": 200
-      },
-      "tags": ["crafting"],
-      "objectives": []
-    },
-    {
-      "id": "bricoleur",
-      "name": "Bricoleur",
-      "type": "crafting",
-      "order": 90,
-      "progression": {
-        "kind": "level",
-        "min": 0,
-        "max": 200,
-        "current": 0,
-        "target": 200
-      },
-      "tags": ["crafting"],
-      "objectives": []
-    },
-    {
-      "id": "chasseur",
-      "name": "Chasseur",
-      "type": "gathering",
-      "order": 100,
-      "progression": {
-        "kind": "level",
-        "min": 0,
-        "max": 200,
-        "current": 0,
-        "target": 200
-      },
-      "tags": ["gathering"],
-      "objectives": []
-    },
-    {
-      "id": "cordonnier",
-      "name": "Cordonnier",
-      "type": "crafting",
-      "order": 110,
-      "progression": {
-        "kind": "level",
-        "min": 0,
-        "max": 200,
-        "current": 0,
-        "target": 200
-      },
-      "tags": ["crafting"],
-      "objectives": []
-    },
-    {
-      "id": "tailleur",
-      "name": "Tailleur",
-      "type": "crafting",
-      "order": 120,
-      "progression": {
-        "kind": "level",
-        "min": 0,
-        "max": 200,
-        "current": 0,
-        "target": 200
-      },
-      "tags": ["crafting"],
-      "objectives": []
-    },
-    {
-      "id": "faconneur",
-      "name": "Façonneur",
-      "type": "crafting",
-      "order": 130,
-      "progression": {
-        "kind": "level",
-        "min": 0,
-        "max": 200,
-        "current": 0,
-        "target": 200
-      },
-      "tags": ["crafting"],
-      "objectives": []
-    },
-    {
-      "id": "poissonnier",
-      "name": "Poissonnier",
-      "type": "crafting",
-      "order": 140,
-      "progression": {
-        "kind": "level",
-        "min": 0,
-        "max": 200,
-        "current": 0,
-        "target": 200
-      },
-      "tags": ["crafting"],
-      "objectives": []
-    },
-    {
-      "id": "forgeur-epees",
-      "name": "Forgeur d'Épées",
-      "type": "crafting",
-      "order": 150,
-      "progression": {
-        "kind": "level",
-        "min": 0,
-        "max": 200,
-        "current": 0,
-        "target": 200
-      },
-      "tags": ["crafting", "weapon"],
-      "objectives": []
-    },
-    {
-      "id": "forgeur-dagues",
-      "name": "Forgeur de Dagues",
-      "type": "crafting",
-      "order": 160,
-      "progression": {
-        "kind": "level",
-        "min": 0,
-        "max": 200,
-        "current": 0,
-        "target": 200
-      },
-      "tags": ["crafting", "weapon"],
-      "objectives": []
-    },
-    {
-      "id": "forgeur-haches",
-      "name": "Forgeur de Haches",
-      "type": "crafting",
-      "order": 170,
-      "progression": {
-        "kind": "level",
-        "min": 0,
-        "max": 200,
-        "current": 0,
-        "target": 200
-      },
-      "tags": ["crafting", "weapon"],
-      "objectives": []
-    },
-    {
-      "id": "forgeur-marteaux",
-      "name": "Forgeur de Marteaux",
-      "type": "crafting",
-      "order": 180,
-      "progression": {
-        "kind": "level",
-        "min": 0,
-        "max": 200,
-        "current": 0,
-        "target": 200
-      },
-      "tags": ["crafting", "weapon"],
-      "objectives": []
-    },
-    {
-      "id": "forgeur-pelles",
-      "name": "Forgeur de Pelles",
-      "type": "crafting",
-      "order": 190,
-      "progression": {
-        "kind": "level",
-        "min": 0,
-        "max": 200,
-        "current": 0,
-        "target": 200
-      },
-      "tags": ["crafting", "weapon"],
-      "objectives": []
-    },
-    {
-      "id": "sculpteur-arcs",
-      "name": "Sculpteur d'Arcs",
-      "type": "crafting",
-      "order": 200,
-      "progression": {
-        "kind": "level",
-        "min": 0,
-        "max": 200,
-        "current": 0,
-        "target": 200
-      },
-      "tags": ["crafting", "weapon"],
-      "objectives": []
-    },
-    {
-      "id": "sculpteur-baguettes",
-      "name": "Sculpteur de Baguettes",
-      "type": "crafting",
-      "order": 210,
-      "progression": {
-        "kind": "level",
-        "min": 0,
-        "max": 200,
-        "current": 0,
-        "target": 200
-      },
-      "tags": ["crafting", "weapon"],
-      "objectives": []
-    },
-    {
-      "id": "sculpteur-batons",
-      "name": "Sculpteur de Bâtons",
-      "type": "crafting",
-      "order": 220,
-      "progression": {
-        "kind": "level",
-        "min": 0,
-        "max": 200,
-        "current": 0,
-        "target": 200
-      },
-      "tags": ["crafting", "weapon"],
-      "objectives": []
-    },
-    {
-      "id": "cordomage",
-      "name": "Cordomage",
-      "type": "mage",
-      "order": 230,
-      "progression": {
-        "kind": "level",
-        "min": 0,
-        "max": 200,
-        "current": 0,
-        "target": 200
-      },
-      "tags": ["mage"],
-      "objectives": []
-    },
-    {
-      "id": "joaillomage",
-      "name": "Joaillomage",
-      "type": "mage",
-      "order": 240,
-      "progression": {
-        "kind": "level",
-        "min": 0,
-        "max": 200,
-        "current": 0,
-        "target": 200
-      },
-      "tags": ["mage"],
-      "objectives": []
-    },
-    {
-      "id": "costumage",
-      "name": "Costumage",
-      "type": "mage",
-      "order": 250,
-      "progression": {
-        "kind": "level",
-        "min": 0,
-        "max": 200,
-        "current": 0,
-        "target": 200
-      },
-      "tags": ["mage"],
-      "objectives": []
-    },
-    {
-      "id": "forgemage-epees",
-      "name": "Forgemage d'Épées",
-      "type": "mage",
-      "order": 260,
-      "progression": {
-        "kind": "level",
-        "min": 0,
-        "max": 200,
-        "current": 0,
-        "target": 200
-      },
-      "tags": ["mage", "weapon"],
-      "objectives": []
-    },
-    {
-      "id": "forgemage-dagues",
-      "name": "Forgemage de Dagues",
-      "type": "mage",
-      "order": 270,
-      "progression": {
-        "kind": "level",
-        "min": 0,
-        "max": 200,
-        "current": 0,
-        "target": 200
-      },
-      "tags": ["mage", "weapon"],
-      "objectives": []
-    },
-    {
-      "id": "forgemage-haches",
-      "name": "Forgemage de Haches",
-      "type": "mage",
-      "order": 280,
-      "progression": {
-        "kind": "level",
-        "min": 0,
-        "max": 200,
-        "current": 0,
-        "target": 200
-      },
-      "tags": ["mage", "weapon"],
-      "objectives": []
-    },
-    {
-      "id": "forgemage-marteaux",
-      "name": "Forgemage de Marteaux",
-      "type": "mage",
-      "order": 290,
-      "progression": {
-        "kind": "level",
-        "min": 0,
-        "max": 200,
-        "current": 0,
-        "target": 200
-      },
-      "tags": ["mage", "weapon"],
-      "objectives": []
-    },
-    {
-      "id": "forgemage-pelles",
-      "name": "Forgemage de Pelles",
-      "type": "mage",
-      "order": 300,
-      "progression": {
-        "kind": "level",
-        "min": 0,
-        "max": 200,
-        "current": 0,
-        "target": 200
-      },
-      "tags": ["mage", "weapon"],
-      "objectives": []
-    },
-    {
-      "id": "sculptemage-arcs",
-      "name": "Sculptemage d'Arcs",
-      "type": "mage",
-      "order": 310,
-      "progression": {
-        "kind": "level",
-        "min": 0,
-        "max": 200,
-        "current": 0,
-        "target": 200
-      },
-      "tags": ["mage", "weapon"],
-      "objectives": []
-    },
-    {
-      "id": "sculptemage-baguettes",
-      "name": "Sculptemage de Baguettes",
-      "type": "mage",
-      "order": 320,
-      "progression": {
-        "kind": "level",
-        "min": 0,
-        "max": 200,
-        "current": 0,
-        "target": 200
-      },
-      "tags": ["mage", "weapon"],
-      "objectives": []
-    },
-    {
-      "id": "sculptemage-batons",
-      "name": "Sculptemage de Bâtons",
-      "type": "mage",
-      "order": 330,
-      "progression": {
-        "kind": "level",
-        "min": 0,
-        "max": 200,
-        "current": 0,
-        "target": 200
-      },
-      "tags": ["mage", "weapon"],
-      "objectives": []
-    }
-  ],
-
   "categories": [
     {
       "id": "gathering",
@@ -514,11 +15,585 @@
       "id": "mage",
       "name": "Métiers de forgemagie",
       "order": 30
+    }
+  ],
+  "professions": [
+    {
+      "id": "alchimiste",
+      "name": "Alchimiste",
+      "type": "gathering",
+      "order": 10,
+      "progression": {
+        "kind": "level",
+        "min": 0,
+        "max": 200,
+        "current": 0,
+        "target": 200
+      },
+      "tags": [
+        "gathering"
+      ],
+      "objectives": []
     },
     {
-      "id": "breeding",
-      "name": "Élevage",
-      "order": 40
+      "id": "paysan",
+      "name": "Paysan",
+      "type": "gathering",
+      "order": 20,
+      "progression": {
+        "kind": "level",
+        "min": 0,
+        "max": 200,
+        "current": 0,
+        "target": 200
+      },
+      "tags": [
+        "gathering"
+      ],
+      "objectives": []
+    },
+    {
+      "id": "bucheron",
+      "name": "Bûcheron",
+      "type": "gathering",
+      "order": 30,
+      "progression": {
+        "kind": "level",
+        "min": 0,
+        "max": 200,
+        "current": 0,
+        "target": 200
+      },
+      "tags": [
+        "gathering"
+      ],
+      "objectives": []
+    },
+    {
+      "id": "mineur",
+      "name": "Mineur",
+      "type": "gathering",
+      "order": 40,
+      "progression": {
+        "kind": "level",
+        "min": 0,
+        "max": 200,
+        "current": 0,
+        "target": 200
+      },
+      "tags": [
+        "gathering"
+      ],
+      "objectives": []
+    },
+    {
+      "id": "pecheur",
+      "name": "Pêcheur",
+      "type": "gathering",
+      "order": 50,
+      "progression": {
+        "kind": "level",
+        "min": 0,
+        "max": 200,
+        "current": 0,
+        "target": 200
+      },
+      "tags": [
+        "gathering"
+      ],
+      "objectives": []
+    },
+    {
+      "id": "bijoutier",
+      "name": "Bijoutier",
+      "type": "crafting",
+      "order": 60,
+      "progression": {
+        "kind": "level",
+        "min": 0,
+        "max": 200,
+        "current": 0,
+        "target": 200
+      },
+      "tags": [
+        "crafting"
+      ],
+      "objectives": []
+    },
+    {
+      "id": "boucher",
+      "name": "Boucher",
+      "type": "crafting",
+      "order": 70,
+      "progression": {
+        "kind": "level",
+        "min": 0,
+        "max": 200,
+        "current": 0,
+        "target": 200
+      },
+      "tags": [
+        "crafting"
+      ],
+      "objectives": []
+    },
+    {
+      "id": "boulanger",
+      "name": "Boulanger",
+      "type": "crafting",
+      "order": 80,
+      "progression": {
+        "kind": "level",
+        "min": 0,
+        "max": 200,
+        "current": 0,
+        "target": 200
+      },
+      "tags": [
+        "crafting"
+      ],
+      "objectives": []
+    },
+    {
+      "id": "bricoleur",
+      "name": "Bricoleur",
+      "type": "crafting",
+      "order": 90,
+      "progression": {
+        "kind": "level",
+        "min": 0,
+        "max": 200,
+        "current": 0,
+        "target": 200
+      },
+      "tags": [
+        "crafting"
+      ],
+      "objectives": []
+    },
+    {
+      "id": "chasseur",
+      "name": "Chasseur",
+      "type": "gathering",
+      "order": 100,
+      "progression": {
+        "kind": "level",
+        "min": 0,
+        "max": 200,
+        "current": 0,
+        "target": 200
+      },
+      "tags": [
+        "gathering"
+      ],
+      "objectives": []
+    },
+    {
+      "id": "cordonnier",
+      "name": "Cordonnier",
+      "type": "crafting",
+      "order": 110,
+      "progression": {
+        "kind": "level",
+        "min": 0,
+        "max": 200,
+        "current": 0,
+        "target": 200
+      },
+      "tags": [
+        "crafting"
+      ],
+      "objectives": []
+    },
+    {
+      "id": "tailleur",
+      "name": "Tailleur",
+      "type": "crafting",
+      "order": 120,
+      "progression": {
+        "kind": "level",
+        "min": 0,
+        "max": 200,
+        "current": 0,
+        "target": 200
+      },
+      "tags": [
+        "crafting"
+      ],
+      "objectives": []
+    },
+    {
+      "id": "faconneur",
+      "name": "Façonneur",
+      "type": "crafting",
+      "order": 130,
+      "progression": {
+        "kind": "level",
+        "min": 0,
+        "max": 200,
+        "current": 0,
+        "target": 200
+      },
+      "tags": [
+        "crafting"
+      ],
+      "objectives": []
+    },
+    {
+      "id": "poissonnier",
+      "name": "Poissonnier",
+      "type": "crafting",
+      "order": 140,
+      "progression": {
+        "kind": "level",
+        "min": 0,
+        "max": 200,
+        "current": 0,
+        "target": 200
+      },
+      "tags": [
+        "crafting"
+      ],
+      "objectives": []
+    },
+    {
+      "id": "forgeur-epees",
+      "name": "Forgeur d'Épées",
+      "type": "crafting",
+      "order": 150,
+      "progression": {
+        "kind": "level",
+        "min": 0,
+        "max": 200,
+        "current": 0,
+        "target": 200
+      },
+      "tags": [
+        "crafting",
+        "weapon"
+      ],
+      "objectives": []
+    },
+    {
+      "id": "forgeur-dagues",
+      "name": "Forgeur de Dagues",
+      "type": "crafting",
+      "order": 160,
+      "progression": {
+        "kind": "level",
+        "min": 0,
+        "max": 200,
+        "current": 0,
+        "target": 200
+      },
+      "tags": [
+        "crafting",
+        "weapon"
+      ],
+      "objectives": []
+    },
+    {
+      "id": "forgeur-haches",
+      "name": "Forgeur de Haches",
+      "type": "crafting",
+      "order": 170,
+      "progression": {
+        "kind": "level",
+        "min": 0,
+        "max": 200,
+        "current": 0,
+        "target": 200
+      },
+      "tags": [
+        "crafting",
+        "weapon"
+      ],
+      "objectives": []
+    },
+    {
+      "id": "forgeur-marteaux",
+      "name": "Forgeur de Marteaux",
+      "type": "crafting",
+      "order": 180,
+      "progression": {
+        "kind": "level",
+        "min": 0,
+        "max": 200,
+        "current": 0,
+        "target": 200
+      },
+      "tags": [
+        "crafting",
+        "weapon"
+      ],
+      "objectives": []
+    },
+    {
+      "id": "forgeur-pelles",
+      "name": "Forgeur de Pelles",
+      "type": "crafting",
+      "order": 190,
+      "progression": {
+        "kind": "level",
+        "min": 0,
+        "max": 200,
+        "current": 0,
+        "target": 200
+      },
+      "tags": [
+        "crafting",
+        "weapon"
+      ],
+      "objectives": []
+    },
+    {
+      "id": "sculpteur-arcs",
+      "name": "Sculpteur d'Arcs",
+      "type": "crafting",
+      "order": 200,
+      "progression": {
+        "kind": "level",
+        "min": 0,
+        "max": 200,
+        "current": 0,
+        "target": 200
+      },
+      "tags": [
+        "crafting",
+        "weapon"
+      ],
+      "objectives": []
+    },
+    {
+      "id": "sculpteur-baguettes",
+      "name": "Sculpteur de Baguettes",
+      "type": "crafting",
+      "order": 210,
+      "progression": {
+        "kind": "level",
+        "min": 0,
+        "max": 200,
+        "current": 0,
+        "target": 200
+      },
+      "tags": [
+        "crafting",
+        "weapon"
+      ],
+      "objectives": []
+    },
+    {
+      "id": "sculpteur-batons",
+      "name": "Sculpteur de Bâtons",
+      "type": "crafting",
+      "order": 220,
+      "progression": {
+        "kind": "level",
+        "min": 0,
+        "max": 200,
+        "current": 0,
+        "target": 200
+      },
+      "tags": [
+        "crafting",
+        "weapon"
+      ],
+      "objectives": []
+    },
+    {
+      "id": "cordomage",
+      "name": "Cordomage",
+      "type": "mage",
+      "order": 230,
+      "progression": {
+        "kind": "level",
+        "min": 0,
+        "max": 200,
+        "current": 0,
+        "target": 200
+      },
+      "tags": [
+        "mage"
+      ],
+      "objectives": []
+    },
+    {
+      "id": "joaillomage",
+      "name": "Joaillomage",
+      "type": "mage",
+      "order": 240,
+      "progression": {
+        "kind": "level",
+        "min": 0,
+        "max": 200,
+        "current": 0,
+        "target": 200
+      },
+      "tags": [
+        "mage"
+      ],
+      "objectives": []
+    },
+    {
+      "id": "costumage",
+      "name": "Costumage",
+      "type": "mage",
+      "order": 250,
+      "progression": {
+        "kind": "level",
+        "min": 0,
+        "max": 200,
+        "current": 0,
+        "target": 200
+      },
+      "tags": [
+        "mage"
+      ],
+      "objectives": []
+    },
+    {
+      "id": "forgemage-epees",
+      "name": "Forgemage d'Épées",
+      "type": "mage",
+      "order": 260,
+      "progression": {
+        "kind": "level",
+        "min": 0,
+        "max": 200,
+        "current": 0,
+        "target": 200
+      },
+      "tags": [
+        "mage",
+        "weapon"
+      ],
+      "objectives": []
+    },
+    {
+      "id": "forgemage-dagues",
+      "name": "Forgemage de Dagues",
+      "type": "mage",
+      "order": 270,
+      "progression": {
+        "kind": "level",
+        "min": 0,
+        "max": 200,
+        "current": 0,
+        "target": 200
+      },
+      "tags": [
+        "mage",
+        "weapon"
+      ],
+      "objectives": []
+    },
+    {
+      "id": "forgemage-haches",
+      "name": "Forgemage de Haches",
+      "type": "mage",
+      "order": 280,
+      "progression": {
+        "kind": "level",
+        "min": 0,
+        "max": 200,
+        "current": 0,
+        "target": 200
+      },
+      "tags": [
+        "mage",
+        "weapon"
+      ],
+      "objectives": []
+    },
+    {
+      "id": "forgemage-marteaux",
+      "name": "Forgemage de Marteaux",
+      "type": "mage",
+      "order": 290,
+      "progression": {
+        "kind": "level",
+        "min": 0,
+        "max": 200,
+        "current": 0,
+        "target": 200
+      },
+      "tags": [
+        "mage",
+        "weapon"
+      ],
+      "objectives": []
+    },
+    {
+      "id": "forgemage-pelles",
+      "name": "Forgemage de Pelles",
+      "type": "mage",
+      "order": 300,
+      "progression": {
+        "kind": "level",
+        "min": 0,
+        "max": 200,
+        "current": 0,
+        "target": 200
+      },
+      "tags": [
+        "mage",
+        "weapon"
+      ],
+      "objectives": []
+    },
+    {
+      "id": "sculptemage-arcs",
+      "name": "Sculptemage d'Arcs",
+      "type": "mage",
+      "order": 310,
+      "progression": {
+        "kind": "level",
+        "min": 0,
+        "max": 200,
+        "current": 0,
+        "target": 200
+      },
+      "tags": [
+        "mage",
+        "weapon"
+      ],
+      "objectives": []
+    },
+    {
+      "id": "sculptemage-baguettes",
+      "name": "Sculptemage de Baguettes",
+      "type": "mage",
+      "order": 320,
+      "progression": {
+        "kind": "level",
+        "min": 0,
+        "max": 200,
+        "current": 0,
+        "target": 200
+      },
+      "tags": [
+        "mage",
+        "weapon"
+      ],
+      "objectives": []
+    },
+    {
+      "id": "sculptemage-batons",
+      "name": "Sculptemage de Bâtons",
+      "type": "mage",
+      "order": 330,
+      "progression": {
+        "kind": "level",
+        "min": 0,
+        "max": 200,
+        "current": 0,
+        "target": 200
+      },
+      "tags": [
+        "mage",
+        "weapon"
+      ],
+      "objectives": []
     }
   ]
 }

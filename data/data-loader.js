@@ -3,10 +3,13 @@
 (function exposeDataLoader() {
   const files = {
     zones: "data/zones.json",
-    routes: "data/dungeon-routes.json",
+    rushStarter: "data/rush-starter.json",
+    routes: "data/parcours.json",
+    successes: "data/succes.json",
+    quests: "data/quetes.json",
     dofus: "data/dofus.json",
-    professions: "data/professions.json",
-    breeding: "data/breeding.json",
+    artisanat: "data/artisanat.json",
+    breeding: "data/elevage.json",
   };
 
   // Permet de conserver une interface utilisable lorsqu'elle est ouverte en file://.
@@ -84,6 +87,10 @@
       ],
     },
   };
+  fallback.rushStarter = { version: 1, routes: fallback.routes.routes.slice(0, 1) };
+  fallback.successes = { version: 1, successes: [] };
+  fallback.quests = { version: 1, quests: [] };
+  fallback.artisanat = fallback.professions;
 
   function parseCsv(text) {
     const rows = [];
@@ -260,11 +267,37 @@
       Object.entries(files).map(async ([key, path]) => [key, await readJson(key, path)]),
     );
     const loaded = Object.fromEntries(entries);
+    const dofusEntries = loaded.dofus.value.dofus || [];
+    const dofusById = new Map(dofusEntries.map((entry) => [entry.id, entry]));
+    (loaded.successes.value.successes || []).forEach(({ dofusId, objective }) => {
+      const entry = dofusById.get(dofusId);
+      if (!entry || !objective) return;
+      if (!Array.isArray(entry.objectives)) entry.objectives = [];
+      entry.objectives.push(objective);
+    });
+    const objectivesById = new Map(
+      dofusEntries.flatMap((entry) =>
+        (entry.objectives || []).map((objective) => [`${entry.id}:${objective.id}`, objective]),
+      ),
+    );
+    (loaded.quests.value.quests || []).forEach(({ dofusId, successId, quests }) => {
+      const objective = objectivesById.get(`${dofusId}:${successId}`);
+      if (objective && Array.isArray(quests)) objective.quests = quests;
+    });
     const data = {
       zones: loaded.zones.value,
-      routes: loaded.routes.value,
+      routes: {
+        version: Math.max(
+          loaded.rushStarter.value.version || 1,
+          loaded.routes.value.version || 1,
+        ),
+        routes: [
+          ...(loaded.rushStarter.value.routes || []),
+          ...(loaded.routes.value.routes || []),
+        ],
+      },
       dofus: loaded.dofus.value,
-      professions: loaded.professions.value,
+      professions: loaded.artisanat.value,
       breeding: loaded.breeding.value,
       usedFallback: Object.values(loaded).some((entry) => entry.fallback),
     };
