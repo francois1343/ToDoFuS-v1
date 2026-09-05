@@ -5,7 +5,8 @@ const tiers = [
   {
     name: "Palier I",
     reward: "Mardi 21 juillet, 15 h — Titre « Chasseur(euse) de boucliers »",
-    image: "https://static.ankama.com/upload/backoffice/direct/2026-07-07/e4f597e7ee137023633909e2beac2ea4.png",
+    image:
+      "https://static.ankama.com/upload/backoffice/direct/2026-07-07/e4f597e7ee137023633909e2beac2ea4.png",
     tasks: [
       ["Cour du Bouftou Royal", 30, "Bouclier du Bouftou Royal"],
       ["Cache de Kankreblath", 40, "Bouclier de Kankreblath"],
@@ -17,7 +18,8 @@ const tiers = [
   {
     name: "Palier II",
     reward: "Mardi 28 juillet, 15 h — 1 jeton de loterie de la saison Ocre",
-    image: "https://static.ankama.com/upload/backoffice/direct/2026-07-07/3f21d9b7fc3a6a0bf71dcb7ab92a4e99.png",
+    image:
+      "https://static.ankama.com/upload/backoffice/direct/2026-07-07/3f21d9b7fc3a6a0bf71dcb7ab92a4e99.png",
     tasks: [
       ["Théâtre du Dramak", 100, "Bouclier de Dramak"],
       ["Caverne du Koulosse", 100, "Kouloclier"],
@@ -29,7 +31,8 @@ const tiers = [
   {
     name: "Palier III",
     reward: "Mardi 4 août, 15 h — Titre « Passionné(e) de boucliers »",
-    image: "https://static.ankama.com/upload/backoffice/direct/2026-07-07/e4f597e7ee137023633909e2beac2ea4.png",
+    image:
+      "https://static.ankama.com/upload/backoffice/direct/2026-07-07/e4f597e7ee137023633909e2beac2ea4.png",
     tasks: [
       ["Atelier du Tanukouï San", 130, "Tanuklier"],
       ["Clairière du Chêne Mou", 140, "Bouclier du Chêne Mou"],
@@ -41,7 +44,8 @@ const tiers = [
   {
     name: "Palier IV",
     reward: "Mardi 11 août, 15 h — 1 jeton de loterie de la saison Ocre",
-    image: "https://static.ankama.com/upload/backoffice/direct/2026-07-07/3f21d9b7fc3a6a0bf71dcb7ab92a4e99.png",
+    image:
+      "https://static.ankama.com/upload/backoffice/direct/2026-07-07/3f21d9b7fc3a6a0bf71dcb7ab92a4e99.png",
     tasks: [
       ["Mégalithe de Fraktale", 120, "Fraktaklier"],
       ["Repaire du Sphincter Cell", 150, "Bouclier des Rats"],
@@ -53,7 +57,8 @@ const tiers = [
   {
     name: "Palier V",
     reward: "Mardi 18 août, 15 h — 1 jeton de loterie de la saison Ocre",
-    image: "https://static.ankama.com/upload/backoffice/direct/2026-07-07/3f21d9b7fc3a6a0bf71dcb7ab92a4e99.png",
+    image:
+      "https://static.ankama.com/upload/backoffice/direct/2026-07-07/3f21d9b7fc3a6a0bf71dcb7ab92a4e99.png",
     tasks: [
       ["Trône de la Cour Sombre", 200, "Bouclier de la Reine des Voleurs"],
       ["Palais de Dantinéa", 200, "Bouclier de Dantinéa"],
@@ -66,7 +71,11 @@ const tiers = [
 
 const storageKey = "dofus-boucliers-todo-v1";
 const totalTasks = tiers.reduce((total, tier) => total + tier.tasks.length, 0);
-const validTaskIds = new Set(tiers.flatMap((tier, tierIndex) => tier.tasks.map((_, taskIndex) => `t${tierIndex}-d${taskIndex}`)));
+const validTaskIds = new Set(
+  tiers.flatMap((tier, tierIndex) =>
+    tier.tasks.map((_, taskIndex) => `t${tierIndex}-d${taskIndex}`),
+  ),
+);
 
 let state = {};
 let activeFilter = "all";
@@ -90,8 +99,16 @@ const elements = {
   toast: document.getElementById("toast"),
 };
 
-const icon = (name) => `<svg aria-hidden="true"><use href="#icon-${name}"></use></svg>`;
-const escapeHtml = (value) => String(value).replace(/[&<>'"]/g, (character) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "'": "&#39;", '"': "&quot;" })[character]);
+const icon = (name) =>
+  `<svg aria-hidden="true"><use href="#icon-${name}"></use></svg>`;
+const escapeHtml = (value) =>
+  String(value).replace(
+    /[&<>'"]/g,
+    (character) =>
+      ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "'": "&#39;", '"': "&quot;" })[
+        character
+      ],
+  );
 const save = () => localStorage.setItem(storageKey, JSON.stringify(state));
 const completedCount = () => [...validTaskIds].filter((id) => state[id]).length;
 
@@ -99,30 +116,38 @@ function showToast(message) {
   clearTimeout(toastTimer);
   elements.toast.textContent = message;
   elements.toast.classList.add("is-visible");
-  toastTimer = setTimeout(() => elements.toast.classList.remove("is-visible"), 2600);
+  toastTimer = setTimeout(
+    () => elements.toast.classList.remove("is-visible"),
+    2600,
+  );
 }
 
 function updateProgress() {
   const completed = completedCount();
   const percent = Math.round((completed / totalTasks) * 100);
-  document.getElementById("progressText").textContent = `${completed} / ${totalTasks}`;
+  document.getElementById("progressText").textContent =
+    `${completed} / ${totalTasks}`;
   document.getElementById("progressPercent").textContent = percent;
   document.getElementById("progressFill").style.width = `${percent}%`;
   document.getElementById("progressBar").setAttribute("aria-valuenow", percent);
-  document.getElementById("progressMessage").textContent = completed === totalTasks
-    ? "Quête légendaire accomplie : tous les boucliers sont à vous !"
-    : completed >= 20
-      ? "La légende est proche. Encore quelques donjons !"
-      : completed >= 10
-        ? "Votre collection prend fière allure."
-        : completed
-          ? "Belle avancée, aventurier. Continuez ainsi."
-          : "Votre aventure commence ici.";
+  document.getElementById("progressMessage").textContent =
+    completed === totalTasks
+      ? "Quête légendaire accomplie : tous les boucliers sont à vous !"
+      : completed >= 20
+        ? "La légende est proche. Encore quelques donjons !"
+        : completed >= 10
+          ? "Votre collection prend fière allure."
+          : completed
+            ? "Belle avancée, aventurier. Continuez ainsi."
+            : "Votre aventure commence ici.";
 }
 
 function taskMatches(name, shield, checked) {
-  const matchesSearch = `${name} ${shield}`.toLocaleLowerCase("fr").includes(searchTerm);
-  const matchesFilter = activeFilter === "all" || (activeFilter === "done" ? checked : !checked);
+  const matchesSearch = `${name} ${shield}`
+    .toLocaleLowerCase("fr")
+    .includes(searchTerm);
+  const matchesFilter =
+    activeFilter === "all" || (activeFilter === "done" ? checked : !checked);
   return matchesSearch && matchesFilter;
 }
 
@@ -145,13 +170,20 @@ function renderTask(task, tierIndex, taskIndex) {
 }
 
 function renderTier(tier, tierIndex) {
-  const completed = tier.tasks.filter((_, taskIndex) => state[`t${tierIndex}-d${taskIndex}`]).length;
+  const completed = tier.tasks.filter(
+    (_, taskIndex) => state[`t${tierIndex}-d${taskIndex}`],
+  ).length;
   const tierPercent = Math.round((completed / tier.tasks.length) * 100);
-  const tasks = tier.tasks.map((task, taskIndex) => renderTask(task, tierIndex, taskIndex)).join("");
+  const tasks = tier.tasks
+    .map((task, taskIndex) => renderTask(task, tierIndex, taskIndex))
+    .join("");
   if (!tasks) return "";
 
   const roman = ["I", "II", "III", "IV", "V"][tierIndex];
-  const status = completed === tier.tasks.length ? "Palier accompli" : `${tierPercent} % accompli`;
+  const status =
+    completed === tier.tasks.length
+      ? "Palier accompli"
+      : `${tierPercent} % accompli`;
   const autoExpand = Boolean(searchTerm) || activeFilter !== "all";
   const isOpen = autoExpand || openTierIds.has(String(tierIndex));
   return `<details class="tier tier-${tierIndex + 1}${completed === tier.tasks.length ? " tier-complete" : ""}" data-tier="${tierIndex}" data-auto-open="${autoExpand}" ${isOpen ? "open" : ""}>
@@ -171,27 +203,33 @@ function render() {
   elements.emptyState.hidden = visibleTasks > 0;
   elements.resultCount.textContent = `${visibleTasks} donjon${visibleTasks > 1 ? "s" : ""} affiché${visibleTasks > 1 ? "s" : ""} sur ${totalTasks}`;
 
-  elements.tiers.querySelectorAll('input[type="checkbox"]').forEach((checkbox) => {
-    checkbox.addEventListener("change", () => {
-      state[checkbox.id] = checkbox.checked;
-      save();
-      render();
-      showToast(completedCount() === totalTasks
-        ? "Quête légendaire accomplie : collection complète !"
-        : checkbox.checked
-          ? "Donjon ajouté à vos victoires."
-          : "Donjon replacé dans les quêtes à accomplir.");
+  elements.tiers
+    .querySelectorAll('input[type="checkbox"]')
+    .forEach((checkbox) => {
+      checkbox.addEventListener("change", () => {
+        state[checkbox.id] = checkbox.checked;
+        save();
+        render();
+        showToast(
+          completedCount() === totalTasks
+            ? "Quête légendaire accomplie : collection complète !"
+            : checkbox.checked
+              ? "Donjon ajouté à vos victoires."
+              : "Donjon replacé dans les quêtes à accomplir.",
+        );
+      });
     });
-  });
   elements.tiers.querySelectorAll("details.tier").forEach((details) => {
     details.addEventListener("toggle", () => {
       if (details.dataset.autoOpen === "true") return;
       if (details.open) {
         openTierIds.clear();
         openTierIds.add(details.dataset.tier);
-        elements.tiers.querySelectorAll("details.tier[open]").forEach((sibling) => {
-          if (sibling !== details) sibling.open = false;
-        });
+        elements.tiers
+          .querySelectorAll("details.tier[open]")
+          .forEach((sibling) => {
+            if (sibling !== details) sibling.open = false;
+          });
       } else {
         openTierIds.delete(details.dataset.tier);
       }
@@ -218,15 +256,23 @@ document.querySelectorAll(".filter").forEach((button) => {
 });
 
 document.getElementById("checkAll").addEventListener("click", () => {
-  validTaskIds.forEach((id) => { state[id] = true; });
+  validTaskIds.forEach((id) => {
+    state[id] = true;
+  });
   save();
   render();
   showToast("Quête accomplie : les 25 donjons sont terminés !");
 });
 
-document.getElementById("openReset").addEventListener("click", () => elements.resetDialog.showModal());
-document.getElementById("closeReset").addEventListener("click", () => elements.resetDialog.close());
-document.getElementById("cancelReset").addEventListener("click", () => elements.resetDialog.close());
+document
+  .getElementById("openReset")
+  .addEventListener("click", () => elements.resetDialog.showModal());
+document
+  .getElementById("closeReset")
+  .addEventListener("click", () => elements.resetDialog.close());
+document
+  .getElementById("cancelReset")
+  .addEventListener("click", () => elements.resetDialog.close());
 document.getElementById("uncheckAll").addEventListener("click", () => {
   state = {};
   save();
