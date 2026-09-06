@@ -1,0 +1,88 @@
+{
+  "id": "bonta",
+  "name": "Bonta",
+  "category": "zone",
+  "level": 100,
+  "acquisition": "quest",
+  "summary": "Ensemble des succès et quêtes d'alignement, d'exploration et de la cité de la Lumière (Bonta), abordant la rivalité historique avec Brâkmar et la défense des valeurs bontariennes.",
+  "tags": [
+    "Zone",
+    "Bonta",
+    "Alignement",
+    "Cité de la Lumière",
+    "Frères ennemis",
+    "Niveau 100",
+    "Niveau 200"
+  ],
+  "source": "https://www.dofuspourlesnoobs.com/bonta.html",
+  "progression": {
+    "trackId": "zones-dofus",
+    "order": 16
+  },
+  "parts": [
+    {
+      "id": "partie-bonta",
+      "name": "Succès et Quêtes de Bonta",
+      "itemsRequired": [
+        {
+          "name": "Bière de Bonta",
+          "quantity": 1,
+          "note": "Pour diverses étapes de quêtes de taverne et diplomatiques"
+        },
+        {
+          "name": "Badges / Certificats Bontariens",
+          "quantity": 1,
+          "note": "Pour la progression dans les ordres et l'alignement"
+        }
+      ],
+      "dungeonsRequired": [
+        "Donjon Boulangerie de Bonta",
+        "Donjon Égoût de Bonta"
+      ],
+      "successes": ["toutes-les-quetes-de-bonta-et-brakmar", "freres-ennemis"]
+    }
+  ],
+  "rewards": {
+    "items": ["Ornements et titres d'alignement Bontarien"],
+    "effect": "Déblocage des ordres de Bonta, accès aux zones réservées et progression dans les succès de cité."
+  },
+  "globalPrerequisites": [
+    "Choix de l'alignement Bontarien auprès d'Amayiro",
+    "Niveau 100 à 200 selon les ordres et étapes de quêtes"
+  ],
+  "objectives": [
+    {
+      "id": "toutes-les-quetes-de-bonta-et-brakmar",
+      "title": "Toutes les quêtes de Bonta et Brâkmar",
+      "type": "achievement",
+      "summary": "Accomplir l'intégralité des quêtes narratives et citadines associées à la cité de Bonta.",
+      "quests": [
+        {
+          "id": "q-bonta-1",
+          "name": "L'apprentissage Bontarien",
+          "level": 100
+        },
+        { "id": "q-bonta-2", "name": "Au service de la Lumière", "level": 140 },
+        { "id": "q-bonta-3", "name": "Garde blanc, cœur pur", "level": 200 }
+      ]
+    },
+    {
+      "id": "freres-ennemis",
+      "title": "Frères ennemis",
+      "type": "achievement",
+      "summary": "Série de quêtes d'investigation et d'affrontements diplomatiques et militaires marquant l'opposition historique entre Bonta et Brâkmar.",
+      "quests": [
+        {
+          "id": "q-freres-ennemis-bonta-1",
+          "name": "L'ombre du rival",
+          "level": 180
+        },
+        {
+          "id": "q-freres-ennemis-bonta-2",
+          "name": "Guerre froide",
+          "level": 200
+        }
+      ]
+    }
+  ]
+}

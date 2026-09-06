@@ -153,11 +153,100 @@
     "monster",
     "objective",
     "achievement",
+    "resource",
+    "gathering",
+    "activity",
     "dofus",
     "anomaly",
     "forgotten",
     "breeding",
   ]);
+  const linkedModules = new Set([
+    "pvm",
+    "quest",
+    "artisanat",
+    "dofus",
+    "rush-starter",
+    "elevage",
+    "parcours",
+    "success",
+    "achievement",
+  ]);
+
+  function normalizeZoneObjective(zone, entry, index) {
+    const sourceId =
+      typeof entry?.id === "string" && entry.id.trim()
+        ? entry.id
+        : `${zone.id}-objectif-${index + 1}`;
+    // A success can legitimately be shared by two zones (for example Bonta/Brâkmar).
+    // Namespace zone objectives so the PvM state and DOM identifiers stay unambiguous.
+    const id = `${zone.id}:${sourceId}`;
+    const name = typeof entry?.name === "string" && entry.name.trim()
+      ? entry.name
+      : typeof entry?.title === "string" && entry.title.trim()
+        ? entry.title
+        : `Objectif ${index + 1}`;
+    return {
+      id,
+      sourceId,
+      name,
+      type: entry?.type || "quest",
+      minLevel: Number(entry?.minLevel ?? entry?.level ?? zone.levelRange?.min ?? 1),
+      maxLevel: Number(entry?.maxLevel ?? entry?.level ?? zone.levelRange?.max ?? 200),
+      description: typeof entry?.description === "string" ? entry.description : typeof entry?.summary === "string" ? entry.summary : "",
+      tags: Array.isArray(entry?.tags) ? entry.tags.filter((tag) => typeof tag === "string") : [],
+      order: Number(entry?.order) || index * 10 + 1,
+      linkedModule: typeof entry?.module === "string" ? entry.module : "pvm",
+      relatedSuccessIds: Array.isArray(entry?.successIds) ? entry.successIds.filter((successId) => typeof successId === "string") : [],
+      links: Array.isArray(entry?.links) ? entry.links : [],
+      quests: Array.isArray(entry?.quests) ? entry.quests : [],
+      itemsRequired: Array.isArray(entry?.itemsRequired) ? entry.itemsRequired : [],
+      prerequisites: Array.isArray(entry?.prerequisites) ? entry.prerequisites : [],
+    };
+  }
+
+  async function loadZoneDetails(zones) {
+    const details = await Promise.all(
+      zones.map(async (zone) => {
+        const path = `data/zones/${zone.id}.json`;
+        try {
+          const response = await fetch(path, { cache: "no-store" });
+          if (!response.ok) return { zoneId: zone.id, objectives: [], successLinks: [] };
+          const payload = await response.json();
+          const objectiveEntries = [
+            ...(Array.isArray(payload?.objectives) ? payload.objectives : []),
+            ...(Array.isArray(payload?.quests) ? payload.quests : []),
+            ...(Array.isArray(payload?.successes) ? payload.successes : []),
+            ...(Array.isArray(payload?.resources) ? payload.resources : []),
+            ...(Array.isArray(payload?.activities) ? payload.activities : []),
+          ].map((entry, index) => normalizeZoneObjective(zone, entry, index));
+          const successLinks = Array.isArray(payload?.successLinks)
+            ? payload.successLinks.filter((link) => link && typeof link === "object")
+            : [];
+          return {
+            zoneId: zone.id,
+            objectives: objectiveEntries,
+            successLinks,
+          };
+        } catch {
+          return { zoneId: zone.id, objectives: [], successLinks: [] };
+        }
+      }),
+    );
+
+    const byZoneId = new Map(details.map((entry) => [entry.zoneId, entry]));
+    return zones.map((zone) => {
+      const detail = byZoneId.get(zone.id);
+      if (!detail) return zone;
+      const zoneObjectives = Array.isArray(zone.objectives) ? zone.objectives : [];
+      const successLinks = Array.isArray(zone.successLinks) ? zone.successLinks : [];
+      return {
+        ...zone,
+        objectives: [...zoneObjectives, ...detail.objectives],
+        successLinks: [...successLinks, ...detail.successLinks],
+      };
+    });
+  }
 
   function validateData(data) {
     const errors = [];
@@ -217,12 +306,24 @@
       });
       return groupIds;
     };
-
+    const checkSuccessLinks = (zonesList) => {
+      zonesList.forEach((zone) => {
+        (zone.successLinks || []).forEach((link) => {
+          if (!link || typeof link.id !== "string" || !link.id.trim())
+            errors.push(`zones/${zone.id}: lien de succès sans identifiant`);
+          if (link?.module && !linkedModules.has(link.module))
+            errors.push(`zones/${zone.id}/${link.id}: module « ${link.module} » inconnu`);
+          if (Array.isArray(link.relatedIds) && link.relatedIds.some((item) => typeof item !== "string"))
+            errors.push(`zones/${zone.id}/${link.id}: identifiants liés invalides`);
+        });
+      });
+    };
     const zones = Array.isArray(data.zones?.zones) ? data.zones.zones : [];
     const routes = Array.isArray(data.routes?.routes) ? data.routes.routes : [];
     const dofus = Array.isArray(data.dofus?.dofus) ? data.dofus.dofus : [];
     const tracks = Array.isArray(data.dofus?.tracks) ? data.dofus.tracks : [];
     checkGroups(zones, "zones");
+    checkSuccessLinks(zones);
     checkGroups(routes, "routes");
     const dofusIds = checkIds(dofus, "dofus");
     const trackIds = checkIds(tracks, "dofus.tracks");
@@ -301,6 +402,7 @@
       breeding: loaded.breeding.value,
       usedFallback: Object.values(loaded).some((entry) => entry.fallback),
     };
+    data.zones.zones = await loadZoneDetails(data.zones.zones || []);
     validateData(data);
     return data;
   }

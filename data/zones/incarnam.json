@@ -1,0 +1,174 @@
+{
+  "id": "incarnam",
+  "name": "Incarnam",
+  "category": "zone",
+  "level": 10,
+  "acquisition": "quest",
+  "summary": "Ensemble des succès et quêtes d'apprentissage d'Incarnam, la zone céleste réservée aux âmes incarnées qui découvrent le Monde des Douze et les bases du combat, de l'artisanat et de l'exploration.",
+  "tags": [
+    "Zone",
+    "Incarnam",
+    "Tutoriel",
+    "Niveau 10",
+    "Aventure",
+    "Poussé par le vent"
+  ],
+  "source": "https://www.dofuspourlesnoobs.com/incarnam.html",
+  "progression": {
+    "trackId": "zones-dofus",
+    "order": 1
+  },
+  "parts": [
+    {
+      "id": "partie-incarnam",
+      "name": "Succès et Quêtes d'Incarnam",
+      "itemsRequired": [
+        {
+          "name": "Eau pure",
+          "quantity": 1,
+          "note": "Pour la fabrication/découverte des métiers"
+        },
+        {
+          "name": "Blé",
+          "quantity": 1,
+          "note": "Ressources de récolte d'initiation"
+        },
+        {
+          "name": "Goujon",
+          "quantity": 1,
+          "note": "Ressources de récolte d'initiation"
+        },
+        {
+          "name": "Fer",
+          "quantity": 1,
+          "note": "Ressources de récolte d'initiation"
+        },
+        {
+          "name": "Fleur de Lin",
+          "quantity": 1,
+          "note": "Ressources de récolte d me d'initiation"
+        },
+        {
+          "name": "Bois de Frêne",
+          "quantity": 1,
+          "note": "Ressources de récolte d'initiation"
+        }
+      ],
+      "dungeonsRequired": ["Donjon d'Incarnam"],
+      "successes": [
+        "en-route-pour-l-aventure",
+        "pousse-par-le-vent",
+        "service-dans-la-milice",
+        "c-est-le-metier-qui-rentre",
+        "ramdam-sur-incarnam"
+      ]
+    }
+  ],
+  "rewards": {
+    "items": ["Panoplie du débutant / Aventure"],
+    "effect": "Déblocage du titre d'aventurier d'Incarnam et accès guidé vers la surface d'Astrub."
+  },
+  "globalPrerequisites": [
+    "Niveau 1 (Accessible dès la création du personnage)"
+  ],
+  "objectives": [
+    {
+      "id": "en-route-pour-l-aventure",
+      "title": "En route pour l'aventure",
+      "type": "achievement",
+      "summary": "Premières quêtes d'arrivée sur Incarnam et de découverte des concepts de base du jeu.",
+      "quests": [
+        {
+          "id": "q-les-reponses-a-tout",
+          "name": "Les réponses à tout",
+          "level": 1
+        },
+        {
+          "id": "q-un-sage-parmi-les-sages",
+          "name": "Un sage parmi les sages",
+          "level": 2
+        },
+        {
+          "id": "q-chasse-aux-monstres",
+          "name": "Chasse aux monstres",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "id": "pousse-par-le-vent",
+      "title": "Poussé par le vent",
+      "type": "achievement",
+      "summary": "Quêtes d'exploration cartographique et de découverte des différentes sous-zones de l'île céleste.",
+      "quests": [
+        {
+          "id": "q-voyage-vers-les-cieux",
+          "name": "Voyage vers les cieux",
+          "level": 5
+        },
+        { "id": "q-l-air-du-temps", "name": "L'air du temps", "level": 5 },
+        {
+          "id": "q-au-milieu-des-nuages",
+          "name": "Au milieu des nuages",
+          "level": 5
+        }
+      ]
+    },
+    {
+      "id": "service-dans-la-milice",
+      "title": "Service dans la milice",
+      "type": "achievement",
+      "summary": "Quêtes d'assistance à la Milice d'Incarnam pour maintenir l'ordre face aux créatures indisciplinées.",
+      "quests": [
+        {
+          "id": "q-maintien-de-l-ordre",
+          "name": "Maintien de l'ordre",
+          "level": 8
+        },
+        { "id": "q-milice-du-coeur", "name": "Milice du cœur", "level": 8 },
+        {
+          "id": "q-nettoyage-de-printemps",
+          "name": "Nettoyage de printemps",
+          "level": 10
+        }
+      ]
+    },
+    {
+      "id": "c-est-le-metier-qui-rentre",
+      "title": "C'est le métier qui rentre",
+      "type": "achievement",
+      "summary": "Introduction à l'artisanat, la récolte de ressources et la fabrication d'équipements de bas niveau.",
+      "quests": [
+        {
+          "id": "q-premiers-pas-de-recolteur",
+          "name": "Premiers pas de récolteur",
+          "level": 5
+        },
+        {
+          "id": "q-l-art-de-la-forge",
+          "name": "L'art de la forge",
+          "level": 5
+        },
+        {
+          "id": "q-combinaison-gagnante",
+          "name": "Combinaison gagnante",
+          "level": 10
+        }
+      ]
+    },
+    {
+      "id": "ramdam-sur-incarnam",
+      "title": "Ramdam sur Incarnam",
+      "type": "achievement",
+      "summary": "Quêtes de résolution des troubles locaux débouchant sur l'exploration du Donjon d'Incarnam.",
+      "quests": [
+        { "id": "q-la-menace-mousse", "name": "La menace mousse", "level": 10 },
+        {
+          "id": "q-donjon-d-incarnam",
+          "name": "Donjon d'Incarnam",
+          "level": 10
+        }
+      ]
+    }
+  ]
+}

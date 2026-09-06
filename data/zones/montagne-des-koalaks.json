@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "zoneId": "montagne-des-koalaks",
+  "name": "Montagne des Koalaks",
+  "levelRange": { "min": 60, "max": 140 },
+  "tags": ["mountain", "pvm"],
+  "quests": [],
+  "successes": [],
+  "resources": [],
+  "activities": [],
+  "successLinks": [
+    {
+      "id": "montagne-des-koalaks-pvm",
+      "title": "Montagne des Koalaks",
+      "module": "pvm",
+      "summary": "Zone de combat et d'exploration dédiée au PvM : monstres, quêtes liées et défis de zone.",
+      "relatedIds": []
+    }
+  ]
+}

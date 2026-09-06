@@ -1,0 +1,135 @@
+{
+  "id": "justiciers",
+  "name": "Base des Justiciers",
+  "category": "zone",
+  "level": 100,
+  "acquisition": "quest",
+  "summary": "Ensemble des succès et quêtes de la Base des Justiciers, abordant la formation des recrues, la traque des criminels recherchés et la défense d'Amakna contre les super-vilains.",
+  "tags": [
+    "Zone",
+    "Justiciers",
+    "Base des Justiciers",
+    "Super-Vilains",
+    "Niveau 100",
+    "Recherchés"
+  ],
+  "source": "https://www.dofuspourlesnoobs.com/base-des-justiciers.html",
+  "progression": {
+    "trackId": "zones-dofus",
+    "order": 12
+  },
+  "parts": [
+    {
+      "id": "partie-justiciers",
+      "name": "Succès et Quêtes des Justiciers",
+      "itemsRequired": [
+        {
+          "name": "Avis de recherche",
+          "quantity": 1,
+          "note": "Requis pour l'initiation à la traque de criminels"
+        },
+        {
+          "name": "Jeton du Justicier",
+          "quantity": 1,
+          "note": "Monnaie de quête des Justiciers"
+        }
+      ],
+      "dungeonsRequired": ["Donjon Mallefisk"],
+      "successes": [
+        "ca-va-faire-du-vilain",
+        "bizutage",
+        "formation-pratique",
+        "nouvelle-fournee-de-justiciers",
+        "mort-ou-vif"
+      ]
+    }
+  ],
+  "rewards": {
+    "items": ["Bouclier du Justicier", "Titre : Justicier Novice"],
+    "effect": "Accès aux missions d'avis de recherche de la Base des Justiciers et déblocage d'équipements thématiques."
+  },
+  "globalPrerequisites": [
+    "Niveau 50 à 100 recommandé",
+    "Avoir accès au Multiman / Base des Justiciers"
+  ],
+  "objectives": [
+    {
+      "id": "ca-va-faire-du-vilain",
+      "title": "Ça va faire du vilain",
+      "type": "achievement",
+      "summary": "Première confrontation avec la pègre et les menaces de super-vilains menaçant l'équilibre du Monde des Douze.",
+      "quests": [
+        {
+          "id": "q-ca-va-faire-du-vilain-1",
+          "name": "Alerte aux vilains",
+          "level": 100
+        },
+        {
+          "id": "q-ca-va-faire-du-vilain-2",
+          "name": "L'ombre des super-vilains",
+          "level": 100
+        }
+      ]
+    },
+    {
+      "id": "bizutage",
+      "title": "Bizutage",
+      "type": "achievement",
+      "summary": "Missions d'intégration et épreuves de bienvenue réservées aux nouvelles recrues de la base.",
+      "quests": [
+        { "id": "q-bizutage-1", "name": "Test d'aptitude", "level": 50 },
+        { "id": "q-bizutage-2", "name": "Première patrouille", "level": 50 }
+      ]
+    },
+    {
+      "id": "formation-pratique",
+      "title": "Formation pratique",
+      "type": "achievement",
+      "summary": "Série d'entraînements de combat et d'exercices tactiques sur le terrain sous la tutelle des Justiciers.",
+      "quests": [
+        {
+          "id": "q-formation-pratique-1",
+          "name": "Exercice de simulation",
+          "level": 80
+        },
+        {
+          "id": "q-formation-pratique-2",
+          "name": "Mise en situation réelle",
+          "level": 80
+        }
+      ]
+    },
+    {
+      "id": "nouvelle-fournee-de-justiciers",
+      "title": "Nouvelle fournée de Justiciers",
+      "type": "achievement",
+      "summary": "Quêtes de recrutement, d'organisation des troupes et de promotion au rang d'agent officiel.",
+      "quests": [
+        {
+          "id": "q-nouvelle-fournee-1",
+          "name": "Appel aux volontaires",
+          "level": 100
+        },
+        {
+          "id": "q-nouvelle-fournee-2",
+          "name": "L'assermentation",
+          "level": 100
+        }
+      ]
+    },
+    {
+      "id": "mort-ou-vif",
+      "title": "Mort ou vif",
+      "type": "achievement",
+      "summary": "Traque et capture des criminels les plus recherchés du continent pour le compte de la milice des Justiciers.",
+      "quests": [
+        {
+          "id": "q-mort-ou-vif-1",
+          "name": "Chasse aux avis de recherche",
+          "level": 100
+        },
+        { "id": "q-mort-ou-vif-2", "name": "Justice est faite", "level": 100 }
+      ]
+    }
+  ]
+}

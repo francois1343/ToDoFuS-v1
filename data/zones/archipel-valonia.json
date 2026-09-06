@@ -1,0 +1,131 @@
+{
+  "id": "archipel-de-valonia",
+  "name": "Archipel de Valonia",
+  "category": "zone",
+  "level": 200,
+  "acquisition": "quest",
+  "summary": "Ensemble complet des succès et quêtes d'exploration, de politique et d'intrigues féodales au cœur de l'archipel de Valonia, abordant les guerres de clans, les mystères d'Ecaflipus et la souveraineté du Roi Belladone.",
+  "tags": [
+    "Zone",
+    "Archipel de Valonia",
+    "Valonia",
+    "Ecaflip",
+    "Clandestinité",
+    "Niveau 200"
+  ],
+  "source": "https://www.dofuspourlesnoobs.com/archipel-de-valonia.html",
+  "progression": {
+    "trackId": "zones-dofus",
+    "order": 31
+  },
+  "parts": [
+    {
+      "id": "partie-archipel-de-valonia",
+      "name": "Succès et Quêtes de l'Archipel de Valonia",
+      "itemsRequired": [
+        {
+          "name": "Jeton d'Ecaflipus",
+          "quantity": 1,
+          "note": "Pour la participation aux épreuves locales"
+        },
+        {
+          "name": "Étoffe de Clan",
+          "quantity": 1,
+          "note": "Ressource de quête pour l'alignement auprès des factions"
+        }
+      ],
+      "dungeonsRequired": ["Donjon Reine des Voleurs", "Donjon Belladone"],
+      "successes": [
+        "toutes-les-quetes-de-l-archipel-de-valonia",
+        "l-enfant-regardait-tomber-la-neige",
+        "un-clan-heteroclite",
+        "conseiller-en-patrimoine",
+        "le-bouquet-final"
+      ]
+    }
+  ],
+  "rewards": {
+    "items": ["Ornements et titres aristocratiques de Valonia"],
+    "effect": "Déblocage des accès d'exploration de l'archipel, des maîtrises de clans et des récits insulaires."
+  },
+  "globalPrerequisites": [
+    "Niveau 200 requis",
+    "Avoir accès au transport maritime ou portail vers l'Archipel de Valonia"
+  ],
+  "objectives": [
+    {
+      "id": "toutes-les-quetes-de-l-archipel-de-valonia",
+      "title": "Toutes les quêtes de l'archipel de Valonia",
+      "type": "achievement",
+      "summary": "Accomplir l'intégralité des quêtes narratives et des intrigues de clans de l'Archipel de Valonia.",
+      "quests": [
+        { "id": "q-valonia-1", "name": "Débarquement à Valonia", "level": 200 },
+        { "id": "q-valonia-2", "name": "L'ombre du trône", "level": 200 }
+      ]
+    },
+    {
+      "id": "l-enfant-regardait-tomber-la-neige",
+      "title": "L'enfant regardait tomber la neige",
+      "type": "achievement",
+      "summary": "Enquête mélancolique et souvenirs d'enfance au cœur des domaines enneigés de l'île.",
+      "quests": [
+        { "id": "q-enfant-neige-1", "name": "Premiers flocons", "level": 200 },
+        {
+          "id": "q-enfant-neige-2",
+          "name": "Les traces du passé",
+          "level": 200
+        }
+      ]
+    },
+    {
+      "id": "un-clan-heteroclite",
+      "title": "Un clan hétéroclite",
+      "type": "achievement",
+      "summary": "Négocier et unifier les différentes factions rivales composant la société valonienne.",
+      "quests": [
+        {
+          "id": "q-clan-heteroclite-1",
+          "name": "Alliances de circonstance",
+          "level": 200
+        },
+        {
+          "id": "q-clan-heteroclite-2",
+          "name": "Chacun son camp",
+          "level": 200
+        }
+      ]
+    },
+    {
+      "id": "conseiller-en-patrimoine",
+      "title": "Conseiller en patrimoine",
+      "type": "achievement",
+      "summary": "Missions de préservation et d'estimation des trésors et biens ancestraux de la noblesse.",
+      "quests": [
+        {
+          "id": "q-conseiller-patrimoine-1",
+          "name": "Inventaire royal",
+          "level": 200
+        },
+        {
+          "id": "q-conseiller-patrimoine-2",
+          "name": "Un héritage disputé",
+          "level": 200
+        }
+      ]
+    },
+    {
+      "id": "le-bouquet-final",
+      "title": "Le bouquet final",
+      "type": "achievement",
+      "summary": "Dénouement explosif des intrigues politiques et affrontement des figures majeures de l'archipel.",
+      "quests": [
+        {
+          "id": "q-bouquet-final-1",
+          "name": "La fête des duperies",
+          "level": 200
+        },
+        { "id": "q-bouquet-final-2", "name": "Clap de fin", "level": 200 }
+      ]
+    }
+  ]
+}

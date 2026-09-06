@@ -1,0 +1,328 @@
+{
+  "id": "sufokia",
+  "name": "Sufokia",
+  "category": "zone",
+  "level": 90,
+  "acquisition": "quest",
+  "summary": "Ensemble complet des succès et quêtes de Sufokia, englobant la cité maritime, la Mer d'Asse ainsi que l'extension sous-marine des Abysses de Sufokia (Meno, Koutoulou, Dankh).",
+  "tags": [
+    "Zone",
+    "Sufokia",
+    "Abysses",
+    "Mer d'Asse",
+    "Merkator",
+    "Niveau 90",
+    "Niveau 200"
+  ],
+  "source": "https://www.dofuspourlesnoobs.com/sufokia.html",
+  "progression": {
+    "trackId": "zones-dofus",
+    "order": 12
+  },
+  "parts": [
+    {
+      "id": "partie-sufokia",
+      "name": "Succès et Quêtes de Sufokia et des Abysses",
+      "itemsRequired": [
+        {
+          "name": "Piles Steamer",
+          "quantity": 1,
+          "note": "Pour le fonctionnement des sous-marins et des équipements abyssaux"
+        },
+        {
+          "name": "Scaphandre de plongée",
+          "quantity": 1,
+          "note": "Nécessaire pour l'exploration sous-marine des Abysses"
+        },
+        {
+          "name": "Ressources diverses d'exploration abyssale",
+          "quantity": 1,
+          "note": "Pépites, coquillages et composants technologiques Steamer"
+        }
+      ],
+      "dungeonsRequired": [
+        "Donjon Palais de Meno",
+        "Donjon Fosses de R'lyeh (Koutoulou)",
+        "Donjon Vaisseau du Capitaine Meno",
+        "Donjon Trône de Dankh (Dienthea)"
+      ],
+      "successes": [
+        "test-d-etancheite",
+        "plouf",
+        "la-mer-en-heritage",
+        "la-guerre-des-profondeurs",
+        "l-appel-de-koutoulou",
+        "vous-ne-descendrez-pas-plus-bas",
+        "silence-on-coule",
+        "le-bon-air-de-la-mer-d-asse",
+        "sufokons-ensemble"
+      ]
+    }
+  ],
+  "rewards": {
+    "items": [],
+    "effect": "Déblocage des accès d'exploration sous-marine et prérequis majeurs pour le Dofus Abyssal."
+  },
+  "globalPrerequisites": [
+    "Niveau 90 recommandé pour Sufokia de surface",
+    "Niveau 200 requis pour l'accès aux quêtes des Abysses sous-marines"
+  ],
+  "objectives": [
+    {
+      "id": "test-d-etancheite",
+      "title": "Test d'étanchéité",
+      "type": "achievement",
+      "summary": "Missions de préparation des équipements et tests de résistance aux pressions sous-marines.",
+      "quests": [
+        {
+          "id": "q-livresse-des-profondeurs",
+          "name": "L'ivresse des profondeurs",
+          "level": 200
+        },
+        {
+          "id": "q-les-mercemers-sont-bien-outilles",
+          "name": "Les Mercemers sont bien outillés",
+          "level": 200
+        },
+        {
+          "id": "q-peche-aux-krabouilleurs",
+          "name": "Pêche aux krabouilleurs",
+          "level": 200
+        },
+        {
+          "id": "q-a-bas-kralab-rah",
+          "name": "À bas Kralab Rah",
+          "level": 200
+        },
+        {
+          "id": "q-ko-pour-bosko-tho",
+          "name": "KO pour Bosko Tho",
+          "level": 200
+        },
+        {
+          "id": "q-relevez-les-niveaux",
+          "name": "Relevez les niveaux",
+          "level": 200
+        },
+        { "id": "q-prise-de-notes", "name": "Prise de notes", "level": 200 }
+      ]
+    },
+    {
+      "id": "plouf",
+      "title": "Plouf !",
+      "type": "achievement",
+      "summary": "Quêtes d'introduction à la descente dans les grandes profondeurs de Sufokia.",
+      "quests": [
+        {
+          "id": "q-la-peche-aux-infos",
+          "name": "La pêche aux infos",
+          "level": 200
+        },
+        {
+          "id": "q-le-heros-de-sufokia",
+          "name": "Le héros de Sufokia",
+          "level": 200
+        }
+      ]
+    },
+    {
+      "id": "la-mer-en-heritage",
+      "title": "La mer en héritage",
+      "type": "achievement",
+      "summary": "Enquête sur la technologie Steamer ancienne et les vestiges oubliés de la cité sous-marine.",
+      "quests": [
+        {
+          "id": "q-il-y-a-de-lelectricite-dans-leau",
+          "name": "Il y a de l'électricité dans l'eau",
+          "level": 200
+        },
+        {
+          "id": "q-topo-le-petit-robot",
+          "name": "Topo le petit robot",
+          "level": 200
+        },
+        {
+          "id": "q-piege-de-crystal",
+          "name": "Piège de crystal",
+          "level": 200
+        },
+        {
+          "id": "q-son-nom-est-personne",
+          "name": "Son nom est Personne",
+          "level": 200
+        },
+        {
+          "id": "q-la-clef-de-lenigme",
+          "name": "La clef de l'énigme",
+          "level": 200
+        },
+        {
+          "id": "q-une-porte-vers-le-passe",
+          "name": "Une porte vers le passé",
+          "level": 200
+        }
+      ]
+    },
+    {
+      "id": "la-guerre-des-profondeurs",
+      "title": "La guerre des profondeurs",
+      "type": "achievement",
+      "summary": "Gérer les conflits et alliances entre les différentes factions peuplant les fausses sous-marines.",
+      "quests": [
+        { "id": "q-reine-de-beaute", "name": "Reine de beauté", "level": 200 },
+        { "id": "q-rancon-nage", "name": "Rançon nage", "level": 200 },
+        {
+          "id": "q-strategie-en-trithon-reel",
+          "name": "Stratégie en Trithon Réel",
+          "level": 200
+        },
+        {
+          "id": "q-sur-fond-de-crise",
+          "name": "Sur fond de crise",
+          "level": 200
+        },
+        { "id": "q-risquer-un-oeil", "name": "Risquer un œil", "level": 200 },
+        {
+          "id": "q-la-gueule-de-lenfer",
+          "name": "La gueule de l'enfer",
+          "level": 200
+        }
+      ]
+    },
+    {
+      "id": "l-appel-de-koutoulou",
+      "title": "L'appel de Koutoulou",
+      "type": "achievement",
+      "summary": "Investigation sur les dérives cultistes et les entités tentaculaires de la zone du Temple de Koutoulou.",
+      "quests": [
+        {
+          "id": "q-celle-qui-glougloutait-dans-les-tenebres",
+          "name": "Celle qui glougloutait dans les ténèbres",
+          "level": 200
+        },
+        {
+          "id": "q-laffaire-pollie-perkine",
+          "name": "L'affaire Pollie Perkine",
+          "level": 200
+        },
+        {
+          "id": "q-trop-pollie-pour-etre-honnete",
+          "name": "Trop Pollie pour être honnête",
+          "level": 200
+        },
+        {
+          "id": "q-quand-les-astres-seront-propices",
+          "name": "Quand les astres seront propices",
+          "level": 200
+        },
+        {
+          "id": "q-il-suffira-dun-signe",
+          "name": "Il suffira d'un signe",
+          "level": 200
+        },
+        { "id": "q-de-mal-en-impie", "name": "De mal en impie", "level": 200 }
+      ]
+    },
+    {
+      "id": "vous-ne-descendrez-pas-plus-bas",
+      "title": "Vous ne descendrez pas plus bas",
+      "type": "achievement",
+      "summary": "Pénétrer dans les zones les plus profondes et hostiles des tranchées abyssales.",
+      "quests": [
+        {
+          "id": "q-le-vieux-gob-et-la-mer",
+          "name": "Le vieux gob et la mer",
+          "level": 200
+        },
+        { "id": "q-demain-jarete", "name": "Demain, j'arête", "level": 200 },
+        {
+          "id": "q-leffet-paula-rice",
+          "name": "L'effet Paula Rice",
+          "level": 200
+        },
+        { "id": "q-fhtagn", "name": "Fhtagn !", "level": 200 }
+      ]
+    },
+    {
+      "id": "silence-on-coule",
+      "title": "Silence on coule",
+      "type": "achievement",
+      "summary": "Affronter les menaces d'engloutissement et rétablir la stabilité de la cité engloutie.",
+      "quests": [
+        {
+          "id": "q-les-sept-mercemers",
+          "name": "Les sept Mercemers",
+          "level": 200
+        },
+        {
+          "id": "q-nos-chairs-voisines",
+          "name": "Nos chairs voisines",
+          "level": 200
+        },
+        {
+          "id": "q-concurrence-deployale",
+          "name": "Concurrence déloyale",
+          "level": 200
+        },
+        {
+          "id": "q-qui-a-la-plus-grosse",
+          "name": "Qui a la plus grosse ?",
+          "level": 200
+        },
+        {
+          "id": "q-droit-de-cuissage",
+          "name": "Droit de cuissage",
+          "level": 200
+        },
+        {
+          "id": "q-la-musique-de-rykke-zane",
+          "name": "La musique de Rykke Zane",
+          "level": 200
+        },
+        {
+          "id": "q-memoires-dun-amnesique",
+          "name": "Mémoires d'un amnésique",
+          "level": 200
+        },
+        {
+          "id": "q-lodeur-devant-le-seuil",
+          "name": "L'odeur devant le seuil",
+          "level": 200
+        },
+        {
+          "id": "q-aux-grands-mots-les-grands-remedes",
+          "name": "Aux grands mots les grands remèdes",
+          "level": 200
+        }
+      ]
+    },
+    {
+      "id": "le-bon-air-de-la-mer-d-asse",
+      "title": "Le bon air de la mer d'Asse",
+      "type": "achievement",
+      "summary": "Quêtes d'exploration de la côte et des rivages de la Mer d'Asse autour de Sufokia.",
+      "quests": [
+        { "id": "q-mer-d-asse-1", "name": "Promenade en rivage", "level": 90 },
+        {
+          "id": "q-mer-d-asse-2",
+          "name": "Les secrets de la côte",
+          "level": 90
+        }
+      ]
+    },
+    {
+      "id": "sufokons-ensemble",
+      "title": "Sufokons ensemble",
+      "type": "achievement",
+      "summary": "Série de quêtes de la vie citadine et du développement portuaire de Sufokia.",
+      "quests": [
+        { "id": "q-sufokons-1", "name": "Bienvenue à Sufokia", "level": 90 },
+        {
+          "id": "q-sufokons-2",
+          "name": "Problèmes de machinerie Steamer",
+          "level": 100
+        }
+      ]
+    }
+  ]
+}

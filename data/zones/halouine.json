@@ -1,0 +1,78 @@
+{
+  "id": "halouine",
+  "name": "Halouine",
+  "category": "zone",
+  "level": 200,
+  "acquisition": "quest",
+  "summary": "Ensemble des succès et quêtes de l'événement saisonnier d'Halouine, couvrant l'invasion des citrouilles, la malédiction d'Asse, le Potager d'Halouine et la confrontation avec le Citwouille.",
+  "tags": [
+    "Zone",
+    "Halouine",
+    "Saisonnier",
+    "Événement",
+    "Citwouille",
+    "Potager d'Halouine",
+    "Niveau 1 à 200"
+  ],
+  "source": "https://www.dofuspourlesnoobs.com/halouine.html",
+  "progression": {
+    "trackId": "zones-dofus",
+    "order": 41
+  },
+  "parts": [
+    {
+      "id": "partie-halouine",
+      "name": "Festivités et Malédiction d'Halouine",
+      "itemsRequired": [
+        {
+          "name": "Citwouille",
+          "quantity": 1,
+          "note": "Ressource de quête et de transformation d'Halouine"
+        },
+        {
+          "name": "Bonbon d'Halouine",
+          "quantity": 1,
+          "note": "Requis pour certaines interactions d'événement"
+        }
+      ],
+      "dungeonsRequired": ["Donjon Potager d'Halouine"],
+      "successes": ["meme-pas-peur", "toutes-les-quetes-halouine"]
+    }
+  ],
+  "rewards": {
+    "items": [
+      "Titre : Citwouille Tannée",
+      "Bouclier d'Halouine",
+      "Ornement d'Halouine"
+    ],
+    "effect": "Validation complète de tous les succès de l'événement annuel d'Halouine."
+  },
+  "globalPrerequisites": [
+    "Événement actif (Ouverture du Potager d'Halouine pendant la période d'octobre/novembre)"
+  ],
+  "objectives": [
+    {
+      "id": "meme-pas-peur",
+      "title": "Même pas peur",
+      "type": "achievement",
+      "summary": "Affronter la malédiction d'Halouine, lever le sortilège des citrouilles et défaire le Citwouille dans son potager.",
+      "quests": [
+        { "id": "q-halouine-1", "name": "Le maléfice d'Halouine", "level": 50 },
+        {
+          "id": "q-halouine-2",
+          "name": "Des Citwouilles et des hommes",
+          "level": 100
+        }
+      ]
+    },
+    {
+      "id": "toutes-les-quetes-halouine",
+      "title": "Toutes les quêtes : Halouine",
+      "type": "achievement",
+      "summary": "Méta-succès récompensant la réalisation de la totalité des quêtes de l'événement saisonnier d'Halouine.",
+      "quests": [
+        { "id": "q-meta-halouine", "name": "L'esprit d'Halouine", "level": 200 }
+      ]
+    }
+  ]
+}

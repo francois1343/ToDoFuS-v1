@@ -1,0 +1,104 @@
+{
+  "id": "tours-de-la-fratrie",
+  "name": "Tours de la Fratrie",
+  "category": "zone",
+  "level": 200,
+  "acquisition": "quest",
+  "summary": "Ensemble des succès et quêtes d'exploration et d'investigation au cœur des Tours de la Fratrie des Oubliés, abordant les sombres conspirations, les nécropoles côtières et la levée des morts.",
+  "tags": [
+    "Zone",
+    "Tours de la Fratrie",
+    "Fratrie des Oubliés",
+    "Niveau 200",
+    "Nécropole"
+  ],
+  "source": "https://www.dofuspourlesnoobs.com/tours-de-la-fratrie.html",
+  "progression": {
+    "trackId": "zones-dofus",
+    "order": 29
+  },
+  "parts": [
+    {
+      "id": "partie-tours-de-la-fratrie",
+      "name": "Succès et Quêtes des Tours de la Fratrie",
+      "itemsRequired": [
+        {
+          "name": "Relique des Oubliés",
+          "quantity": 1,
+          "note": "Pour le déverrouillage des sceaux magiques dans la tour"
+        },
+        {
+          "name": "Poudre de résurrection",
+          "quantity": 1,
+          "note": "Ressource requise pour certaines étapes rituelles"
+        }
+      ],
+      "dungeonsRequired": ["Donjon Tour de Bethel", "Donjon Tour de Solar"],
+      "successes": ["l-armee-des-morts", "marche-et-creve", "cimetiere-marin"]
+    }
+  ],
+  "rewards": {
+    "items": ["Ornements et titres de la Fratrie"],
+    "effect": "Déblocage des accès d'exploration des étages supérieurs des Tours et prérequis de l'Eliocalypse."
+  },
+  "globalPrerequisites": [
+    "Niveau 200 requis",
+    "Avoir débloqué l'accès aux zones de la Fratrie des Oubliés"
+  ],
+  "objectives": [
+    {
+      "id": "l-armee-des-morts",
+      "title": "L'armée des morts",
+      "type": "achievement",
+      "summary": "Enquête et affrontement contre les bataillons de revenants levés par la Fratrie au cœur des tours.",
+      "quests": [
+        {
+          "id": "q-armee-des-morts-1",
+          "name": "Les spectres du passé",
+          "level": 200
+        },
+        {
+          "id": "q-armee-des-morts-2",
+          "name": "Légions d'outre-tombe",
+          "level": 200
+        }
+      ]
+    },
+    {
+      "id": "marche-et-creve",
+      "title": "Marche et crève",
+      "type": "achievement",
+      "summary": "Épreuves d'endurance, piéges et ascensions périlleuses le long des marches des Tours de la Fratrie.",
+      "quests": [
+        {
+          "id": "q-marche-et-creve-1",
+          "name": "Une ascension sans fin",
+          "level": 200
+        },
+        {
+          "id": "q-marche-et-creve-2",
+          "name": "Les marches de la souffrance",
+          "level": 200
+        }
+      ]
+    },
+    {
+      "id": "cimetiere-marin",
+      "title": "Cimetière marin",
+      "type": "achievement",
+      "summary": "Missions d'exploration dans les cryptes immergées et les récifs maudits bordant les pieds des tours.",
+      "quests": [
+        {
+          "id": "q-cimetiere-marin-1",
+          "name": "Sous la surface des tombes",
+          "level": 200
+        },
+        {
+          "id": "q-cimetiere-marin-2",
+          "name": "Épaves et ossements",
+          "level": 200
+        }
+      ]
+    }
+  ]
+}

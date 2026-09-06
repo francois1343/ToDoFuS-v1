@@ -1,0 +1,93 @@
+{
+  "id": "brakmar",
+  "name": "Brâkmar",
+  "category": "zone",
+  "level": 100,
+  "acquisition": "quest",
+  "summary": "Ensemble des succès et quêtes d'alignement, d'exploration et de la cité sombre (Brâkmar), abordant la rivalité ancestrale contre Bonta et l'ascension au sein des ordres brâkmariens.",
+  "tags": [
+    "Zone",
+    "Brâkmar",
+    "Alignement",
+    "Cité Sombre",
+    "Frères ennemis",
+    "Niveau 100",
+    "Niveau 200"
+  ],
+  "source": "https://www.dofuspourlesnoobs.com/brakmar.html",
+  "progression": {
+    "trackId": "zones-dofus",
+    "order": 17
+  },
+  "parts": [
+    {
+      "id": "partie-brakmar",
+      "name": "Succès et Quêtes de Brâkmar",
+      "itemsRequired": [
+        {
+          "name": "Bière de Brâkmar",
+          "quantity": 1,
+          "note": "Pour la convivialité sombre et diverses quêtes citadines"
+        },
+        {
+          "name": "Badges / Certificats Brâkmariens",
+          "quantity": 1,
+          "note": "Pour la progression dans les ordres et l'alignement"
+        }
+      ],
+      "dungeonsRequired": ["Donjon Égoût de Brâkmar"],
+      "successes": ["toutes-les-quetes-de-bonta-et-brakmar", "freres-ennemis"]
+    }
+  ],
+  "rewards": {
+    "items": ["Ornements et titres d'alignement Brâkmarien"],
+    "effect": "Déblocage des ordres de Brâkmar, accès aux zones réservées et progression dans les succès de cité."
+  },
+  "globalPrerequisites": [
+    "Choix de l'alignement Brâkmarien auprès d'Oto Mustam",
+    "Niveau 100 à 200 selon les ordres et étapes de quêtes"
+  ],
+  "objectives": [
+    {
+      "id": "toutes-les-quetes-de-bonta-et-brakmar",
+      "title": "Toutes les quêtes de Bonta et Brâkmar",
+      "type": "achievement",
+      "summary": "Accomplir l'intégralité des quêtes narratives et citadines associées à la cité de Brâkmar.",
+      "quests": [
+        {
+          "id": "q-brakmar-1",
+          "name": "L'apprentissage Brâkmarien",
+          "level": 100
+        },
+        {
+          "id": "q-brakmar-2",
+          "name": "Au service de la Cité Sombre",
+          "level": 140
+        },
+        {
+          "id": "q-brakmar-3",
+          "name": "Ame sombre, cœur de pierre",
+          "level": 200
+        }
+      ]
+    },
+    {
+      "id": "freres-ennemis",
+      "title": "Frères ennemis",
+      "type": "achievement",
+      "summary": "Série de quêtes d'espionnage, de sabotage et d'affrontements marquant l'opposition irréconciliable entre Brâkmar et Bonta.",
+      "quests": [
+        {
+          "id": "q-freres-ennemis-brakmar-1",
+          "name": "Infiltration en terre ennemie",
+          "level": 180
+        },
+        {
+          "id": "q-freres-ennemis-brakmar-2",
+          "name": "L'affront sans merci",
+          "level": 200
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,417 @@
+{
+  "id": "quetes-mondiales",
+  "name": "Quêtes Mondiales",
+  "category": "zone",
+  "level": 200,
+  "acquisition": "quest",
+  "summary": "Ensemble majeur des succès et quêtes transversales du Monde des Douze, regroupant la Quête des Dofus Primordiaux (Émeraude, Pourpre, Turquoise, Ocre, Ivoire, Ébène), le tour du monde des donjons, la Fratrie des Oubliés, ainsi que l'apprentissage des attitudes et invocations.",
+  "tags": [
+    "Zone",
+    "Quêtes Mondiales",
+    "Dofus Primordiaux",
+    "Six sur six",
+    "Tour du monde",
+    "Donjons",
+    "Niveau 1 à 200"
+  ],
+  "source": "https://www.dofuspourlesnoobs.com/quetes-principales.html",
+  "progression": {
+    "trackId": "zones-dofus",
+    "order": 38
+  },
+  "parts": [
+    {
+      "id": "partie-dofus-primordiaux",
+      "name": "Quête des Dofus Primordiaux",
+      "itemsRequired": [
+        {
+          "name": "Dofus Émeraude",
+          "quantity": 1,
+          "note": "Requis pour la progression des Dofus Primordiaux"
+        },
+        {
+          "name": "Dofus Pourpre",
+          "quantity": 1,
+          "note": "Requis pour la progression des Dofus Primordiaux"
+        },
+        {
+          "name": "Dofus Turquoise",
+          "quantity": 1,
+          "note": "Requis pour la progression des Dofus Primordiaux"
+        },
+        {
+          "name": "Dofus Ocre",
+          "quantity": 1,
+          "note": "Requis pour la progression des Dofus Primordiaux"
+        },
+        {
+          "name": "Dofus Ivoire",
+          "quantity": 1,
+          "note": "Requis pour la progression des Dofus Primordiaux"
+        },
+        {
+          "name": "Dofus Ébène",
+          "quantity": 1,
+          "note": "Requis pour la progression des Dofus Primordiaux"
+        }
+      ],
+      "dungeonsRequired": [
+        "Donjon Labo de Brumen",
+        "Donjon Minotot",
+        "Donjon Dragon Cochon",
+        "Donjon Korriandre",
+        "Donjon Comte Harebourg"
+      ],
+      "successes": [
+        "mais-ou-sont-les-dofus",
+        "vert-emeraude",
+        "pourpre-profond",
+        "bleu-turquoise",
+        "ocre-d-ambre",
+        "la-fin-de-l-eternite",
+        "quatre-sur-six",
+        "blanc-ivoire",
+        "noir-d-ebene",
+        "six-sur-six"
+      ]
+    },
+    {
+      "id": "partie-intrigue-monde",
+      "name": "Intrigues du Monde des Douze",
+      "itemsRequired": [
+        {
+          "name": "Relique de la Fratrie",
+          "quantity": 1,
+          "note": "Objet lié aux séries d'investigation sur la Fratrie"
+        }
+      ],
+      "dungeonsRequired": [],
+      "successes": [
+        "le-secret-des-dofus-prologue",
+        "en-attendant-le-printemps",
+        "la-fratrie-des-oublies",
+        "reves-de-dragons"
+      ]
+    },
+    {
+      "id": "partie-tours-du-monde",
+      "name": "Tours du Monde des Donjons",
+      "itemsRequired": [
+        {
+          "name": "Clés de donjons diverses",
+          "quantity": 1,
+          "note": "Nécessaires pour l'exploration en chaîne des donjons"
+        }
+      ],
+      "dungeonsRequired": ["Ensemble des donjons de niveau 1 à 200"],
+      "successes": [
+        "le-tour-du-monde-en-27-donjons",
+        "premiere-edition-de-donjons",
+        "donjons-avances",
+        "donjons-trois-point-cinq",
+        "le-siege-des-donjons",
+        "la-tornade-des-donjons"
+      ]
+    },
+    {
+      "id": "partie-attitudes-et-invocations",
+      "name": "Attitudes et Apprivoisement",
+      "itemsRequired": [],
+      "dungeonsRequired": [],
+      "successes": ["la-bonne-attitude", "faire-le-keke", "l-osmose"]
+    }
+  ],
+  "rewards": {
+    "items": [
+      "Ornement Six sur Six",
+      "Titre : Réunificateur des Dofus",
+      "Dofus Vulbis"
+    ],
+    "effect": "Accomplissement ultime des quêtes principales du Monde des Douze et déblocage de la puissance réunie des six Dofus Primordiaux."
+  },
+  "globalPrerequisites": [
+    "Niveau 1 à 200 requis selon les étapes",
+    "Avoir accompli les prérequis de quêtes régionales (Astrub, Pandala, Alignement, etc.)"
+  ],
+  "objectives": [
+    {
+      "id": "mais-ou-sont-les-dofus",
+      "title": "Mais où sont les Dofus ?",
+      "type": "achievement",
+      "summary": "Initiation à la quête universelle des Dofus auprès de Meriana et des sages du Monde des Douze.",
+      "quests": [
+        {
+          "id": "q-mais-ou-sont-les-dofus-1",
+          "name": "Les Dofus et le Pandawa",
+          "level": 60
+        },
+        {
+          "id": "q-mais-ou-sont-les-dofus-2",
+          "name": "Rumeurs d'œufs de dragons",
+          "level": 80
+        }
+      ]
+    },
+    {
+      "id": "vert-emeraude",
+      "title": "Vert émeraude",
+      "type": "achievement",
+      "summary": "Série de quêtes de traque des trois brigands et d'apaisement du dragon Dark Vlad pour obtenir le Dofus Émeraude.",
+      "quests": [
+        { "id": "q-emeraude-1", "name": "Archi m'a tuer", "level": 100 },
+        { "id": "q-emeraude-2", "name": "Le cœur d'Émeraude", "level": 100 }
+      ]
+    },
+    {
+      "id": "pourpre-profond",
+      "title": "Pourpre profond",
+      "type": "achievement",
+      "summary": "Quête épique du Minotot et du Dragon Cochon pour purifier le Dofus Pourpre.",
+      "quests": [
+        { "id": "q-pourpre-1", "name": "Le livre du Taude", "level": 110 },
+        { "id": "q-pourpre-2", "name": "L'œuf de la discorde", "level": 120 }
+      ]
+    },
+    {
+      "id": "bleu-turquoise",
+      "title": "Bleu turquoise",
+      "type": "achievement",
+      "summary": "Réaliser les épreuves de Bolgrot et des Gardiens de Donjon avec malédictions pour obtenir le Dofus Turquoise.",
+      "quests": [
+        { "id": "q-turquoise-1", "name": "L'âme de Bolgrot", "level": 160 },
+        {
+          "id": "q-turquoise-2",
+          "name": "Les réceptacles de Turquoise",
+          "level": 160
+        }
+      ]
+    },
+    {
+      "id": "ocre-d-ambre",
+      "title": "Ocre d'ambre",
+      "type": "achievement",
+      "summary": "L'Éternelle Moisson d'Otomaï : capturer l'ensemble des monstres et archimonstres du jeu pour le Dofus Ocre.",
+      "quests": [
+        { "id": "q-ocre-eternel", "name": "L'Éternelle Moisson", "level": 180 }
+      ]
+    },
+    {
+      "id": "la-fin-de-l-eternite",
+      "title": "La fin de l'éternité",
+      "type": "achievement",
+      "summary": "Quêtes narratives avancées scellant le lien entre les Dofus et les Gardiens du Temps.",
+      "quests": [
+        {
+          "id": "q-fin-eternite-1",
+          "name": "L'éternité suspendue",
+          "level": 190
+        },
+        {
+          "id": "q-fin-eternite-2",
+          "name": "La fin des illusions",
+          "level": 190
+        }
+      ]
+    },
+    {
+      "id": "quatre-sur-six",
+      "title": "Quatre sur six",
+      "type": "achievement",
+      "summary": "Rassembler les quatre premiers Dofus Primordiaux (Émeraude, Pourpre, Turquoise, Ocre).",
+      "quests": [
+        {
+          "id": "q-quatre-sur-six-1",
+          "name": "La réunion des quatre",
+          "level": 180
+        }
+      ]
+    },
+    {
+      "id": "blanc-ivoire",
+      "title": "Blanc Ivoire",
+      "type": "achievement",
+      "summary": "Longue suite de quêtes exigeant l'alignement 100 pour la purification du Dofus Ivoire d'Dardondakal.",
+      "quests": [
+        { "id": "q-ivoire-1", "name": "L'Ombre et la Lumière", "level": 200 },
+        { "id": "q-ivoire-2", "name": "Le Dofus d'Ivoire", "level": 200 }
+      ]
+    },
+    {
+      "id": "noir-d-ebene",
+      "title": "Noir d'ébène",
+      "type": "achievement",
+      "summary": "Enquête sombre à Bonta et Brâkmar pour arracher le Dofus Ébène au dragon Grougalorasalar.",
+      "quests": [
+        { "id": "q-ebene-1", "name": "L'esprit de noirceur", "level": 200 },
+        { "id": "q-ebene-2", "name": "L'éveil d'Ébène", "level": 200 }
+      ]
+    },
+    {
+      "id": "six-sur-six",
+      "title": "Six sur six",
+      "type": "achievement",
+      "summary": "Succès ultime du jeu : réunir l'intégralité des six Dofus Primordiaux et accomplir la prophétie.",
+      "quests": [
+        {
+          "id": "q-six-sur-six-1",
+          "name": "La Réunification des Dofus",
+          "level": 200
+        }
+      ]
+    },
+    {
+      "id": "le-secret-des-dofus-prologue",
+      "title": "Le secret des Dofus : Prologue",
+      "type": "achievement",
+      "summary": "Premiers pas dans la quête narrative principale guidée par Pandamida et le Conseil d'Astrub.",
+      "quests": [
+        {
+          "id": "q-secret-prologue-1",
+          "name": "Les origines du Monde",
+          "level": 20
+        }
+      ]
+    },
+    {
+      "id": "en-attendant-le-printemps",
+      "title": "En attendant le printemps",
+      "type": "achievement",
+      "summary": "Quêtes de transition continentales préparant les révélations de l'Eliocalypse.",
+      "quests": [
+        {
+          "id": "q-attendant-printemps-1",
+          "name": "Présages et graines",
+          "level": 150
+        }
+      ]
+    },
+    {
+      "id": "la-fratrie-des-oublies",
+      "title": "La Fratrie des Oubliés",
+      "type": "achievement",
+      "summary": "Investiguer sur les demi-dieux oubliés et leurs machinations à travers le Monde des Douze.",
+      "quests": [
+        {
+          "id": "q-fratrie-oublies-1",
+          "name": "Les enfants des dieux",
+          "level": 200
+        },
+        {
+          "id": "q-fratrie-oublies-2",
+          "name": "Complots célestes",
+          "level": 200
+        }
+      ]
+    },
+    {
+      "id": "reves-de-dragons",
+      "title": "Rêves de dragons",
+      "type": "achievement",
+      "summary": "Explorer les songes et la mémoire ancestrale des dragons créateurs du monde.",
+      "quests": [
+        {
+          "id": "q-reves-dragons-1",
+          "name": "Le sommeil du Dragon",
+          "level": 200
+        }
+      ]
+    },
+    {
+      "id": "le-tour-du-monde-en-27-donjons",
+      "title": "Le tour du monde en 27 donjons",
+      "type": "achievement",
+      "summary": "La quête classique de Tour du Monde donnée par Metasse puis Emma Tomypan.",
+      "quests": [
+        { "id": "q-tour-monde-27-1", "name": "Le Tour du Monde", "level": 50 }
+      ]
+    },
+    {
+      "id": "premiere-edition-de-donjons",
+      "title": "Première édition de donjons",
+      "type": "achievement",
+      "summary": "Série de donjons bas niveau pour l'initiation des aventuriers débutants.",
+      "quests": [
+        {
+          "id": "q-premiere-edition-1",
+          "name": "Premiers gardiens",
+          "level": 30
+        }
+      ]
+    },
+    {
+      "id": "donjons-avances",
+      "title": "Donjons avancés",
+      "type": "achievement",
+      "summary": "Traversée des donjons de tranche intermédiaire à travers les îles et plaines.",
+      "quests": [
+        {
+          "id": "q-donjons-avances-1",
+          "name": "Défis intermédiaires",
+          "level": 100
+        }
+      ]
+    },
+    {
+      "id": "donjons-trois-point-cinq",
+      "title": "Donjons trois point cinq",
+      "type": "achievement",
+      "summary": "Nettoyage des donjons de haut niveau sur les continents et archipels principaux.",
+      "quests": [
+        {
+          "id": "q-donjons-35-1",
+          "name": "L'épreuve des gardiens",
+          "level": 150
+        }
+      ]
+    },
+    {
+      "id": "le-siege-des-donjons",
+      "title": "Le siège des donjons",
+      "type": "achievement",
+      "summary": "Vaincre la garnison des gardiens de donjons très haut niveau.",
+      "quests": [
+        { "id": "q-siege-donjons-1", "name": "Siège et conquête", "level": 190 }
+      ]
+    },
+    {
+      "id": "la-tornade-des-donjons",
+      "title": "La tornade des donjons",
+      "type": "achievement",
+      "summary": "L'ultime marathon de donjons niveau 200 à travers l'ensemble des extensions.",
+      "quests": [
+        {
+          "id": "q-tornade-donjons-1",
+          "name": "La Tornade Ultime",
+          "level": 200
+        }
+      ]
+    },
+    {
+      "id": "la-bonne-attitude",
+      "title": "La bonne attitude",
+      "type": "achievement",
+      "summary": "Débloquer un premier ensemble d'attitudes et d'emotes de base à travers le monde.",
+      "quests": [
+        { "id": "q-bonne-attitude-1", "name": "Mimes et gestes", "level": 40 }
+      ]
+    },
+    {
+      "id": "faire-le-keke",
+      "title": "Faire le keke",
+      "type": "achievement",
+      "summary": "Obtenir la collection complète des attitudes de frime et de célébration.",
+      "quests": [
+        { "id": "q-faire-keke-1", "name": "Ménestrel des rues", "level": 100 }
+      ]
+    },
+    {
+      "id": "l-osmose",
+      "title": "L'osmose",
+      "type": "achievement",
+      "summary": "Apprendre le sort d'Apprivoisement de Monture et maîtriser l'élevage des Dragodindes et Volkorne.",
+      "quests": [
+        { "id": "q-osmose-1", "name": "Apprivoisement de monture", "level": 60 }
+      ]
+    }
+  ]
+}

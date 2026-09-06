@@ -1,0 +1,175 @@
+{
+  "id": "archipel-de-vulkania",
+  "name": "Archipel de Vulkania",
+  "category": "zone",
+  "level": 200,
+  "acquisition": "quest",
+  "summary": "Ensemble complet des succès et quêtes de l'événement saisonnier de l'Archipel de Vulkania, couvrant les guerres de clans (Kohrog vs Lantamaï), la chasse aux Srokilles, le safari photo, l'ouverture de la dalle des héros et la confrontation avec Grozilla et Grasmera.",
+  "tags": [
+    "Zone",
+    "Vulkania",
+    "Archipel de Vulkania",
+    "Saisonnier",
+    "Événement",
+    "Grozilla et Grasmera",
+    "Krozoster",
+    "Niveau 1 à 200"
+  ],
+  "source": "https://www.dofuspourlesnoobs.com/vulkania.html",
+  "progression": {
+    "trackId": "zones-dofus",
+    "order": 42
+  },
+  "parts": [
+    {
+      "id": "partie-vulkania-quetes",
+      "name": "Épreuves et Mystères de Vulkania",
+      "itemsRequired": [
+        {
+          "name": "Foulard Kohrog / Lantamaï",
+          "quantity": 1,
+          "note": "Requis pour représenter son clan lors des épreuves"
+        },
+        {
+          "name": "Coquille de Srokille",
+          "quantity": 1,
+          "note": "Pour les échanges de diplômes et la chasse aux trophées"
+        },
+        {
+          "name": "Passeport de Vulkania",
+          "quantity": 1,
+          "note": "Pour la validation des tampons touristiques"
+        }
+      ],
+      "dungeonsRequired": [
+        "Cratère Minus",
+        "Cratère Mopen",
+        "Cratère Neze",
+        "Cratère Monseleya",
+        "Antre de Grozilla et Grasmera"
+      ],
+      "successes": [
+        "kohrog-en-force",
+        "lantamai-en-force",
+        "trophee-de-chasse",
+        "tampon-saisonnier",
+        "l-envers-du-decor",
+        "toutes-les-quetes-vulkania"
+      ]
+    }
+  ],
+  "rewards": {
+    "items": [
+      "Krozoster",
+      "Montilier Kroliméa",
+      "Titre : Héros de Vulkania",
+      "Ornement Vulkanique"
+    ],
+    "effect": "Validation intégrale des succès de l'événement estival de l'Archipel de Vulkania."
+  },
+  "globalPrerequisites": [
+    "Événement actif (Ouverture de Vulkania pendant la période estivale)",
+    "Accès par bateau depuis le Port de Madrestam auprès du Capitaine Ellen"
+  ],
+  "objectives": [
+    {
+      "id": "kohrog-en-force",
+      "title": "Kohrog en force",
+      "type": "achievement",
+      "summary": "Missions d'allégeance et épreuves d'effort auprès du village Kohrog.",
+      "quests": [
+        {
+          "id": "q-vulkania-kohrog-1",
+          "name": "Combats d'été pour un Kohrog",
+          "level": 100
+        },
+        {
+          "id": "q-vulkania-kohrog-2",
+          "name": "Champion de Kohrog",
+          "level": 150
+        }
+      ]
+    },
+    {
+      "id": "lantamai-en-force",
+      "title": "Lantamaï en force",
+      "type": "achievement",
+      "summary": "Missions d'allégeance et épreuves d'agilité auprès du village Lantamaï.",
+      "quests": [
+        {
+          "id": "q-vulkania-lantamai-1",
+          "name": "Combats d'été pour un Lantamaï",
+          "level": 100
+        },
+        {
+          "id": "q-vulkania-lantamai-2",
+          "name": "Champion de Lantamaï",
+          "level": 150
+        }
+      ]
+    },
+    {
+      "id": "trophee-de-chasse",
+      "title": "Trophée de chasse",
+      "type": "achievement",
+      "summary": "Participer au safari photo et traquer l'ensemble des espèces de Srokilles de l'archipel.",
+      "quests": [
+        {
+          "id": "q-vulkania-chasse-1",
+          "name": "Chasse aux Srokilles",
+          "level": 120
+        },
+        { "id": "q-vulkania-chasse-2", "name": "Safari photo", "level": 120 }
+      ]
+    },
+    {
+      "id": "tampon-saisonnier",
+      "title": "Tampon saisonnier",
+      "type": "achievement",
+      "summary": "Effectuer le parcours touristique complet et faire tamponner son passeport auprès de Dina Thor.",
+      "quests": [
+        {
+          "id": "q-vulkania-tampon-1",
+          "name": "Un touriste averti",
+          "level": 50
+        },
+        {
+          "id": "q-vulkania-tampon-2",
+          "name": "Circuit découverte",
+          "level": 80
+        }
+      ]
+    },
+    {
+      "id": "l-envers-du-decor",
+      "title": "L'envers du décor",
+      "type": "achievement",
+      "summary": "Enquête approfondie sur les activités louches du complexe touristique de Charlie Pigent et l'éveil des deux légendes.",
+      "quests": [
+        {
+          "id": "q-vulkania-decor-1",
+          "name": "Sous le sable, la roche",
+          "level": 180
+        },
+        {
+          "id": "q-vulkania-decor-2",
+          "name": "L'éveil des géants",
+          "level": 200
+        }
+      ]
+    },
+    {
+      "id": "toutes-les-quetes-vulkania",
+      "title": "Toutes les quêtes : Vulkania",
+      "type": "achievement",
+      "summary": "Méta-succès récompensant la réalisation de la totalité des quêtes de l'événement saisonnier de Vulkania.",
+      "quests": [
+        {
+          "id": "q-meta-vulkania",
+          "name": "L'esprit de Vulkania",
+          "level": 200
+        }
+      ]
+    }
+  ]
+}

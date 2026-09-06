@@ -1,0 +1,142 @@
+{
+  "id": "ile-d-otomai",
+  "name": "Île d'Otomaï",
+  "category": "zone",
+  "level": 100,
+  "acquisition": "quest",
+  "summary": "Ensemble des succès et quêtes d'exploration sur l'Île d'Otomaï, permettant de découvrir l'écosystème unique créé par le célèbre alchimiste, d'aider ses assistants et d'accéder aux réinitialisations de caractéristiques et aux donjons de l'île.",
+  "tags": [
+    "Zone",
+    "Île d'Otomaï",
+    "Otomaï",
+    "Tourbière",
+    "Niveau 100",
+    "L'éternelle moisson"
+  ],
+  "source": "https://www.dofuspourlesnoobs.com/ile-dotomai.html",
+  "progression": {
+    "trackId": "zones-dofus",
+    "order": 20
+  },
+  "parts": [
+    {
+      "id": "partie-ile-d-otomai",
+      "name": "Succès et Quêtes de l'Île d'Otomaï",
+      "itemsRequired": [
+        {
+          "name": "Gros Boulet",
+          "quantity": 1,
+          "note": "Pour le voyage vers l'île / traversée"
+        },
+        {
+          "name": "Feuille de Bwork",
+          "quantity": 2,
+          "note": "Pour la potion d'accès / bateau d'Otomaï"
+        },
+        {
+          "name": "Fleur de Bwork",
+          "quantity": 2,
+          "note": "Pour la potion d'accès / bateau d'Otomaï"
+        },
+        {
+          "name": "Huile de Sesame",
+          "quantity": 1,
+          "note": "Ressource de quête pour l'équipage"
+        },
+        {
+          "name": "Ressources de monstres de la Tourbière",
+          "quantity": 1,
+          "note": "Variables selon la progression dans la tourbière"
+        }
+      ],
+      "dungeonsRequired": [
+        "Donjon Grotte Hesque",
+        "Donjon Arche de Noawwan",
+        "Donjon Goulet du Rasboul",
+        "Donjon Laboratoire du Tynril",
+        "Donjon Canopy du Kimbo"
+      ],
+      "successes": [
+        "la-grande-kradoc",
+        "haute-voltige",
+        "service-de-depannage",
+        "sacree-tourbiere"
+      ]
+    }
+  ],
+  "rewards": {
+    "items": ["Potions de réinitialisation de sorts / caractéristiques"],
+    "effect": "Déblocage des accès aux donjons d'Otomaï, possibilité de restat auprès d'Otomaï et prérequis pour la quête du Dofus Ocre."
+  },
+  "globalPrerequisites": [
+    "Niveau 100 recommandé (accessible dès le niveau 40 via le Capitaine Kradoc à Sufokia)",
+    "Réaliser la quête du bateau du Capitaine Kradoc pour débloquer l'accès permanent à l'île"
+  ],
+  "objectives": [
+    {
+      "id": "la-grande-kradoc",
+      "title": "La grande kradoc",
+      "type": "achievement",
+      "summary": "Quêtes de voyage et d'assistance au Capitaine Kradoc pour atteindre et sécuriser le mouillage sur l'Île d'Otomaï.",
+      "quests": [
+        {
+          "id": "q-le-bateau-de-kradoc",
+          "name": "Un bon gros boulet",
+          "level": 40
+        },
+        {
+          "id": "q-le-voyage-vers-otomai",
+          "name": "Le piège de la mer",
+          "level": 40
+        }
+      ]
+    },
+    {
+      "id": "haute-voltige",
+      "title": "Haute voltige",
+      "type": "achievement",
+      "summary": "Missions d'exploration et de livraison dans la Canopée et les sommets de l'arbre Hakam.",
+      "quests": [
+        { "id": "q-haute-voltige-1", "name": "L'arbre d'Hakam", "level": 100 },
+        { "id": "q-haute-voltige-2", "name": "Polka Merdedieu", "level": 100 }
+      ]
+    },
+    {
+      "id": "service-de-depannage",
+      "title": "Service de dépannage",
+      "type": "achievement",
+      "summary": "Assister les assistants d'Otomaï dispersés sur l'île dans leurs expériences scientifiques et leurs besoins matériels.",
+      "quests": [
+        { "id": "q-pauvre-kiki", "name": "Pauvre Kiki", "level": 60 },
+        {
+          "id": "q-la-chasse-aux-crocodailles",
+          "name": "La chasse aux Crocodailles",
+          "level": 80
+        },
+        {
+          "id": "q-problèmes-d-alchimiste",
+          "name": "Problèmes d'alchimiste",
+          "level": 100
+        }
+      ]
+    },
+    {
+      "id": "sacree-tourbiere",
+      "title": "Sacrée Tourbière",
+      "type": "achievement",
+      "summary": "Série de quêtes d'exploration et de combats au cœur de la sombre et dangereuse Tourbière sans Fond.",
+      "quests": [
+        {
+          "id": "q-la-tourbiere-sans-fond",
+          "name": "La tourbière sans fond",
+          "level": 140
+        },
+        {
+          "id": "q-les-mysteres-de-la-tourbiere",
+          "name": "Les mystères de la tourbière",
+          "level": 140
+        }
+      ]
+    }
+  ]
+}

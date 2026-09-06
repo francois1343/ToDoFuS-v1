@@ -1,0 +1,149 @@
+{
+  "id": "saharach",
+  "name": "Saharach",
+  "category": "zone",
+  "level": 120,
+  "acquisition": "quest",
+  "summary": "Ensemble des succès et quêtes d'exploration et d'investigation dans les déserts arides de Saharach, retraçant la ruée vers l'Épice, les conflits avec la Corporation Parasol et la découverte de cités perdues.",
+  "tags": [
+    "Zone",
+    "Saharach",
+    "Désert",
+    "Épice",
+    "Corporation",
+    "Niveau 120",
+    "Niveau 180"
+  ],
+  "source": "https://www.dofuspourlesnoobs.com/saharach.html",
+  "progression": {
+    "trackId": "zones-dofus",
+    "order": 26
+  },
+  "parts": [
+    {
+      "id": "partie-saharach",
+      "name": "Succès et Quêtes de Saharach",
+      "itemsRequired": [
+        {
+          "name": "Bouteille d'Eau",
+          "quantity": 1,
+          "note": "Pour la traversée des zones désertiques"
+        },
+        {
+          "name": "Épice brute",
+          "quantity": 5,
+          "note": "Pour les échanges avec la Corporation et les marchands locaux"
+        }
+      ],
+      "dungeonsRequired": [
+        "Donjon Pyramidons",
+        "Donjon Cacterre",
+        "Donjon Ougah",
+        "Donjon Tal Kadi"
+      ],
+      "successes": [
+        "le-plein-d-epice",
+        "prive-de-desert",
+        "au-clair-de-la-dune",
+        "sous-le-soleil-de-saharach",
+        "que-cherche-la-corporation"
+      ]
+    }
+  ],
+  "rewards": {
+    "items": [],
+    "effect": "Déblocage des accès aux pyramides, sous-zones de Saharach et prérequis pour les reliques de l'Épice."
+  },
+  "globalPrerequisites": [
+    "Niveau 120 minimum",
+    "Avoir débloqué l'accès au port de Saharach"
+  ],
+  "objectives": [
+    {
+      "id": "le-plein-d-epice",
+      "title": "Le plein d'Épice",
+      "type": "achievement",
+      "summary": "Quêtes de découverte des gisements d'Épice et de participation à la ruée vers l'or rouge de Saharach.",
+      "quests": [
+        {
+          "id": "q-le-plein-d-epice-1",
+          "name": "La ruée vers l'Épice",
+          "level": 120
+        },
+        { "id": "q-le-plein-d-epice-2", "name": "L'or du désert", "level": 120 }
+      ]
+    },
+    {
+      "id": "prive-de-desert",
+      "title": "Privé de désert",
+      "type": "achievement",
+      "summary": "Résoudre les conflits d'exclusion territoriaux et les embargos imposés sur les caravanes du désert.",
+      "quests": [
+        {
+          "id": "q-prive-de-desert-1",
+          "name": "Caravane bloquée",
+          "level": 120
+        },
+        {
+          "id": "q-prive-de-desert-2",
+          "name": "Passage en force",
+          "level": 130
+        }
+      ]
+    },
+    {
+      "id": "au-clair-de-la-dune",
+      "title": "Au clair de la dune",
+      "type": "achievement",
+      "summary": "Missions nocturnes et mystérieuses au milieu des dunes de sable de la première zone.",
+      "quests": [
+        {
+          "id": "q-au-clair-de-la-dune-1",
+          "name": "Les ombres des sables",
+          "level": 130
+        },
+        {
+          "id": "q-au-clair-de-la-dune-2",
+          "name": "Mirage ou réalité",
+          "level": 140
+        }
+      ]
+    },
+    {
+      "id": "sous-le-soleil-de-saharach",
+      "title": "Sous le soleil de Saharach",
+      "type": "achievement",
+      "summary": "Enquête approfondie sur l'écosystème local et les créatures vivant sous la chaleur accablante du désert.",
+      "quests": [
+        {
+          "id": "q-sous-le-soleil-1",
+          "name": "Chaleur mortelle",
+          "level": 150
+        },
+        {
+          "id": "q-sous-le-soleil-2",
+          "name": "Les épines de la survie",
+          "level": 160
+        }
+      ]
+    },
+    {
+      "id": "que-cherche-la-corporation",
+      "title": "Que cherche la Corporation ?",
+      "type": "achievement",
+      "summary": "Infiltration et découverte des objectifs secrets de la Corporation dans les ruines et pyramides de Saharach.",
+      "quests": [
+        {
+          "id": "q-que-cherche-la-corporation-1",
+          "name": "Sous le masque industriel",
+          "level": 180
+        },
+        {
+          "id": "q-que-cherche-la-corporation-2",
+          "name": "Les secrets de la Pyramide",
+          "level": 180
+        }
+      ]
+    }
+  ]
+}

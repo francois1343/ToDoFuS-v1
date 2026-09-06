@@ -1,0 +1,62 @@
+{
+  "id": "general",
+  "name": "Général",
+  "category": "zone",
+  "level": 200,
+  "acquisition": "quest",
+  "summary": "Succès et quêtes d'introduction et d'étape pour les intrigues temporelles et narratives globales du Monde des Douze.",
+  "tags": ["Zone", "Général", "Éliocalypse", "Temps", "Niveau 200"],
+  "source": "https://www.dofuspourlesnoobs.com/quetes-principales.html",
+  "progression": {
+    "trackId": "zones-dofus",
+    "order": 39
+  },
+  "parts": [
+    {
+      "id": "partie-general",
+      "name": "Succès Généraux",
+      "itemsRequired": [],
+      "dungeonsRequired": [],
+      "successes": ["premier-temps", "second-temps"]
+    }
+  ],
+  "rewards": {
+    "items": ["Ornements et titres temporels"],
+    "effect": "Validation des étapes majeures de la trame narrative globale."
+  },
+  "globalPrerequisites": ["Niveau 200 requis"],
+  "objectives": [
+    {
+      "id": "premier-temps",
+      "title": "Premier temps",
+      "type": "achievement",
+      "summary": "Première phase d'investigation sur les altérations de la ligne temporelle et les présages de l'Éliocalypse.",
+      "quests": [
+        {
+          "id": "q-premier-temps-1",
+          "name": "Les murmures du temps",
+          "level": 200
+        },
+        {
+          "id": "q-premier-temps-2",
+          "name": "La première aiguille",
+          "level": 200
+        }
+      ]
+    },
+    {
+      "id": "second-temps",
+      "title": "Second temps",
+      "type": "achievement",
+      "summary": "Deuxième phase d'affrontements et d'approfondissement des mystères de la trame temporelle.",
+      "quests": [
+        {
+          "id": "q-second-temps-1",
+          "name": "Le balancier du destin",
+          "level": 200
+        },
+        { "id": "q-second-temps-2", "name": "Écho du futur", "level": 200 }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "id": "ile-de-moon",
+  "name": "Île de Moon",
+  "category": "zone",
+  "level": 80,
+  "acquisition": "quest",
+  "summary": "Ensemble des quêtes d'exploration et d'intrigue sur l'Île de Moon, permettant de découvrir le territoire des Kanniboul et des Kokokos, tout en préparant l'accès au fameux singe Moon et à son Dofus.",
+  "tags": ["Zone", "Île de Moon", "Moon", "Kanniboul", "Kokoko", "Niveau 80"],
+  "source": "https://www.dofuspourlesnoobs.com/ile-de-moon.html",
+  "progression": {
+    "trackId": "zones-dofus",
+    "order": 15
+  },
+  "parts": [
+    {
+      "id": "partie-ile-de-moon",
+      "name": "Quêtes de l'Île de Moon",
+      "itemsRequired": [
+        {
+          "name": "Casque d'Ombrage",
+          "quantity": 1,
+          "note": "Pour le vol vers l'Île de Moon"
+        },
+        {
+          "name": "Ailes en bois du Chêne Mou",
+          "quantity": 1,
+          "note": "Pour le vol vers l'Île de Moon"
+        },
+        {
+          "name": "Noix de Kokoko",
+          "quantity": 4,
+          "note": "Pour accéder aux sous-zones de la jungle"
+        },
+        {
+          "name": "Kamas de glace / Peau de Kanniboul",
+          "quantity": 1,
+          "note": "Selon les besoins des quêtes"
+        }
+      ],
+      "dungeonsRequired": [
+        "Donjon Kanigrula / Donjon Moon",
+        "Donjon Kanniboul"
+      ],
+      "successes": ["koko-boy", "monnaie-de-singe"]
+    }
+  ],
+  "rewards": {
+    "items": [],
+    "effect": "Déblocage des accès de la jungle de Moon, accès aux donjons locaux et prérequis pour le Dofus Turquoise / Marteau de Moon."
+  },
+  "globalPrerequisites": [
+    "Niveau 80 recommandé",
+    "Avoir confectionné ou acheté le Casque et les Ailes en bois pour prendre le canon vers l'Île de Moon"
+  ],
+  "objectives": [
+    {
+      "id": "koko-boy",
+      "title": "Koko Boy",
+      "type": "achievement",
+      "summary": "Succès regroupant les quêtes d'exploration, de survie et d'entraide avec les autochtones sur l'Île de Moon.",
+      "quests": [
+        {
+          "id": "q-koko-boy-intro",
+          "name": "Nouveau départ pour Moon",
+          "level": 80
+        },
+        {
+          "id": "q-la-tribu-kanniboul",
+          "name": "La tribu Kanniboul",
+          "level": 80
+        },
+        {
+          "id": "q-recette-de-chaman",
+          "name": "Recette de chaman",
+          "level": 80
+        }
+      ]
+    },
+    {
+      "id": "monnaie-de-singe",
+      "title": "Monnaie de singe",
+      "type": "achievement",
+      "summary": "Succès regroupant les quêtes d'échanges, d'économie locale et de démêlés avec les pirates et singes de l'île.",
+      "quests": [
+        {
+          "id": "q-monnaie-de-singe-1",
+          "name": "Un singe en hiver",
+          "level": 80
+        },
+        {
+          "id": "q-monnaie-de-singe-2",
+          "name": "Trafic d'écorces",
+          "level": 80
+        },
+        {
+          "id": "q-monnaie-de-singe-3",
+          "name": "La fortune du pirate",
+          "level": 80
+        }
+      ]
+    }
+  ]
+}

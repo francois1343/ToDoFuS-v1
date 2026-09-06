@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "zoneId": "foret-abraknydes",
+  "name": "Forêt des Abraknydes",
+  "levelRange": {
+    "min": 30,
+    "max": 100
+  },
+  "tags": [],
+  "quests": [],
+  "successes": [],
+  "resources": [],
+  "activities": [],
+  "successLinks": []
+}

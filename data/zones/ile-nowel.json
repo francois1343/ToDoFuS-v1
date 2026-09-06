@@ -1,0 +1,180 @@
+{
+  "id": "ile-de-nowel",
+  "name": "Île de Nowel",
+  "category": "zone",
+  "level": 200,
+  "acquisition": "quest",
+  "summary": "Ensemble des succès et quêtes de l'événement saisonnier de l'Île de Nowel, regroupant l'ensemble des tranches de niveau (1 à 200), la livraison de cadeaux, les combats contre le Sapik, le Père Fwetar et le Père Nowel, ainsi que l'obtention des ornements et du Montilier Despéro.",
+  "tags": [
+    "Zone",
+    "Île de Nowel",
+    "Saisonnier",
+    "Événement",
+    "Père Nowel",
+    "Niveau 1 à 200"
+  ],
+  "source": "https://www.dofuspourlesnoobs.com/ile-de-nowel.html",
+  "progression": {
+    "trackId": "zones-dofus",
+    "order": 40
+  },
+  "parts": [
+    {
+      "id": "partie-nowel-quetes",
+      "name": "Sourires et Festivités de Nowel",
+      "itemsRequired": [
+        {
+          "name": "Bons points de Nowel",
+          "quantity": 1,
+          "note": "Récompense des quêtes répétables et quotidiennes"
+        },
+        {
+          "name": "Cadeaux de Nowel divers",
+          "quantity": 1,
+          "note": "Requis pour valider les quêtes de livraison et d'échange"
+        }
+      ],
+      "dungeonsRequired": [
+        "Donjon Sapik",
+        "Donjon Caverne de Nowel",
+        "Donjon Maison du Père Nowel"
+      ],
+      "successes": [
+        "sourire-sous-cape",
+        "sourire-jaune",
+        "sourire-aux-eclats",
+        "sourire-en-boite",
+        "a-fond-les-ballons",
+        "un-drole-de-nowel",
+        "des-chants-de-nowel",
+        "toutes-les-quetes-nowel"
+      ]
+    }
+  ],
+  "rewards": {
+    "items": [
+      "Montilier Despéro",
+      "Titre : Joyeux Nowel",
+      "Ornement Sapin de Nowel"
+    ],
+    "effect": "Validation complète de tous les succès de l'événement annuel de l'Île de Nowel."
+  },
+  "globalPrerequisites": [
+    "Événement actif (Ouverture de l'Île de Nowel pendant la période hivernale)",
+    "Accès au port de Madrestam pour prendre le bateau de Hector Tubi"
+  ],
+  "objectives": [
+    {
+      "id": "sourire-sous-cape",
+      "title": "Sourire sous cape",
+      "type": "achievement",
+      "summary": "Accomplir la série de quêtes de la tranche de niveau 1 à 70 sur l'Île de Nowel.",
+      "quests": [
+        { "id": "q-nowel-niv-20", "name": "L'étoile de Nowel", "level": 20 },
+        {
+          "id": "q-nowel-niv-50",
+          "name": "Distribution de joyeusetés",
+          "level": 50
+        }
+      ]
+    },
+    {
+      "id": "sourire-jaune",
+      "title": "Sourire jaune",
+      "type": "achievement",
+      "summary": "Accomplir la série de quêtes de la tranche de niveau 71 à 130.",
+      "quests": [
+        {
+          "id": "q-nowel-niv-80",
+          "name": "Copains comme cochons",
+          "level": 80
+        },
+        {
+          "id": "q-nowel-niv-110",
+          "name": "Métamorphose hivernale",
+          "level": 110
+        }
+      ]
+    },
+    {
+      "id": "sourire-aux-eclats",
+      "title": "Sourire aux éclats",
+      "type": "achievement",
+      "summary": "Accomplir la série de quêtes de la tranche de niveau 131 à 190.",
+      "quests": [
+        {
+          "id": "q-nowel-niv-140",
+          "name": "Les étoiles de la terreur",
+          "level": 140
+        },
+        {
+          "id": "q-nowel-niv-170",
+          "name": "Où sont les cadeaux ?",
+          "level": 170
+        }
+      ]
+    },
+    {
+      "id": "sourire-en-boite",
+      "title": "Sourire en boîte",
+      "type": "achievement",
+      "summary": "Accomplir la série de quêtes de haut niveau (191 à 200) et affronter le Père Nowel dans son atelier.",
+      "quests": [
+        {
+          "id": "q-nowel-niv-200-1",
+          "name": "Un réveillon mouvementé",
+          "level": 200
+        },
+        {
+          "id": "q-nowel-niv-200-2",
+          "name": "Le repos du Père Nowel",
+          "level": 200
+        }
+      ]
+    },
+    {
+      "id": "a-fond-les-ballons",
+      "title": "À fond les ballons",
+      "type": "achievement",
+      "summary": "Réaliser les épreuves de rapidité et d'agilité sur les pistes glissantes de l'Île de Nowel.",
+      "quests": [
+        {
+          "id": "q-nowel-ballons-1",
+          "name": "La course aux cadeaux",
+          "level": 100
+        }
+      ]
+    },
+    {
+      "id": "un-drole-de-nowel",
+      "title": "Un drôle de Nowel",
+      "type": "achievement",
+      "summary": "Enquêter sur les mystères et les farces des lutins malicieux au cœur de la forêt de Nowel.",
+      "quests": [
+        {
+          "id": "q-drole-nowel-1",
+          "name": "Lutineries et magouilles",
+          "level": 120
+        }
+      ]
+    },
+    {
+      "id": "des-chants-de-nowel",
+      "title": "Des chants de Nowel",
+      "type": "achievement",
+      "summary": "Participer aux festivités chorales et chanter les cantiques traditionnels de Nowel.",
+      "quests": [
+        { "id": "q-chants-nowel-1", "name": "Chorale de la taïga", "level": 80 }
+      ]
+    },
+    {
+      "id": "toutes-les-quetes-nowel",
+      "title": "Toutes les quêtes : Nowel",
+      "type": "achievement",
+      "summary": "Méta-succès récompensant la réalisation de la totalité des quêtes de l'événement de Nowel.",
+      "quests": [
+        { "id": "q-meta-nowel", "name": "L'esprit de Nowel", "level": 200 }
+      ]
+    }
+  ]
+}

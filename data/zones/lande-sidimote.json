@@ -1,0 +1,134 @@
+{
+  "id": "sidimote",
+  "name": "Landes de Sidimote",
+  "category": "zone",
+  "level": 140,
+  "acquisition": "quest",
+  "summary": "Ensemble des succès et quêtes d'exploration des désolations de Sidimote, couvrant les terres calcinées autour de Brâkmar, la cité maudite de Gisgoul, les cimetières obscurs et le territoire des Crocodailles et Hyènes.",
+  "tags": [
+    "Zone",
+    "Sidimote",
+    "Brâkmar",
+    "Gisgoul",
+    "Vampyres",
+    "Niveau 140",
+    "Niveau 160"
+  ],
+  "source": "https://www.dofuspourlesnoobs.com/les-landes-de-sidimote.html",
+  "progression": {
+    "trackId": "zones-dofus",
+    "order": 27
+  },
+  "parts": [
+    {
+      "id": "partie-sidimote",
+      "name": "Succès et Quêtes de Sidimote",
+      "itemsRequired": [
+        {
+          "name": "Bière de Brâkmar",
+          "quantity": 1,
+          "note": "Pour diverses quêtes de taverne et d'informations"
+        },
+        {
+          "name": "Poudre de Perlinpinpin",
+          "quantity": 1,
+          "note": "Ressource pour la neutralisation des spores"
+        },
+        {
+          "name": "Sang de Bouftou",
+          "quantity": 5,
+          "note": "Pour les rituels et échanges locaux"
+        }
+      ],
+      "dungeonsRequired": [
+        "Donjon Tanière du Meulou",
+        "Donjon Manoir des gorithmes",
+        "Donjon Caverne des Fungus",
+        "Donjon Rituel de Gisgoul"
+      ],
+      "successes": [
+        "les-landes-mortes",
+        "hurlements-de-rire",
+        "le-double-effet-gisgoul",
+        "les-spores-c-est-la-sante",
+        "vampyre-vous-avez-dit-vampyre"
+      ]
+    }
+  ],
+  "rewards": {
+    "items": [],
+    "effect": "Déblocage des accès aux donjons sombres de Sidimote et progression dans les prérequis régionaux de Brâkmar."
+  },
+  "globalPrerequisites": [
+    "Niveau 140 recommandé",
+    "Accès libre aux zones entourant la cité de Brâkmar"
+  ],
+  "objectives": [
+    {
+      "id": "les-landes-mortes",
+      "title": "Les landes mortes",
+      "type": "achievement",
+      "summary": "Quêtes d'exploration et de repérage à travers les paysages dévastés et rocailleux de Sidimote.",
+      "quests": [
+        { "id": "q-les-landes-mortes-1", "name": "Terre brûlée", "level": 140 },
+        {
+          "id": "q-les-landes-mortes-2",
+          "name": "Sous la cendre",
+          "level": 140
+        }
+      ]
+    },
+    {
+      "id": "hurlements-de-rire",
+      "title": "Hurlements de rire",
+      "type": "achievement",
+      "summary": "Affronter la menace des Hyènes sauvages et des créatures ricaneuses de la région.",
+      "quests": [
+        {
+          "id": "q-hurlements-1",
+          "name": "Rira bien qui rira le dernier",
+          "level": 140
+        },
+        { "id": "q-hurlements-2", "name": "Une meute sans pitié", "level": 150 }
+      ]
+    },
+    {
+      "id": "le-double-effet-gisgoul",
+      "title": "Le double effet Gisgoul",
+      "type": "achievement",
+      "summary": "Enquête sur les ruines maudites du village de Gisgoul et ses manifestations démoniaques.",
+      "quests": [
+        { "id": "q-gisgoul-1", "name": "Les vestiges du passé", "level": 150 },
+        { "id": "q-gisgoul-2", "name": "Retour à Gisgoul", "level": 160 }
+      ]
+    },
+    {
+      "id": "les-spores-c-est-la-sante",
+      "title": "Les spores, c'est la santé",
+      "type": "achievement",
+      "summary": "Neutraliser la prolifération toxique des champignons et spores des grottes Fungus.",
+      "quests": [
+        { "id": "q-spores-1", "name": "Air toxique", "level": 150 },
+        {
+          "id": "q-spores-2",
+          "name": "Chassé-croisé dans la caverne",
+          "level": 160
+        }
+      ]
+    },
+    {
+      "id": "vampyre-vous-avez-dit-vampyre",
+      "title": "Vampyre, vous avez dit Vampyre ?",
+      "type": "achievement",
+      "summary": "Traquer les créatures de la nuit et déjouer les complots de la malédiction vampyrique.",
+      "quests": [
+        { "id": "q-vampyre-1", "name": "Peur sur le cimetière", "level": 160 },
+        {
+          "id": "q-vampyre-2",
+          "name": "Une quenotte contre la nuit",
+          "level": 160
+        }
+      ]
+    }
+  ]
+}

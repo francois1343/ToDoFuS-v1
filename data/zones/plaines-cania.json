@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "zoneId": "plaines-cania",
+  "name": "Plaines de Cania",
+  "levelRange": { "min": 30, "max": 150 },
+  "tags": ["pvm"],
+  "objectives": [],
+  "quests": [],
+  "successes": [],
+  "resources": [],
+  "activities": [],
+  "successLinks": []
+}

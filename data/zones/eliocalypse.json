@@ -1,0 +1,210 @@
+{
+  "id": "eliocalypse",
+  "name": "Eliocalypse",
+  "category": "zone",
+  "level": 200,
+  "acquisition": "quest",
+  "summary": "Ensemble complet des succès et quêtes de la trame narrative majeure de l'Eliocalypse, traversant les failles temporelles, les quatre cavaliers, les visions d'apocalypse et le destin des Eliotropes et du Monde des Douze.",
+  "tags": [
+    "Zone",
+    "Eliocalypse",
+    "Cavaliers",
+    "Résonance",
+    "Résilience",
+    "Réminiscence",
+    "Temporalité",
+    "Niveau 200"
+  ],
+  "source": "https://www.dofuspourlesnoobs.com/eliocalypse.html",
+  "progression": {
+    "trackId": "zones-dofus",
+    "order": 30
+  },
+  "parts": [
+    {
+      "id": "partie-eliocalypse",
+      "name": "Succès et Quêtes de l'Eliocalypse",
+      "itemsRequired": [
+        {
+          "name": "Poudre d'Anomalie Temporal",
+          "quantity": 1,
+          "note": "Pour la stabilisation des failles temporelles"
+        },
+        {
+          "name": "Ressources des Cavaliers de l'Eliocalypse",
+          "quantity": 1,
+          "note": "Nécessaires lors des rituels et des confrontations majeures"
+        }
+      ],
+      "dungeonsRequired": [
+        "Donjon Tanière de la Guerre",
+        "Donjon Servitude",
+        "Donjon Misère",
+        "Donjon Corruption"
+      ],
+      "successes": [
+        "je-suis-malade-completement-malade",
+        "la-guerre-eternelle",
+        "prisonniers-de-la-mer",
+        "jugement-dernier",
+        "la-chevauchee-fantastique",
+        "l-avenir-du-futur",
+        "eliocalypse-resonance",
+        "eliocalypse-resilience",
+        "eliocalypse-reminiscence"
+      ]
+    }
+  ],
+  "rewards": {
+    "items": ["Ornements et titres exclusifs de l'Eliocalypse"],
+    "effect": "Déblocage des accès aux dimensions temporelles de l'Eliocalypse et accomplissement du chapitre narratif principal."
+  },
+  "globalPrerequisites": [
+    "Niveau 200 requis",
+    "Avoir progressé dans les trames de la Fratrie des Oubliés et des Anomalies Temporelles"
+  ],
+  "objectives": [
+    {
+      "id": "je-suis-malade-completement-malade",
+      "title": "Je suis malade, complètement malade",
+      "type": "achievement",
+      "summary": "Quêtes d'investigation sur la propagation du Mal de la Pandémie et l'influence de la Corruption.",
+      "quests": [
+        {
+          "id": "q-je-suis-malade-1",
+          "name": "Contagion temporelle",
+          "level": 200
+        },
+        {
+          "id": "q-je-suis-malade-2",
+          "name": "Symptômes apocalyptiques",
+          "level": 200
+        }
+      ]
+    },
+    {
+      "id": "la-guerre-eternelle",
+      "title": "La guerre éternelle",
+      "type": "achievement",
+      "summary": "Série de quêtes affrontant le domaine de la Guerre et ses armées d'invasion.",
+      "quests": [
+        {
+          "id": "q-guerre-eternelle-1",
+          "name": "Le choc des armées",
+          "level": 200
+        },
+        {
+          "id": "q-guerre-eternelle-2",
+          "name": "L'étendard sanglant",
+          "level": 200
+        }
+      ]
+    },
+    {
+      "id": "prisonniers-de-la-mer",
+      "title": "Prisonniers de la mer",
+      "type": "achievement",
+      "summary": "Missions d'exploration et de libération dans les zones côtières touchées par les perturbations temporelles.",
+      "quests": [
+        {
+          "id": "q-prisonniers-mer-1",
+          "name": "Les vagues du passé",
+          "level": 200
+        },
+        {
+          "id": "q-prisonniers-mer-2",
+          "name": "Naufrage dans le temps",
+          "level": 200
+        }
+      ]
+    },
+    {
+      "id": "jugement-dernier",
+      "title": "Jugement dernier",
+      "type": "achievement",
+      "summary": "Confrontation finale et révélations sur le fléau de Servitude et la corruption des âmes.",
+      "quests": [
+        {
+          "id": "q-jugement-dernier-1",
+          "name": "La balance et le glaive",
+          "level": 200
+        },
+        {
+          "id": "q-jugement-dernier-2",
+          "name": "Le verdict du temps",
+          "level": 200
+        }
+      ]
+    },
+    {
+      "id": "la-chevauchee-fantastique",
+      "title": "La chevauchée fantastique",
+      "type": "achievement",
+      "summary": "Traquer les quatre Cavaliers à travers les différentes époques et failles ouvertes.",
+      "quests": [
+        {
+          "id": "q-chevauchee-1",
+          "name": "Dans le sillage des destriers",
+          "level": 200
+        },
+        {
+          "id": "q-chevauchee-2",
+          "name": "Poursuite au-delà du temps",
+          "level": 200
+        }
+      ]
+    },
+    {
+      "id": "l-avenir-du-futur",
+      "title": "L'avenir du futur",
+      "type": "achievement",
+      "summary": "Exploration des visions prospectives et des lignes temporelles alternatives menacees par la destruction.",
+      "quests": [
+        {
+          "id": "q-avenir-futur-1",
+          "name": "Un lendemain incertain",
+          "level": 200
+        },
+        { "id": "q-avenir-futur-2", "name": "Effacer la fin", "level": 200 }
+      ]
+    },
+    {
+      "id": "eliocalypse-resonance",
+      "title": "Eliocalypse : Résonance",
+      "type": "achievement",
+      "summary": "Premier chapitre majeur de l'Eliocalypse introduisant les perturbations temporelles et les Anomalies.",
+      "quests": [
+        { "id": "q-resonance-1", "name": "Échos du futur", "level": 200 },
+        { "id": "q-resonance-2", "name": "Ondes de choc", "level": 200 }
+      ]
+    },
+    {
+      "id": "eliocalypse-resilience",
+      "title": "Eliocalypse : Résilience",
+      "type": "achievement",
+      "summary": "Deuxième chapitre majeur centré sur la résistance face à l'incursion des Cavaliers.",
+      "quests": [
+        { "id": "q-resilience-1", "name": "Tenir le front", "level": 200 },
+        {
+          "id": "q-resilience-2",
+          "name": "L'espoir parmi les ruines",
+          "level": 200
+        }
+      ]
+    },
+    {
+      "id": "eliocalypse-reminiscence",
+      "title": "Eliocalypse : Réminiscence",
+      "type": "achievement",
+      "summary": "Troisième et ultime chapitre concluant l'arc de l'Eliocalypse et scellant le destin du Monde des Douze.",
+      "quests": [
+        {
+          "id": "q-reminiscence-1",
+          "name": "Souvenirs de l'apocalypse",
+          "level": 200
+        },
+        { "id": "q-reminiscence-2", "name": "Le cycle éternel", "level": 200 }
+      ]
+    }
+  ]
+}

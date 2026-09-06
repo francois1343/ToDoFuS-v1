@@ -1,0 +1,60 @@
+{
+  "id": "cauchemar-des-ravageurs",
+  "name": "Cauchemar des Ravageurs",
+  "category": "zone",
+  "level": 200,
+  "acquisition": "quest",
+  "summary": "Succès et quêtes d'exploration, de cauchemars et d'affrontements au cœur du Cauchemar des Ravageurs, zoneonirique et corrompue liée aux manifestations démoniaques.",
+  "tags": [
+    "Zone",
+    "Cauchemar des Ravageurs",
+    "Ravageurs",
+    "Onirique",
+    "Niveau 200"
+  ],
+  "source": "https://www.dofuspourlesnoobs.com/cauchemar-des-ravageurs.html",
+  "progression": {
+    "trackId": "zones-dofus",
+    "order": 32
+  },
+  "parts": [
+    {
+      "id": "partie-cauchemar-des-ravageurs",
+      "name": "Succès et Quêtes du Cauchemar des Ravageurs",
+      "itemsRequired": [
+        {
+          "name": "Essence de Cauchemar",
+          "quantity": 1,
+          "note": "Ressource requise pour la progression rituelle et l'accès aux zones altérées"
+        }
+      ],
+      "dungeonsRequired": ["Donjon Cauchemar des Ravageurs"],
+      "successes": ["demons-et-merveilles"]
+    }
+  ],
+  "rewards": {
+    "items": ["Ornaments et titres du Cauchemar"],
+    "effect": "Déblocage des accès d'exploration du Cauchemar des Ravageurs et succès de zone."
+  },
+  "globalPrerequisites": ["Niveau 200 requis"],
+  "objectives": [
+    {
+      "id": "demons-et-merveilles",
+      "title": "Démons et merveilles",
+      "type": "achievement",
+      "summary": "Ensemble de quêtes traversant les illusions, merveilles macabres et entités démoniaques peuplant la zone.",
+      "quests": [
+        {
+          "id": "q-demons-et-merveilles-1",
+          "name": "Au cœur du cauchemar",
+          "level": 200
+        },
+        {
+          "id": "q-demons-et-merveilles-2",
+          "name": "Merveilles trompeuses",
+          "level": 200
+        }
+      ]
+    }
+  ]
+}

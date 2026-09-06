@@ -53,7 +53,7 @@ const moduleBlueprints = {
     title: "Zones et parcours",
     progressUnit: "objectifs terminés",
     searchPlaceholder: "Rechercher une zone ou un objectif…",
-    categories: ["dungeon", "quest", "monster", "objective"],
+    categories: ["dungeon", "quest", "monster", "achievement", "resource", "activity", "objective"],
     notice: "Les cartes viennent des fichiers zones.json, rush-starter.json et parcours.json ; leurs objectifs peuvent être ajoutés progressivement.",
   },
   lore: {

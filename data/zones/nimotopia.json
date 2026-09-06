@@ -1,0 +1,73 @@
+{
+  "id": "nimotopia",
+  "name": "Nimotopia",
+  "category": "zone",
+  "level": 170,
+  "acquisition": "quest",
+  "summary": "Ensemble des quêtes d'exploration et de protection de la faune sauvage sur l'île refuge de Nimotopia, dédiée à la préservation des espèces menacées du Monde des Douze.",
+  "tags": [
+    "Zone",
+    "Nimotopia",
+    "Protection animale",
+    "Niveau 170",
+    "Chasseurs"
+  ],
+  "source": "https://www.dofuspourlesnoobs.com/nimotopia.html",
+  "progression": {
+    "trackId": "zones-dofus",
+    "order": 28
+  },
+  "parts": [
+    {
+      "id": "partie-nimotopia",
+      "name": "Succès et Quêtes de Nimotopia",
+      "itemsRequired": [
+        {
+          "name": "Filet de capture",
+          "quantity": 1,
+          "note": "Pour la sécurisation des spécimens rares"
+        },
+        {
+          "name": "Ressources de créatures locales",
+          "quantity": 1,
+          "note": "Variables selon les missions de soins et de protection"
+        }
+      ],
+      "dungeonsRequired": ["Donjon Tanière de la Gargouille"],
+      "successes": ["la-chasse-aux-chasseurs"]
+    }
+  ],
+  "rewards": {
+    "items": [],
+    "effect": "Déblocage des succès d'exploration de Nimotopia et reconnaissance auprès du refuge animalier."
+  },
+  "globalPrerequisites": [
+    "Niveau 170 recommandé",
+    "Avoir accès au bateau/transport à destination de l'île de Nimotopia"
+  ],
+  "objectives": [
+    {
+      "id": "la-chasse-aux-chasseurs",
+      "title": "La chasse aux chasseurs",
+      "type": "achievement",
+      "summary": "Déjouer les pièges des braconniers et protéger la faune protégée du refuge contre les menaces d'exploitation commerciale.",
+      "quests": [
+        {
+          "id": "q-la-chasse-aux-chasseurs-1",
+          "name": "Avis de recherche : Braconniers",
+          "level": 170
+        },
+        {
+          "id": "q-la-chasse-aux-chasseurs-2",
+          "name": "Sauvetage au refuge",
+          "level": 170
+        },
+        {
+          "id": "q-la-chasse-aux-chasseurs-3",
+          "name": "Pièges et contre-attaque",
+          "level": 170
+        }
+      ]
+    }
+  ]
+}

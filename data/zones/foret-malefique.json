@@ -1,0 +1,130 @@
+{
+  "id": "foret-malefique",
+  "name": "Forêt Maléfique",
+  "category": "zone",
+  "level": 150,
+  "acquisition": "quest",
+  "summary": "Ensemble complet des succès, quêtes et secrets de la Forêt Maléfique, englobant la traversée du Dédale du Dark Vlad, la traque d'Hell Mina et la découverte des mystères de la forêt.",
+  "tags": [
+    "Zone",
+    "Forêt Maléfique",
+    "Dark Vlad",
+    "Hell Mina",
+    "Malterego",
+    "Niveau 150"
+  ],
+  "source": "https://www.dofuspourlesnoobs.com/quetes-de-la-foret-malefique.html",
+  "progression": {
+    "trackId": "zones-dofus",
+    "order": 18
+  },
+  "parts": [
+    {
+      "id": "partie-foret-malefique",
+      "name": "Succès et Quêtes de la Forêt Maléfique",
+      "itemsRequired": [
+        {
+          "name": "Chaînes Brisées",
+          "quantity": 1,
+          "note": "Ressource requise pour la progression des quêtes"
+        },
+        { "name": "Ebonite", "quantity": 1, "note": "Composant de quête" },
+        {
+          "name": "Scalp de Bwork Archer",
+          "quantity": 1,
+          "note": "Objet de quête requis"
+        },
+        {
+          "name": "Filet de capture universel",
+          "quantity": 1,
+          "note": "Pour la capture de créatures lors des quêtes"
+        }
+      ],
+      "dungeonsRequired": ["Donjon Tertre du long sommeil (Hell Mina)"],
+      "successes": [
+        "toutes-les-quetes-de-la-foret-malefique",
+        "cherche-et-trouve",
+        "mortelle-randonnee"
+      ]
+    }
+  ],
+  "rewards": {
+    "items": ["Pétale de Malter"],
+    "effect": "Accès permanent au cœur de la Forêt Maléfique et déblocage des secrets de la zone."
+  },
+  "globalPrerequisites": [
+    "Niveau 150 recommandé",
+    "Posséder le sort Apprivoisement de monture"
+  ],
+  "objectives": [
+    {
+      "id": "toutes-les-quetes-de-la-foret-malefique",
+      "title": "Toutes les quêtes de la Forêt Maléfique",
+      "type": "achievement",
+      "summary": "Accomplir l'intégralité des séries de quêtes de la zone de la Forêt Maléfique.",
+      "quests": [
+        {
+          "id": "q-un-pendule-pour-guider-ses-pas",
+          "name": "Un pendule pour guider ses pas",
+          "level": 150
+        },
+        {
+          "id": "q-arrete-la-si-tu-peux",
+          "name": "Arrête-la si tu peux",
+          "level": 150
+        },
+        {
+          "id": "q-le-mal-qui-fait-bien",
+          "name": "Le mal qui fait bien",
+          "level": 150
+        },
+        {
+          "id": "q-la-campagne-hallucinee",
+          "name": "La campagne hallucinée",
+          "level": 150
+        }
+      ]
+    },
+    {
+      "id": "cherche-et-trouve",
+      "title": "Cherche et trouve",
+      "type": "achievement",
+      "summary": "Découvrir et résoudre l'ensemble des 7 mystères et secrets dissimulés dans les Profondeurs de la Forêt Maléfique.",
+      "quests": [
+        {
+          "id": "q-les-mysteres-de-la-foret",
+          "name": "Les mystères de la forêt",
+          "level": 150
+        }
+      ]
+    },
+    {
+      "id": "mortelle-randonnee",
+      "title": "Mortelle randonnée",
+      "type": "achievement",
+      "summary": "Série de quêtes d'exploration et de survie à travers le dédale obscur et les menaces de la forêt.",
+      "quests": [
+        {
+          "id": "q-un-pendule-pour-guider-ses-pas",
+          "name": "Un pendule pour guider ses pas",
+          "level": 150
+        },
+        {
+          "id": "q-arrete-la-si-tu-peux",
+          "name": "Arrête-la si tu peux",
+          "level": 150
+        },
+        {
+          "id": "q-le-mal-qui-fait-bien",
+          "name": "Le mal qui fait bien",
+          "level": 150
+        },
+        {
+          "id": "q-la-campagne-hallucinee",
+          "name": "La campagne hallucinée",
+          "level": 150
+        }
+      ]
+    }
+  ]
+}

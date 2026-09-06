@@ -1,0 +1,555 @@
+{
+  "id": "dimensions-divines",
+  "name": "Dimensions Divines",
+  "category": "zone",
+  "level": 200,
+  "acquisition": "quest",
+  "summary": "Ensemble complet des succès et quêtes des Dimensions Divines (Enutrosor, Srambad, Xélorium, Ecaflipus et Osavora) ainsi que la quête trans-dimensionnelle du Dofus des Veilleurs et le Dofus Nébuleux.",
+  "tags": [
+    "Zone",
+    "Dimensions Divines",
+    "Enutrosor",
+    "Srambad",
+    "Xélorium",
+    "Ecaflipus",
+    "Osavora",
+    "Dofus des Veilleurs",
+    "Dofus Nébuleux",
+    "Niveau 200"
+  ],
+  "source": "https://www.dofuspourlesnoobs.com/dimensions-divines.html",
+  "progression": {
+    "trackId": "zones-dofus",
+    "order": 25
+  },
+  "parts": [
+    {
+      "id": "partie-dofus-des-veilleurs",
+      "name": "Dofus des Veilleurs",
+      "itemsRequired": [
+        {
+          "name": "Orbe d'ouverture dimensionnel",
+          "quantity": 1,
+          "note": "Requis pour traverser les portails divins"
+        }
+      ],
+      "dungeonsRequired": [
+        "Donjon Mallefisk",
+        "Donjon Capitaine Amakna",
+        "Donjon Reine des Voleurs"
+      ],
+      "successes": [
+        "d-un-monde-a-l-autre",
+        "aux-portes-de-la-nuit",
+        "generations-futures",
+        "par-dela-les-apparences"
+      ]
+    },
+    {
+      "id": "partie-enutrosor",
+      "name": "Enutrosor",
+      "itemsRequired": [
+        {
+          "name": "Orbite d'Enutrosor",
+          "quantity": 1,
+          "note": "Objet de quête d'accès"
+        }
+      ],
+      "dungeonsRequired": [
+        "Donjon Ringomand",
+        "Donjon Phossile",
+        "Donjon Mallefisk"
+      ],
+      "successes": [
+        "meme-pas-malle",
+        "apres-les-phorreurs-le-reconfort",
+        "le-roi-et-moi",
+        "raisons-de-retraite"
+      ]
+    },
+    {
+      "id": "partie-srambad",
+      "name": "Srambad",
+      "itemsRequired": [
+        {
+          "name": "Jeton de Srambad",
+          "quantity": 1,
+          "note": "Requis pour la pègre de la dimension"
+        }
+      ],
+      "dungeonsRequired": [
+        "Donjon Toxoliath",
+        "Donjon Capitaine Amakna",
+        "Donjon Reine des Voleurs"
+      ],
+      "successes": [
+        "sauve-par-le-gong",
+        "crache-ton-venin",
+        "le-jeu-du-trone",
+        "les-voleurs-de-srambad"
+      ]
+    },
+    {
+      "id": "partie-xelorium",
+      "name": "Xélorium",
+      "itemsRequired": [
+        {
+          "name": "Sable du temps",
+          "quantity": 1,
+          "note": "Ressource de traversée temporelle"
+        }
+      ],
+      "dungeonsRequired": ["Donjon XLII", "Donjon Fraktale", "Donjon Vortex"],
+      "successes": [
+        "les-temps-qui-courent",
+        "carpe-diem",
+        "les-puits-du-fou",
+        "moments-d-egarement",
+        "je-revais-d-un-autre-monde"
+      ]
+    },
+    {
+      "id": "partie-ecaflipus",
+      "name": "Ecaflipus",
+      "itemsRequired": [
+        {
+          "name": "Dés magiques d'Ecaflip",
+          "quantity": 1,
+          "note": "Pour les paris et épreuves de la dimension"
+        }
+      ],
+      "dungeonsRequired": [
+        "Donjon Ush Galesh",
+        "Donjon Challocat",
+        "Donjon Meulou"
+      ],
+      "successes": [
+        "errances-felines",
+        "tu-peux-toujours-te-gratter",
+        "angoraphobie",
+        "on-va-tout-defausser"
+      ]
+    },
+    {
+      "id": "partie-osavora",
+      "name": "Osavora",
+      "itemsRequired": [
+        {
+          "name": "Totem Osamodas",
+          "quantity": 1,
+          "note": "Ressource rituelle de faune sauvage"
+        }
+      ],
+      "dungeonsRequired": ["Donjon Osavora"],
+      "successes": [
+        "question-d-equilibre",
+        "on-se-fait-la-bzzzbz",
+        "le-gout-de-la-vie-sauvage",
+        "la-part-du-rhoarim",
+        "a-la-petite-semaine"
+      ]
+    }
+  ],
+  "rewards": {
+    "items": [
+      "Dofus des Veilleurs",
+      "Dofus Nébuleux",
+      "Ornements des Dimensions Divines"
+    ],
+    "effect": "Octroie les pouvoirs passifs des Dofus des Veilleurs et Nébuleux, débloque les accès permanents aux Sanctuaires Divins."
+  },
+  "globalPrerequisites": [
+    "Niveau 100 à 200 selon les sous-zones",
+    "Accès aux Portails Dimensionnels via la Tour des Voyageurs"
+  ],
+  "objectives": [
+    {
+      "id": "d-un-monde-a-l-autre",
+      "title": "D'un monde à l'autre",
+      "type": "achievement",
+      "summary": "Initiation aux voyages interdimensionnels et première étape de la quête du Dofus des Veilleurs.",
+      "quests": [
+        {
+          "id": "q-monde-autre-1",
+          "name": "Portails et voyageurs",
+          "level": 160
+        },
+        {
+          "id": "q-monde-autre-2",
+          "name": "Les failles de l'Espace-Temps",
+          "level": 160
+        }
+      ]
+    },
+    {
+      "id": "aux-portes-de-la-nuit",
+      "title": "Aux portes de la nuit",
+      "type": "achievement",
+      "summary": "Exploration des strates obscures des dimensions divines pour la quête du Dofus des Veilleurs.",
+      "quests": [
+        {
+          "id": "q-portes-nuit-1",
+          "name": "Ténèbres dimensionnelles",
+          "level": 180
+        },
+        {
+          "id": "q-portes-nuit-2",
+          "name": "Le crépuscule des dieux",
+          "level": 180
+        }
+      ]
+    },
+    {
+      "id": "generations-futures",
+      "title": "Générations futures",
+      "type": "achievement",
+      "summary": "Découverte des visions du futur et des lignes temporelles croisées au cœur des dimensions.",
+      "quests": [
+        {
+          "id": "q-generations-futures-1",
+          "name": "Les fils du destin",
+          "level": 200
+        },
+        {
+          "id": "q-generations-futures-2",
+          "name": "Heritage divin",
+          "level": 200
+        }
+      ]
+    },
+    {
+      "id": "par-dela-les-apparences",
+      "title": "Par-delà les apparences",
+      "type": "achievement",
+      "summary": "Dénouement de la série de quêtes du Dofus des Veilleurs et révélation des secrets des Voyageurs.",
+      "quests": [
+        {
+          "id": "q-par-dela-apparences-1",
+          "name": "La vérité en face",
+          "level": 200
+        },
+        {
+          "id": "q-par-dela-apparences-2",
+          "name": "L’éveil du Veilleur",
+          "level": 200
+        }
+      ]
+    },
+    {
+      "id": "meme-pas-malle",
+      "title": "Même pas malle",
+      "type": "achievement",
+      "summary": "Première série de quêtes au cœur du trésor d'Enutrosor et de la cité du Dieu Enutrof.",
+      "quests": [
+        {
+          "id": "q-meme-pas-malle-1",
+          "name": "L'or des coffres",
+          "level": 130
+        },
+        {
+          "id": "q-meme-pas-malle-2",
+          "name": "Protégez le magot",
+          "level": 130
+        }
+      ]
+    },
+    {
+      "id": "apres-les-phorreurs-le-reconfort",
+      "title": "Après les phorreurs, le réconfort",
+      "type": "achievement",
+      "summary": "Quêtes de cohabitation avec la faune sous-terraine de Phorreurs et prospection minérale.",
+      "quests": [
+        {
+          "id": "q-phorreurs-reconfort-1",
+          "name": "Chasseurs de pépites",
+          "level": 160
+        },
+        {
+          "id": "q-phorreurs-reconfort-2",
+          "name": "Dressage de Phorreur",
+          "level": 160
+        }
+      ]
+    },
+    {
+      "id": "le-roi-et-moi",
+      "title": "Le roi et moi",
+      "type": "achievement",
+      "summary": "Intrigues royales et rencontres avec la cour dorée d'Enutrosor.",
+      "quests": [
+        { "id": "q-roi-et-moi-1", "name": "Audiences dorées", "level": 200 },
+        { "id": "q-roi-et-moi-2", "name": "Taxe d'imposition", "level": 200 }
+      ]
+    },
+    {
+      "id": "raisons-de-retraite",
+      "title": "Raisons de retraite",
+      "type": "achievement",
+      "summary": "Finaliser les affaires bancaires et assurer la garde du coffre-fort ultime d'Enutrof.",
+      "quests": [
+        {
+          "id": "q-raisons-retraite-1",
+          "name": "Compte d'épargne",
+          "level": 200
+        },
+        {
+          "id": "q-raisons-retraite-2",
+          "name": "Solde de tout compte",
+          "level": 200
+        }
+      ]
+    },
+    {
+      "id": "sauve-par-le-gong",
+      "title": "Sauvé par le gong",
+      "type": "achievement",
+      "summary": "Survivre aux ruelles sombres et aux pièges mortels de la dimension de Srambad.",
+      "quests": [
+        {
+          "id": "q-sauve-gong-1",
+          "name": "Les ruelles du crime",
+          "level": 130
+        },
+        {
+          "id": "q-sauve-gong-2",
+          "name": "Alerte dans les bas-fonds",
+          "level": 130
+        }
+      ]
+    },
+    {
+      "id": "crache-ton-venin",
+      "title": "Crache ton venin",
+      "type": "achievement",
+      "summary": "Infiltration chez les empoisonneurs et les assassins de la guildes des ombres de Srambad.",
+      "quests": [
+        { "id": "q-crache-venin-1", "name": "Mélanges toxiques", "level": 160 },
+        { "id": "q-crache-venin-2", "name": "Goutte de poison", "level": 160 }
+      ]
+    },
+    {
+      "id": "le-jeu-du-trone",
+      "title": "Le jeu du trône",
+      "type": "achievement",
+      "summary": "Trahisons, complots et luttes de pouvoir pour le contrôle du trône d'os de Srambad.",
+      "quests": [
+        { "id": "q-jeu-trone-1", "name": "Trônes d'os", "level": 200 },
+        { "id": "q-jeu-trone-2", "name": "Coups de poignard", "level": 200 }
+      ]
+    },
+    {
+      "id": "les-voleurs-de-srambad",
+      "title": "Les voleurs de Srambad",
+      "type": "achievement",
+      "summary": "Mettre fin aux méfaits de la guilde des voleurs ou intégrer les rangs de la pègre suprême.",
+      "quests": [
+        {
+          "id": "q-voleurs-srambad-1",
+          "name": "Vol à l'étalage",
+          "level": 200
+        },
+        {
+          "id": "q-voleurs-srambad-2",
+          "name": "Le casse du siècle",
+          "level": 200
+        }
+      ]
+    },
+    {
+      "id": "les-temps-qui-courent",
+      "title": "Les temps qui courent",
+      "type": "achievement",
+      "summary": "Traversée des rouages du temps au cœur du passé, présent et futur de Xélorium.",
+      "quests": [
+        {
+          "id": "q-temps-courent-1",
+          "name": "Aiguilles et engrenages",
+          "level": 130
+        },
+        {
+          "id": "q-temps-courent-2",
+          "name": "Horloge biologique",
+          "level": 130
+        }
+      ]
+    },
+    {
+      "id": "carpe-diem",
+      "title": "Carpe Diem",
+      "type": "achievement",
+      "summary": "Profiter des failles temporelles et corriger les anachronismes perturbant la dimension de Xélor.",
+      "quests": [
+        { "id": "q-carpe-diem-1", "name": "Un jour sans fin", "level": 160 },
+        { "id": "q-carpe-diem-2", "name": "Instant présent", "level": 160 }
+      ]
+    },
+    {
+      "id": "les-puits-du-fou",
+      "title": "Les puits du fou",
+      "type": "achievement",
+      "summary": "Missions au fond des puits temporels secrets où le temps s'effondre.",
+      "quests": [
+        { "id": "q-puits-fou-1", "name": "Vertige temporel", "level": 200 },
+        { "id": "q-puits-fou-2", "name": "Au fond de l'abîme", "level": 200 }
+      ]
+    },
+    {
+      "id": "moments-d-egarement",
+      "title": "Moments d'égarement",
+      "type": "achievement",
+      "summary": "Résoudre les paradoxes temporels menaçant d'effacer la réalité de Xélorium.",
+      "quests": [
+        {
+          "id": "q-moments-egarement-1",
+          "name": "Effet papillon",
+          "level": 200
+        },
+        {
+          "id": "q-moments-egarement-2",
+          "name": "Rupture de continuum",
+          "level": 200
+        }
+      ]
+    },
+    {
+      "id": "je-revais-d-un-autre-monde",
+      "title": "Je rêvais d'un autre monde (Nébuleux)",
+      "type": "achievement",
+      "summary": "Série de quêtes majeures d'obtention du Dofus Nébuleux à travers le Xélorium.",
+      "quests": [
+        { "id": "q-nebuleux-1", "name": "Les brumes du temps", "level": 200 },
+        {
+          "id": "q-nebuleux-2",
+          "name": "Prophétie des voyageurs",
+          "level": 200
+        }
+      ]
+    },
+    {
+      "id": "errances-felines",
+      "title": "Errances félines",
+      "type": "achievement",
+      "summary": "Première immersion dans le casino géant et les tapis de jeux de la dimension d'Ecaflipus.",
+      "quests": [
+        {
+          "id": "q-errances-felines-1",
+          "name": "Jetons et tapis rouge",
+          "level": 130
+        },
+        {
+          "id": "q-errances-felines-2",
+          "name": "Sur un coup de tête",
+          "level": 130
+        }
+      ]
+    },
+    {
+      "id": "tu-peux-toujours-te-gratter",
+      "title": "Tu peux toujours te gratter",
+      "type": "achievement",
+      "summary": "Affronter la chance, les arnaques et les puces d'Ecaflipus.",
+      "quests": [
+        { "id": "q-toujours-gratter-1", "name": "Gratte-gratte", "level": 160 },
+        {
+          "id": "q-toujours-gratter-2",
+          "name": "Le hasard fait bien les choses",
+          "level": 160
+        }
+      ]
+    },
+    {
+      "id": "angoraphobie",
+      "title": "Angoraphobie",
+      "type": "achievement",
+      "summary": "Se frayer un chemin à travers la foule de matous et surmonter la peur des poils.",
+      "quests": [
+        { "id": "q-angoraphobie-1", "name": "Balles de laine", "level": 200 },
+        { "id": "q-angoraphobie-2", "name": "Chat persan", "level": 200 }
+      ]
+    },
+    {
+      "id": "on-va-tout-defausser",
+      "title": "On va tout défausser",
+      "type": "achievement",
+      "summary": "Mettre tapis et battre les plus grands tricheurs des tables d'Ecaflipus.",
+      "quests": [
+        {
+          "id": "q-on-va-tout-defausser-1",
+          "name": "As de trèfle",
+          "level": 200
+        },
+        {
+          "id": "q-on-va-tout-defausser-2",
+          "name": "Quinte flush",
+          "level": 200
+        }
+      ]
+    },
+    {
+      "id": "question-d-equilibre",
+      "title": "Question d'équilibre",
+      "type": "achievement",
+      "summary": "Comprendre les lois de la nature et l'harmonie des créatures sauvages d'Osavora.",
+      "quests": [
+        {
+          "id": "q-question-equilibre-1",
+          "name": "L'écosystème céleste",
+          "level": 200
+        },
+        {
+          "id": "q-question-equilibre-2",
+          "name": "L'appel de la faune",
+          "level": 200
+        }
+      ]
+    },
+    {
+      "id": "on-se-fait-la-bzzzbz",
+      "title": "On se fait la bzzzbz",
+      "type": "achievement",
+      "summary": "Infiltration chez les essaims d'insectes géants d'Osavora.",
+      "quests": [
+        { "id": "q-bzzzbz-1", "name": "Au cœur de la ruche", "level": 200 },
+        { "id": "q-bzzzbz-2", "name": "Reine des insectes", "level": 200 }
+      ]
+    },
+    {
+      "id": "le-gout-de-la-vie-sauvage",
+      "title": "Le goût de la vie sauvage",
+      "type": "achievement",
+      "summary": "Survie en milieu hostile et apprentissage des prédateurs d'Osamodas.",
+      "quests": [
+        {
+          "id": "q-vie-sauvage-1",
+          "name": "La loi de la jungle",
+          "level": 200
+        },
+        { "id": "q-vie-sauvage-2", "name": "Instinct animal", "level": 200 }
+      ]
+    },
+    {
+      "id": "la-part-du-rhoarim",
+      "title": "La part du Rhoarim",
+      "type": "achievement",
+      "summary": "Chasser et apaiser les grands prédateurs mythiques d'Osavora.",
+      "quests": [
+        { "id": "q-part-rhoarim-1", "name": "La piste du félin", "level": 200 },
+        { "id": "q-part-rhoarim-2", "name": "Rugissement divin", "level": 200 }
+      ]
+    },
+    {
+      "id": "a-la-petite-semaine",
+      "title": "À la petite semaine",
+      "type": "achievement",
+      "summary": "Tâches quotidiennes et entretien du sanctuaire naturel auprès des gardiens.",
+      "quests": [
+        {
+          "id": "q-petite-semaine-1",
+          "name": "Corvées du sanctuaire",
+          "level": 200
+        },
+        { "id": "q-petite-semaine-2", "name": "Soins aux bêtes", "level": 200 }
+      ]
+    }
+  ]
+}

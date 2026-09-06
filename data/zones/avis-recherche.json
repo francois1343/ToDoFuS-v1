@@ -1,0 +1,252 @@
+{
+  "id": "avis-de-recherche",
+  "name": "Avis de recherche",
+  "category": "zone",
+  "level": 200,
+  "acquisition": "quest",
+  "summary": "Ensemble complet des succès de capture d'avis de recherche à travers toutes les milices et prisons du Monde des Douze (Astrub, Amakna, Frigost, Sufokia, Dimensions Divines, Saharach, Pandala, etc.).",
+  "tags": [
+    "Avis de recherche",
+    "Chasse",
+    "Prisons",
+    "Milice",
+    "Niveau 20 à 200"
+  ],
+  "source": "https://www.dofuspourlesnoobs.com/avis-de-recherche.html",
+  "progression": {
+    "trackId": "zones-dofus",
+    "order": 35
+  },
+  "parts": [
+    {
+      "id": "partie-avis-de-recherche",
+      "name": "Succès de capture d'Avis de recherche",
+      "itemsRequired": [
+        {
+          "name": "Avis de recherche divers",
+          "quantity": 1,
+          "note": "À récupérer sur les panneaux de recherche des différentes milices"
+        }
+      ],
+      "dungeonsRequired": [],
+      "successes": [
+        "nourri-loge-blanchi",
+        "balle-aux-prisonniers",
+        "une-chambre-douillette",
+        "perdu-de-recherche",
+        "l-institut-pisteur",
+        "le-plein-de-super-vilains",
+        "dimension-carcerale",
+        "les-sept-saloupiots",
+        "un-tour-en-cellule",
+        "maison-de-correction",
+        "au-pain-mouille-et-surtout-a-l-eau",
+        "un-peu-de-soleil-derriere-les-barreaux",
+        "repris-de-justesse"
+      ]
+    }
+  ],
+  "rewards": {
+    "items": [
+      "Doplons",
+      "Kamas de glace",
+      "Ornements et titres de chasseur de primes"
+    ],
+    "effect": "Gain de monnaies régionales et accomplissement des objectifs mondiaux de traque."
+  },
+  "globalPrerequisites": [
+    "Niveau 20 à 200 selon la zone de la milice référante"
+  ],
+  "objectives": [
+    {
+      "id": "nourri-loge-blanchi",
+      "title": "Nourri, logé, blanchi",
+      "type": "achievement",
+      "summary": "Traquer et capturer les premiers criminels recherchés de la milice d'Astrub et d'Amakna.",
+      "quests": [
+        { "id": "q-avis-astrub-1", "name": "Fouayard", "level": 20 },
+        {
+          "id": "q-avis-astrub-2",
+          "name": "Les recherchés de la cité d'Astrub",
+          "level": 40
+        }
+      ]
+    },
+    {
+      "id": "balle-aux-prisonniers",
+      "title": "Balle aux prisonniers",
+      "type": "achievement",
+      "summary": "Capturer une série de criminels intermédiaires pour les milices continentales.",
+      "quests": [
+        {
+          "id": "q-avis-balle-1",
+          "name": "Traque des brigands de Cania",
+          "level": 80
+        },
+        { "id": "q-avis-balle-2", "name": "Captures des plaines", "level": 100 }
+      ]
+    },
+    {
+      "id": "une-chambre-douillette",
+      "title": "Une chambre douillette",
+      "type": "achievement",
+      "summary": "Remplir les cellules des milices de Bonta et de Brâkmar.",
+      "quests": [
+        {
+          "id": "q-avis-bonta-brakmar-1",
+          "name": "Les recherchés de Bonta",
+          "level": 120
+        },
+        {
+          "id": "q-avis-bonta-brakmar-2",
+          "name": "Les recherchés de Brâkmar",
+          "level": 120
+        }
+      ]
+    },
+    {
+      "id": "perdu-de-recherche",
+      "title": "Perdu de recherche",
+      "type": "achievement",
+      "summary": "Mener des recherches approfondies pour débusquer les criminels dissimulés dans les zones sauvages.",
+      "quests": [
+        { "id": "q-avis-perdu-1", "name": "Pisteurs des bois", "level": 140 },
+        { "id": "q-avis-perdu-2", "name": "Traque clandestine", "level": 140 }
+      ]
+    },
+    {
+      "id": "l-institut-pisteur",
+      "title": "L'institut pisteur",
+      "type": "achievement",
+      "summary": "Prouver sa maîtrise de la traque sur des monstres d'élite et fugitifs de haut niveau.",
+      "quests": [
+        {
+          "id": "q-avis-pisteur-1",
+          "name": "Méthode de pistage",
+          "level": 160
+        },
+        { "id": "q-avis-pisteur-2", "name": "Maître traqueur", "level": 160 }
+      ]
+    },
+    {
+      "id": "le-plein-de-super-vilains",
+      "title": "Le plein de super-vilains",
+      "type": "achievement",
+      "summary": "Mettre hors d'état de nuire l'ensemble des super-vilains de la Base des Justiciers.",
+      "quests": [
+        {
+          "id": "q-avis-justiciers-1",
+          "name": "Chasse aux super-vilains",
+          "level": 150
+        },
+        {
+          "id": "q-avis-justiciers-2",
+          "name": "Les évadés de la base",
+          "level": 180
+        }
+      ]
+    },
+    {
+      "id": "dimension-carcerale",
+      "title": "Dimension carcérale",
+      "type": "achievement",
+      "summary": "Capturer les fugitifs recherchés s'étant réfugiés dans les différentes Dimensions Divines.",
+      "quests": [
+        {
+          "id": "q-avis-dimensions-1",
+          "name": "Recherchés d'Enutrosor et Srambad",
+          "level": 160
+        },
+        {
+          "id": "q-avis-dimensions-2",
+          "name": "Recherchés de Xélorium et Ecaflipus",
+          "level": 200
+        }
+      ]
+    },
+    {
+      "id": "les-sept-saloupiots",
+      "title": "Les sept saloupiots",
+      "type": "achievement",
+      "summary": "Neutraliser un groupe spécifique de criminels tristement célèbres de Frigost.",
+      "quests": [
+        { "id": "q-avis-frigost-1", "name": "Bande des sept", "level": 180 },
+        {
+          "id": "q-avis-frigost-2",
+          "name": "Nettoyage des glaces",
+          "level": 190
+        }
+      ]
+    },
+    {
+      "id": "un-tour-en-cellule",
+      "title": "Un tour en cellule",
+      "type": "achievement",
+      "summary": "Capturer les hors-la-loi arpentant les îles et archipels isolés.",
+      "quests": [
+        { "id": "q-avis-isles-1", "name": "Recherchés d'Otomaï", "level": 150 },
+        {
+          "id": "q-avis-isles-2",
+          "name": "Recherchés de Pandala",
+          "level": 180
+        }
+      ]
+    },
+    {
+      "id": "maison-de-correction",
+      "title": "Maison de correction",
+      "type": "achievement",
+      "summary": "Traquer les criminels de très haut niveau dans les zones d'extension modernes.",
+      "quests": [
+        {
+          "id": "q-avis-correction-1",
+          "name": "Criminels de Saharach",
+          "level": 200
+        },
+        {
+          "id": "q-avis-correction-2",
+          "name": "Fugitifs de Sufokia",
+          "level": 200
+        }
+      ]
+    },
+    {
+      "id": "au-pain-mouille-et-surtout-a-l-eau",
+      "title": "Au pain mouillé et surtout à l'eau",
+      "type": "achievement",
+      "summary": "Capturer les fugitifs terrurés dans les abysses et environnements aquatiques.",
+      "quests": [
+        {
+          "id": "q-avis-eau-1",
+          "name": "Monstres des profondeurs",
+          "level": 200
+        },
+        { "id": "q-avis-eau-2", "name": "Fugitifs sous-marins", "level": 200 }
+      ]
+    },
+    {
+      "id": "un-peu-de-soleil-derriere-les-barreaux",
+      "title": "Un peu de soleil derrière les barreaux",
+      "type": "achievement",
+      "summary": "Capturer les criminels du désert de Saharach et des zones arides.",
+      "quests": [
+        { "id": "q-avis-soleil-1", "name": "Bandits des dunes", "level": 180 },
+        { "id": "q-avis-soleil-2", "name": "Seigneurs du désert", "level": 200 }
+      ]
+    },
+    {
+      "id": "repris-de-justesse",
+      "title": "Repris de justesse",
+      "type": "achievement",
+      "summary": "Dernières captures des criminels les plus dangereux et insaisissables du jeu.",
+      "quests": [
+        {
+          "id": "q-avis-ultime-1",
+          "name": "Les ultimes avis de recherche",
+          "level": 200
+        },
+        { "id": "q-avis-ultime-2", "name": "L'élite de la pègre", "level": 200 }
+      ]
+    }
+  ]
+}

@@ -27,11 +27,11 @@
       "objectives": []
     },
     {
-      "id": "baie-sufokia",
-      "name": "Baie de Sufokia",
+      "id": "sufokia",
+      "name": "Sufokia",
       "order": 40,
-      "levelRange": { "min": 40, "max": 100 },
-      "tags": [],
+      "levelRange": { "min": 90, "max": 200 },
+      "tags": ["city", "island", "pvm"],
       "objectives": []
     },
     {
@@ -131,11 +131,179 @@
       "objectives": []
     },
     {
+      "id": "montagne-des-koalaks",
+      "name": "Montagne des Koalaks",
+      "order": 170,
+      "levelRange": { "min": 60, "max": 140 },
+      "tags": ["mountain", "pvm"],
+      "objectives": []
+    },
+    {
+      "id": "nimotopia",
+      "name": "Nimotopia",
+      "order": 180,
+      "levelRange": { "min": 100, "max": 200 },
+      "tags": ["island", "pvm"],
+      "objectives": []
+    },
+    {
       "id": "plaines-cania",
       "name": "Plaines de Cania",
-      "order": 170,
+      "order": 190,
       "levelRange": { "min": 30, "max": 150 },
       "tags": [],
+      "objectives": []
+    },
+    {
+      "id": "alignement",
+      "name": "Alignement et Ordres",
+      "order": 200,
+      "levelRange": { "min": 1, "max": 200 },
+      "tags": ["alignment", "quest", "pvm"],
+      "objectives": []
+    },
+    {
+      "id": "almanax",
+      "name": "Almanax",
+      "order": 210,
+      "levelRange": { "min": 1, "max": 100 },
+      "tags": ["daily", "activity"],
+      "objectives": []
+    },
+    {
+      "id": "archipel-ecailles",
+      "name": "Archipel des Écailles",
+      "order": 220,
+      "levelRange": { "min": 100, "max": 200 },
+      "tags": ["island", "pvm"],
+      "objectives": []
+    },
+    {
+      "id": "archipel-valonia",
+      "name": "Archipel de Valonia",
+      "order": 230,
+      "levelRange": { "min": 100, "max": 200 },
+      "tags": ["island", "pvm"],
+      "objectives": []
+    },
+    {
+      "id": "atoll-possedes",
+      "name": "Atoll des Possédés",
+      "order": 240,
+      "levelRange": { "min": 100, "max": 200 },
+      "tags": ["island", "pvm"],
+      "objectives": []
+    },
+    {
+      "id": "avis-recherche",
+      "name": "Avis de recherche",
+      "order": 250,
+      "levelRange": { "min": 1, "max": 200 },
+      "tags": ["bounty", "pvm"],
+      "objectives": []
+    },
+    {
+      "id": "camp-bworks-gobelins",
+      "name": "Camp des Bworks et des Gobelins",
+      "order": 260,
+      "levelRange": { "min": 50, "max": 100 },
+      "tags": ["dungeon", "pvm"],
+      "objectives": []
+    },
+    {
+      "id": "cania",
+      "name": "Cania",
+      "order": 270,
+      "levelRange": { "min": 70, "max": 90 },
+      "tags": ["zone", "pvm"],
+      "objectives": []
+    },
+    {
+      "id": "cauchemar-ravageurs",
+      "name": "Cauchemar des Ravageurs",
+      "order": 280,
+      "levelRange": { "min": 200, "max": 200 },
+      "tags": ["endgame", "pvm"],
+      "objectives": []
+    },
+    {
+      "id": "dimensions-divines",
+      "name": "Dimensions Divines",
+      "order": 290,
+      "levelRange": { "min": 100, "max": 200 },
+      "tags": ["dimension", "pvm"],
+      "objectives": []
+    },
+    {
+      "id": "eliocalypse",
+      "name": "Éliocalypse",
+      "order": 300,
+      "levelRange": { "min": 200, "max": 200 },
+      "tags": ["endgame", "quest", "pvm"],
+      "objectives": []
+    },
+    {
+      "id": "foire-trool",
+      "name": "Foire du Trool — contenus complémentaires",
+      "order": 310,
+      "levelRange": { "min": 40, "max": 100 },
+      "tags": ["activity", "pvm"],
+      "objectives": []
+    },
+    {
+      "id": "foret-malefique",
+      "name": "Forêt Maléfique",
+      "order": 320,
+      "levelRange": { "min": 150, "max": 200 },
+      "tags": ["forest", "pvm"],
+      "objectives": []
+    },
+    {
+      "id": "general",
+      "name": "Général",
+      "order": 330,
+      "levelRange": { "min": 1, "max": 200 },
+      "tags": ["quest", "pvm"],
+      "objectives": []
+    },
+    {
+      "id": "halouine",
+      "name": "Halouine",
+      "order": 340,
+      "levelRange": { "min": 1, "max": 200 },
+      "tags": ["event", "activity", "pvm"],
+      "objectives": []
+    },
+    {
+      "id": "justicier",
+      "name": "Base des Justiciers",
+      "order": 350,
+      "levelRange": { "min": 100, "max": 200 },
+      "tags": ["quest", "pvm"],
+      "objectives": []
+    },
+    {
+      "id": "quetes-mondiales",
+      "name": "Quêtes Mondiales",
+      "order": 360,
+      "levelRange": { "min": 1, "max": 200 },
+      "tags": ["quest", "pvm"],
+      "objectives": []
+    },
+    {
+      "id": "saharach",
+      "name": "Saharach",
+      "order": 370,
+      "levelRange": { "min": 120, "max": 200 },
+      "tags": ["desert", "pvm"],
+      "objectives": []
+    },
+    {
+      "id": "tours-fratrie",
+      "name": "Tours de la Fratrie",
+      "order": 380,
+      "levelRange": { "min": 200, "max": 200 },
+      "tags": ["endgame", "pvm"],
       "objectives": []
     }
   ]

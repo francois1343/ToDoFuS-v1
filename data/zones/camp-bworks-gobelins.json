@@ -1,0 +1,69 @@
+{
+  "id": "camp-des-bworks-et-des-gobelins",
+  "name": "Camp des Bworks et des Gobelins",
+  "category": "zone",
+  "level": 50,
+  "acquisition": "quest",
+  "summary": "Ensemble des succès et quêtes d'exploration et de ruse au cœur du Camp des Bworks et du Village des Gobelins, couvrant les intrigues théâtrales et les affaires de bandes locales.",
+  "tags": ["Zone", "Camp des Bworks", "Gobelins", "Niveau 50", "Théâtre"],
+  "source": "https://www.dofuspourlesnoobs.com/camp-des-bworks.html",
+  "progression": {
+    "trackId": "zones-dofus",
+    "order": 6
+  },
+  "parts": [
+    {
+      "id": "partie-camp-des-bworks-et-des-gobelins",
+      "name": "Succès et Quêtes du Camp des Bworks et des Gobelins",
+      "itemsRequired": [
+        {
+          "name": "Bière de Bwork",
+          "quantity": 1,
+          "note": "Pour les échanges et quêtes de taverne chez les Bworks"
+        },
+        {
+          "name": "Peau de Gobelin",
+          "quantity": 1,
+          "note": "Ressource de quête requise"
+        }
+      ],
+      "dungeonsRequired": ["Donjon Bwork", "Donjon Gobelins"],
+      "successes": ["le-theatre-des-gobelins", "kaira"]
+    }
+  ],
+  "rewards": {
+    "items": [],
+    "effect": "Déblocage des accès d'exploration du campement Bwork/Gobelin et succès de zone."
+  },
+  "globalPrerequisites": ["Niveau 50 recommandé"],
+  "objectives": [
+    {
+      "id": "le-theatre-des-gobelins",
+      "title": "Le théâtre des gobelins",
+      "type": "achievement",
+      "summary": "Série de quêtes humoristiques et rocambolesques centrées sur les représentations et farces théâtrales des Gobelins.",
+      "quests": [
+        {
+          "id": "q-le-theatre-des-gobelins-1",
+          "name": "Comédie gobeline",
+          "level": 50
+        },
+        {
+          "id": "q-le-theatre-des-gobelins-2",
+          "name": "Coup de théâtre chez les puces",
+          "level": 50
+        }
+      ]
+    },
+    {
+      "id": "kaira",
+      "title": "Kaïra",
+      "type": "achievement",
+      "summary": "Résoudre les conflits de bandes et régler les affaires de territoire au sein du camp des Bworks.",
+      "quests": [
+        { "id": "q-kaira-1", "name": "Embrouille de quartier", "level": 50 },
+        { "id": "q-kaira-2", "name": "La loi du plus fort", "level": 50 }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "id": "royaume-d-amakna",
+  "name": "Royaume d'Amakna",
+  "category": "zone",
+  "level": 40,
+  "acquisition": "quest",
+  "summary": "Ensemble des succès et quêtes d'exploration de la région centrale d'Amakna, englobant le Château d'Amakna, le Port de Madrestam, la Forêt d'Amakna et les environs du portail royal.",
+  "tags": [
+    "Zone",
+    "Royaume d'Amakna",
+    "Amakna",
+    "Château d'Amakna",
+    "Niveau 40",
+    "Roi Allister"
+  ],
+  "source": "https://www.dofuspourlesnoobs.com/royaume-d-amakna.html",
+  "progression": {
+    "trackId": "zones-dofus",
+    "order": 5
+  },
+  "parts": [
+    {
+      "id": "partie-royaume-d-amakna",
+      "name": "Succès et Quêtes du Royaume d'Amakna",
+      "itemsRequired": [
+        {
+          "name": "Bière de Taverne",
+          "quantity": 1,
+          "note": "Pour la convivialité et les quêtes de la Cour"
+        },
+        {
+          "name": "Ressources de récolte locales d'Amakna",
+          "quantity": 1,
+          "note": "Variables selon la progression dans les quêtes de la région"
+        }
+      ],
+      "dungeonsRequired": [
+        "Donjon Château du Wa Wabbit",
+        "Donjon Squelettes",
+        "Donjon Gobelins"
+      ],
+      "successes": [
+        "le-vallon-du-chateau",
+        "destinations-aventure",
+        "etre-plus-royaliste-que-le-roi",
+        "lechage-de-bottes",
+        "l-arbre-qui-cache-la-foret"
+      ]
+    }
+  ],
+  "rewards": {
+    "items": [],
+    "effect": "Déblocage des titres d'Amakna, succès de zone et prérequis d'accès à divers transports maritimes et régionaux."
+  },
+  "globalPrerequisites": [
+    "Niveau 40 recommandé (accessible dès la sortie d'Astrub)"
+  ],
+  "objectives": [
+    {
+      "id": "le-vallon-du-chateau",
+      "title": "Le vallon du château",
+      "type": "achievement",
+      "summary": "Explorer les territoires paisibles entourant la forteresse royale du Roi Allister.",
+      "quests": [
+        {
+          "id": "q-le-vallon-du-chateau-1",
+          "name": "Un cadavre exquis",
+          "level": 30
+        },
+        {
+          "id": "q-le-vallon-du-chateau-2",
+          "name": "Les bons tuyaux du château",
+          "level": 30
+        }
+      ]
+    },
+    {
+      "id": "destinations-aventure",
+      "title": "Destinations Aventure",
+      "type": "achievement",
+      "summary": "Découvrir les principales voies de transport, ports et routes de voyage partant d'Amakna.",
+      "quests": [
+        {
+          "id": "q-destinations-1",
+          "name": "Le marin d'eau douce",
+          "level": 35
+        },
+        {
+          "id": "q-destinations-2",
+          "name": "Carnet de voyage d'un aventurier",
+          "level": 35
+        }
+      ]
+    },
+    {
+      "id": "etre-plus-royaliste-que-le-roi",
+      "title": "Être plus royaliste que le roi",
+      "type": "achievement",
+      "summary": "Effectuer des missions diplomatiques et administratives directement pour la cour du Roi Allister.",
+      "quests": [
+        { "id": "q-royaliste-1", "name": "Service royal", "level": 40 },
+        {
+          "id": "q-royaliste-2",
+          "name": "Allégeance et protocole",
+          "level": 40
+        }
+      ]
+    },
+    {
+      "id": "lechage-de-bottes",
+      "title": "Léchage de bottes",
+      "type": "achievement",
+      "summary": "Rendre de fiers services aux nobles et hauts dignitaires séjournant au Château d'Amakna.",
+      "quests": [
+        { "id": "q-lechage-1", "name": "Les faveurs du baron", "level": 40 },
+        {
+          "id": "q-lechage-2",
+          "name": "Flatterie n'est pas jouer",
+          "level": 40
+        }
+      ]
+    },
+    {
+      "id": "l-arbre-qui-cache-la-foret",
+      "title": "L'arbre qui cache la forêt",
+      "type": "achievement",
+      "summary": "Série de quêtes d'investigation sur les mystères et menaces tapis au cœur de la forêt d'Amakna.",
+      "quests": [
+        {
+          "id": "q-arbre-foret-1",
+          "name": "Ombres sous les feuillages",
+          "level": 45
+        },
+        { "id": "q-arbre-foret-2", "name": "Le secret des ormes", "level": 45 }
+      ]
+    }
+  ]
+}

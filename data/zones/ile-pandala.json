@@ -1,0 +1,312 @@
+{
+  "id": "ile-de-pandala",
+  "name": "Île de Pandala",
+  "category": "zone",
+  "level": 100,
+  "acquisition": "quest",
+  "summary": "Ensemble complet des succès et quêtes d'exploration, de spiritualité, d'arts martiaux et du Pandamonium sur l'île de Pandala, retraçant la réunification des esprits, la légende des dragons de Pandala et la quête des Dofus associé.",
+  "tags": [
+    "Zone",
+    "Pandala",
+    "Pandamonium",
+    "Dofus Tacheté",
+    "Dofus Domakuro",
+    "Dofus Doraikuro",
+    "Niveau 100",
+    "Niveau 200"
+  ],
+  "source": "https://www.dofuspourlesnoobs.com/pandala.html",
+  "progression": {
+    "trackId": "zones-dofus",
+    "order": 15
+  },
+  "parts": [
+    {
+      "id": "partie-ile-de-pandala",
+      "name": "Succès et Quêtes de Pandala et du Pandamonium",
+      "itemsRequired": [
+        {
+          "name": "Bière de Pandawash",
+          "quantity": 1,
+          "note": "Pour la convivialité et les rituels de taverne"
+        },
+        {
+          "name": "Bambou sombre",
+          "quantity": 5,
+          "note": "Pour diverses quêtes d'artisanat et d'offrandes spiritualistes"
+        },
+        {
+          "name": "Fiole d'Aqua Dæe",
+          "quantity": 1,
+          "note": "Composant de quête rituel de Pandala"
+        }
+      ],
+      "dungeonsRequired": [
+        "Donjon Donjon des Bambous",
+        "Donjon Donjon des Firefoux",
+        "Donjon Donjon de Tanukouï San",
+        "Donjon Donjon de Grozilla et Grasmera",
+        "Donjon Fabrique de Mallefisk",
+        "Donjon Atelier de Tanukouï San"
+      ],
+      "successes": [
+        "toutes-les-quetes-de-pandala",
+        "toutes-les-quetes-du-pandamonium",
+        "les-grands-esprits-se-rencontrent",
+        "suivre-la-voie",
+        "nature-spirituelle",
+        "de-quel-bois-je-me-chauffe",
+        "des-larmes-de-pierre",
+        "sous-des-nuages-de-cendre",
+        "le-gardien-de-l-immacule",
+        "a-tombeaux-ouverts",
+        "un-reve-en-clair-obscur",
+        "deux-dragons-entrent-dans-un-bar",
+        "les-secrets-du-pandawushu",
+        "apres-la-pluie"
+      ]
+    }
+  ],
+  "rewards": {
+    "items": ["Dofus Tacheté", "Dofus Domakuro", "Dofus Doraikuro"],
+    "effect": "Accès aux royaumes spirituels de Pandala, maitrise des arts martial Pandawushu et succès majeurs."
+  },
+  "globalPrerequisites": [
+    "Niveau 100 minimum pour les séries de base de Pandala",
+    "Niveau 180 à 200 requis pour les quêtes du Pandamonium et des dragons"
+  ],
+  "objectives": [
+    {
+      "id": "toutes-les-quetes-de-pandala",
+      "title": "Toutes les quêtes de Pandala",
+      "type": "achievement",
+      "summary": "Accomplir l'intégralité des quêtes d'exploration et de l'histoire générale de l'île de Pandala.",
+      "quests": [
+        {
+          "id": "q-pandala-main-1",
+          "name": "Bienvenue à Pandala",
+          "level": 100
+        },
+        { "id": "q-pandala-main-2", "name": "L'éveil de Pandala", "level": 120 }
+      ]
+    },
+    {
+      "id": "toutes-les-quetes-du-pandamonium",
+      "title": "Toutes les quêtes du Pandamonium",
+      "type": "achievement",
+      "summary": "Terminer l'ensemble des trames narrative de la zone obscure et démoniaque du Pandamonium.",
+      "quests": [
+        {
+          "id": "q-pandamonium-1",
+          "name": "Les ténèbres de Pandala",
+          "level": 190
+        },
+        { "id": "q-pandamonium-2", "name": "Cauchemar éveillé", "level": 200 }
+      ]
+    },
+    {
+      "id": "les-grands-esprits-se-rencontrent",
+      "title": "Les grands esprits se rencontrent",
+      "type": "achievement",
+      "summary": "Communier avec les esprits tutélaires et élémentaires gardiens des différentes régions de l'île.",
+      "quests": [
+        {
+          "id": "q-grands-esprits-1",
+          "name": "Rencontre avec les élémentaires",
+          "level": 120
+        },
+        {
+          "id": "q-grands-esprits-2",
+          "name": "Harmonie spirituelle",
+          "level": 140
+        }
+      ]
+    },
+    {
+      "id": "suivre-la-voie",
+      "title": "Suivre la voie",
+      "type": "achievement",
+      "summary": "Initier son parcours spirituel et philosophique auprès des sages des villages de Pandala.",
+      "quests": [
+        {
+          "id": "q-suivre-la-voie-1",
+          "name": "Le chemin de l'éveil",
+          "level": 100
+        },
+        { "id": "q-suivre-la-voie-2", "name": "Sagesse pandawa", "level": 110 }
+      ]
+    },
+    {
+      "id": "nature-spirituelle",
+      "title": "Nature spirituelle",
+      "type": "achievement",
+      "summary": "Explorer les forêts sacrées et préserver le lien entre la faune, la flore et le monde des esprits.",
+      "quests": [
+        {
+          "id": "q-nature-spirituelle-1",
+          "name": "L'appel de la forêt de bambous",
+          "level": 130
+        },
+        {
+          "id": "q-nature-spirituelle-2",
+          "name": "L'équilibre naturel",
+          "level": 140
+        }
+      ]
+    },
+    {
+      "id": "de-quel-bois-je-me-chauffe",
+      "title": "De quel bois je me chauffe",
+      "type": "achievement",
+      "summary": "Infiltration et quêtes d'investigation au cœur de la forêt de Plantala.",
+      "quests": [
+        {
+          "id": "q-de-quel-bois-1",
+          "name": "Les mystères de Plantala",
+          "level": 150
+        },
+        {
+          "id": "q-de-quel-bois-2",
+          "name": "Au cœur du bois sacré",
+          "level": 160
+        }
+      ]
+    },
+    {
+      "id": "des-larmes-de-pierre",
+      "title": "Des larmes de pierre",
+      "type": "achievement",
+      "summary": "Enquête dramatique sur les malédictions qui frappe la zone rocheuse d'Akwadala/Feudala.",
+      "quests": [
+        {
+          "id": "q-des-larmes-de-pierre-1",
+          "name": "Gouttes de Chagrin",
+          "level": 160
+        },
+        {
+          "id": "q-des-larmes-de-pierre-2",
+          "name": "Cœur de roche",
+          "level": 170
+        }
+      ]
+    },
+    {
+      "id": "sous-des-nuages-de-cendre",
+      "title": "Sous des nuages de cendre",
+      "type": "achievement",
+      "summary": "Traverser les plaines calcinées et affronter les menaces liées au feu sacré et aux Firefoux.",
+      "quests": [
+        {
+          "id": "q-nuages-de-cendre-1",
+          "name": "Cendres volantes",
+          "level": 170
+        },
+        {
+          "id": "q-nuages-de-cendre-2",
+          "name": "La fournaise des esprits",
+          "level": 180
+        }
+      ]
+    },
+    {
+      "id": "le-gardien-de-l-immacule",
+      "title": "Le gardien de l'immaculé",
+      "type": "achievement",
+      "summary": "Protéger les reliques et zones sacrées contre la profanation et la corruption démoniaque.",
+      "quests": [
+        {
+          "id": "q-gardien-immacule-1",
+          "name": "Sanctuaire sous scellés",
+          "level": 180
+        },
+        {
+          "id": "q-gardien-immacule-2",
+          "name": "Purification rituelle",
+          "level": 190
+        }
+      ]
+    },
+    {
+      "id": "a-tombeaux-ouverts",
+      "title": "À tombeaux ouverts",
+      "type": "achievement",
+      "summary": "Infiltration dans les nécropoles et tombeaux anciens de la désolation de Nolifis.",
+      "quests": [
+        {
+          "id": "q-a-tombeaux-ouverts-1",
+          "name": "Les spectres de Nolifis",
+          "level": 190
+        },
+        {
+          "id": "q-a-tombeaux-ouverts-2",
+          "name": "Requiem pour un esprit",
+          "level": 200
+        }
+      ]
+    },
+    {
+      "id": "un-reve-en-clair-obscur",
+      "title": "Un rêve en clair-obscur",
+      "type": "achievement",
+      "summary": "Série de quêtes métaphysiques explorant la frontière entre le royaume des rêves et la réalité.",
+      "quests": [
+        { "id": "q-clair-obscur-1", "name": "Visions oniriques", "level": 200 },
+        {
+          "id": "q-clair-obscur-2",
+          "name": "L'équilibre de l'Ombre et de la Lumière",
+          "level": 200
+        }
+      ]
+    },
+    {
+      "id": "deux-dragons-entrent-dans-un-bar",
+      "title": "Deux dragons entrent dans un bar...",
+      "type": "achievement",
+      "summary": "Démêler les intrigues ancestrales et la rivalité épique des deux dragons légendaires de Pandala.",
+      "quests": [
+        {
+          "id": "q-deux-dragons-1",
+          "name": "Rencontre au sommet",
+          "level": 200
+        },
+        {
+          "id": "q-deux-dragons-2",
+          "name": "Le pacte des deux dragons",
+          "level": 200
+        }
+      ]
+    },
+    {
+      "id": "les-secrets-du-pandawushu",
+      "title": "Les secrets du Pandawushu",
+      "type": "achievement",
+      "summary": "Maitriser les différentes voies d'arts martiaux traditionnels et gravir les échelons du dojo Pandawa.",
+      "quests": [
+        {
+          "id": "q-pandawushu-1",
+          "name": "L'apprentissage de la ceinture",
+          "level": 100
+        },
+        { "id": "q-pandawushu-2", "name": "Le maître du dojo", "level": 120 }
+      ]
+    },
+    {
+      "id": "apres-la-pluie",
+      "title": "Après la pluie",
+      "type": "achievement",
+      "summary": "Épilogue des événements majeurs de la renaissance et de la restructuration de Pandala.",
+      "quests": [
+        {
+          "id": "q-apres-la-pluie-1",
+          "name": "Le calme après la tempête",
+          "level": 200
+        },
+        {
+          "id": "q-apres-la-pluie-2",
+          "name": "Avenir de l'île sacrée",
+          "level": 200
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "archipel-des-ecailles",
+  "name": "Archipel des Écailles",
+  "category": "zone",
+  "level": 200,
+  "acquisition": "quest",
+  "summary": "Ensemble des succès et quêtes d'exploration et de traque au cœur de l'Archipel des Écailles, peuplé de Crocodailles féroces et d'esprits marécageux.",
+  "tags": [
+    "Zone",
+    "Archipel des Écailles",
+    "Crocodaille",
+    "Salar",
+    "Niveau 200"
+  ],
+  "source": "https://www.dofuspourlesnoobs.com/archipel-des-ecailles.html",
+  "progression": {
+    "trackId": "zones-dofus",
+    "order": 34
+  },
+  "parts": [
+    {
+      "id": "partie-archipel-des-ecailles",
+      "name": "Succès et Quêtes de l'Archipel des Écailles",
+      "itemsRequired": [
+        {
+          "name": "Écaille de Crocodaille Sacré",
+          "quantity": 1,
+          "note": "Requis pour la fabrication d'objets rituels ou la validation d'épreuves"
+        }
+      ],
+      "dungeonsRequired": ["Donjon Sanctuaire de Salar"],
+      "successes": ["larmes-de-crocodaille"]
+    }
+  ],
+  "rewards": {
+    "items": [],
+    "effect": "Déblocage des accès d'exploration de l'Archipel des Écailles et succès de zone."
+  },
+  "globalPrerequisites": ["Niveau 200 requis"],
+  "objectives": [
+    {
+      "id": "larmes-de-crocodaille",
+      "title": "Larmes de crocodaille",
+      "type": "achievement",
+      "summary": "Missions d'investigation, d'affrontements et de ruse face aux clans de Crocodailles de l'archipel.",
+      "quests": [
+        {
+          "id": "q-larmes-de-crocodaille-1",
+          "name": "Faux-semblants en marécage",
+          "level": 200
+        },
+        {
+          "id": "q-larmes-de-crocodaille-2",
+          "name": "Les Dents de la mer turquoise",
+          "level": 200
+        }
+      ]
+    }
+  ]
+}

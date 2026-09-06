@@ -1,0 +1,160 @@
+{
+  "id": "astrub",
+  "name": "Astrub",
+  "category": "zone",
+  "level": 20,
+  "acquisition": "quest",
+  "summary": "Ensemble complet des succès et quêtes de la cité d'Astrub et de ses environs, posant les bases de l'aventure pour tous les aventuriers quittant Incarnam (métiers, mercenariat, vie citadine et menaces souterraines).",
+  "tags": ["Zone", "Astrub", "Cité", "Débutant", "Niveau 20", "Mercenaire"],
+  "source": "https://www.dofuspourlesnoobs.com/astrub.html",
+  "progression": {
+    "trackId": "zones-dofus",
+    "order": 2
+  },
+  "parts": [
+    {
+      "id": "partie-astrub",
+      "name": "Succès et Quêtes d'Astrub",
+      "itemsRequired": [
+        {
+          "name": "Bière d'Astrub",
+          "quantity": 1,
+          "note": "Pour diverses quêtes d'accueil et de taverne"
+        },
+        {
+          "name": "Blé",
+          "quantity": 10,
+          "note": "Pour les quêtes d'initiation aux métiers de récolte"
+        },
+        {
+          "name": "Piau de Bouftou",
+          "quantity": 5,
+          "note": "Pour les demandes d'artisans locaux"
+        }
+      ],
+      "dungeonsRequired": [
+        "Donjon Grange du Tournesol Affamé",
+        "Donjon Égouts d'Astrub",
+        "Donjon Carrière d'Astrub"
+      ],
+      "successes": [
+        "un-citoyen-modele",
+        "l-occasion-fait-le-larron",
+        "la-grande-biblioquete",
+        "mercenaire-d-acier",
+        "pas-le-temps-de-chomer",
+        "l-habitat-urbain",
+        "escapades-et-embuscades"
+      ]
+    }
+  ],
+  "rewards": {
+    "items": ["Argentiquette"],
+    "effect": "Déblocage des titres de citoyen d'Astrub, accès complet aux services de la ville et prérequis pour les quêtes continentales."
+  },
+  "globalPrerequisites": ["Niveau 10 à 20 recommandé (départ d'Incarnam)"],
+  "objectives": [
+    {
+      "id": "un-citoyen-modele",
+      "title": "Un citoyen modèle",
+      "type": "achievement",
+      "summary": "Effectuer les démarches civiles et d'intégration auprès du Conseil d'Astrub et d'Erty Dazus.",
+      "quests": [
+        {
+          "id": "q-un-citoyen-modele-1",
+          "name": "Bienvenue à Astrub",
+          "level": 10
+        },
+        { "id": "q-un-citoyen-modele-2", "name": "L'avis d'Erty", "level": 15 }
+      ]
+    },
+    {
+      "id": "l-occasion-fait-le-larron",
+      "title": "L'occasion fait le larron",
+      "type": "achievement",
+      "summary": "Résoudre les affaires d'opportunisme, de vol et de pègre mineure dans la cité.",
+      "quests": [
+        { "id": "q-occasion-larron-1", "name": "Vol à la tire", "level": 15 },
+        {
+          "id": "q-occasion-larron-2",
+          "name": "Affaires louches en ruelle",
+          "level": 20
+        }
+      ]
+    },
+    {
+      "id": "la-grande-biblioquete",
+      "title": "La grande biblioquête",
+      "type": "achievement",
+      "summary": "Aider le bibliothécaire d'Astrub à rassembler les ouvrages et savoirs anciens éparpillés.",
+      "quests": [
+        { "id": "q-biblioquete-1", "name": "Chasse aux livres", "level": 20 },
+        {
+          "id": "q-biblioquete-2",
+          "name": "Les archives d'Astrub",
+          "level": 20
+        }
+      ]
+    },
+    {
+      "id": "mercenaire-d-acier",
+      "title": "Mercenaire d'acier",
+      "type": "achievement",
+      "summary": "Remplir les contrats de mercenariat et de sécurisation des abords de la ville.",
+      "quests": [
+        {
+          "id": "q-mercenaire-acier-1",
+          "name": "Contrat de garde",
+          "level": 20
+        },
+        {
+          "id": "q-mercenaire-acier-2",
+          "name": "Nettoyage des environs",
+          "level": 25
+        }
+      ]
+    },
+    {
+      "id": "pas-le-temps-de-chomer",
+      "title": "Pas le temps de chômer",
+      "type": "achievement",
+      "summary": "Série de quêtes de découverte et d'apprentissage des métiers d'artisanat et de récolte.",
+      "quests": [
+        { "id": "q-pas-temps-chomer-1", "name": "Au travail !", "level": 10 },
+        {
+          "id": "q-pas-temps-chomer-2",
+          "name": "Main-d'œuvre qualifiée",
+          "level": 15
+        }
+      ]
+    },
+    {
+      "id": "l-habitat-urbain",
+      "title": "L'habitat urbain",
+      "type": "achievement",
+      "summary": "Enquête sur la gestion immobilière et les problèmes de cohabitation dans les quartiers d'Astrub.",
+      "quests": [
+        {
+          "id": "q-habitat-urbain-1",
+          "name": "Sous les toits d'Astrub",
+          "level": 20
+        },
+        { "id": "q-habitat-urbain-2", "name": "Voisinage bruyant", "level": 20 }
+      ]
+    },
+    {
+      "id": "escapades-et-embuscades",
+      "title": "Escapades et embuscades",
+      "type": "achievement",
+      "summary": "Périples d'exploration hors des remparts et neutralisation des pièges tendus par les brigands.",
+      "quests": [
+        { "id": "q-escapades-1", "name": "Promenade risquée", "level": 20 },
+        {
+          "id": "q-escapades-2",
+          "name": "Embuscade dans la clairière",
+          "level": 25
+        }
+      ]
+    }
+  ]
+}

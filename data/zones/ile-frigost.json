@@ -1,0 +1,506 @@
+{
+  "id": "ile-de-frigost",
+  "name": "Île de Frigost",
+  "category": "zone",
+  "level": 100,
+  "acquisition": "quest",
+  "summary": "Ensemble complet des succès et quêtes d'exploration, de donjons, de ressources et d'intrigues sur l'île glacée de Frigost, retraçant la malédiction du Comte Harebourg, la gestion de La Bourgade et la descente dans les profondeurs gelées.",
+  "tags": [
+    "Zone",
+    "Frigost",
+    "Bourgade",
+    "Comte Harebourg",
+    "Niveau 100",
+    "Niveau 200",
+    "Dofus des Glaces"
+  ],
+  "source": "https://www.dofuspourlesnoobs.com/frigost.html",
+  "progression": {
+    "trackId": "zones-dofus",
+    "order": 30
+  },
+  "parts": [
+    {
+      "id": "partie-ile-de-frigost",
+      "name": "Succès et Quêtes de Frigost",
+      "itemsRequired": [
+        {
+          "name": "Vaccin contre le Rube",
+          "quantity": 1,
+          "note": "Pour la quête Jouer au docteur"
+        },
+        {
+          "name": "Eau pure",
+          "quantity": 10,
+          "note": "Pour diverses quêtes de la Bourgade"
+        },
+        {
+          "name": "Glace éternelle",
+          "quantity": 1,
+          "note": "Ressource de quête d'exploration"
+        },
+        {
+          "name": "Huile de Poisson",
+          "quantity": 5,
+          "note": "Pour les quêtes d'artisanat et d'aide aux Frigostiens"
+        }
+      ],
+      "dungeonsRequired": [
+        "Donjon Serre du Royalmouth",
+        "Donjon Donjon du Mansot Royal",
+        "Donjon Donjon de Ben le Ripate",
+        "Donjon Antre de l'Obsidiantre",
+        "Donjon Tanière du Givrefoux",
+        "Donjon Antre du Glourseleste",
+        "Donjon Donjon du Kolosso",
+        "Donjon Donjon du Tengu Givrefoux",
+        "Donjon Donjon du Fuji Givrefoux",
+        "Donjon Donjon du Comte Harebourg"
+      ],
+      "successes": [
+        "jouer-au-docteur",
+        "les-survivants-de-frigost",
+        "agriculture-ou-alchimie",
+        "problemes-et-solutions",
+        "fri-carre",
+        "objets-trouves",
+        "halte-au-peage",
+        "l-heure-c-est-l-heure",
+        "forage-a-tout-va",
+        "la-maire-denie",
+        "les-carrieres-de-glace",
+        "l-hiver-arrive",
+        "l-ame-de-glace",
+        "ongles-incarnes",
+        "fraichement-pondu",
+        "epilogue-hivernal",
+        "chahuteur-clandestin",
+        "chasse-gardee",
+        "tire-la-chasse",
+        "une-piqure-de-plus",
+        "l-hiver-sera-rude",
+        "tourisme-hivernal",
+        "parent-indigne",
+        "dans-les-dents",
+        "porte-monstre-tresor",
+        "interimaire-frigostien",
+        "ondine-ensemble-ce-soir",
+        "slip-ou-calecon",
+        "mais-ou-qu-ils-sont-les-frigostiens",
+        "la-glace-repare-la-glace-remplace",
+        "noblesse-oblige",
+        "carnage-de-glace",
+        "donjons-a-l-ancienne",
+        "regarde-ce-que-j-ai-trouve",
+        "c-est-assez",
+        "la-bas-sous-la-montagne"
+      ]
+    }
+  ],
+  "rewards": {
+    "items": ["Kamas de glace"],
+    "effect": "Accès aux différentes zones de Frigost 1, 2 et 3, et prérequis majeurs pour le Dofus des Glaces."
+  },
+  "globalPrerequisites": [
+    "Niveau 100 minimum (accessible via le bateau du Capitaine Lorkous à Bonta/Brâkmar)",
+    "Compléter les accès progressifs par donjons (Royalmouth -> Mansot Royal -> Ben le Ripate -> Obsidiantre, etc.)"
+  ],
+  "objectives": [
+    {
+      "id": "jouer-au-docteur",
+      "title": "Jouer au docteur",
+      "type": "achievement",
+      "summary": "Assister le médecin de la Bourgade dans le traitement des maladies du froid subies par les habitants.",
+      "quests": [
+        { "id": "q-jouer-au-docteur", "name": "Jouer au docteur", "level": 100 }
+      ]
+    },
+    {
+      "id": "les-survivants-de-frigost",
+      "title": "Les survivants de Frigost",
+      "type": "achievement",
+      "summary": "Venir en aide aux réfugiés et rescapés disséminés dans la Bourgade gelée.",
+      "quests": [
+        {
+          "id": "q-les-survivants-de-frigost",
+          "name": "Les survivants de Frigost",
+          "level": 100
+        }
+      ]
+    },
+    {
+      "id": "agriculture-ou-alchimie",
+      "title": "Agriculture ou alchimie",
+      "type": "achievement",
+      "summary": "Résoudre les conflits d'approvisionnement et de méthodes de culture sous climat polaire.",
+      "quests": [
+        {
+          "id": "q-agriculture-ou-alchimie",
+          "name": "Agriculture ou alchimie",
+          "level": 100
+        }
+      ]
+    },
+    {
+      "id": "problemes-et-solutions",
+      "title": "Problèmes et solutions",
+      "type": "achievement",
+      "summary": "Série de quêtes de gestion urbaine et d'infrastructures de la Maire Cantile.",
+      "quests": [
+        {
+          "id": "q-problemes-et-solutions",
+          "name": "Problèmes et solutions",
+          "level": 100
+        }
+      ]
+    },
+    {
+      "id": "fri-carre",
+      "title": "Fri carré",
+      "type": "achievement",
+      "summary": "Participer à l'aménagement et la sécurisation des remparts de La Bourgade.",
+      "quests": [{ "id": "q-fri-carre", "name": "Fri carré", "level": 100 }]
+    },
+    {
+      "id": "objets-trouves",
+      "title": "Objets trouvés",
+      "type": "achievement",
+      "summary": "Retrouver des artefacts et affaires personnelles perdus dans la neige par les habitants.",
+      "quests": [
+        { "id": "q-objets-trouves", "name": "Objets trouvés", "level": 100 }
+      ]
+    },
+    {
+      "id": "halte-au-peage",
+      "title": "Halte au péage",
+      "type": "achievement",
+      "summary": "Régler la circulation et les péages d'accès entre les portes de la Bourgade et les champs de glace.",
+      "quests": [
+        { "id": "q-halte-au-peage", "name": "Halte au péage", "level": 110 }
+      ]
+    },
+    {
+      "id": "l-heure-c-est-l-heure",
+      "title": "L'heure, c'est l'heure",
+      "type": "achievement",
+      "summary": "Comprendre et réparer les mécanismes horlogers perturbés par la magie du Comte Harebourg.",
+      "quests": [
+        {
+          "id": "q-l-heure-c-est-l-heure",
+          "name": "L'heure, c'est l'heure",
+          "level": 110
+        }
+      ]
+    },
+    {
+      "id": "forage-a-tout-va",
+      "title": "Forage à tout va",
+      "type": "achievement",
+      "summary": "Enquête sur les opérations de forage minier intensif menées dans la forêt des pins perdus.",
+      "quests": [
+        { "id": "q-forage-a-tout-va", "name": "Forage à tout va", "level": 120 }
+      ]
+    },
+    {
+      "id": "la-maire-denie",
+      "title": "La maire dénie",
+      "type": "achievement",
+      "summary": "Assister la Maire Cantile dans ses arbitrages politiques et administratifs sous pression.",
+      "quests": [
+        { "id": "q-la-maire-denie", "name": "La maire dénie", "level": 120 }
+      ]
+    },
+    {
+      "id": "les-carrieres-de-glace",
+      "title": "Les carrières de glace",
+      "type": "achievement",
+      "summary": "Secourir les ouvriers des carrières gelées aux prises avec les monstres de glace.",
+      "quests": [
+        {
+          "id": "q-les-carrieres-de-glace",
+          "name": "Les carrières de glace",
+          "level": 130
+        }
+      ]
+    },
+    {
+      "id": "l-hiver-arrive",
+      "title": "L'hiver arrive",
+      "type": "achievement",
+      "summary": "Préparer les défenses de la ville face aux tempêtes de neige magiques récurrentes.",
+      "quests": [
+        { "id": "q-l-hiver-arrive", "name": "L'hiver arrive", "level": 130 }
+      ]
+    },
+    {
+      "id": "l-ame-de-glace",
+      "title": "L'âme de glace",
+      "type": "achievement",
+      "summary": "Enquête mystique sur la nature altérée des esprits et des dragons gelés de l'île.",
+      "quests": [
+        { "id": "q-l-ame-de-glace", "name": "L'âme de glace", "level": 140 }
+      ]
+    },
+    {
+      "id": "ongles-incarnes",
+      "title": "Ongles incarnés",
+      "type": "achievement",
+      "summary": "Combattre les créatures grimpantes et sauvages du berceau d'Alma.",
+      "quests": [
+        { "id": "q-ongles-incarnes", "name": "Ongles incarnés", "level": 140 }
+      ]
+    },
+    {
+      "id": "fraichement-pondu",
+      "title": "Fraîchement pondu",
+      "type": "achievement",
+      "summary": "Étude et collecte des œufs d'espèces rares vivant exclusivement dans les sommets enneigés.",
+      "quests": [
+        {
+          "id": "q-fraichement-pondu",
+          "name": "Fraîchement pondu",
+          "level": 150
+        }
+      ]
+    },
+    {
+      "id": "epilogue-hivernal",
+      "title": "Épilogue hivernal",
+      "type": "achievement",
+      "summary": "Rassemblement des preuves de l'origine du gel perpétuel de Frigost.",
+      "quests": [
+        {
+          "id": "q-epilogue-hivernal",
+          "name": "Épilogue hivernal",
+          "level": 150
+        }
+      ]
+    },
+    {
+      "id": "chahuteur-clandestin",
+      "title": "Chahuteur clandestin",
+      "type": "achievement",
+      "summary": "Neutraliser les fauteurs de troubles infiltrés dans les bateaux et docks frigostiens.",
+      "quests": [
+        {
+          "id": "q-chahuteur-clandestin",
+          "name": "Chahuteur clandestin",
+          "level": 150
+        }
+      ]
+    },
+    {
+      "id": "chasse-gardee",
+      "title": "Chasse gardée",
+      "type": "achievement",
+      "summary": "Protéger la faune menacée par les braconniers des lisières de la forêt pétrifiée.",
+      "quests": [
+        { "id": "q-chasse-gardee", "name": "Chasse gardée", "level": 160 }
+      ]
+    },
+    {
+      "id": "tire-la-chasse",
+      "title": "Tire la chasse",
+      "type": "achievement",
+      "summary": "Traque de spécimens sauvages dangereux dans les grottes de glace.",
+      "quests": [
+        { "id": "q-tire-la-chasse", "name": "Tire la chasse", "level": 160 }
+      ]
+    },
+    {
+      "id": "une-piqure-de-plus",
+      "title": "Une piqûre de plus",
+      "type": "achievement",
+      "summary": "Recherche de remèdes avancés contre les venins des créatures des abîmes glacés.",
+      "quests": [
+        {
+          "id": "q-une-piqure-de-plus",
+          "name": "Une piqûre de plus",
+          "level": 170
+        }
+      ]
+    },
+    {
+      "id": "l-hiver-sera-rude",
+      "title": "L'hiver sera rude",
+      "type": "achievement",
+      "summary": "Missions de ravitaillement stratégiques pour les camps avancés du village enseveli.",
+      "quests": [
+        {
+          "id": "q-l-hiver-sera-rude",
+          "name": "L'hiver sera rude",
+          "level": 170
+        }
+      ]
+    },
+    {
+      "id": "tourisme-hivernal",
+      "title": "Tourisme hivernal",
+      "type": "achievement",
+      "summary": "Escorter des visiteurs téméraires à travers les panoramas gelés les plus périlleux.",
+      "quests": [
+        {
+          "id": "q-tourisme-hivernal",
+          "name": "Tourisme hivernal",
+          "level": 170
+        }
+      ]
+    },
+    {
+      "id": "parent-indigne",
+      "title": "Parent indigne",
+      "type": "achievement",
+      "summary": "Résolution de querelles familiales dramatiques nées de l'isolement du grand froid.",
+      "quests": [
+        { "id": "q-parent-indigne", "name": "Parent indigne", "level": 180 }
+      ]
+    },
+    {
+      "id": "dans-les-dents",
+      "title": "Dans les dents",
+      "type": "achievement",
+      "summary": "Affrontement contre les meutes de Givrefoux hostiles envahissant les villages.",
+      "quests": [
+        { "id": "q-dans-les-dents", "name": "Dans les dents", "level": 180 }
+      ]
+    },
+    {
+      "id": "porte-monstre-tresor",
+      "title": "Porte, monstre, trésor",
+      "type": "achievement",
+      "summary": "Exploration classique des ruines gelées et pillage des cachettes oubliées.",
+      "quests": [
+        {
+          "id": "q-porte-monstre-tresor",
+          "name": "Porte, monstre, trésor",
+          "level": 180
+        }
+      ]
+    },
+    {
+      "id": "interimaire-frigostien",
+      "title": "Intérimaire frigostien",
+      "type": "achievement",
+      "summary": "Accomplir diverses tâches d'assistance journalières et petits boulots de la Bourgade.",
+      "quests": [
+        {
+          "id": "q-interimaire-frigostien",
+          "name": "Intérimaire frigostien",
+          "level": 180
+        }
+      ]
+    },
+    {
+      "id": "ondine-ensemble-ce-soir",
+      "title": "Ondine ensemble ce soir",
+      "type": "achievement",
+      "summary": "Enquête poétique et périlleuse sur la créature aquatique des eaux gelées.",
+      "quests": [
+        {
+          "id": "q-ondine-ensemble-ce-soir",
+          "name": "Ondine ensemble ce soir",
+          "level": 190
+        }
+      ]
+    },
+    {
+      "id": "slip-ou-calecon",
+      "title": "Slip ou caleçon ?",
+      "type": "achievement",
+      "summary": "Dilemme vestimentaire et thermique hautement philosophique des habitants du froid.",
+      "quests": [
+        { "id": "q-slip-ou-calecon", "name": "Slip ou caleçon ?", "level": 190 }
+      ]
+    },
+    {
+      "id": "mais-ou-qu-ils-sont-les-frigostiens",
+      "title": "Mais où qu'ils sont les Frigostiens ?",
+      "type": "achievement",
+      "summary": "Recherche de villageois disparus sous des coulées de neige et dans les crevasses.",
+      "quests": [
+        {
+          "id": "q-mais-ou-qu-ils-sont-les-frigostiens",
+          "name": "Mais où qu'ils sont les Frigostiens ?",
+          "level": 190
+        }
+      ]
+    },
+    {
+      "id": "la-glace-repare-la-glace-remplace",
+      "title": "La glace répare, la glace remplace",
+      "type": "achievement",
+      "summary": "Découverte des propriétés magiques de conservation et de reconstruction par la glace d'ingénierie.",
+      "quests": [
+        {
+          "id": "q-la-glace-repare-la-glace-remplace",
+          "name": "La glace répare, la glace remplace",
+          "level": 190
+        }
+      ]
+    },
+    {
+      "id": "noblesse-oblige",
+      "title": "Noblesse oblige",
+      "type": "achievement",
+      "summary": "Démêler les intrigues et prétentions des aristocrates réfugiés au château d'Harebourg.",
+      "quests": [
+        { "id": "q-noblesse-oblige", "name": "Noblesse oblige", "level": 200 }
+      ]
+    },
+    {
+      "id": "carnage-de-glace",
+      "title": "Carnage de glace",
+      "type": "achievement",
+      "summary": "Extermination ciblée des monstres les plus redoutables des zones de Frigost 3.",
+      "quests": [
+        { "id": "q-carnage-de-glace", "name": "Carnage de glace", "level": 200 }
+      ]
+    },
+    {
+      "id": "donjons-a-l-ancienne",
+      "title": "Donjons à l'ancienne",
+      "type": "achievement",
+      "summary": "Vaincre les boss emblématiques de Frigost selon les rituels et conditions traditionnels.",
+      "quests": [
+        {
+          "id": "q-donjons-a-l-ancienne",
+          "name": "Donjons à l'ancienne",
+          "level": 200
+        }
+      ]
+    },
+    {
+      "id": "regarde-ce-que-j-ai-trouve",
+      "title": "Regarde ce que j'ai trouvé",
+      "type": "achievement",
+      "summary": "Exhumation de reliques anciennes enfouies sous le donjon du Comte Harebourg.",
+      "quests": [
+        {
+          "id": "q-regarde-ce-que-j-ai-trouve",
+          "name": "Regarde ce que j'ai trouvé",
+          "level": 200
+        }
+      ]
+    },
+    {
+      "id": "c-est-assez",
+      "title": "C'est assez",
+      "type": "achievement",
+      "summary": "Mettre fin aux conspirations menaçant la survie ultime des rescapés du gel.",
+      "quests": [{ "id": "q-c-est-assez", "name": "C'est assez", "level": 200 }]
+    },
+    {
+      "id": "la-bas-sous-la-montagne",
+      "title": "Là-bas sous la montagne",
+      "type": "achievement",
+      "summary": "Infiltration ultime dans les galeries et laboratoires secrets sous le mont Freezeberg.",
+      "quests": [
+        {
+          "id": "q-la-bas-sous-la-montagne",
+          "name": "Là-bas sous la montagne",
+          "level": 200
+        }
+      ]
+    }
+  ]
+}

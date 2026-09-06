@@ -1,0 +1,342 @@
+{
+  "id": "alignement",
+  "name": "Alignement et Ordres",
+  "category": "zone",
+  "level": 200,
+  "acquisition": "quest",
+  "summary": "Ensemble complet des succès de progression d'alignement (quêtes 1 à 100) pour Bonta ou Brâkmar, ainsi que la progression dans les 5 rangs des Ordres citadins, menant à l'obtention du Dofus Ivoire.",
+  "tags": [
+    "Zone",
+    "Alignement",
+    "Bonta",
+    "Brâkmar",
+    "Ordres",
+    "Dofus Ivoire",
+    "Niveau 200"
+  ],
+  "source": "https://www.dofuspourlesnoobs.com/quetes-dalignement.html",
+  "progression": {
+    "trackId": "zones-dofus",
+    "order": 37
+  },
+  "parts": [
+    {
+      "id": "partie-alignement-quetes",
+      "name": "Niveaux d'Alignement (1 à 100)",
+      "itemsRequired": [
+        {
+          "name": "Badges et composants d'Ordre",
+          "quantity": 1,
+          "note": "Ressources et équipements spécifiques requis selon la cité et l'Ordre choisi"
+        }
+      ],
+      "dungeonsRequired": [],
+      "successes": [
+        "garde-a-vous",
+        "chef-oui-chef",
+        "adjuge-glandu",
+        "major-de-promotion-canape",
+        "aspirateur",
+        "lieutenant-colon",
+        "ohe-ohe-capitaine-abandonne",
+        "commande-et-ment",
+        "colonel-chachabert",
+        "travail-d-interet-general"
+      ]
+    },
+    {
+      "id": "partie-alignement-ordres",
+      "name": "Rangs des Ordres (Titres et Ornements)",
+      "itemsRequired": [
+        {
+          "name": "Reliques d'Ordre",
+          "quantity": 1,
+          "note": "S'obtiennent en complétant les quêtes de spécialisation d'Ordre"
+        }
+      ],
+      "dungeonsRequired": [],
+      "successes": [
+        "a-vos-ordres",
+        "mot-d-ordre",
+        "jusqu-a-nouvel-ordre",
+        "ordre-du-jour",
+        "maintien-de-l-ordre",
+        "mettre-en-ordre",
+        "tout-est-en-ordre",
+        "dans-l-ordre-des-choses",
+        "vos-desirs-sont-des-ordres",
+        "vos-desirs-font-desordre"
+      ]
+    }
+  ],
+  "rewards": {
+    "items": ["Dofus Ivoire", "Ornements et Titres d'Ordre"],
+    "effect": "Octroie la maîtrise de l'alignement citadin maximum et prérequis indispensable pour la quête du Dofus Ivoire."
+  },
+  "globalPrerequisites": [
+    "Avoir choisi un alignement (Bonta auprès d'Amayiro ou Brâkmar auprès d'Oto Mustam)",
+    "Niveau 200 recommandé pour finaliser les tranches 80 à 100"
+  ],
+  "objectives": [
+    {
+      "id": "garde-a-vous",
+      "title": "Garde à vous.",
+      "type": "achievement",
+      "summary": "Compléter les quêtes d'alignement de 1 à 10.",
+      "quests": [
+        {
+          "id": "q-alignement-1-10",
+          "name": "Quêtes d'alignement 1 à 10",
+          "level": 20
+        }
+      ]
+    },
+    {
+      "id": "chef-oui-chef",
+      "title": "Chef oui chef.",
+      "type": "achievement",
+      "summary": "Compléter les quêtes d'alignement de 11 à 20.",
+      "quests": [
+        {
+          "id": "q-alignement-11-20",
+          "name": "Quêtes d'alignement 11 à 20",
+          "level": 40
+        }
+      ]
+    },
+    {
+      "id": "adjuge-glandu",
+      "title": "Adjugé glandu.",
+      "type": "achievement",
+      "summary": "Compléter les quêtes d'alignement de 21 à 30.",
+      "quests": [
+        {
+          "id": "q-alignement-21-30",
+          "name": "Quêtes d'alignement 21 à 30",
+          "level": 60
+        }
+      ]
+    },
+    {
+      "id": "major-de-promotion-canape",
+      "title": "Major de promotion canapé.",
+      "type": "achievement",
+      "summary": "Compléter les quêtes d'alignement de 31 à 40.",
+      "quests": [
+        {
+          "id": "q-alignement-31-40",
+          "name": "Quêtes d'alignement 31 à 40",
+          "level": 80
+        }
+      ]
+    },
+    {
+      "id": "aspirateur",
+      "title": "Aspirateur.",
+      "type": "achievement",
+      "summary": "Compléter les quêtes d'alignement de 41 à 50.",
+      "quests": [
+        {
+          "id": "q-alignement-41-50",
+          "name": "Quêtes d'alignement 41 à 50",
+          "level": 100
+        }
+      ]
+    },
+    {
+      "id": "lieutenant-colon",
+      "title": "Lieutenant Colon.",
+      "type": "achievement",
+      "summary": "Compléter les quêtes d'alignement de 51 à 60.",
+      "quests": [
+        {
+          "id": "q-alignement-51-60",
+          "name": "Quêtes d'alignement 51 à 60",
+          "level": 120
+        }
+      ]
+    },
+    {
+      "id": "ohe-ohe-capitaine-abandonne",
+      "title": "Ohé, ohé, capitaine abandonné.",
+      "type": "achievement",
+      "summary": "Compléter les quêtes d'alignement de 61 à 70.",
+      "quests": [
+        {
+          "id": "q-alignement-61-70",
+          "name": "Quêtes d'alignement 61 à 70",
+          "level": 140
+        }
+      ]
+    },
+    {
+      "id": "commande-et-ment",
+      "title": "Commande et ment.",
+      "type": "achievement",
+      "summary": "Compléter les quêtes d'alignement de 71 à 80.",
+      "quests": [
+        {
+          "id": "q-alignement-71-80",
+          "name": "Quêtes d'alignement 71 à 80",
+          "level": 160
+        }
+      ]
+    },
+    {
+      "id": "colonel-chachabert",
+      "title": "Colonel Chachabert.",
+      "type": "achievement",
+      "summary": "Compléter les quêtes d'alignement de 81 à 90.",
+      "quests": [
+        {
+          "id": "q-alignement-81-90",
+          "name": "Quêtes d'alignement 81 à 90",
+          "level": 180
+        }
+      ]
+    },
+    {
+      "id": "travail-d-interet-general",
+      "title": "Travail d'intérêt général.",
+      "type": "achievement",
+      "summary": "Compléter les quêtes d'alignement de 91 à 100.",
+      "quests": [
+        {
+          "id": "q-alignement-91-100",
+          "name": "Quêtes d'alignement 91 à 100",
+          "level": 200
+        }
+      ]
+    },
+    {
+      "id": "a-vos-ordres",
+      "title": "À vos Ordres !",
+      "type": "achievement",
+      "summary": "Obtenir les titres associés au Rang 1 de votre Ordre citadin.",
+      "quests": [
+        {
+          "id": "q-ordre-rang-1-titre",
+          "name": "Première spécialisation d'Ordre",
+          "level": 40
+        }
+      ]
+    },
+    {
+      "id": "mot-d-ordre",
+      "title": "Mot d'Ordre.",
+      "type": "achievement",
+      "summary": "Obtenir les ornements associés au Rang 1 de votre Ordre citadin.",
+      "quests": [
+        {
+          "id": "q-ordre-rang-1-ornement",
+          "name": "Consécration du Rang 1",
+          "level": 40
+        }
+      ]
+    },
+    {
+      "id": "jusqu-a-nouvel-ordre",
+      "title": "Jusqu'à nouvel Ordre.",
+      "type": "achievement",
+      "summary": "Obtenir les titres associés au Rang 2 de votre Ordre citadin.",
+      "quests": [
+        {
+          "id": "q-ordre-rang-2-titre",
+          "name": "Deuxième spécialisation d'Ordre",
+          "level": 80
+        }
+      ]
+    },
+    {
+      "id": "ordre-du-jour",
+      "title": "Ordre du jour.",
+      "type": "achievement",
+      "summary": "Obtenir les ornements associés au Rang 2 de votre Ordre citadin.",
+      "quests": [
+        {
+          "id": "q-ordre-rang-2-ornement",
+          "name": "Consécration du Rang 2",
+          "level": 80
+        }
+      ]
+    },
+    {
+      "id": "maintien-de-l-ordre",
+      "title": "Maintien de l'Ordre.",
+      "type": "achievement",
+      "summary": "Obtenir les titres associés au Rang 3 de votre Ordre citadin.",
+      "quests": [
+        {
+          "id": "q-ordre-rang-3-titre",
+          "name": "Troisième spécialisation d'Ordre",
+          "level": 120
+        }
+      ]
+    },
+    {
+      "id": "mettre-en-ordre",
+      "title": "Mettre en Ordre.",
+      "type": "achievement",
+      "summary": "Obtenir les ornements associés au Rang 3 de votre Ordre citadin.",
+      "quests": [
+        {
+          "id": "q-ordre-rang-3-ornement",
+          "name": "Consécration du Rang 3",
+          "level": 120
+        }
+      ]
+    },
+    {
+      "id": "tout-est-en-ordre",
+      "title": "Tout est en Ordre.",
+      "type": "achievement",
+      "summary": "Obtenir les titres associés au Rang 4 de votre Ordre citadin.",
+      "quests": [
+        {
+          "id": "q-ordre-rang-4-titre",
+          "name": "Quatrième spécialisation d'Ordre",
+          "level": 160
+        }
+      ]
+    },
+    {
+      "id": "dans-l-ordre-des-choses",
+      "title": "Dans l'Ordre des choses.",
+      "type": "achievement",
+      "summary": "Obtenir les ornements associés au Rang 4 de votre Ordre citadin.",
+      "quests": [
+        {
+          "id": "q-ordre-rang-4-ornement",
+          "name": "Consécration du Rang 4",
+          "level": 160
+        }
+      ]
+    },
+    {
+      "id": "vos-desirs-sont-des-ordres",
+      "title": "Vos désirs sont des Ordres.",
+      "type": "achievement",
+      "summary": "Obtenir les titres de Maître ultime associés au Rang 5 de votre Ordre citadin.",
+      "quests": [
+        {
+          "id": "q-ordre-rang-5-titre",
+          "name": "Ultime spécialisation d'Ordre",
+          "level": 200
+        }
+      ]
+    },
+    {
+      "id": "vos-desirs-font-desordre",
+      "title": "Vos désirs font désordre.",
+      "type": "achievement",
+      "summary": "Obtenir les ornements suprêmes associés au Rang 5 de votre Ordre citadin.",
+      "quests": [
+        {
+          "id": "q-ordre-rang-5-ornement",
+          "name": "Consécration du Rang 5",
+          "level": 200
+        }
+      ]
+    }
+  ]
+}

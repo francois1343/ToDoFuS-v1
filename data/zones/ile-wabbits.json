@@ -1,0 +1,120 @@
+{
+  "id": "ile-wabbits",
+  "name": "Île des Wabbits",
+  "category": "zone",
+  "level": 60,
+  "acquisition": "quest",
+  "summary": "Ensemble des quêtes d'exploration et d'intrigue sur l'Île des Wabbits, permettant notamment de faire la connaissance du Wa Wabbit et de progresser vers les secrets de l'île et le Dofus Cawotte.",
+  "tags": [
+    "Zone",
+    "Île des Wabbits",
+    "Wabbit",
+    "Wa Wabbit",
+    "Lenalde",
+    "Niveau 60"
+  ],
+  "source": "https://www.dofuspourlesnoobs.com/ile-des-wabbits.html",
+  "progression": {
+    "trackId": "zones-dofus",
+    "order": 10
+  },
+  "parts": [
+    {
+      "id": "partie-ile-wabbits",
+      "name": "Quêtes de l'Île des Wabbits",
+      "itemsRequired": [
+        {
+          "name": "Potion d'Oubli de Métier",
+          "quantity": 1,
+          "note": "Variable selon l'orientation des quêtes"
+        },
+        {
+          "name": "Cawotte",
+          "quantity": 100,
+          "note": "Pour diverses étapes et échanges sur l'île"
+        }
+      ],
+      "dungeonsRequired": ["Donjon Château du Wa Wabbit"],
+      "successes": [
+        "ruse-comme-une-lenalde",
+        "lancer-de-wabbit",
+        "un-wa-de-pacotille",
+        "poil-de-cawotte",
+        "partie-prise",
+        "wabbit-en-feu"
+      ]
+    }
+  ],
+  "rewards": {
+    "items": [],
+    "effect": "Déblocage des accès de l'île, succès de zone et prérequis pour le Dofus Cawotte."
+  },
+  "globalPrerequisites": [
+    "Niveau 60 recommandé",
+    "Avoir débloqué l'accès maritime vers l'Île des Wabbits (Château d'Amakna / Bateau)"
+  ],
+  "objectives": [
+    {
+      "id": "ruse-comme-une-lenalde",
+      "title": "Rusé comme une Lenalde",
+      "type": "quest",
+      "summary": "Quête d'introduction aux intrigues des Lenaldes opposées au règne tyrannique du Wa Wabbit.",
+      "quests": [
+        {
+          "id": "q-ruse-comme-une-lenalde",
+          "name": "Rusé comme une Lenalde",
+          "level": 60
+        }
+      ]
+    },
+    {
+      "id": "lancer-de-wabbit",
+      "title": "Lancer de Wabbit",
+      "type": "quest",
+      "summary": "Aider à résoudre des problèmes d'invasion et de gestion des Wabbits sur l'île.",
+      "quests": [
+        { "id": "q-lancer-de-wabbit", "name": "Lancer de Wabbit", "level": 60 }
+      ]
+    },
+    {
+      "id": "un-wa-de-pacotille",
+      "title": "Un Wa de pacotille",
+      "type": "quest",
+      "summary": "Tenter de détrôner ou d'infiltrer la garde rapprochée du Wa Wabbit.",
+      "quests": [
+        {
+          "id": "q-un-wa-de-pacotille",
+          "name": "Un Wa de pacotille",
+          "level": 60
+        }
+      ]
+    },
+    {
+      "id": "poil-de-cawotte",
+      "title": "Poil de Cawotte",
+      "type": "quest",
+      "summary": "Série de recherches et de récoltes autour des célèbres Cawottes magiques des Wabbits.",
+      "quests": [
+        { "id": "q-poil-de-cawotte", "name": "Poil de Cawotte", "level": 60 }
+      ]
+    },
+    {
+      "id": "partie-prise",
+      "title": "Partie prise",
+      "type": "quest",
+      "summary": "Choisir son camp ou négocier les alliances locales entre Lenaldes et Wabbits.",
+      "quests": [
+        { "id": "q-partie-prise", "name": "Partie prise", "level": 60 }
+      ]
+    },
+    {
+      "id": "wabbit-en-feu",
+      "title": "Wabbit en feu",
+      "type": "quest",
+      "summary": "Faire face aux menaces et incidents survenus dans les souterrains et galeries des Wabbits.",
+      "quests": [
+        { "id": "q-wabbit-en-feu", "name": "Wabbit en feu", "level": 60 }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "id": "cania",
+  "name": "Cania",
+  "category": "zone",
+  "level": 70,
+  "acquisition": "quest",
+  "summary": "Ensemble des succès et quêtes d'exploration des vastes Plaines de Cania, couvrant le Lac de Cania, les Champs de Cania, les Massifs et les routes marchandes menant vers Bonta.",
+  "tags": [
+    "Zone",
+    "Cania",
+    "Plaines de Cania",
+    "Bonta",
+    "Niveau 70",
+    "Niveau 90"
+  ],
+  "source": "https://www.dofuspourlesnoobs.com/plaines-de-cania.html",
+  "progression": {
+    "trackId": "zones-dofus",
+    "order": 8
+  },
+  "parts": [
+    {
+      "id": "partie-cania",
+      "name": "Succès et Quêtes de Cania",
+      "itemsRequired": [
+        {
+          "name": "Bière du dromadaire",
+          "quantity": 1,
+          "note": "Pour la convivialité et certaines étapes de quêtes de la région"
+        },
+        {
+          "name": "Laine de Bouftou de Cania",
+          "quantity": 5,
+          "note": "Ressource de collecte et d'échanges locaux"
+        }
+      ],
+      "dungeonsRequired": [
+        "Donjon Tainéla / Donjon Champa",
+        "Donjon Bwork",
+        "Donjon Blop"
+      ],
+      "successes": [
+        "la-voyageuse-imprudente",
+        "caniablanca",
+        "ca-en-valait-la-plaine"
+      ]
+    }
+  ],
+  "rewards": {
+    "items": [],
+    "effect": "Déblocage des accès d'exploration des sous-zones de Cania et succès de zone."
+  },
+  "globalPrerequisites": [
+    "Niveau 70 recommandé",
+    "Accès libre aux Plaines de Cania depuis Astrub ou Bonta"
+  ],
+  "objectives": [
+    {
+      "id": "la-voyageuse-imprudente",
+      "title": "La voyageuse imprudente",
+      "type": "achievement",
+      "summary": "Missions d'escorte et de protection d'une aventurière égarée dans les plaines sauvages.",
+      "quests": [
+        {
+          "id": "q-la-voyageuse-1",
+          "name": "Une piste dans les hautes herbes",
+          "level": 70
+        },
+        {
+          "id": "q-la-voyageuse-2",
+          "name": "Secours sur la route de Bonta",
+          "level": 70
+        }
+      ]
+    },
+    {
+      "id": "caniablanca",
+      "title": "Caniablanca",
+      "type": "achievement",
+      "summary": "Infiltration, quêtes d'intrigue diplomatique et affaires louches sur les comptoirs marchands de Cania.",
+      "quests": [
+        {
+          "id": "q-caniablanca-1",
+          "name": "Affaires de comptoir",
+          "level": 80
+        },
+        { "id": "q-caniablanca-2", "name": "Un trafic bien huilé", "level": 80 }
+      ]
+    },
+    {
+      "id": "ca-en-valait-la-plaine",
+      "title": "Ça en valait la plaine",
+      "type": "achievement",
+      "summary": "Grandes quêtes d'arpentage et de cartographie à travers les multiples paysages des Plaines de Cania.",
+      "quests": [
+        {
+          "id": "q-valait-la-plaine-1",
+          "name": "L'arpenteur des grands espaces",
+          "level": 90
+        },
+        {
+          "id": "q-valait-la-plaine-2",
+          "name": "Horizon sans fin",
+          "level": 90
+        }
+      ]
+    }
+  ]
+}

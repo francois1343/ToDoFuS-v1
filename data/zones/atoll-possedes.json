@@ -1,0 +1,64 @@
+{
+  "id": "atoll-des-possedes",
+  "name": "Atoll des Possédés",
+  "category": "zone",
+  "level": 200,
+  "acquisition": "quest",
+  "summary": "Ensemble des succès et quêtes d'exploration de l'Atoll des Possédés, traitant des esprits possédés, des mutations démoniaques et des conflits ravageurs sur cet archipel maudit.",
+  "tags": ["Zone", "Atoll des Possédés", "Possédés", "Ravageurs", "Niveau 200"],
+  "source": "https://www.dofuspourlesnoobs.com/atoll-des-possedes.html",
+  "progression": {
+    "trackId": "zones-dofus",
+    "order": 33
+  },
+  "parts": [
+    {
+      "id": "partie-atoll-des-possedes",
+      "name": "Succès et Quêtes de l'Atoll des Possédés",
+      "itemsRequired": [
+        {
+          "name": "Essence d'Esprit Possédé",
+          "quantity": 1,
+          "note": "Ressource requise pour la purification ou les rituels"
+        }
+      ],
+      "dungeonsRequired": ["Donjon Anomura"],
+      "successes": ["d-autres-moeurs", "ravages"]
+    }
+  ],
+  "rewards": {
+    "items": [],
+    "effect": "Déblocage des accès d'exploration de l'Atoll des Possédés et prérequis d'extension."
+  },
+  "globalPrerequisites": ["Niveau 200 requis"],
+  "objectives": [
+    {
+      "id": "d-autres-moeurs",
+      "title": "D'autres mœurs",
+      "type": "achievement",
+      "summary": "Enquête sur les coutumes sombres et les rites d'incorporation des entités possédées de l'île.",
+      "quests": [
+        {
+          "id": "q-d-autres-moeurs-1",
+          "name": "Rituels profanes",
+          "level": 200
+        },
+        {
+          "id": "q-d-autres-moeurs-2",
+          "name": "Coutumes d'un autre monde",
+          "level": 200
+        }
+      ]
+    },
+    {
+      "id": "ravages",
+      "title": "Ravagés",
+      "type": "achievement",
+      "summary": "Faire face aux vagues de ravages et d'altérations démoniaques frappant les faunes et flores de l'atoll.",
+      "quests": [
+        { "id": "q-ravages-1", "name": "Terre dévastée", "level": 200 },
+        { "id": "q-ravages-2", "name": "La marque du ravage", "level": 200 }
+      ]
+    }
+  ]
+}

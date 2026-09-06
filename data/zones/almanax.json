@@ -1,0 +1,54 @@
+{
+  "id": "almanax",
+  "name": "Almanax",
+  "category": "zone",
+  "level": 100,
+  "acquisition": "quest",
+  "summary": "Succès et quête d'offrandes quotidiennes au Sanctuaire du Bibliotemple pour honorer les Mérydes, menant à l'obtention du Dofus des Glaces / Dolmanax.",
+  "tags": [
+    "Zone",
+    "Almanax",
+    "Bibliotemple",
+    "Mérydes",
+    "Dolmanax",
+    "Niveau 100"
+  ],
+  "source": "https://www.dofuspourlesnoobs.com/almanax.html",
+  "progression": {
+    "trackId": "zones-dofus",
+    "order": 36
+  },
+  "parts": [
+    {
+      "id": "partie-almanax",
+      "name": "Succès et Quêtes du Bibliotemple",
+      "itemsRequired": [
+        {
+          "name": "Offrandes quotidiennes des Mérydes",
+          "quantity": 365,
+          "note": "Une offrande spécifique par jour pendant 365 jours"
+        }
+      ],
+      "dungeonsRequired": [],
+      "successes": ["le-repos-du-dragon"]
+    }
+  ],
+  "rewards": {
+    "items": ["Dolmanax", "Page du Calendrier"],
+    "effect": "Accès au pouvoir du Dolmanax et accomplissement du rituel des 365 jours au Bibliotemple."
+  },
+  "globalPrerequisites": [
+    "Niveau 100 recommandé pour accomplir les quêtes d'offrandes quotidiennes"
+  ],
+  "objectives": [
+    {
+      "id": "le-repos-du-dragon",
+      "title": "Le repos du dragon",
+      "type": "achievement",
+      "summary": "Accomplir les 365 offrandes quotidiennes auprès de Théodore Poussin pour réveiller la puissance du Dolmanax.",
+      "quests": [
+        { "id": "q-almanax-365", "name": "Le repos du dragon", "level": 100 }
+      ]
+    }
+  ]
+}
