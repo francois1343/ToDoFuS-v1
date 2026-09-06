@@ -80,6 +80,18 @@ const moduleBlueprints = {
     categories: ["gathering", "crafting", "mage", "breeding", "scroll"],
     notice: "Les niveaux sont personnels et restent dans le navigateur ; les définitions viennent uniquement des JSON.",
   },
+  custom: {
+    id: "custom",
+    label: "Créer sa propre Todoofus-list",
+    shortLabel: "Todoofus-list",
+    icon: "backpack",
+    eyebrow: "Liste personnelle",
+    title: "Créer sa propre Todoofus-list",
+    progressUnit: "objectifs personnels",
+    searchPlaceholder: "Rechercher un objectif…",
+    categories: [],
+    notice: "Les tâches de cette liste sont stockées localement sur cet appareil.",
+  },
 };
 
 const elements = {
@@ -179,6 +191,7 @@ function loadState() {
   const next = {
     objectives: loaded?.objectives || {},
     metrics: loaded?.metrics || {},
+    customList: Array.isArray(loaded?.customList) ? loaded.customList : [],
     migrations: loaded?.migrations || {},
     filters: loaded?.filters || {},
     openGroups: loaded?.openGroups || [],
@@ -452,6 +465,7 @@ function buildModules(data) {
       });
     })
     .sort(byOrder);
+
   const professionCategories = asArray(data.professions?.categories).filter(
     (category) => category.id !== "breeding",
   );
@@ -495,13 +509,16 @@ function buildModules(data) {
     },
     { ...moduleBlueprints.lore, sections: dofusSections },
     { ...moduleBlueprints.artisanat, sections: professionSections },
+    { ...moduleBlueprints.custom, sections: [] },
   ];
 }
 
 const currentModule = () =>
   modules.find((module) => module.id === activeModuleId);
 const moduleGroups = (module) =>
-  module.sections.flatMap((section) => section.groups);
+  module.id === "custom"
+    ? []
+    : module.sections.flatMap((section) => section.groups);
 const objectiveStateId = (module, objective) => `${module.id}:${objective.id}`;
 const isObjectiveDone = (module, objective) =>
   Boolean(state.objectives[objectiveStateId(module, objective)]);
@@ -541,7 +558,32 @@ function groupStats(module, group) {
   };
 }
 
+function getCustomList() {
+  return (Array.isArray(state.customList) ? state.customList : [])
+    .map((task) => ({
+      id: typeof task?.id === "string" ? task.id : `custom-${Math.random().toString(36).slice(2, 9)}`,
+      title: typeof task?.title === "string" ? task.title.trim() : "",
+      done: Boolean(task?.done),
+    }))
+    .filter((task) => task.title);
+}
+
+function saveCustomList(list) {
+  state.customList = list;
+  saveState();
+}
+
 function moduleStats(module) {
+  if (module.id === "custom") {
+    const customList = getCustomList();
+    const total = customList.length;
+    const completed = customList.filter((task) => task.done).length;
+    return {
+      completed,
+      total,
+      percent: total ? Math.round((completed / total) * 100) : 0,
+    };
+  }
   const groups = moduleGroups(module);
   const objectives = groups.flatMap((group) => group.objectives);
   const metrics = groups.filter((group) => group.metric);
@@ -959,7 +1001,84 @@ function renderGroup(module, group, objectives) {
   </details>`;
 }
 
+function renderCustomList() {
+  const tasks = getCustomList();
+  const total = tasks.length;
+  const completed = tasks.filter((task) => task.done).length;
+  const percent = total ? Math.round((completed / total) * 100) : 0;
+  const items = tasks.length
+    ? tasks.map((task, index) => `
+      <li class="custom-task-item${task.done ? " is-done" : ""}">
+        <label class="custom-task" for="custom-task-${escapeHtml(task.id)}">
+          <input
+            id="custom-task-${escapeHtml(task.id)}"
+            type="checkbox"
+            data-custom-check="${index}"
+            ${task.done ? "checked" : ""}
+          >
+          <span class="custom-task-title">${escapeHtml(task.title)}</span>
+        </label>
+        <button
+          type="button"
+          class="icon-button custom-task-remove"
+          data-custom-remove="${index}"
+          aria-label="Supprimer ${escapeHtml(task.title)}"
+        >
+          <svg aria-hidden="true"><use href="#icon-close"></use></svg>
+        </button>
+      </li>
+    `).join("")
+    : `<li class="custom-empty-state">Aucune tâche pour le moment. Ajoutez votre premier objectif pour commencer votre Todoofus-list.</li>`;
+
+  return `
+    <section class="catalog-section custom-list-section">
+      <div class="catalog-section-heading">
+        <div>
+          <p class="eyebrow">Todoofus</p>
+          <h3 id="section-custom-list">Créer sa propre Todoofus-list</h3>
+        </div>
+        <div class="catalog-section-actions">
+          <p>Suivez vos objectifs personnels, vos priorités ou les étapes de votre aventure.</p>
+          <div class="custom-actions">
+            <button type="button" class="button button-small button-ghost" data-custom-action="complete-all">Tout cocher</button>
+            <button type="button" class="button button-small button-ghost" data-custom-action="clear-all">Tout remettre à zéro</button>
+          </div>
+        </div>
+      </div>
+      <div class="custom-board">
+        <form class="custom-task-form" data-custom-form="true">
+          <label class="custom-task-input-wrap">
+            <span class="sr-only">Nouvel objectif</span>
+            <input
+              id="customTaskInput"
+              type="text"
+              name="task"
+              placeholder="Ajouter un objectif…"
+              maxlength="160"
+              autocomplete="off"
+              required
+            >
+          </label>
+          <button type="submit" class="button button-primary">Ajouter</button>
+        </form>
+        <div class="custom-summary" aria-live="polite">
+          <strong>${completed}</strong> / ${total} complété${total === 1 ? "" : "s"}
+          <span class="custom-progress">
+            <i style="width:${percent}%"></i>
+          </span>
+          <small>${percent}%</small>
+        </div>
+        <ul class="custom-task-list">${items}</ul>
+      </div>
+    </section>
+  `;
+}
+
 function renderCatalog(module) {
+  if (module.id === "custom") {
+    elements.tiers.innerHTML = renderCustomList();
+    return getCustomList().length;
+  }
   let visibleGroups = 0;
   const sections = module.sections
     .map((section) => {
@@ -990,6 +1109,9 @@ function renderCatalog(module) {
 }
 
 function hasModuleProgress(module) {
+  if (module.id === "custom") {
+    return getCustomList().some((task) => task.done);
+  }
   return moduleGroups(module).some((group) => {
     if (group.metric) return metricValue(group) > group.metric.min;
     return group.objectives.some((objective) => isObjectiveDone(module, objective));
@@ -1006,6 +1128,11 @@ function progressMessage(stats) {
 }
 
 function renderCategoryFilters(module) {
+  if (module.id === "custom") {
+    elements.categoryFilter.innerHTML = '<option value="all">Tous les types</option>';
+    elements.tagFilters.innerHTML = '<label class="tag-choice"><input type="checkbox" value="" checked>Tous les tags</label>';
+    return;
+  }
   const ignoredTags = new Set(["city", "island", "event", "endgame", "activity"]);
   const ignoredLoreTags = new Set(["dofus", "primordial"]);
   const tags = new Set(moduleGroups(module).flatMap((group) => {
@@ -1071,6 +1198,11 @@ function renderCategoryFilters(module) {
 }
 
 function renderZoneFilter(module) {
+  if (module.id === "custom") {
+    elements.zoneFilterField.hidden = true;
+    elements.zoneFilter.innerHTML = '<option value="all">Toutes</option>';
+    return;
+  }
   const zones = module.sections
     .flatMap((section) => section.groups)
     .filter((group) => group.kind === "zone")
@@ -1089,6 +1221,9 @@ function renderZoneFilter(module) {
 }
 
 function updateInterface(module, stats, visibleGroups) {
+  const customMode = module.id === "custom";
+  const filterPanel = document.querySelector(".filter-panel");
+  if (filterPanel) filterPanel.hidden = customMode;
   elements.progressEyebrow.textContent = `Progression · ${module.shortLabel}`;
   elements.progressText.textContent = `${stats.completed} / ${stats.total}`;
   elements.progressUnit.textContent = module.progressUnit;
@@ -1105,20 +1240,26 @@ function updateInterface(module, stats, visibleGroups) {
   elements.moduleNotice.textContent = usingFallbackData
     ? "Mode local actif : lancez le site via un serveur local (http://localhost) pour charger les JSON complets."
     : "";
-  elements.emptyTitle.textContent = "Aucun parcours trouvé";
-  elements.emptyText.textContent = visibleGroups
-    ? ""
-    : "Modifiez la recherche ou les filtres pour afficher d’autres cartes, ou revenez plus tard : contenu à venir.";
-  elements.resultCount.textContent = `${visibleGroups} carte${visibleGroups === 1 ? "" : "s"} affichée${visibleGroups === 1 ? "" : "s"}`;
+  elements.emptyTitle.textContent = customMode ? "Aucune tâche planifiée" : "Aucun parcours trouvé";
+  elements.emptyText.textContent = customMode
+    ? "Ajoutez votre premier objectif pour construire votre Todoofus-list."
+    : visibleGroups
+      ? ""
+      : "Modifiez la recherche ou les filtres pour afficher d’autres cartes, ou revenez plus tard : contenu à venir.";
+  elements.resultCount.textContent = customMode
+    ? `${visibleGroups} objectif${visibleGroups === 1 ? "" : "s"} affiché${visibleGroups === 1 ? "" : "s"}`
+    : `${visibleGroups} carte${visibleGroups === 1 ? "" : "s"} affichée${visibleGroups === 1 ? "" : "s"}`;
   elements.hideCompletedLabel.textContent = hideCompleted
     ? "Afficher les progressions achevées (100 %)"
     : "Masquer les progressions achevées (100 %)";
-  elements.checkAllLabel.textContent = "Tout terminer";
-  elements.resetLabel.textContent = "Effacer la progression";
+  elements.checkAllLabel.textContent = customMode ? "Tout valider" : "Tout terminer";
+  elements.resetLabel.textContent = customMode ? "Effacer la liste" : "Effacer la progression";
   elements.checkAll.disabled = !stats.total || stats.percent === 100;
   elements.openReset.disabled = !hasModuleProgress(module);
-  renderCategoryFilters(module);
-  renderZoneFilter(module);
+  if (!customMode) {
+    renderCategoryFilters(module);
+    renderZoneFilter(module);
+  }
   updateSaveStatus();
 }
 
@@ -1350,6 +1491,39 @@ elements.tiers.addEventListener("toggle", (event) => {
 }, true);
 
 elements.tiers.addEventListener("click", (event) => {
+  const customAction = event.target.closest("[data-custom-action]");
+  if (customAction) {
+    event.preventDefault();
+    event.stopPropagation();
+    const tasks = getCustomList();
+    if (customAction.dataset.customAction === "complete-all") {
+      const updated = tasks.map((task) => ({ ...task, done: true }));
+      saveCustomList(updated);
+      render();
+      showToast("Toutes les tâches de votre Todoofus-list sont validées.");
+      return;
+    }
+    if (customAction.dataset.customAction === "clear-all") {
+      saveCustomList([]);
+      render();
+      showToast("Votre Todoofus-list a été réinitialisée.");
+      return;
+    }
+  }
+
+  const customRemove = event.target.closest("[data-custom-remove]");
+  if (customRemove) {
+    event.preventDefault();
+    event.stopPropagation();
+    const tasks = getCustomList();
+    const index = Number(customRemove.dataset.customRemove);
+    const updated = tasks.filter((_, taskIndex) => taskIndex !== index);
+    saveCustomList(updated);
+    render();
+    showToast("Tâche supprimée.");
+    return;
+  }
+
   const sectionButton = event.target.closest("[data-hide-section]");
   if (sectionButton) {
     event.preventDefault();
@@ -1402,8 +1576,41 @@ elements.tiers.addEventListener("click", (event) => {
   }
 });
 
+elements.tiers.addEventListener("submit", (event) => {
+  const customForm = event.target.closest("form[data-custom-form]");
+  if (!customForm) return;
+  event.preventDefault();
+  const input = customForm.querySelector("input[name='task']");
+  if (!(input instanceof HTMLInputElement)) return;
+  const value = input.value.trim();
+  if (!value) return;
+  const tasks = getCustomList();
+  const nextTask = {
+    id: `custom-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 8)}`,
+    title: value,
+    done: false,
+  };
+  saveCustomList([...tasks, nextTask]);
+  input.value = "";
+  render();
+  showToast("Nouvel objectif ajouté à votre Todoofus-list.");
+});
+
 elements.tiers.addEventListener("change", (event) => {
   const module = currentModule();
+  const customCheckbox = event.target.closest("input[data-custom-check]");
+  if (customCheckbox) {
+    const tasks = getCustomList();
+    const index = Number(customCheckbox.dataset.customCheck);
+    const updated = tasks.map((task, taskIndex) =>
+      taskIndex === index ? { ...task, done: customCheckbox.checked } : task,
+    );
+    saveCustomList(updated);
+    render();
+    showToast(customCheckbox.checked ? "Objectif validé." : "Objectif remis à faire.");
+    return;
+  }
+
   const pageSelect = event.target.closest("select[data-page-group]");
   if (pageSelect) {
     objectivePages.set(pageSelect.dataset.pageGroup, Number(pageSelect.value) || 0);
@@ -1460,6 +1667,12 @@ elements.tiers.addEventListener("change", (event) => {
 
 elements.checkAll.addEventListener("click", () => {
   const module = currentModule();
+  if (module.id === "custom") {
+    saveCustomList(getCustomList().map((task) => ({ ...task, done: true })));
+    render();
+    showToast("Tous les objectifs de votre Todoofus-list sont cochés.");
+    return;
+  }
   moduleGroups(module).forEach((group) => {
     group.objectives.forEach((objective) => {
       state.objectives[objectiveStateId(module, objective)] = true;
@@ -1475,7 +1688,9 @@ elements.openReset.addEventListener("click", () => {
   const module = currentModule();
   elements.dialogTitle.textContent = `Réinitialiser ${module.shortLabel} ?`;
   elements.resetDialogText.textContent =
-    `Toute la progression du module « ${module.label} » sera effacée. Cette action ne peut pas être annulée.`;
+    module.id === "custom"
+      ? "Toute votre Todoofus-list sera effacée. Cette action ne peut pas être annulée."
+      : `Toute la progression du module « ${module.label} » sera effacée. Cette action ne peut pas être annulée.`;
   elements.resetDialog.showModal();
 });
 
@@ -1487,6 +1702,13 @@ document
   .addEventListener("click", () => elements.resetDialog.close());
 document.getElementById("uncheckAll").addEventListener("click", () => {
   const module = currentModule();
+  if (module.id === "custom") {
+    saveCustomList([]);
+    elements.resetDialog.close();
+    render();
+    showToast("La Todoofus-list a été réinitialisée.");
+    return;
+  }
   const objectiveIds = new Set(
     moduleGroups(module)
       .flatMap((group) => group.objectives)
@@ -1515,6 +1737,7 @@ elements.exportSave.addEventListener("click", () => {
     state: {
       objectives: state.objectives,
       metrics: state.metrics,
+      customList: state.customList,
       migrations: state.migrations,
       filters: state.filters,
       openGroups: state.openGroups,
@@ -1560,6 +1783,7 @@ elements.importFile.addEventListener("change", () => {
       state = {
         objectives: imported.objectives,
         metrics: imported.metrics,
+        customList: Array.isArray(imported.customList) ? imported.customList : [],
         migrations: imported.migrations || {},
         filters: imported.filters || {},
         openGroups: Array.isArray(imported.openGroups) ? imported.openGroups : [],
