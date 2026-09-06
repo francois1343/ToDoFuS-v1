@@ -51,14 +51,6 @@
       "objectives": []
     },
     {
-      "id": "foire-du-trool",
-      "name": "Foire du Trool",
-      "order": 70,
-      "levelRange": { "min": 40, "max": 100 },
-      "tags": ["activity"],
-      "objectives": []
-    },
-    {
       "id": "foret-abraknydes",
       "name": "Forêt des Abraknydes",
       "order": 80,
@@ -163,14 +155,6 @@
       "objectives": []
     },
     {
-      "id": "almanax",
-      "name": "Almanax",
-      "order": 210,
-      "levelRange": { "min": 1, "max": 100 },
-      "tags": ["daily", "activity"],
-      "objectives": []
-    },
-    {
       "id": "archipel-ecailles",
       "name": "Archipel des Écailles",
       "order": 220,
@@ -240,14 +224,6 @@
       "order": 300,
       "levelRange": { "min": 200, "max": 200 },
       "tags": ["endgame", "quest", "pvm"],
-      "objectives": []
-    },
-    {
-      "id": "foire-trool",
-      "name": "Foire du Trool — contenus complémentaires",
-      "order": 310,
-      "levelRange": { "min": 40, "max": 100 },
-      "tags": ["activity", "pvm"],
       "objectives": []
     },
     {

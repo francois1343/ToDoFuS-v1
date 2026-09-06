@@ -7,7 +7,9 @@
     routes: "data/parcours.json",
     successes: "data/succes.json",
     quests: "data/quetes.json",
+    questsWithoutSuccesses: "data/quetes-hors-succes.json",
     dofus: "data/dofus.json",
+    almanax: "data/almanax.json",
     artisanat: "data/artisanat.json",
     breeding: "data/elevage.json",
   };
@@ -90,7 +92,9 @@
   fallback.rushStarter = { version: 1, routes: fallback.routes.routes.slice(0, 1) };
   fallback.successes = { version: 1, successes: [] };
   fallback.quests = { version: 1, quests: [] };
+  fallback.questsWithoutSuccesses = { version: 1, categories: [] };
   fallback.artisanat = fallback.professions;
+  fallback.almanax = { version: 1, id: "almanax", name: "Almanax", objectives: [] };
 
   function parseCsv(text) {
     const rows = [];
@@ -398,6 +402,8 @@
         ],
       },
       dofus: loaded.dofus.value,
+      questsWithoutSuccesses: loaded.questsWithoutSuccesses.value,
+      almanax: loaded.almanax.value,
       professions: loaded.artisanat.value,
       breeding: loaded.breeding.value,
       usedFallback: Object.values(loaded).some((entry) => entry.fallback),

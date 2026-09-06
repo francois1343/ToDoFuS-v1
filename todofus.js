@@ -33,6 +33,7 @@ const typeLabels = {
   breeding: "Élevage",
   scroll: "Parchemin",
   achievement: "Succès",
+  "hors-succes": "Hors succès",
   activity: "Activité",
   duo: "Duo",
   prudent: "Prudent",
@@ -65,7 +66,7 @@ const moduleBlueprints = {
     title: "Dofus et récits",
     progressUnit: "parcours terminés",
     searchPlaceholder: "Rechercher un Dofus ou une quête…",
-    categories: ["dofus", "quest", "anomaly", "forgotten"],
+    categories: ["dofus", "quest", "almanax", "anomaly", "forgotten", "hors-succes"],
     notice: "Les prérequis de dofus.json pilotent automatiquement l’ordre et le verrouillage des parcours.",
   },
   artisanat: {
@@ -446,8 +447,55 @@ function buildModules(data) {
       }),
     )
     .sort(byOrder);
-  if (loreCategories.length)
-    dofusSections.push({ id: "lore-categories", title: "Autres récits", groups: loreCategories });
+  let otherLoreGroups = [...loreCategories];
+  if (data.almanax?.id && data.almanax?.name) {
+    otherLoreGroups.push(
+      makeGroup(data.almanax, {
+        kind: "almanax",
+        categoryKeys: ["almanax", "quest"],
+        levelRange: {
+          min: data.almanax.level || data.almanax.levelRange?.min || null,
+          max: data.almanax.level || data.almanax.levelRange?.max || null,
+        },
+      }),
+    );
+  }
+  const questsWithoutSuccesses = asArray(data.questsWithoutSuccesses?.categories)
+    .map((category) =>
+      makeGroup(
+        {
+          ...category,
+          objectives: asArray(category.quests).map((quest, index) => ({
+            ...quest,
+            type: "quest",
+            order: index + 1,
+            description: quest.date
+              ? `Disponible : ${quest.date}`
+              : quest.note || "",
+            tags: ["hors-succes"],
+          })),
+        },
+        {
+          kind: "quest",
+          categoryKeys: ["quest", "hors-succes"],
+        },
+      ),
+    )
+    .filter((category) => category.objectives.length)
+    .sort(byOrder);
+  const questsWithoutSuccessesById = new Map(
+    questsWithoutSuccesses.map((category) => [category.id, category]),
+  );
+  otherLoreGroups = otherLoreGroups.map(
+    (category) => questsWithoutSuccessesById.get(category.id) || category,
+  );
+  otherLoreGroups.push(
+    ...questsWithoutSuccesses.filter(
+      (category) => !loreCategories.some((loreCategory) => loreCategory.id === category.id),
+    ),
+  );
+  if (otherLoreGroups.length)
+    dofusSections.push({ id: "lore-categories", title: "Autres récits", groups: otherLoreGroups });
 
   const professions = asArray(data.professions?.professions)
     .filter((profession) => profession?.id && profession?.name)

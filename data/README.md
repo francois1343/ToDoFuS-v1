@@ -7,6 +7,7 @@ Les composants lisent les données par l’intermédiaire de `data-loader.js`. L
 - `parcours.json` : parcours transversaux ;
 - `succes.json` : succès des Dofus ;
 - `quetes.json` : quêtes détaillées des succès ;
+- `quetes-hors-succes.json` : quêtes qui ne sont rattachées à aucun succès, affichées dans « Autres récits » ;
 - `dofus.json` : métadonnées, prérequis et parties des Dofus ;
 - `artisanat.json` : métiers de récolte, fabrication et forgemagie ;
 - `elevage.json` : élevage et générations.

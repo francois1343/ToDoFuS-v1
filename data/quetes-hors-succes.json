@@ -1,0 +1,345 @@
+{
+  "id": "quetes-hors-succes",
+  "name": "Quêtes non disponibles dans les succès",
+  "category": "hors-succes",
+  "summary": "Catalogue exhaustif des quêtes secondaires, répétables, événementielles ou utilitaires ne faisant partie d'aucun succès en jeu, regroupées par catégorie du journal de quêtes.",
+  "source": "https://www.dofuspourlesnoobs.com/quetes-non-disponibles-dans-les-succes.html",
+  "categories": [
+    {
+      "id": "mondiales",
+      "name": "Mondiales",
+      "quests": [
+        { "id": "q-hs-mon-1", "name": "Comment perdre ses plumes" },
+        { "id": "q-hs-mon-2", "name": "Ennemis d'état" },
+        { "id": "q-hs-mon-3", "name": "La Malle aux trésors" },
+        { "id": "q-hs-mon-4", "name": "Le Dofus et l'alchimiste" },
+        { "id": "q-hs-mon-5", "name": "Les marcheurs blancs" },
+        { "id": "q-hs-mon-6", "name": "L'ombre et la proie" },
+        { "id": "q-hs-mon-7", "name": "Terra Carta" },
+        { "id": "q-hs-mon-8", "name": "Le silence est d'Aure" },
+        { "id": "q-hs-mon-9", "name": "Au détour d'un rêve perdu" },
+        { "id": "q-hs-mon-10", "name": "Entretemps, une renaissance" },
+        {
+          "id": "q-hs-mon-11",
+          "name": "Le cœur d'un compagnon est fait comme une auberge..."
+        },
+        { "id": "q-hs-mon-12", "name": "Question d'évolution" },
+        { "id": "q-hs-mon-13", "name": "Les animaux fantastiques" },
+        { "id": "q-hs-mon-14", "name": "Rencontres d'un soir" }
+      ]
+    },
+    {
+      "id": "fratrie-oublies",
+      "name": "Fratrie des Oubliés",
+      "quests": [
+        {
+          "id": "q-fratrie-oublies-1",
+          "name": "Les enfants des dieux",
+          "level": 200
+        },
+        {
+          "id": "q-fratrie-oublies-2",
+          "name": "Complots célestes",
+          "level": 200
+        }
+      ]
+    },
+    {
+      "id": "astrub",
+      "name": "Astrub",
+      "quests": [{ "id": "q-hs-ast-1", "name": "Les touffes des héros" }]
+    },
+    {
+      "id": "almanax",
+      "name": "Almanax",
+      "quests": [
+        { "id": "q-hs-alm-1", "name": "L'Almanax du Mage Ax" },
+        {
+          "id": "q-hs-alm-2",
+          "name": "Farine assassine",
+          "date": "06 Janvier"
+        },
+        {
+          "id": "q-hs-alm-3",
+          "name": "Qui vole un oeuf cherche l'embrouille",
+          "date": "Pâques"
+        },
+        {
+          "id": "q-hs-alm-4",
+          "name": "Le fabuleux festin d'Amélie Poêlon",
+          "date": "08 Mai"
+        },
+        {
+          "id": "q-hs-alm-5",
+          "name": "Que le Gwan Kwic me cwoque",
+          "date": "25 Mai"
+        },
+        {
+          "id": "q-hs-alm-6",
+          "name": "Bon comme du bon pain",
+          "date": "03 Août"
+        },
+        {
+          "id": "q-hs-alm-7",
+          "name": "Troubles à Bonta",
+          "date": "12 Septembre"
+        },
+        {
+          "id": "q-hs-alm-8",
+          "name": "Troubles à Brâkmar",
+          "date": "12 Septembre"
+        },
+        {
+          "id": "q-hs-alm-9",
+          "name": "La fête aux tire-fesses",
+          "date": "03 Octobre"
+        },
+        {
+          "id": "q-hs-alm-10",
+          "name": "Vols à la charrette",
+          "date": "15 Novembre"
+        },
+        {
+          "id": "q-hs-alm-11",
+          "name": "Contrôles anti-baston",
+          "date": "12 Décembre"
+        },
+        { "id": "q-hs-alm-12", "name": "Retour en avant", "note": "Très rare" }
+      ]
+    },
+    {
+      "id": "avis-de-recherche",
+      "name": "Avis de recherche",
+      "quests": [{ "id": "q-hs-avis-1", "name": "On recherche Atcham" }]
+    },
+    {
+      "id": "bonta",
+      "name": "Bonta",
+      "quests": [
+        { "id": "q-hs-bon-1", "name": "Chargez !" },
+        { "id": "q-hs-bon-2", "name": "L'appel de la cité blanche" }
+      ]
+    },
+    {
+      "id": "brakmar",
+      "name": "Brâkmar",
+      "quests": [
+        { "id": "q-hs-brak-1", "name": "Piétine titine" },
+        { "id": "q-hs-brak-2", "name": "L'appel de la cité sombre" }
+      ]
+    },
+    {
+      "id": "cania",
+      "name": "Cania",
+      "quests": [
+        { "id": "q-hs-can-1", "name": "Le petit Manitou" },
+        { "id": "q-hs-can-2", "name": "Le Grand Manitou" },
+        { "id": "q-hs-can-3", "name": "Chasse au trésor quotidienne" },
+        {
+          "id": "q-hs-can-4",
+          "name": "Chasse au trésor archéologique (tablette de Totankama)"
+        },
+        {
+          "id": "q-hs-can-5",
+          "name": "Chasse au trésor de Güss",
+          "date": "15 Février"
+        },
+        {
+          "id": "q-hs-can-6",
+          "name": "Chasse au trésor de Scheik",
+          "date": "21 Avril"
+        },
+        {
+          "id": "q-hs-can-7",
+          "name": "Chasse au trésor de Sad",
+          "date": "28 Septembre"
+        },
+        {
+          "id": "q-hs-can-8",
+          "name": "Chasse au trésor de Milivar",
+          "date": "24 Décembre"
+        }
+      ]
+    },
+    {
+      "id": "chateau-d-amakna",
+      "name": "Château d'Amakna",
+      "quests": [
+        { "id": "q-hs-cha-1", "name": "De la viande pour la tablée d'Allister" }
+      ]
+    },
+    {
+      "id": "evenements",
+      "name": "Événements",
+      "quests": [
+        { "id": "q-hs-eve-1", "name": "Coeur brisé" },
+        { "id": "q-hs-eve-2", "name": "Le pouvoir des fleurs" },
+        { "id": "q-hs-eve-3", "name": "Le monde à l'envers (partie 1)" },
+        { "id": "q-hs-eve-4", "name": "Le monde à l'envers (partie 2)" },
+        { "id": "q-hs-eve-5", "name": "Le monde à l'envers (partie 3)" },
+        { "id": "q-hs-eve-6", "name": "Haché parlé" },
+        { "id": "q-hs-eve-7", "name": "Les oeufs oubliés" },
+        { "id": "q-hs-eve-8", "name": "La vie en mauve" },
+        { "id": "q-hs-eve-9", "name": "Une boufette nommée Blanquette" },
+        { "id": "q-hs-eve-10", "name": "Peluchez-les toutes" },
+        { "id": "q-hs-eve-11", "name": "En manque d'inspiration" },
+        { "id": "q-hs-eve-12", "name": "Simulations périlleuses" },
+        { "id": "q-hs-eve-13", "name": "Simulation de Tiwotokar" },
+        { "id": "q-hs-eve-14", "name": "Simulation de Tiwaapi" },
+        { "id": "q-hs-eve-15", "name": "Simulation de Tiwagrum" },
+        {
+          "id": "q-hs-eve-16",
+          "name": "Le serveur est actuellement en cours de maintenance"
+        },
+        { "id": "q-hs-eve-17", "name": "Foire en question" },
+        { "id": "q-hs-eve-18", "name": "Les paris sont ouverts" },
+        { "id": "q-hs-eve-19", "name": "Simulations infinies" },
+        { "id": "q-hs-eve-20", "name": "Où est Leonzi Trool ?" },
+        { "id": "q-hs-eve-21", "name": "Gladiateur dans l'âme" },
+        {
+          "id": "q-hs-eve-22",
+          "name": "Chasse au trésor des pirates",
+          "date": "Alentours du 19 Septembre"
+        },
+        {
+          "id": "q-hs-eve-23",
+          "name": "Chasse à l'ambre fossile (Saison Ocre)"
+        }
+      ]
+    },
+    {
+      "id": "ile-de-frigost",
+      "name": "Île de Frigost",
+      "quests": [
+        { "id": "q-hs-fri-1", "name": "La garde meurt mais ne se rend pas" },
+        { "id": "q-hs-fri-2", "name": "La Pêche à Mel" },
+        { "id": "q-hs-fri-3", "name": "Mel au drame" },
+        { "id": "q-hs-fri-4", "name": "Mel Odieuse" },
+        { "id": "q-hs-fri-5", "name": "L'arène et le roi" },
+        { "id": "q-hs-fri-6", "name": "Monarchie absolue" },
+        { "id": "q-hs-fri-7", "name": "Monarchie parlementaire" },
+        { "id": "q-hs-fri-8", "name": "Piwates des sept mers et demies" },
+        { "id": "q-hs-fri-9", "name": "Pour qui sonne le glagla" },
+        { "id": "q-hs-fri-10", "name": "Guerriers foux" },
+        { "id": "q-hs-fri-11", "name": "Donjon sans dragon" },
+        { "id": "q-hs-fri-12", "name": "C'est Rébro" },
+        { "id": "q-hs-fri-13", "name": "Glourson et Lumière" },
+        { "id": "q-hs-fri-14", "name": "Un chasseur qui a du coffre" },
+        { "id": "q-hs-fri-15", "name": "Premier postage" },
+        { "id": "q-hs-fri-16", "name": "Deuxième postage" },
+        { "id": "q-hs-fri-17", "name": "Troisième postage" },
+        { "id": "q-hs-fri-18", "name": "Quatrième postage" },
+        { "id": "q-hs-fri-19", "name": "Cinquième postage" },
+        { "id": "q-hs-fri-20", "name": "Sixième postage" },
+        { "id": "q-hs-fri-21", "name": "Septième postage" },
+        { "id": "q-hs-fri-22", "name": "Huitième postage" },
+        { "id": "q-hs-fri-23", "name": "Neuvième postage" },
+        { "id": "q-hs-fri-24", "name": "Dixième postage" },
+        { "id": "q-hs-fri-25", "name": "Onzième postage" },
+        { "id": "q-hs-fri-26", "name": "Douzième postage" },
+        { "id": "q-hs-fri-27", "name": "Treizième postage" },
+        { "id": "q-hs-fri-28", "name": "Quatorzième postage" },
+        { "id": "q-hs-fri-29", "name": "Mer il et foux !" },
+        { "id": "q-hs-fri-30", "name": "Qpvsrvpj ubou ef ibjof ?" }
+      ]
+    },
+    {
+      "id": "ile-des-wabbits",
+      "name": "Île des Wabbits",
+      "quests": [{ "id": "q-hs-wab-1", "name": "Wogew l'hewmite" }]
+    },
+    {
+      "id": "justiciers",
+      "name": "Justiciers",
+      "quests": [{ "id": "q-hs-jus-1", "name": "L'école fantastique" }]
+    },
+    {
+      "id": "krosmoz",
+      "name": "Krosmoz",
+      "quests": [
+        { "id": "q-hs-kro-1", "name": "Balade en Ecaflipus" },
+        { "id": "q-hs-kro-2", "name": "Barnabé dans l'espace" },
+        { "id": "q-hs-kro-3", "name": "Ecaflip sourit aux audacieux" },
+        { "id": "q-hs-kro-4", "name": "Il faut que cha brille" },
+        { "id": "q-hs-kro-5", "name": "Le secret des Flaqueux" },
+        { "id": "q-hs-kro-6", "name": "Un œuf pour Ecaflip" },
+        { "id": "q-hs-kro-7", "name": "Le divin enfant" },
+        { "id": "q-hs-kro-8", "name": "Laisse pas trainer tes fils" }
+      ]
+    },
+    {
+      "id": "montagne-des-koalaks",
+      "name": "Montagne des Koalaks",
+      "quests": [
+        { "id": "q-hs-koa-1", "name": "Des fleurs épineuses" },
+        { "id": "q-hs-koa-2", "name": "Le cimetière primitif" },
+        { "id": "q-hs-koa-3", "name": "Visite non guidée" }
+      ]
+    },
+    {
+      "id": "port-de-madrestam",
+      "name": "Port de Madrestam",
+      "quests": [
+        { "id": "q-hs-mad-1", "name": "Comment mettre un requin en bière" }
+      ]
+    },
+    {
+      "id": "province-d-amakna",
+      "name": "Province d'Amakna",
+      "quests": [
+        { "id": "q-hs-ama-1", "name": "Ça est frugal, une fois" },
+        { "id": "q-hs-ama-2", "name": "La faux Maudite" },
+        { "id": "q-hs-ama-3", "name": "Allez hue !" }
+      ]
+    },
+    {
+      "id": "quetes-de-temple",
+      "name": "Quêtes de temple",
+      "quests": [
+        { "id": "q-hs-tem-1", "name": "Quêtes de dévotion" },
+        {
+          "id": "q-hs-tem-2",
+          "name": "Quêtes de temple (Chasse au dopeul...)"
+        },
+        { "id": "q-hs-tem-3", "name": "Chasse au Dopeul Forgelance" }
+      ]
+    },
+    {
+      "id": "saharach",
+      "name": "Saharach",
+      "quests": [
+        { "id": "q-hs-sah-1", "name": "Le bout du tunnel" },
+        { "id": "q-hs-sah-2", "name": "Sur la piste de Droupik" },
+        { "id": "q-hs-sah-3", "name": "L'ombre du duel" }
+      ]
+    },
+    {
+      "id": "sufokia",
+      "name": "Sufokia",
+      "quests": [
+        { "id": "q-hs-suf-1", "name": "Bûcher, c'est votre métier" },
+        { "id": "q-hs-suf-2", "name": "Chasser, c'est votre métier" },
+        { "id": "q-hs-suf-3", "name": "Cueillir, c'est votre métier" },
+        { "id": "q-hs-suf-4", "name": "Faucher, c'est votre métier" },
+        { "id": "q-hs-suf-5", "name": "Pêcher, c'est votre métier" },
+        { "id": "q-hs-suf-6", "name": "Piocher, c'est votre métier" }
+      ]
+    },
+    {
+      "id": "tutoriel-guide",
+      "name": "Tutoriel guidé",
+      "quests": [
+        { "id": "q-hs-tut-1", "name": "Bien débuter" },
+        { "id": "q-hs-tut-2", "name": "Premiers pas" },
+        { "id": "q-hs-tut-3", "name": "Premières armes" },
+        { "id": "q-hs-tut-4", "name": "L'anneau de tous les dangers" },
+        { "id": "q-hs-tut-5", "name": "Sous le regard des dieux" }
+      ]
+    },
+    {
+      "id": "campement-des-gobelins",
+      "name": "Campement des Gobelins",
+      "quests": [{ "id": "q-hs-gob-1", "name": "De joyeux petits arbres" }]
+    }
+  ]
+}
